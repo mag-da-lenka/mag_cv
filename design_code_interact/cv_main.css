@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+
+body {
+  /* background-image: linear-gradient(to bottom, rgb(68, 65, 104), rgb(32, 30, 49)); */
+  background-image: linear-gradient(to bottom, rgb(59, 100, 95), rgb(51, 78, 75));
+  background-color: rgb(51, 78, 75);
+  color: rgb(228, 228, 228);
+  font-family: 'Abel'; 
+  font-size: 1.0rem;
+  /* display: block; */
+}
+
+.nav_background {
+  /* background-image: linear-gradient(to bottom, rgb(36, 33, 59), rgb(68, 65, 104)); */
+  background-image: linear-gradient(to bottom, rgb(52, 59, 59), rgb(59, 100, 95));
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  margin-top: -10vh;
+}
+
+nav {
+  width: 80vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+h1, h2, h3, h4 {
+  color: rgb(194, 165, 181);
+  padding: 1% 0% 2% 0%;
+}
+
+h1 {
+  border: none;
+}
+
+/* MAGDA'S PICTURE */
+.img-logo-width {
+  max-width: 100px;
+  border: 5px solid rgb(194, 165, 181);
+  border-radius: 50%;
+}
+
+.abel_font {
+  font-family: 'Abel';
+  color: orange;
+  font-size: 1.0rem;
+}
+
+
+.anchor {
+  position: absolute;
+  margin: -10vh;
+}
+
+.screen {
+  /* border: dotted yellow 2px; */
+  margin-top: 10vh; 
+  margin-bottom: 0vh; 
+  height: 90vh; 
+  width: 80vw;
+  display: flex;
+  flex-direction: column;  
+}
+
+
+.header_row {
+  display: flex;
+  flex-direction: row; 
+  max-width: 800px;
+  height: 80vh;
+}
+
+.keep_going { 
+  border: solid white 1px; 
+  text-align: center;
+  height: 30px;
+}
+
+
+
+aside, main {
+  border: rgb(197, 197, 197) solid 1px;
+  border-radius: 20px;
+  margin: 0% 1% 0% 1%;
+  padding: 2% 2% 2% 2%;
+}
+
+aside {
+  width: 50%;
+  text-align: right;
+  /* flex: 3 3 10em; */
+  border:  2px;
+  border-color:  rgb(228, 228, 228) rgb(228, 228, 228) transparent transparent;
+  border-style:  solid solid solid solid; 
+  border-radius: 0px 5px 0px 0px;
+}
+
+main {
+  width: 50%;
+  /* flex: 5 5 15em; */
+  font-size: 1.0rem;
+  border:  2px;
+  border-color: transparent transparent rgb(228, 228, 228) rgb(228, 228, 228) ;
+  border-style:  solid solid solid solid; 
+  border-radius: 0px 0px 0px 5px;
+}
+
+address {
+  font-style: normal;
+}
+
+
+
+
+/* LISTS > ASIDEs */
+
+aside>ul, .languages_ul{
+  /* border: pink solid 1px; */
+  margin: 1% 0% 5% 0%;
+  padding: 0% 0% 0% 0%; 
+  text-align: right; 
+  list-style-type: none;
+}
+
+aside>ul>li, .languages_ul>li {
+  /* border: yellowgreen solid 1px; */
+  margin: 0% 0% 5% 0%;
+  padding: 0% 0% 0% 0%; 
+  text-align: right; 
+  list-style-type: none;
+}
+
+aside>ul>li>ul>li {
+  /* border: yellowgreen dotted 1px; */
+  list-style-type: none; 
+  margin: 0% 0% 0% -12%;
+  padding: 0% 0% 0% 0%; 
+}
+
+/* LISTS > MAINs */
+
+main>article>section>ul {
+  /* border: pink solid 1px; */
+  margin: 0% 0% 5% 0%;
+  padding: 0% 0% 0% 0%;
+}
+
+main>section>ul>li,
+main>article>section>ul>li {
+  /* border: white dotted 1px;  */
+  display: block;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  list-style-type: none;
+}
+
+
+
+
+
+/* FLOAR_R > magda's and other contact icon rows */
+.contact_icon_line_mag, 
+.contact_icon_line {
+  /* border: yellow 1px dotted; */
+  float: right;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.clearing_div {
+  clear: both;
+}
+
+/* magda's and other contact icons --> styled */
+.icon_link {
+  width: 40px;
+  border: white solid 0.5px;
+  border-radius: 50%;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 0px 0px 2px 2px rgb(228, 228, 228);
+}
+
+/* tech skills icon --> style */
+.skills_icon_line>img {
+  width: 50px;
+  margin: 10px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+
+
+
+footer {
+  background-color: rgb(42, 39, 65); 
+  background-color: rgb(51, 78, 75); 
+  background-image: linear-gradient(to bottom, rgb(51, 78, 75), rgb(51, 61, 60));
+  margin: 10% 0% 0% 0%;
+  padding: 2% 2% 2% 12%;
+  /* border-top: rgb(228, 228, 228) 0.5px solid; */
+}
+
+
+
+
+
+
+
+
+
+/* LINKS - defaults */
+
+a:link {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  /* background-image: linear-gradient(30deg, rgb(194, 165, 181),  */
+    /* transparent 35px, transparent); */
+  padding: 5px 7px 5px 7px;
+  border:  2px;
+  border-color: transparent transparent rgb(228, 228, 228)rgb(228, 228, 228);
+  border-style:  solid solid solid solid;
+  border-radius: 0px 0px 0px 5px;
+}
+
+main a:link {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  /* background-image: linear-gradient(30deg, rgb(194, 165, 181),  */
+    /* transparent 35px, transparent); */
+    padding: 0px 5px 0px 5px;
+  border:  1px;
+  border-color: transparent transparent rgb(228, 228, 228)rgb(228, 228, 228);
+  border-style:  solid solid solid solid;
+  border-radius: 0px 0px 0px 5px;
+}
+
+.contact_icon_line>a:link,
+.contact_icon_line_mag>a:link {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  background-image: none;
+  border: none;
+  /* border: blue 2px solid; */
+}
+
+
+
+/* LINKS - hover/active/focus */
+
+a:hover, a:active, a:focus {
+  padding: 5px 7px 5px 7px;
+  border:  2px;
+  border-color:  rgb(228, 228, 228) rgb(228, 228, 228) transparent transparent;
+  border-style:  solid solid solid solid; 
+  border-radius: 0px 5px 0px 0px;
+}
+
+main a:link:hover,
+main a:link:active,
+main a:link:focus {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  padding: 0px 5px 0px 5px;
+  border-color:  rgb(228, 228, 228) rgb(228, 228, 228) transparent transparent;
+  border-style:  solid solid solid solid;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.contact_icon_line>a>img:hover, 
+.contact_icon_line>a>img:active, 
+.contact_icon_line>a>img:focus, 
+.contact_icon_line_mag>a>img:hover, 
+.contact_icon_line_mag>a>img:active, 
+.contact_icon_line_mag>a>img:focus {
+border: 1px rgb(228, 228, 228) solid;
+box-shadow: 0px 0px 5px 2px rgba(228, 228, 228, 0.849); 
+}
+
+
+
+
+/* LINKS - visited */
+
+a:visited {
+  color: rgb(228, 228, 228);
+  border: rgb(228, 228, 228) 1px solid;
+}
+
+
+
+
+
+
+
+
+
+/* text-decoration: line-through; */
+
+/* text-decoration-color: orange; */
+
+/* background-color: transparent; */
+
+/* list-style-type: decimal-leading-zero; */
+
+/* list-style-position: outside; */
+
+/* -webkit-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);*/
+
+/* -moz-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);  */
+
+/* box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.479); */
+
+/* border-style: solid solid solid solid; */
+
+/* border-bottom: orange 1px solid; */
+
+/* box-shadow: 0px 0px 40px 12px rgba(255, 255, 255, 0.281); */
+
+/* text-transform: uppercase; */
+
+/* background-color: rgb(68, 65, 104); */
+
+/* background-color: rgb(42, 39, 65); */
+
+/* background-image: url(https://github.com/mag-da-lenka/HYF-heptapods/blob/master/IMGP0011fiafiolki_nav.jpg?raw=true); */ 
+
+
+
+.buttons_row {
+display: flex; 
+justify-content: space-between;
+}
+
+button {
+  font-size: 22px;
+  border: rgb(228, 228, 228) 2px solid;
+  border-radius: 50%; 
+  padding: 5px;
+  margin: 0px 50px 0px 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  /* background-color: rgb(148, 124, 137);  */
+  background-color: transparent;
+  color: rgb(228, 228, 228);
+  box-shadow: -6px -6px 10px rgb(57, 87, 83), 6px 6px 10px rgba(0, 0, 0, 0.178);  
+  
+}
+
+button:focus {
+  outline: 0;
+}
+
+.button_l>span>a, .button_r>span>a {
+  border: none;
+}
+
+body .button_l:hover, body .button_l:focus, 
+body .button_r:hover, body .button_r:focus{
+  background-color: rgb(160, 106, 135);
+  box-shadow: -6px -6px 10px rgba(57, 87, 83, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+body .button_l:active, 
+body .button_r:active {
+  background-color: rgb(148, 97, 124);
+  box-shadow: inset -4px -4px 8px rgb(141, 86, 116), inset 8px 8px 16px rgb(141, 86, 116);
+}
+
