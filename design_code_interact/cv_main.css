@@ -1,26 +1,21 @@
 * {
   box-sizing: border-box;
   margin: auto;
-  /* overflow: hidden; */
 }
 
 body {
-  /* background-image: linear-gradient(to bottom, rgb(68, 65, 104), rgb(32, 30, 49)); */
   background-image: linear-gradient(to bottom, rgb(59, 100, 95), rgb(51, 78, 75));
-  background-color: rgb(51, 78, 75);
   color: rgb(228, 228, 228);
   font-family: 'Abel';
-  font-size: 1.0rem;
-  /* display: block; */
 }
 
 .nav_background {
-  /* background-image: linear-gradient(to bottom, rgb(36, 33, 59), rgb(68, 65, 104)); */
   background-image: linear-gradient(to bottom, rgb(52, 59, 59), rgb(59, 100, 95));
   position: fixed;
   width: 100%;
   height: 10vh;
   margin-top: -10vh;
+  z-index:10;
 }
 
 nav {
@@ -28,38 +23,34 @@ nav {
   height: 10vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; 
+  z-index: 10;
 }
+
 
 h1, h2, h3, h4 {
   color: rgb(194, 165, 181);
-  padding: 0% 0% 0% 0%;
   border: none;
+  font-weight: 500;
 }
 
-h2 {
-  font-size: 30px; 
-  font-weight: 500;
-} 
+h1{  font-size: 3.0vw;}
+h2 {  font-size: 2.0vw; } 
+h3, button {  font-size: 1.3vw; }
 
-h3{
-  font-size: 20px; 
-  font-weight: 500;
+p, ul, li {
+  font-size: 1.2vw; 
+  font-weight: 100;
 }
 
 /* MAGDA'S PICTURE */
-
 .img-logo-width {
-  max-width: 100px;
-  border: 5px solid rgb(194, 165, 181);
+  max-width: 10vw;
+  border: 0.5vw solid rgb(194, 165, 181);
   border-radius: 50%;
 }
 
-.abel_font {
-  font-family: 'Abel';
-  color: orange;
-  font-size: 1.0rem;
-}
+
 
 .anchor {
   position: absolute;
@@ -87,13 +78,13 @@ h3{
 aside, main {
   margin: 0% 1% 0% 1%;
   padding: 2% 2% 2% 2%;
+  border: 0.2vw;
 }
 
 aside {
-  width: 40vw;
+  width: 45vw;
   text-align: right;
   /* flex: 3 3 10em; */
-  border: 2px;
   border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) transparent transparent;
   border-style: solid solid solid solid;
   border-radius: 0px 5px 0px 0px;
@@ -101,10 +92,8 @@ aside {
 }
 
 main {
-  width: 40vw;
+  width: 45vw;
   /* flex: 5 5 15em; */
-  font-size: 1.0rem;
-  border: 2px;
   border-color: transparent transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151);
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px;
@@ -121,7 +110,7 @@ address {
 
 ul {
   /* border: pink solid 1px; */
-  margin: 1% 0% 5% 0%;
+  margin: 1% 0% 1% 0%;
   padding: 0% 0% 0% 0%;
   text-align: left;
   list-style-type: none;
@@ -141,7 +130,7 @@ li{
 
 aside>section>ul{
   /* border: pink solid 1px; */
-  margin: 1% 0% 5% 0%;
+  margin: 1% 0% 1% 0%;
   padding: 0% 0% 0% 0%;
   text-align: right;
   list-style-type: none;
@@ -162,8 +151,8 @@ aside>section>ul>li {
 .contact_icon_line {
   /* border: yellow 1px dotted; */
   float: right;
-  margin: 0px 0px 0px 0px;
-  padding: 10px 0px 10px 0px;
+  margin: 0% 0% 0% 0%;
+  padding: 1% 0% 1% 0%;
 }
 
 .clearing_div {
@@ -173,7 +162,8 @@ aside>section>ul>li {
 /* magda's and other contact icons --> styled */
 
 .icon_link {
-  width: 40px;
+  width: 3vw; 
+  margin: 5% 0% 1% 0%;
   border: white solid 0.5px;
   border-radius: 50%;
   background-color: rgb(228, 228, 228);
@@ -183,9 +173,9 @@ aside>section>ul>li {
 /* tech skills icon --> style */
 
 .skills_icon_line>img {
-  width: 50px;
-  margin: 10px 10px 0px 0px;
-  padding: 0px 0px 0px 0px;
+  width: 3vw; 
+  margin: 2% 0% 1% 0%;
+  padding: 0% 0% 0% 0%;
 }
 
 footer {
@@ -203,43 +193,36 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* LINKS - defaults */
 
 a:link {
   color: rgb(228, 228, 228);
-  text-decoration: none;
-  padding: 5px 7px 5px 7px;
-  border: 2px;
-  border-color: transparent transparent rgb(228, 228, 228)rgb(228, 228, 228);
+  text-decoration: none; 
+  font-size: 1.2vw; 
+  font-weight: 100;
+  /* padding: 5px 7px 5px 7px; */
+  /* border: 2px; */
+  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
+  border: 0.2vw;
+  border-color: transparent transparent rgba(228, 228, 228, 0.151)rgba(228, 228, 228, 0.151);
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px; 
   /* background-color: green; */
 }
 
 a:hover, a:active, a:focus {
-  padding: 5px 7px 5px 7px;
-  border: 2px;
-  border-color: rgb(228, 228, 228) rgb(228, 228, 228) transparent transparent;
+  /* padding: 5px 7px 5px 7px; */
+  /* border: 2px;  */
+  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
+  border: 0.2vw; 
+  border-color: rgba(228, 228, 228, 0.151)rgba(228, 228, 228, 0.151) transparent transparent;
   border-style: solid solid solid solid;
   border-radius: 0px 5px 0px 0px;
 }
 
 a:visited {
   color: rgb(228, 228, 228);
-  border: rgb(228, 228, 228) 1px solid;
+  border: rgba(228, 228, 228, 0.151) 1px solid;
 }
 
 
@@ -252,9 +235,9 @@ main a:link,
 footer a:link {
   color: rgb(228, 228, 228);
   text-decoration: none;
-  padding: 0px 5px 0px 5px;
-  border: 1px;
-  border-color: transparent transparent rgb(228, 228, 228)rgb(228, 228, 228);
+  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
+  border: 0.1vw;
+  border-color: transparent transparent rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61);
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px;
 }
@@ -273,8 +256,9 @@ footer a:link:active,
 footer a:link:focus {
   color: rgb(228, 228, 228);
   text-decoration: none;
-  padding: 0px 5px 0px 5px;
-  border-color: rgb(228, 228, 228) rgb(228, 228, 228) transparent transparent;
+  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
+  border: 0.1vw; 
+  border-color: rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61) transparent transparent;
   border-style: solid solid solid solid;
   border-radius: 0px 5px 0px 0px;
 }
@@ -302,54 +286,25 @@ footer a:link:focus {
 
 
 
-/* background-image: linear-gradient(30deg, rgb(194, 165, 181),  */
-/* transparent 35px, transparent); */
-
-/* text-decoration: line-through; */
-
-/* text-decoration-color: orange; */
-
-/* background-color: transparent; */
-
-/* list-style-type: decimal-leading-zero; */
-
-/* list-style-position: outside; */
-
-/* -webkit-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);*/
-
-/* -moz-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);  */
-
-/* box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.479); */
-
-/* border-style: solid solid solid solid; */
-
-/* border-bottom: orange 1px solid; */
-
-/* box-shadow: 0px 0px 40px 12px rgba(255, 255, 255, 0.281); */
-
-/* text-transform: uppercase; */
-
-/* background-color: rgb(68, 65, 104); */
-
-/* background-color: rgb(42, 39, 65); */
-
-/* background-image: url(https://github.com/mag-da-lenka/HYF-heptapods/blob/master/IMGP0011fiafiolki_nav.jpg?raw=true); */
-
 
 /* the up/down navigation arrow buttons ROW */
 .buttons_row {
   display: flex;
   justify-content: space-between;
 }
+
+
 /* the up/down navigation arrow buttons L=UP, R=DOWN */
-.button_l, .button_r {
-  font-size: 22px;
+
+.button_l, 
+.button_r {
+  font-size: 1.2vw;
   border: rgb(228, 228, 228) 2px solid;
   border-radius: 50%;
-  padding: 5px;
+  padding: 0;
   margin: 0px 50px 0px 50px;
-  width: 50px;
-  height: 50px;
+  width: 3.2vw;
+  height: 3.2vw;
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -359,16 +314,15 @@ footer a:link:focus {
   box-shadow: -6px -6px 10px rgb(57, 87, 83), 6px 6px 10px rgba(0, 0, 0, 0.178);
 }
 
-button:focus {
-  outline: 0;
-}
+button:focus { outline: 0; }
 
-.button_l>span>a, .button_r>span>a {
-  border: none;
-}
+.button_l>span>a, 
+.button_r>span>a {  border: none; }
 
-body .button_l:hover, body .button_l:focus, 
-body .button_r:hover, body .button_r:focus {
+body .button_l:hover, 
+body .button_l:focus, 
+body .button_r:hover, 
+body .button_r:focus {
   background-color: rgb(160, 106, 135);
   box-shadow: -6px -6px 10px rgba(57, 87, 83, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
@@ -378,12 +332,12 @@ body .button_r:active {
   background-color: rgb(148, 97, 124);
   box-shadow: inset -4px -4px 8px rgb(141, 86, 116), inset 8px 8px 16px rgb(141, 86, 116);
 }
+/* the up/down navigation arrow buttons L=UP, R=DOWN    -->  end  */
 
 
 
 
-
-/*  */
+/* clearfix */
 
 .clearfix {
   /* overflow: auto; */
@@ -393,13 +347,13 @@ body .button_r:active {
 
 
 
-
-
-
 /* SLIDES */
 
-* {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
+* {box-sizing: border-box; } 
+
+.mySlides1, 
+.mySlides2 {display: none} 
+
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -410,14 +364,15 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, 
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: rgb(228, 228, 228);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -432,8 +387,9 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
+.prev:hover, 
+.next:hover {
+  background-color: rgb(228, 228, 228);
   color: black;
 }
 
@@ -450,20 +406,22 @@ img {vertical-align: middle;}
   background-color: rgba(124, 124, 124, 0);
   color: rgb(194, 165, 181); 
   font-family: 'Abel';
-  font-size: 1.20em; 
+  font-size: 1.5vw; 
   font-style: bold;
   cursor: pointer;
-  padding: 1% 1% 1% 1%;
+  padding: 0% 1% 0% 1%;
   margin: 1% 0% 1% 0%;
-  width: 400px;
+  width: 31vw;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+/* Add a background color to the button if it is clicked on (add the .active class with JS), 
+and when you move the mouse over it (hover) */
+.active, 
+.accordion:hover {
   background-color: rgba(255, 192, 203, 0.137);
 }
 
@@ -487,13 +445,13 @@ img {vertical-align: middle;}
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   content: "\02BC6";
-  font-size: 12px;
-  color: rgb(255, 255, 255); 
-  border: white solid 1px;
+  font-size: 1.0vw;
+  color: rgba(228, 228, 228, 0.61); 
+  border: rgba(228, 228, 228, 0.61) solid 1px;
   border-radius: 50%; 
-  width: 20px;
-  height: 20px;
-  padding: 1px;
+  width: 1.5vw;
+  height: 1.5vw;
+  padding: 0.1vw;
   float: right;
   text-align:center; 
   /* margin-left: 5px; */
@@ -505,3 +463,82 @@ img {vertical-align: middle;}
 }
 
 /* ACCORDION - end  */
+
+
+
+
+
+
+
+/* MEDIA QUERIES :: EXPERIMENTS */
+
+/* 1026-infinity  WIDE SCREEN LANDSCAPE */
+@media screen and (min-width: 1026px) and (max-width: 10000px) and (orientation: landscape) {
+  body {
+    /* color: rgb(51, 129, 255);  */
+  }
+}
+
+/* 801-1025 MEDIUM SCREEN LANDSCAPE */
+@media screen and (min-width: 801px) and (max-width: 1025px) and (orientation: landscape) {
+  body{
+    /* color: lightskyblue; */
+  }
+}
+
+/* 601-800 SMALL SCREEN LANDSCAPE */
+@media screen and (min-width: 601px) and (max-width: 800px) and (orientation: landscape) {
+  body{
+    /* color: lightsteelblue; */
+  }
+}
+
+/* 000-600  MOBILE SCREEN LANDSCAPE  */
+@media screen and (min-width: 1px) and (max-width: 600px) and (orientation: landscape){
+  body{
+    /* color:azure; */
+  }
+}
+
+/* 1026-infinity WIDE SCREEN PORTRAIT */
+@media screen and (min-width: 1026px) and (max-width: 10000px) and (orientation: portrait) {
+  body {
+    /* color: red; */
+  }
+}
+
+/* 801-1025 MEDIUM SCREEN PORTRAIT iPad PRO === 1025 */
+@media screen and (min-width: 801px) and (max-width: 1025px) and (orientation: portrait) {
+  body{
+    /* color: orange; */
+  }
+} 
+
+/* 601-800 SMALL SCREEN PORTRAIT iPad === 768 */
+@media screen and (min-width: 601px) and (max-width: 800px) and (orientation: portrait){
+  body{
+    /* color: yellow; */
+  }
+}
+
+/* 000-600  MOBILE SCREEN PORTRAIT  */
+@media screen and (min-width: 1px) and (max-width: 600px) and (orientation: portrait){
+  body{
+    /* color: yellowgreen; */
+  }
+} 
+
+
+
+
+
+/* blablabla */
+/* text-decoration: line-through; */
+/* text-decoration-color: orange; */
+/* list-style-type: decimal-leading-zero; */
+/* list-style-position: outside; */
+/* -webkit-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);*/
+/* -moz-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);  */
+/* box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.479); */
+/* text-transform: uppercase; */
+/* background-image: url(https://github.com/mag-da-lenka/HYF-heptapods/blob/master/IMGP0011fiafiolki_nav.jpg?raw=true); */
