@@ -70,6 +70,7 @@ p, ul, li {
 }
 
 
+
 .squirrel_icon {
  width: 11vw;
  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
@@ -127,6 +128,11 @@ main {
   border-color: transparent transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151);
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px;
+}
+
+.link_bars {
+  margin-top: 1vh;
+  width: 30vw;
 }
 
 address {
@@ -553,6 +559,14 @@ and when you move the mouse over it (hover) */
   main {
     order: -1;
   }
+
+  .link_bars {
+    margin-top: 1vh;
+    width: 60vw;
+  }
+
+
+
   /* LISTS > ASIDEs */
   aside>section>ul, aside>section>ul>li {
     text-align: left;
@@ -712,6 +726,13 @@ and when you move the mouse over it (hover) */
   main {
     order: -1;
   }
+
+  .link_bars {
+    margin-top: 1vh;
+    width: 80vw;
+  }
+
+
   /* LISTS > ASIDEs */
   aside>section>ul, aside>section>ul>li {
     text-align: left;
