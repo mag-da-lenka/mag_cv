@@ -26,8 +26,8 @@
     <nav>
       <a href="#">home</a>
       <a href="#contact-link">contact</a>
-      <a href="#coding-experience-link">coding experience</a>
       <a href="#design-experience-link">design experience</a>
+      <a href="#coding-experience-link">coding experience</a>
       <a href="#interaction-experience-link">interaction experience</a>
       <!-- <a href="#other-education-link">other education</a> -->
       <!-- <div class="anchor" id="other-education-link"></div> -->
@@ -37,18 +37,23 @@
 
 
   <!-- SCREEN 01 > HEADER -->
-  <header class="screen">
-    <div class="flex_row" class="clearfix">
-      <h1>I am Magda : : &nbsp; </h1> <br>
+  <header class="screen" style="border: none;"> <br>
+
+    <div class="i_am_magda" class="clearfix">
+      <h1>I am Magda : : &nbsp; </h1>
       <figure>
         <img class="img-logo-width" src="mag_2021.jpg" alt="magda's portrait">
         <!-- <figcaption> a human squirreloid </figcaption> -->
       </figure>
       <h1>&nbsp; I design : : &lt;code&gt; : : communicate</h1>
     </div>
+
     <div class="buttons_row">
-      <button class="button_r"><span><a href="#contact-link"> ▼ </a></span></button>
+      <button class="button_r">
+        <span><a href="#contact-link"> ▼ </a></span>
+      </button>
     </div>
+
   </header>
 
 
@@ -63,7 +68,7 @@
     <!-- anchor contact and intro -->
     <div class="anchor" id="contact-link"></div>
 
-    <div class="flex_row">
+    <div class="screen_flex_layout">
 
       <aside class="clearfix">
 
@@ -79,17 +84,6 @@
             </a>
             <a href="mailto:magda.w@gmail.com">
               <img class="icon_link" src="ic_mail2.png" alt="gmail icon">
-            </a>
-          </div>
-          <div class="clearing_div"></div>
-
-          <!-- mobile phone -->
-          <div class="contact_icon_line_mag">
-            <a href="+45 9185 9682">
-              +45 9185 9682
-            </a>
-            <a href="+45 9185 9682">
-              <img style="padding: 2px;" class="icon_link" src="ic_call.png" alt="telephone icon">
             </a>
           </div>
           <div class="clearing_div"></div>
@@ -114,7 +108,18 @@
               <img class="icon_link" src="ic_gh.png" alt="GitHub icon">
             </a>
           </div>
-          <div class="clearing_div"></div> <br>
+          <div class="clearing_div"></div>
+
+          <!-- mobile phone -->
+          <div class="contact_icon_line_mag">
+            <a href="+45 9185 9682">
+              +45 9185 9682
+            </a>
+            <a href="+45 9185 9682">
+              <img style="padding: 2px;" class="icon_link" src="ic_call.png" alt="telephone icon">
+            </a>
+          </div>
+          <div class="clearing_div"></div><br>
 
         </address>
 
@@ -123,10 +128,10 @@
           <h2>My languages:</h2>
           <ul>
             <li>/English (fluent)</li>
-            <li>/Danish (A1)</li>
             <li>/Polish (native)</li>
-            <li>/music</li>
+            <li>/Danish (A1)</li>
             <li>/JavaScript</li>
+            <li>/music</li>
           </ul>
         </section>
 
@@ -135,25 +140,39 @@
       <main class="clearfix">
         <!-- INTRODUCTION to a squirreloid person -->
         <h2>About me:</h2>
-        <p>
-          I have worked in a few fields before I realized how much fun it is to do the above together.
-        </p>
-        <p>
-          I am human squirreloid who enjoys...
-          ...interacting with fellow human beings
-          /humbly serving a non-human furry person,
-          sometimes even getting a few purrs in return,
-          ...travelling, outdoor adventures, nature /ice, snow, mountain and glacier trekking, rocky landscapes,
-          ...visiting abandoned places: churches, factories, bunkers, you name it,
-          ...water (I am a diver-to-be despite being a very wobbly swimmer),
-          ...Sci-Fi films, but also a variety of other ecxiting series (HBO, Netflix addict), documentaries about
-          ancient cultures or mysteries,
-          ...creating: jewellery, unusual (so they say) interior decorations or unique gifts for my loved ones,
-          ...music* (singing included) ocassionally interrupted by silence...
-          *if you want to find out more, please book three days off so we can discuss that …
-        </p>
-        <p>citizenship: Polish /the right to stay and work in Denmark: yes</p>
-        <p>the plan: to stay for good (I got married here)</p>
+        <article>
+          <section>
+            <p>
+              I have decided to combine and upgrade my skills and enter the UX/UI area
+              so I am soon completing a coding bootcamp.
+              Becoming a part of digital production world
+              is a way utilizing my knack for all things visual and interaction-related.
+              I am a trained jewellery designer, a photo technician,
+              a teacher and I have a solid experience in customer service.
+              All the above have proved to be a relevant background to start my coding and UX/UI adventures.
+              I look forward to getting more of them.
+            </p> <br>
+            <p> the right to stay /work in Denmark > yes</p>
+            <p> the plan > to stay for good (I got married here)</p>
+            <p> citizenship > Polish </p> <br>
+            <button class="accordion">
+              Privately I am human squirreloid who enjoys ...
+            </button>
+            <div class="panel">
+              <ul>
+                <li> interacting with fellow beings,</li>
+                <li> humbly serving a non-human furry person,</li>
+                <li> dark sense of humour, </li>
+                <li> outdoor adventures, abandoned places,</li>
+                <li> water (despite being a very wobbly swimmer),</li>
+                <li> Sci-Fi films /series, </li>
+                <li> creating: jewellery and interior decorations,</li>
+                <li> music > to find out more, please book three days off ...</li>
+              </ul>
+            </div>
+          </section>
+          <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"></img>
+        </article>
       </main>
 
     </div>
@@ -170,130 +189,37 @@
 
 
 
-  <!-- screen 03 CODING -->
+
+
+
+
+
+
+
+  <!-- screen 03 DESIGN -->
   <div class="screen">
 
-    <!-- anchor screen 01 :: CODING -->
-    <div class="anchor" id="coding-experience-link"></div>
-
-    <div class="flex_row">
-
-      <aside class="clearfix">
-
-        <h2>Coding &nbsp; > &nbsp; education:</h2><br>
-
-        <section>
-          <h3>Hack Your Future /Copenhagen</h3>
-          <ul>
-            <li class="skills_icon_line">
-              <a id="aside_text_link1" href="https://www.hackyourfuture.dk/">
-                Hack-Your-Future/Copenhagen [codingschool]</a>
-            </li>
-            <!-- HackYourFuture Social Media interactive icons -->
-            <div class="contact_icon_line">
-              <a href="https://www.linkedin.com/school/hackyourfuture-copenhagen/">
-                <img class="icon_link" src="ic_in.png" alt="LinkedIn icon">
-              </a>
-              <a href="https://github.com/hackyourfuture-cph">
-                <img class="icon_link" src="ic_gh.png" alt="GutHub icon">
-              </a>
-              <a href="https://www.facebook.com/hackyourfuturecopenhagen/">
-                <img class="icon_link" src="ic_fb.png" alt="Facebook icon">
-              </a>
-              <a href="https://www.youtube.com/channel/UCgWEvuTAyg7qbWcq0M8w4EQ">
-                <img class="icon_link" src="ic_yt.png" alt="YouTube icon">
-              </a>
-              <a href="https://twitter.com/HackyourfutureC">
-                <img class="icon_link" src="ic_tweet.png" alt="Twitter icon">
-              </a>
-            </div class="contact_icon_line">
-          </ul>
-        </section>
-
-        <div class="clearing_div"></div>
-
-        <h3 style="color:rgb(228, 228, 228);">Hack Your Future &nbsp; > &nbsp; program </h3>
-
-        <p>HTML5, CSS3, JavaScript, React.js, UX/UI</p>
-        <p>DB (MySQL, Mongo.db), Node.js, GitHub</p>
-
-
-        <div class="skills_icon_line">
-          <!-- git and front end -->
-          <img src="icon_html.png" alt="html5 icon">
-          <img src="icon_css.png" alt="css3 icon">
-          <img src="icon_js.png" alt="JavaScript icon">
-          <img src="icon_reactjs.png" alt="reactjs icon"> <br>
-          <!-- backend and GitHub -->
-          <!-- <img src="icon_db.png" alt="DB icon"> -->
-          <img style="background-color: ivory; width: 90px;" src="icon_mysql.png" alt="mysql icon">
-          <img src="icon_nodejs.png" alt="nodejs icon">
-          <img style="background-color: ivory; width: 60px; " src="icon_github2.png" alt="GitHub icon"><br>
-        </div class="skills_icon_line">
-
-      </aside>
-
-      <main class="clearfix">
-
-        <article>
-
-          <h2> Coding &nbsp; > &nbsp; what I've done: </h2> <br>
-
-          <section>
-
-            <h3> INSERT HYF REEL HERE &nbsp; XXXXX </h3>
-
-            <p>link to coding portfolio with mini projects [screen/vid, demo-link, description]</p>
-            <p>a carousel with screenshots of the projects</p>
-            <p>hackathon screen, link, demo, Ceca's article on Medium</p>
-
-          </section>
-
-        </article>
-
-      </main>
-
-    </div>
-
-
-    <div class="buttons_row">
-      <button class="button_l"><span><a href="#"> ▲ </a></span></button>
-      <button class="button_r"><span><a href="#design-experience-link"> ▼ </a></span></button>
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-  <!-- screen 04 DESIGN -->
-  <div class="screen">
-
-    <!-- anchor screen 02 :: DESIGN -->
+    <!-- anchor screen 03 :: DESIGN -->
     <div class="anchor" id="design-experience-link"></div>
 
-    <div class="flex_row">
+    <div class="screen_flex_layout">
 
       <aside class="clearfix">
 
         <h2>Design &nbsp; > &nbsp; education:</h2> <br>
 
         <section>
-          <h3>jewellery design /silversmithing <br> /Polish state diploma</h3>
+          <h3>[2010 – 201] jewellery design /silversmithing </h3>
           <ul>
             <li>
-              <a id="aside_text_link2" href="www.pomorskaizba.pl">
-                The Association of Pomeranian Craftsmen
+              <a id="aside_text_link2" href="https://www.pomorskaizba.pl/">
+                The Association of Pomeranian Craftsmen, Gdansk, Poland
               </a>
-            </li> <br>
-            <li>Gdansk, Poland, 2010 – 2011</li>
-            <li>an extensive vocational course</li> <br>
-            <li>my hallmark: </li>
+            </li>
+            <li>an extensive vocational course</li>
+            <li> hallmark below: </li><br>
             <li>
-              <img src="ic_loc.png" alt="some icon with hallmark" style="width: 50px;">
+              <img class="hallmark" src="hallmark2.png" alt="some icon with hallmark">
             </li>
           </ul>
         </section>
@@ -302,12 +228,10 @@
           <h3>photography /techinical side </h3>
           <ul>
             <li>[learned hands-on while working at photo studios]</li>
-            <li>photoshoots</li>
-            <li>passport photographs</li>
-            <li>Noritsu machines maintenance</li>
-            <li>C-41 /b&w /135 /medium format /APS</li>
-            <li>developing /processing /cutting negatives</li>
+            <li>developing /processing C-41 /b&w /135 /medium format /APSs</li>
             <li>Photoshop /restoring photographs /collages /posters</li>
+            <li>photoshoots, passport photographs</li>
+            <li>Noritsu machines maintenance</li>
           </ul>
         </section>
 
@@ -321,48 +245,133 @@
 
           <h2>Design &nbsp; > &nbsp; what I've done: </h2> <br>
 
+          <div style="display: inline-flex; float: left;">
 
-          <section>
-            <!-- JEWELLERY SLIDES :: sneak peek -->
-            <div class="slideshow-container">
-              <div class="mySlides1">
-                <img src="img1.jpg" style="width:100%">
-              </div>
-              <div class="mySlides1">
-                <img src="img2.jpg" style="width:100%">
-              </div>
-              <div class="mySlides1">
-                <img src="img3.jpg" style="width:100%">
-              </div>
-              <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-            </div> <br>
-          </section>
+            <section>
+              <!-- JEWELLERY SLIDES :: sneak peek -->
+              <div class="slideshow-container">
 
+                <div class="mySlides1">
+                  <img src="img1_antring1.jpg">
+                </div>
+                <div class="mySlides1">
+                  <img src="Img1_antring2.jpg">
+                </div>
+                <!-- <div class="mySlides1">
+                <img src="img1_barbedwirering1.jpg">
+              </div> -->
+                <!-- <div class="mySlides1">
+                <img src="img1_celticrings1.jpg">
+              </div> -->
+                <div class="mySlides1">
+                  <img src="img1_celticrings2.jpg">
+                </div>
+                <!-- <div class="mySlides1">
+                  <img src="img1_concorde1.jpg">
+                </div> -->
+                <!-- <div class="mySlides1">
+                <img src="img1_crochet1.jpg">
+              </div> -->
+                <div class="mySlides1">
+                  <img src="img1_flowers1.jpg">
+                </div>
+                <div class="mySlides1">
+                  <img src="img1_flowers2.jpg">
+                </div>
+                <div class="mySlides1">
+                  <img src="img1_flowers3.jpg">
+                </div>
+                <!-- <div class="mySlides1">
+                <img src="img1_halfwolf1.jpg">
+              </div> -->
+                <div class="mySlides1">
+                  <img src="img1_icering1.jpg">
+                </div>
+                <div class="mySlides1">
+                  <img src="img1_icering2.jpg">
+                </div>
+                <!-- <div class="mySlides1">
+                <img src="img1_icering3.jpg">
+              </div> -->
+                <!-- <div class="mySlides1">
+                <img src="img1_kitty1.jpg">
+              </div> -->
+                <div class="mySlides1">
+                  <img src="img1_kitty2.jpg">
+                </div>
+                <!-- <div class="mySlides1">
+                <img src="img1_postapobat1.jpg">
+              </div> -->
+                <div class="mySlides1">
+                  <img src="img1_radioactivering1.jpg">
+                </div>
+                <div class="mySlides1">
+                  <img src="img1_radioactivering2.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+              </div> <br>
 
+            </section>
 
+            <img src="ic_squirrel_l.png" alt="an icon showing a squirrel" class="squirrel_icon"></img>
+
+          </div>
+          <div class="clearing_div"></div>
 
 
           <!-- JEWELLERY :: what I've done > hide/show -->
           <section>
             <button class="accordion">
-              [2009 - 2017] jewellery designer /silversmith
+              [2009 - 2017] jewellery design /silversmithing
             </button>
             <div class="panel">
               <ul>
-                <li>in my jewellery workshop in Tczew, Poland</li>
+                <!-- <li>in my jewellery workshop in Tczew, Poland</li> -->
                 <li>inventing /designing /manufacturing my own projects</li>
-                <li>sculpting in wax</li>
+                <li>sculpting in wax / stone setting</li>
                 <li>working with precious metals /alloys</li>
-                <li>stone setting</li>
                 <li>other media: glass /epoxy /random objects</li>
-                <li>finishing jewellery pieces</li>
-                <li>check my <a href="portfolio">portfolio</a></li>
+                <!-- <li>finishing jewellery pieces</li> -->
+                <!-- <li>check my <a href="portfolio">portfolio</a></li> -->
               </ul>
             </div>
           </section>
 
+          <!-- JEWELLERY :: what I've done > hide/show -->
+          <section>
+            <button class="accordion">
+              [2020 - 2021] UX/UI while coding
+            </button>
+            <div class="panel">
+              <ul>
+                <li>learn more in the
+                  <a href="#coding-experience-link">coding section</a>
+                </li>
+              </ul>
+            </div>
+          </section>
 
+          <!-- PHOTO :: what I've done > hide/show -->
+          <section>
+            <button class="accordion">
+              [2007-09 + 2017] photo editing
+            </button>
+            <div class="panel">
+              <ul>
+                <li>photo studios in Edinburgh /London</li>
+                <li>eg.: Snappy Snaps:
+                  <a href="https://www.snappysnaps.co.uk/soho/">
+                    Soho Photo Lab</a>
+                  <a href="https://www.yelp.com/biz/snappy-snaps-edinburgh">
+                    Edinburgh Photo Lab</a>
+                </li>
+                <!-- <li>check my <a href="portfolio">photographs</a></li> -->
+              </ul>
+            </div>
+          </section>
+
+          <!-- <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"></img> -->
 
 
         </article>
@@ -381,6 +390,235 @@
 
 
 
+  <!-- screen 04 CODING -->
+  <div class="screen">
+
+    <!-- anchor screen 04 :: CODING -->
+    <div class="anchor" id="coding-experience-link"></div>
+
+    <div class="screen_flex_layout">
+
+      <aside class="clearfix">
+
+        <h2>Coding &nbsp; > &nbsp; education:</h2><br>
+
+        <section>
+          <h3>Hack Your Future /Copenhagen</h3>
+          <ul>
+            <li class="skills_icon_line">
+              <a id="aside_text_link1" href="https://www.hackyourfuture.dk/">
+                Hack-Your-Future/Copenhagen [codingschool]</a>
+            </li>
+            <li>
+              <!-- HackYourFuture Social Media interactive icons -->
+              <div class="contact_icon_line">
+                <a href="https://www.linkedin.com/school/hackyourfuture-copenhagen/">
+                  <img class="icon_link" src="ic_in.png" alt="LinkedIn icon">
+                </a>
+                <a href="https://github.com/hackyourfuture-cph">
+                  <img class="icon_link" src="ic_gh.png" alt="GutHub icon">
+                </a>
+                <a href="https://www.facebook.com/hackyourfuturecopenhagen/">
+                  <img class="icon_link" src="ic_fb.png" alt="Facebook icon">
+                </a>
+                <a href="https://www.youtube.com/channel/UCgWEvuTAyg7qbWcq0M8w4EQ">
+                  <img class="icon_link" src="ic_yt.png" alt="YouTube icon">
+                </a>
+                <a href="https://twitter.com/HackyourfutureC">
+                  <img class="icon_link" src="ic_tweet.png" alt="Twitter icon">
+                </a>
+              </div class="contact_icon_line">
+            </li>
+          </ul>
+        </section>
+
+        <div class="clearing_div"></div>
+
+        <h3 style="color:rgb(228, 228, 228);"> Hack Your Future &nbsp; > &nbsp; program: </h3>
+
+        <p>HTML5, CSS3, JavaScript, React.js, UX/UI <br>
+          DB (MySQL, Mongo.db), Node.js, GitHub</p>
+
+
+        <div class="skills_icon_line">
+          <!-- git and front end -->
+          <img src="icon_html.png" alt="html5 icon">
+          <img src="icon_css.png" alt="css3 icon">
+          <img src="icon_js.png" alt="JavaScript icon">
+          <img src="icon_reactjs.png" alt="reactjs icon"> <br class="break_choice">
+          <!-- backend and GitHub -->
+          <!-- <img src="icon_db.png" alt="DB icon"> -->
+          <img style="background-color: ivory; " src="icon_mysql.png" alt="mysql icon">
+          <img src="icon_nodejs.png" alt="nodejs icon">
+          <img style="background-color: ivory; " src="icon_github2.png" alt="GitHub icon"> <br>
+        </div class="skills_icon_line">
+
+      </aside>
+
+      <main class="clearfix">
+
+        <article>
+
+          <h2> Coding &nbsp; > &nbsp; what I've done: </h2> <br>
+
+
+
+          <section>
+            <button class="accordion">
+              Our First Hackathon (won!) &nbsp;
+            </button>
+            <!-- CODING :: what I've done > hide/show -->
+            <div class="panel">
+              <ul>
+                <li> Our kraftige-sammen app on Heroku <br>
+                  <a href="https://kraftige-sammen.herokuapp.com" style="border-style: none; ">
+                    <img src="img_kraftigesammen_bar.png" alt="a screenshot of our kraftigesammen app"
+                      style="width: 30vw;  margin-top: 1.0vh;">
+                  </a>
+                </li> <br>
+
+                <li> Code <br>
+                  <a href="https://github.com/cecastosic/kraftige-sammen">
+                    kraftige sammen on Github
+                  </a>
+                  &nbsp;
+                </li> <br>
+
+                <li> More info: <br>
+                  <a href="https://hackyourfuturecopenhagen.medium.com/how-i-won-my-first-hackathon-f010742f182e">
+                    'How I won my first hackathon' &nbsp; by Svetlana Stosic Milosavljevic &nbsp; from my group
+                  </a> <br>
+                </li>
+              </ul>
+            </div>
+          </section> <br>
+
+
+
+
+
+          <section>
+            <button class="accordion">
+              My projects
+            </button>
+            <!-- CODING :: what I've done > hide/show -->
+            <div class="panel">
+              <ul>
+                <li> Videos <br>
+                  <a href="https://www.youtube.com/channel/UCiu_xkQSjWBiv2uD4ujUfqA" style="border-style: none;">
+                    <img src="img_yt_vid_bar.png" alt="a screenshot of my YouTube videos"
+                      style="width: 30vw; margin-top: 1.0vh;">
+                  </a>
+                </li> <br>
+                <li> Code <br>
+                  <a href="https://github.com/mag-da-lenka/hyf_mag/tree/main/12_hw_js3_1_json_api_fetch/3_weather_app">
+                    weather app
+                  </a>
+                  &nbsp;
+                  <a
+                    href="https://github.com/mag-da-lenka/hyf_mag/tree/main/11_hw_js2_3_callback_async/fastest_presser">
+                    fastest presser
+                  </a>
+                  &nbsp;
+                  <a href="https://github.com/mag-da-lenka/hyf_mag/tree/main/12_hw_js3_1_json_api_fetch/4_giphy_api">
+                    giphy api
+                  </a>
+                  &nbsp;
+                  <a href="https://github.com/mag-da-lenka/hyf_mag/tree/main/03_hw_html_css_3_online_form/w03_hw_form">
+                    online form
+                  </a>
+                  &nbsp;
+                  <a href="https://github.com/mag-da-lenka/hyf_mag/tree/main/02_hw_html_css_2_flexbox">
+                    flexbox
+                  </a>
+                  &nbsp;
+                </li> <br>
+                <li>More code <br>
+                  <a href="https://github.com/mag-da-lenka/hyf_mag">
+                    HackYourFuture portfolio
+                  </a>
+                  &nbsp;
+                </li> <br>
+                <li>My GitHub <br>
+                  <a href="https://github.com/mag-da-lenka">
+                    repositories
+                  </a>
+                  &nbsp;
+                </li>
+              </ul>
+            </div>
+          </section> <br>
+
+          <!-- Slideshow 2 but I don;t like it ;) -->
+          <div style="display: inline-flex; float: left; display:none;">
+            <section>
+              <div class="slideshow-container">
+                <div class="mySlides2">
+                  <img src="img2_hw01cv.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw02flex01.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw02flex02.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw03form01.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw09anim01.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw09anim02.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw11fp01.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw11fp02.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw12giphy01.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw12giphy02.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw12weather01.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw13_fetchwait01.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw13_fetchwait02.png">
+                </div>
+                <div class="mySlides2">
+                  <img src="img2_hw14_promises01.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+              </div> <br>
+            </section>
+            <img src="ic_squirrel_l.png" alt="an icon showing a squirrel" class="squirrel_icon"></img>
+          </div>
+          <div class="clearing_div"></div>
+
+
+        </article>
+
+        <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"></img>
+
+      </main>
+
+    </div>
+
+
+    <div class="buttons_row">
+      <button class="button_l"><span><a href="#"> ▲ </a></span></button>
+      <button class="button_r"><span><a href="#design-experience-link"> ▼ </a></span></button>
+    </div>
+
+  </div>
 
 
 
@@ -392,39 +630,43 @@
     <!-- anchor screen 03 :: HUMAN INTERACTION -->
     <div class="anchor" id="interaction-experience-link"></div>
 
-    <div class="flex_row">
+    <div class="screen_flex_layout">
 
       <aside class="clearfix">
 
         <h2>Other education:</h2><br>
 
         <section>
-          <h3>MA: English literature /teaching</h3>
+          <h3> MA: English literature /teaching [2002 – 2005]</h3>
           <ul>
-            <li>2002 – 2005</li>
             <li>Gdansk University, Poland</li>
-            <li>thesis: <br>
-              ‘Some Examples of Detachment <br>
-              and Some Hints of “Integration” <br>
-              in the Poetry of Philip Larkin’
+
+            <li class="smaller_font">thesis:
+              <i>
+                ‘Some Examples of Detachment <br>
+                and Some Hints of “Integration” <br class="break_choice">
+                in the Poetry of Philip Larkin’
+              </i>
             </li>
         </section>
 
         <section>
-          <h3>BA: English teaching</h3>
+          <h3>BA: English teaching [1999 – 2002]</h3>
           <ul>
-            <li>1999 – 2002</li>
-            <li>Teacher Training College, <br> Gdansk University, Poland</li>
-            <li>thesis:<br> ‘Teaching Pronunciation <br> in a Communicative Way’</li>
+            <li> Teacher Training College, Gdansk University, Poland</li>
+            <li class="smaller_font">thesis:
+              <i>
+                ‘Teaching Pronunciation in a Communicative Way’
+              </i>
+            </li>
           </ul>
         </section>
 
         <section>
-          <h3>piano class</h3>
+          <h3>piano class [6 years]</h3>
           <ul>
-            <li>1987 – 1993</li>
-            <li>State Music School, Tczew, PL</li>
-            <li>1st Grade Music School Diploma</li>
+            <li>State Music School, Tczew, Poland</li>
+            <!-- <li class="smaller_font">1st Grade Music School Diploma</li> -->
           </ul>
         </section>
 
@@ -455,20 +697,15 @@
             </button>
             <div class="panel">
               <ul>
-                <li>in Edinburgh /London</li>
-                <li>magnes language studio:
+                <li>Edinburgh /London /Tczew(PL)
                   <a href="http://www.magnes.tczew.pl/">
                     magnes.tczew.pl</a>
                 </li>
-                <li>I have practiced human ineraction with students and parents
-                  while teaching in state /private schools (Poland, Scotland)
-                  and my language studio.</li>
-                <li>check my <a href="portfolio">check my teaching CV</a></li>
+                <li>I have practiced human ineraction with students and their parents.
+                <li>check my <a href="teaching_cv">check my teaching CV</a> ...coming soon </li>
               </ul>
             </div>
           </section>
-
-
 
           <!-- CRUISES :: what I've done > hide/show -->
           <section>
@@ -477,10 +714,16 @@
             </button>
             <div class="panel">
               <ul>
-                <li>Copenhagen Cruise Terminal /Aiport</li>
-                <li>for <a href="https://www.dmcdenmark.dk/">DMC</a>
+                <li>Copenhagen Cruise Terminal /Aiport
+                  for <a href="https://www.dmcdenmark.dk/">DMC</a>
+                  and <a href="https://smscruises.com/">SMS</a>
                 </li>
-                <li> and <a href="https://smscruises.com/">SMS</a></li>
+                <li>Cruise Lines: Disney, Princess and Norwegian </li>
+                <li> verifying travel documents and visas </li>
+                <li>ensuring that travel requirements are met <br>
+                  and the data is accurately input in the system
+                </li>
+                <li>providing the guests with some essential toutist information about Copenhagen</li>
               </ul>
             </div>
           </section>
@@ -492,29 +735,21 @@
             </button>
             <div class="panel">
               <ul>
-                <li>various photo studios</li>
-                <li>in Edinburgh /London</li>
-                <li>Snappy Snaps:
+                <li>photo studios in Edinburgh /London</li>
+                <li>eg.: Snappy Snaps:
                   <a href="https://www.snappysnaps.co.uk/soho/">
                     Soho Photo Lab</a>
-                </li>
-                <li>Snappy Snaps:
                   <a href="https://www.yelp.com/biz/snappy-snaps-edinburgh">
                     Edinburgh Photo Lab</a>
                 </li>
-                <li>photoshoots</li>
-                <li>passport photographs</li>
-                <li>Noritsu machines maintenance</li>
-                <li>C-41 /b&w /135 /medium format /APS</li>
-                <li>developing /processing /cutting negatives</li>
-                <li>Photoshop /restoring photographs /collages /posters</li>
-                <li>check my <a href="portfolio">portfolio</a></li>
+                <li>check my <a href="photo_portfolio">photographs</a>... coming soon</li>
               </ul>
             </div>
           </section>
 
-
         </article>
+
+        <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"></img>
 
       </main>
 
@@ -538,17 +773,12 @@
 
   <footer>
 
-    <a href="#">home</a>
 
-    <p>by Magdalena Wojtakowska [Voigt] &copy; 2019 MSW
-      <time datetime='2019-10-09 23:00+0100'> </time>
-    </p> <br>
 
-    <address>
-      <a href='mailto:magdalena.s.wojtakowska@gmail.com'>
-        magdalena.s.wojtakowska@gmail.com
-      </a>
-    </address>
+    <p>by Magdalena Wojtakowska [Voigt] &copy; 2020 MSW
+      <time datetime='2019-10-09 23:00+0100'></time>
+    </p>
+
 
     <br>
 

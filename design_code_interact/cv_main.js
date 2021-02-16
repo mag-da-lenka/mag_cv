@@ -3,7 +3,11 @@ console.log(`hello Hello`)
 
 
 const slideIndex = [1, 1];
-const slideId = ["mySlides1"]
+const slideId = ["mySlides1", "mySlides2"]
+
+function plusSlides(num, idNum) {
+    showSlides(slideIndex[idNum] += num, idNum);
+}
 
 function showSlides(num, idNum) {
     let slides = document.getElementsByClassName(slideId[idNum]);
@@ -15,11 +19,10 @@ function showSlides(num, idNum) {
     slides[slideIndex[idNum] - 1].style.display = "block";
 }
 
-function plusSlides(num, idNum) {
-    showSlides(slideIndex[idNum] += num, idNum);
-}
+
 
 showSlides(1, 0);
+showSlides(1, 1);
 
 
 
@@ -38,7 +41,7 @@ for (i = 0; i < acc.length; i++) {
         if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
         } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.maxHeight = panel.scrollHeight + "vw";
         }
 
     });

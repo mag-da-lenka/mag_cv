@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 10vh;
   margin-top: -10vh;
-  z-index:10;
+  z-index: 10;
 }
 
 nav {
@@ -23,10 +23,9 @@ nav {
   height: 10vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; 
+  justify-content: space-between;
   z-index: 10;
 }
-
 
 h1, h2, h3, h4 {
   color: rgb(194, 165, 181);
@@ -34,16 +33,36 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-h1{  font-size: 3.0vw;}
-h2 {  font-size: 2.0vw; } 
-h3, button {  font-size: 1.3vw; }
+h1 {
+  font-size: 3.0vw;
+}
+
+h2 {
+  font-size: 2.0vw;
+}
+
+h3, button {
+  font-size: 1.3vw;
+}
 
 p, ul, li {
-  font-size: 1.2vw; 
+  font-size: 1.2vw;
   font-weight: 100;
 }
 
+.smaller_font {
+  font-size: 1.0vw;
+}
+
+.i_am_magda {
+  display: flex;
+  flex-direction: row; 
+  margin-top: 25vh;
+  margin-bottom:25vh;
+}
+
 /* MAGDA'S PICTURE */
+
 .img-logo-width {
   max-width: 10vw;
   border: 0.5vw solid rgb(194, 165, 181);
@@ -51,6 +70,19 @@ p, ul, li {
 }
 
 
+.squirrel_icon {
+ width: 11vw;
+ filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
+ opacity: 70%;
+}
+
+.hallmark {
+  width: 10vw;
+  border: 0px solid none; 
+  border-radius: 50%; 
+  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
+  opacity: 70%;
+}
 
 .anchor {
   position: absolute;
@@ -67,13 +99,12 @@ p, ul, li {
   flex-direction: column;
 }
 
-.flex_row {
+.screen_flex_layout {
   display: flex;
   flex-direction: row;
   max-width: 100vw;
   height: 80vh;
 }
-
 
 aside, main {
   margin: 0% 1% 0% 1%;
@@ -88,7 +119,6 @@ aside {
   border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) transparent transparent;
   border-style: solid solid solid solid;
   border-radius: 0px 5px 0px 0px;
-  /* border: dotted yellow 2px; */
 }
 
 main {
@@ -97,14 +127,11 @@ main {
   border-color: transparent transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151);
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px;
-  /* border: dotted yellow 2px; */
 }
 
 address {
   font-style: normal;
 }
-
-
 
 /* LISTS */
 
@@ -116,7 +143,7 @@ ul {
   list-style-type: none;
 }
 
-li{
+li {
   /* border: white dotted 1px;  */
   display: block;
   margin: 0% 0% 0% 0%;
@@ -126,9 +153,10 @@ li{
 }
 
 
+
 /* LISTS > ASIDEs */
 
-aside>section>ul{
+aside>section>ul {
   /* border: pink solid 1px; */
   margin: 1% 0% 1% 0%;
   padding: 0% 0% 0% 0%;
@@ -144,7 +172,6 @@ aside>section>ul>li {
   list-style-type: none;
 }
 
-
 /* FLOAT_R > magda's and other contact icon rows */
 
 .contact_icon_line_mag, 
@@ -159,62 +186,51 @@ aside>section>ul>li {
   clear: both;
 }
 
-/* magda's and other contact icons --> styled */
 
+/* magda's and other contact icons --> styled */
 .icon_link {
-  width: 3vw; 
+  width: 3vw;
   margin: 5% 0% 1% 0%;
-  border: white solid 0.5px;
+  border:  rgb(228, 228, 228) solid 1.5px;
   border-radius: 50%;
   background-color: rgb(228, 228, 228);
-  box-shadow: 0px 0px 2px 2px rgb(228, 228, 228);
+  box-shadow: 0px 0px 1px 1px rgb(228, 228, 228); 
 }
 
-/* tech skills icon --> style */
 
+/* tech skills icon --> style */
 .skills_icon_line>img {
-  width: 3vw; 
-  margin: 2% 0% 1% 0%;
+  height: 3vw;
+  margin: 1% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
 }
 
 footer {
-  background-color: rgb(42, 39, 65);
-  background-color: rgb(51, 78, 75);
   background-image: linear-gradient(to bottom, rgb(51, 78, 75), rgb(51, 61, 60));
   margin: 10% 0% 0% 0%;
   padding: 2% 2% 2% 12%;
+  text-align: center;
   /* border-top: rgb(228, 228, 228) 0.5px solid; */
 }
 
 
 
-
-
-
-
 /* LINKS - defaults */
-
 a:link {
   color: rgb(228, 228, 228);
-  text-decoration: none; 
-  font-size: 1.2vw; 
+  text-decoration: none;
+  font-size: 1.0vw;
   font-weight: 100;
-  /* padding: 5px 7px 5px 7px; */
-  /* border: 2px; */
-  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
+  padding: 0.0em 0.2em 0.0em 0.2em;
   border: 0.2vw;
   border-color: transparent transparent rgba(228, 228, 228, 0.151)rgba(228, 228, 228, 0.151);
   border-style: solid solid solid solid;
-  border-radius: 0px 0px 0px 5px; 
-  /* background-color: green; */
+  border-radius: 0px 0px 0px 5px;
+ 
 }
-
 a:hover, a:active, a:focus {
-  /* padding: 5px 7px 5px 7px; */
-  /* border: 2px;  */
-  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
-  border: 0.2vw; 
+  padding: 0.0em 0.2em 0.0em 0.2em;
+  border: 0.2vw;
   border-color: rgba(228, 228, 228, 0.151)rgba(228, 228, 228, 0.151) transparent transparent;
   border-style: solid solid solid solid;
   border-radius: 0px 5px 0px 0px;
@@ -227,53 +243,43 @@ a:visited {
 
 
 
-/* aside/main/footer - overriden */
-
-#aside_text_link1, 
-#aside_text_link2, 
+/* LINKS - aside/main/footer - overriden */
+#aside_text_link1, #aside_text_link2, 
 main a:link, 
 footer a:link {
   color: rgb(228, 228, 228);
   text-decoration: none;
-  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
+  padding: 0.0em 0.2em 0.0em 0.2em;
   border: 0.1vw;
   border-color: transparent transparent rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61);
+  /* border-color: orange; */
   border-style: solid solid solid solid;
-  border-radius: 0px 0px 0px 5px;
+  border-radius: 0px 0px 0px 5px; 
 }
-
-#aside_text_link1:hover, 
-#aside_text_link1:active, 
-#aside_text_link1:focus,
-#aside_text_link2:hover, 
-#aside_text_link2:active, 
-#aside_text_link2:focus,
-main a:link:hover, 
-main a:link:active, 
-main a:link:focus, 
-footer a:link:hover, 
-footer a:link:active, 
-footer a:link:focus {
+#aside_text_link1:hover, #aside_text_link1:active, #aside_text_link1:focus, 
+#aside_text_link2:hover, #aside_text_link2:active, #aside_text_link2:focus, 
+main a:link:hover, main a:link:active, main a:link:focus, 
+footer a:link:hover, footer a:link:active, footer a:link:focus {
   color: rgb(228, 228, 228);
   text-decoration: none;
-  padding: 0.1vw 0.7vw 0.1vw 0.7vw;
-  border: 0.1vw; 
+  padding: 0.0em 0.2em 0.0em 0.2em;
+  border: 0.1vw;
   border-color: rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61) transparent transparent;
   border-style: solid solid solid solid;
-  border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 5px 0px 0px; 
+  
 }
+
 
 
 /* contact round icon_links  */
 
-.contact_icon_line>a:link, 
-.contact_icon_line_mag>a:link {
+.contact_icon_line>a:link, .contact_icon_line_mag>a:link {
   color: rgb(228, 228, 228);
   text-decoration: none;
   background-image: none;
-  border: none;
+  border: none; 
 }
-
 .contact_icon_line>a>img:hover, 
 .contact_icon_line>a>img:active, 
 .contact_icon_line>a>img:focus, 
@@ -281,9 +287,8 @@ footer a:link:focus {
 .contact_icon_line_mag>a>img:active, 
 .contact_icon_line_mag>a>img:focus {
   border: 1px rgb(228, 228, 228) solid;
-  box-shadow: 0px 0px 5px 2px rgba(228, 228, 228, 0.849);
+  box-shadow: 0px 0px 1px 2px rgba(228, 228, 228, 0.849);
 }
-
 
 
 
@@ -293,9 +298,7 @@ footer a:link:focus {
   justify-content: space-between;
 }
 
-
 /* the up/down navigation arrow buttons L=UP, R=DOWN */
-
 .button_l, 
 .button_r {
   font-size: 1.2vw;
@@ -313,12 +316,13 @@ footer a:link:focus {
   color: rgb(228, 228, 228);
   box-shadow: -6px -6px 10px rgb(57, 87, 83), 6px 6px 10px rgba(0, 0, 0, 0.178);
 }
-
-button:focus { outline: 0; }
-
+button:focus {
+  outline: 0;
+}
 .button_l>span>a, 
-.button_r>span>a {  border: none; }
-
+.button_r>span>a {
+  border: none;
+}
 body .button_l:hover, 
 body .button_l:focus, 
 body .button_r:hover, 
@@ -326,7 +330,6 @@ body .button_r:focus {
   background-color: rgb(160, 106, 135);
   box-shadow: -6px -6px 10px rgba(57, 87, 83, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-
 body .button_l:active, 
 body .button_r:active {
   background-color: rgb(148, 97, 124);
@@ -336,9 +339,7 @@ body .button_r:active {
 
 
 
-
 /* clearfix */
-
 .clearfix {
   /* overflow: auto; */
   overflow: hidden;
@@ -347,25 +348,30 @@ body .button_r:active {
 
 
 
+
 /* SLIDES */
-
-* {box-sizing: border-box; } 
-
-.mySlides1, 
-.mySlides2 {display: none} 
-
-img {vertical-align: middle;}
+* {
+  box-sizing: border-box;
+}
+.mySlides1, .mySlides2 {
+  display: none
+}
+.slideshow-container img {
+  vertical-align: middle;
+  border: 1px transparent solid; 
+  border-radius: 50%; 
+  width: 100%;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 200px;
+  max-width: 16vw;
   position: relative;
   margin: 0;
 }
 
 /* Next & previous buttons */
-.prev, 
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -387,14 +393,11 @@ img {vertical-align: middle;}
 }
 
 /* On hover, add a grey background color */
-.prev:hover, 
-.next:hover {
+.prev:hover, .next:hover {
   background-color: rgb(228, 228, 228);
   color: black;
 }
-
 /* SLIDES - end */
-
 
 
 
@@ -404,14 +407,15 @@ img {vertical-align: middle;}
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: rgba(124, 124, 124, 0);
-  color: rgb(194, 165, 181); 
+  color: rgb(194, 165, 181);
   font-family: 'Abel';
-  font-size: 1.5vw; 
+  font-size: 1.5vw;
   font-style: bold;
   cursor: pointer;
   padding: 0% 1% 0% 1%;
   margin: 1% 0% 1% 0%;
   width: 31vw;
+  /* width: 100%; */
   text-align: left;
   border: none;
   outline: none;
@@ -420,8 +424,7 @@ img {vertical-align: middle;}
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), 
 and when you move the mouse over it (hover) */
-.active, 
-.accordion:hover {
+.active, .accordion:hover {
   background-color: rgba(255, 192, 203, 0.137);
 }
 
@@ -443,22 +446,24 @@ and when you move the mouse over it (hover) */
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
   content: "\02BC6";
   font-size: 1.0vw;
-  color: rgba(228, 228, 228, 0.61); 
+  color: rgba(228, 228, 228, 0.61);
   border: rgba(228, 228, 228, 0.61) solid 1px;
-  border-radius: 50%; 
+  border-radius: 50%;
   width: 1.5vw;
   height: 1.5vw;
   padding: 0.1vw;
   float: right;
-  text-align:center; 
+  text-align: center;
   /* margin-left: 5px; */
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
   content: "\02BC5";
 }
 
@@ -470,9 +475,12 @@ and when you move the mouse over it (hover) */
 
 
 
+
+
 /* MEDIA QUERIES :: EXPERIMENTS */
 
 /* 1026-infinity  WIDE SCREEN LANDSCAPE */
+
 @media screen and (min-width: 1026px) and (max-width: 10000px) and (orientation: landscape) {
   body {
     /* color: rgb(51, 129, 255);  */
@@ -480,27 +488,31 @@ and when you move the mouse over it (hover) */
 }
 
 /* 801-1025 MEDIUM SCREEN LANDSCAPE */
+
 @media screen and (min-width: 801px) and (max-width: 1025px) and (orientation: landscape) {
-  body{
+  body {
     /* color: lightskyblue; */
   }
 }
 
 /* 601-800 SMALL SCREEN LANDSCAPE */
+
 @media screen and (min-width: 601px) and (max-width: 800px) and (orientation: landscape) {
-  body{
+  body {
     /* color: lightsteelblue; */
   }
 }
 
 /* 000-600  MOBILE SCREEN LANDSCAPE  */
-@media screen and (min-width: 1px) and (max-width: 600px) and (orientation: landscape){
-  body{
+
+@media screen and (min-width: 1px) and (max-width: 600px) and (orientation: landscape) {
+  body {
     /* color:azure; */
   }
 }
 
 /* 1026-infinity WIDE SCREEN PORTRAIT */
+
 @media screen and (min-width: 1026px) and (max-width: 10000px) and (orientation: portrait) {
   body {
     /* color: red; */
@@ -508,37 +520,213 @@ and when you move the mouse over it (hover) */
 }
 
 /* 801-1025 MEDIUM SCREEN PORTRAIT iPad PRO === 1025 */
+
 @media screen and (min-width: 801px) and (max-width: 1025px) and (orientation: portrait) {
-  body{
+  body {
     /* color: orange; */
   }
-} 
+}
 
 /* 601-800 SMALL SCREEN PORTRAIT iPad === 768 */
-@media screen and (min-width: 601px) and (max-width: 800px) and (orientation: portrait){
-  body{
+
+@media screen and (min-width: 601px) and (max-width: 800px) and (orientation: portrait) {
+  body {
     /* color: yellow; */
   }
 }
 
 /* 000-600  MOBILE SCREEN PORTRAIT  */
-@media screen and (min-width: 1px) and (max-width: 600px) and (orientation: portrait){
-  body{
+
+@media screen and (min-width: 1px) and (max-width: 1000px) and (orientation: portrait) {
+  body {
     /* color: yellowgreen; */
+  
+  } 
+}
+
+/* 000-1200  MOBILE SCREEN PORTRAIT  */
+
+@media screen and (min-width: 1px) and (max-width: 1050px) and (orientation: portrait)  {
+  body {
+    /* color: yellowgreen;
+   */
+  } 
+  .break_choice {
+    display: none;
   }
-} 
+  .nav_background {
+    position: sticky;
+    width: 100%;
+    height: 10vh;
+    margin-top: 0vh;
+  }
+  nav {
+    width: 100%;
+    height: 10vh;
+  }
+  h1 {
+    font-size: 4.0vw;
+  }
+  h2 {
+    font-size: 3.8vw;
+  }
+  h3, button {
+    font-size: 2.7vw;
+  }
+  p, ul, li {
+    font-size: 2.5vw;
+    font-weight: 100;
+    text-align: left;
+  } 
+  .smaller_font {
+    font-size: 2.0vw;
+  }
+  .i_am_magda {
+    display: flex;
+    flex-direction: row; 
+    margin-top: 35vh;
+    margin-bottom:35vh;
+  }
+  .squirrel_icon {
+    width: 15vw;
+   }
+  .screen_flex_layout {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: 100%;
+  }
+  .anchor {
+    position: absolute;
+    margin: -5vh;
+  }
+  .screen {
+    border: rgba(228, 228, 228, 0.151) 1px solid;
+    border-radius: 5px;
+    margin-top: 0vh;
+    margin-bottom: 10vh;
+    padding-bottom: 2vh;
+    height: 100%;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+  }
+  aside, main {
+    width: 90vw;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 1% 2% 2%;
+    border: 0.4vw;
+  }
+  aside {
+    text-align: left;
+    margin: 0% 0% 3% 0%;
+  }
+  main {
+    order: -1;
+  }
+  /* LISTS > ASIDEs */
+  aside>section>ul, aside>section>ul>li {
+    text-align: left;
+  }
+  /* FLOAT_R > magda's and other contact icon rows */
+  .contact_icon_line_mag, .contact_icon_line {
+    /* border: yellow 1px dotted; */
+    float: left;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 0% 1% 0%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .clearing_div {
+    clear: both;
+  }
+  /* magda's and other contact icons --> styled */
+  .icon_link {
+    width: 6vw;
+    margin: 5% 0% 1% 0%;
+    border: white solid 0.5px;
+    border-radius: 50%;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 0px 0px 1px 1px rgba(228, 228, 228, 0.603);
+  }
+  /* tech skills icon --> style */
+  .skills_icon_line>img {
+    height: 5vw;
+  }
+  /* the up/down navigation arrow buttons L=UP, R=DOWN */
+  .button_l, .button_r {
+    font-size: 2.2vw;
+    border: rgb(228, 228, 228) 1px solid;
+    width: 6vw;
+    height: 6vw;
+  }
+  .button_r {
+    display: none;
+  }
+  footer {
+    display: flex;
+    width: 100vw;
+    padding: 1% 1% 10% 1%;
+  }
+  /* LINKS - defaults */
+  a:link {
+    font-size: 2.5vw;
+  }
+  /* ACCORDION */
+  .accordion {
+    font-size: 2.5vw;
+    padding: 1% 1% 1% 1%;
+    margin: 0% 0% 1% 0%;
+    width: 61vw;
+  }
+  .accordion:after {
+    font-size: 1.5vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    padding: 0.1vw;
+  }
+
+
+  .slideshow-container {
+  max-width: 40vw;
+  position: relative;
+  margin: 0;
+  }
+
+  .hallmark {
+  width: 15vw;
+  }
+
+}
 
 
 
 
 
 /* blablabla */
+
 /* text-decoration: line-through; */
+
 /* text-decoration-color: orange; */
+
 /* list-style-type: decimal-leading-zero; */
+
 /* list-style-position: outside; */
+
 /* -webkit-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);*/
+
 /* -moz-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);  */
+
 /* box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.479); */
+
 /* text-transform: uppercase; */
+
 /* background-image: url(https://github.com/mag-da-lenka/HYF-heptapods/blob/master/IMGP0011fiafiolki_nav.jpg?raw=true); */
+
+/* border-color: transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151);
+    border-style: solid solid solid solid;
+    border-radius: 0px 0px 5px 5px; */
+
+/* border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) transparent rgba(228, 228, 228, 0.151);
+    border-style: solid solid solid solid;
+    border-radius: 5px 5px 0px 0px; */
