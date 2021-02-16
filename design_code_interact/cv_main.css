@@ -455,13 +455,14 @@ and when you move the mouse over it (hover) */
   content: '\02795';
   /* Unicode character for "plus" sign (+) */
   content: "\02BC6";
+  content:"▼";
   font-size: 1.0vw;
   color: rgba(228, 228, 228, 0.61);
   border: rgba(228, 228, 228, 0.61) solid 1px;
   border-radius: 50%;
   width: 1.5vw;
   height: 1.5vw;
-  padding: 0.1vw;
+  padding: 0.3vw;
   float: right;
   text-align: center;
   /* margin-left: 5px; */
@@ -470,7 +471,9 @@ and when you move the mouse over it (hover) */
 .active:after {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
-  content: "\02BC5";
+  content: "\02BC5"; 
+  content:"▲";
+  font-size: 1.0vw;
 }
 
 /* ACCORDION - end  */
@@ -611,6 +614,7 @@ and when you move the mouse over it (hover) */
     width: 100vw;
     padding: 1% 1% 10% 1%;
   }
+  
   /* LINKS - defaults */
   a:link {
     font-size: 2.5vw;
@@ -623,10 +627,11 @@ and when you move the mouse over it (hover) */
     width: 61vw;
   }
   .accordion:after {
-    font-size: 1.5vw;
-    width: 2.5vw;
-    height: 2.5vw;
-    padding: 0.1vw;
+    font-size: 2.5vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    padding: 0.4vw;
+    
   }
 
 
@@ -789,10 +794,11 @@ and when you move the mouse over it (hover) */
     width: 85vw;
   }
   .accordion:after {
-    font-size: 3.3vw;
+    font-size: 3.7vw;
     width: 4.7vw;
     height: 4.7vw;
     padding: 0.1vw;
+    
   }
 
   .slideshow-container {
