@@ -10,6 +10,7 @@ function plusSlides(num, idNum) {
 }
 
 function showSlides(num, idNum) {
+    let i;
     let slides = document.getElementsByClassName(slideId[idNum]);
     if (num > slides.length) { slideIndex[idNum] = 1 }
     if (num < 1) { slideIndex[idNum] = slides.length }

@@ -354,7 +354,7 @@ body .button_r:active {
   box-sizing: border-box;
 }
 .mySlides1, .mySlides2 {
-  display: none
+  display: none;
 }
 .slideshow-container img {
   vertical-align: middle;
