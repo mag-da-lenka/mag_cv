@@ -20,8 +20,6 @@ function showSlides(num, idNum) {
     slides[slideIndex[idNum] - 1].style.display = "block";
 }
 
-
-
 showSlides(1, 0);
 showSlides(1, 1);
 
@@ -30,7 +28,7 @@ showSlides(1, 1);
 
 
 const acc = document.getElementsByClassName("accordion");
-// var i;
+
 
 for (i = 0; i < acc.length; i++) {
 

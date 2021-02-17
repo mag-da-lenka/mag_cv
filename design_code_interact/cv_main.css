@@ -9,6 +9,7 @@ body {
   font-family: 'Abel';
 }
 
+
 .nav_background {
   background-image: linear-gradient(to bottom, rgb(52, 59, 59), rgb(59, 100, 95));
   position: fixed;
@@ -33,17 +34,9 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-h1 {
-  font-size: 3.7vw;
-}
-
-h2 {
-  font-size: 2.5vw;
-}
-
-h3, button {
-  font-size: 1.7vw; 
-}
+h1 {font-size: 3.7vw;}
+h2 {font-size: 2.5vw;}
+h3 {font-size: 1.7vw;}
 
 p, ul, li {
   font-size: 1.2vw;
@@ -257,7 +250,7 @@ footer a:link {
   text-decoration: none;
   padding: 0.0em 0.2em 0.0em 0.2em;
   border: 0.1vw;
-  border-color: transparent transparent rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61);
+  border-color: transparent transparent rgba(228, 228, 228, 0.322)rgba(228, 228, 228, 0.61);
   /* border-color: orange; */
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px; 
@@ -358,7 +351,7 @@ body .button_r:active {
   width: 100%;
 }
 .slideshow-container {
-  max-width: 15vw;
+  max-width: 11vw;
   position: relative;
   margin: auto;
 }
@@ -415,6 +408,9 @@ body .button_r:active {
   content: '\02795'; 
   content: "\02BC6";
   content:"▼";
+  content:"+";
+  /* content:"˅"; */
+  
   font-size: 1.1vw;
   color: rgba(228, 228, 228, 0.61);
   border: rgba(228, 228, 228, 0.61) solid 0.1vw;
@@ -428,7 +424,10 @@ body .button_r:active {
 .active:after {
   content: "\2796"; 
   content: "\02BC5"; 
-  content:"▲";
+  content:"▲"; 
+  content:"-"; 
+  /* content:"˄"; */
+  
 }
 .panel {
   color: rgba(228, 228, 228, 0.897);
@@ -454,233 +453,60 @@ body .button_r:active {
 
 
 
-/* 750-800 SMALL SCREEN PORTRAIT iPadMini===768; iPad === 1050 */
 
-@media screen and (min-width: 750px) and (max-width: 1050px) and (orientation: portrait)  {
+
+
+
+
+
+@media screen and (min-width: 1px) and (max-width: 1025px)  {
+
   body {
-    /* color: yellow; */
+    /* color:pink; */
   }
 
-  .break_choice {
+  .break_mobile_none {
     display: none;
   }
+
   .nav_background {
-    position: sticky;
+    position: fixed;
     width: 100%;
     height: 10vh;
     margin-top: 0vh;
   }
+
   nav {
     width: 100%;
     height: 10vh;
   }
-  h1 {
-    font-size: 4.0vw;
-  }
-  h2 {
-    font-size: 3.8vw;
-  }
-  h3, button {
-    font-size: 2.7vw;
-  }
-  p, ul, li {
-    font-size: 2.5vw;
-    font-weight: 100;
-    text-align: left;
-  } 
-  .smaller_font {
-    font-size: 2.0vw;
-  }
+
+  h1 {    font-size: 4.0vw;  }
+  h2 {    font-size: 4.8vw;  }
+  h3 {    font-size: 3.7vw;  }
+
+  p, ul, li {    font-size: 3.2vw;  } 
+  /* also 3.5 vw default link > see further below */
+  .smaller_font {    font-size: 3.0vw;  } 
+  
   .i_am_magda {
-    display: flex;
-    flex-direction: row; 
+    display: flex; flex-direction: row; 
     margin-top: 35vh;
     margin-bottom:35vh;
   }
   .squirrel_icon {
-    width: 15vw;
+    width: 35vw;
    }
   .screen_flex_layout {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: 100%;
+    display: flex; flex-direction: column;
+    max-width: 100%; height: 100%;
   }
   .anchor {
     position: absolute;
-    margin: -5vh;
+    margin: -14vh;
   }
   .screen {
-    border: rgba(228, 228, 228, 0.151) 1px solid;
-    border-radius: 5px;
-    margin-top: 0vh;
-    margin-bottom: 10vh;
-    padding-bottom: 2vh;
-    height: 100%;
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-  }
-  aside, main {
-    width: 90vw;
-    margin: 0% 0% 0% 0%;
-    padding: 1% 1% 2% 2%;
-    border: 0.4vw;
-  }
-  aside {
-    text-align: left;
-    margin: 0% 0% 3% 0%;
-  }
-  main {
-    order: -1;
-  }
-
-  .link_bars {
-    margin-top: 1vh;
-    width: 60vw;
-  }
-
-
-
-  /* LISTS > ASIDEs */
-  aside>section>ul, aside>section>ul>li {
-    text-align: left;
-  }
-  /* FLOAT_R > magda's and other contact icon rows */
-  .contact_icon_line_mag, .contact_icon_line {
-    /* border: yellow 1px dotted; */
-    float: left;
-    margin: 0% 0% 0% 0%;
-    padding: 1% 0% 1% 0%;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .clearing_div {
-    clear: both;
-  }
-  /* magda's and other contact icons --> styled */
-  .icon_link {
-    width: 6vw;
-    margin: 5% 0% 1% 0%;
-    border: white solid 0.5px;
-    border-radius: 50%;
-    background-color: rgb(228, 228, 228);
-    box-shadow: 0px 0px 1px 1px rgba(228, 228, 228, 0.603);
-  }
-  /* tech skills icon --> style */
-  .skills_icon_line>img {
-    height: 5vw;
-  }
-  /* the up/down navigation arrow buttons L=UP, R=DOWN */
-  .button_l, .button_r {
-    font-size: 2.2vw;
-    border: rgb(228, 228, 228) 1px solid;
-    width: 6vw;
-    height: 6vw;
-  }
-  .button_r {
-    display: none;
-  }
-  footer {
-    display: flex;
-    width: 100vw;
-    padding: 1% 1% 10% 1%;
-  }
-  
-  /* LINKS - defaults */
-  a:link {
-    font-size: 2.5vw;
-  }
-  /* ACCORDION */
-  .accordion {
-    font-size: 2.5vw;
-    padding: 1% 1% 1% 1%;
-    margin: 0% 0% 1% 0%;
-    width: 61vw;
-  }
-  .accordion:after {
-    font-size: 2.5vw;
-    width: 3.5vw;
-    height: 3.5vw;
-    padding: 0.4vw;
-    
-  }
-
-
-  .slideshow-container {
-  max-width: 40vw;
-  position: relative;
-  margin: 0;
-  }
-
-  .hallmark {
-  width: 15vw;
-  }
-
-}
-
-
-
-
-
-
-/* 001-749  MOBILE SCREEN PORTRAIT  */
-
-@media screen and (min-width: 1px) and (max-width: 749px) and (orientation: portrait)  {
-
-  body {
-    /* color:yellowgreen; */
-  }
-
-  .break_choice {
-    display: none;
-  }
- 
-  .nav_background {
-    position: sticky;
-    width: 100%;
-    height: 10vh;
-    margin-top: 0vh;
-  }
-
-  nav {
-    width: 100%;
-    height: 10vh;
-  }
-
-  h1 {
-    font-size: 4.0vw;
-  }
-  h2 {
-    font-size: 4.8vw;
-  }
-  h3, button {
-    font-size: 3.7vw;
-  }
-  p, ul, li {
-    font-size: 3.5vw;
-  } 
-  .smaller_font {
-    font-size: 3.0vw;
-  }
-
-  .squirrel_icon {
-    width: 25vw;
-   }
-  .screen_flex_layout {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .anchor {
-    position: absolute;
-    margin: -2vh;
-  }
-
-  .screen {
-    border: rgba(228, 228, 228, 0.151) 1px solid;
+    border: rgba(228, 228, 228, 0.151) 0.3vw solid;
     border-radius: 5px;
     margin-top: 0vh;
     margin-bottom: 30vh;
@@ -690,6 +516,7 @@ body .button_r:active {
     display: flex;
     flex-direction: column;
   }
+
   aside, main {
     width: 90vw;
     margin: 0% 0% 0% 0%;
@@ -709,72 +536,91 @@ body .button_r:active {
     width: 80vw;
   }
 
+  .link_bars:hover {
+    margin-top: 1vh;
+    width: 80vw;
+    opacity: 50%;
+  }
 
   /* LISTS > ASIDEs */
   aside>section>ul, aside>section>ul>li {
     text-align: left;
   }
+
+
+
   /* FLOAT_R > magda's and other contact icon rows */
   .contact_icon_line_mag, .contact_icon_line {
-    /* border: yellow 1px dotted; */
     float: left;
-    margin: 0% 0% 0% 0%;
-    padding: 1% 0% 1% 0%;
-    display: flex;
-    flex-direction: row-reverse;
+    margin: 0% 0% 0% 0%; padding: 1% 0% 1% 0%;
+    display: flex; flex-direction: row-reverse;
   }
-  .clearing_div {
-    clear: both;
-  }
+
   /* magda's and other contact icons --> styled */
   .icon_link {
-    width: 6vw;
+    width: 8vw;
     margin: 5% 0% 1% 0%;
-    border: white solid 0.5px;
+    border: rgb(228, 228, 228) solid 0.5px;
     border-radius: 50%;
     background-color: rgb(228, 228, 228);
     box-shadow: 0px 0px 1px 1px rgba(228, 228, 228, 0.603);
   }
   /* tech skills icon --> style */
-  .skills_icon_line>img {
-    height: 5vw;
-  }
+  .skills_icon_line>img {    height: 7vw;   }
+
+
+
+
+
   /* the up/down navigation arrow buttons L=UP, R=DOWN */
   .button_l, .button_r {
-    font-size: 2.2vw;
+    font-size: 4.5vw;
     border: rgb(228, 228, 228) 1px solid;
-    width: 6vw;
-    height: 6vw;
+    width: 10vw;
+    height: 10vw;
   }
   .button_r {
     display: none;
   }
+
+
   footer {
     display: flex;
     width: 100vw;
     padding: 1% 1% 10% 1%;
   }
+
+
   /* LINKS - defaults */
   a:link {
-    font-size: 3.5vw;
+    font-size: 3.2vw;
   }
+
+
+
+
   /* ACCORDION */
   .accordion {
     font-size: 3.7vw;
     padding: 1% 1% 1% 1%;
-    margin: 0% 0% 1% 0%;
+    margin: 3% 0% 0% 0%;
     width: 85vw;
+  
   }
   .accordion:after {
     font-size: 3.7vw;
     width: 4.7vw;
     height: 4.7vw;
-    padding: 0.1vw;
-    
-  }
+    padding: 0.1vw; 
+  } 
+
+
+
+
+
 
   .slideshow-container {
-  max-width: 40vw;
+  max-width: 35vw;
   position: relative;
   margin: 0;
   }
@@ -783,116 +629,7 @@ body .button_r:active {
   width: 20vw;
   }
 
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERIES :: EXPERIMENTS */
-
-/* 1026-infinity  WIDE SCREEN LANDSCAPE */
-
-@media screen and (min-width: 1026px) and (max-width: 10000px) and (orientation: landscape) {
-  body {
-    /* color: rgb(51, 129, 255);  */
-  }
-}
-
-/* 801-1025 MEDIUM SCREEN LANDSCAPE */
-
-@media screen and (min-width: 801px) and (max-width: 1025px) and (orientation: landscape) {
-  body {
-    /* color: lightskyblue; */
-  }
-}
-
-/* 601-800 SMALL SCREEN LANDSCAPE */
-
-@media screen and (min-width: 601px) and (max-width: 800px) and (orientation: landscape) {
-  body {
-    /* color: lightsteelblue; */
-  }
-}
-
-/* 000-600  MOBILE SCREEN LANDSCAPE  */
-
-@media screen and (min-width: 1px) and (max-width: 600px) and (orientation: landscape) {
-  body {
-    /* color:azure; */
-  }
-}
-
-/* 1026-infinity WIDE SCREEN PORTRAIT */
-
-@media screen and (min-width: 1026px) and (max-width: 10000px) and (orientation: portrait) {
-  body {
-    /* color: red; */
-  }
-}
-
-/* 801-1025 MEDIUM SCREEN PORTRAIT iPad PRO === 1025 */
-
-@media screen and (min-width: 801px) and (max-width: 1025px) and (orientation: portrait) {
-  body {
-    /* color: orange; */
-  }
-}
-
-/* 601-800 SMALL SCREEN PORTRAIT iPad === 768 */
-
-@media screen and (min-width: 601px) and (max-width: 800px) and (orientation: portrait) {
-  body {
-    /* color: yellow; */
-  }
-}
-
-/* 000-600  MOBILE SCREEN PORTRAIT  */
-
-@media screen and (min-width: 1px) and (max-width: 1000px) and (orientation: portrait) {
-  body {
-    /* color: yellowgreen; */
-  
-  } 
-}
-
-
-/* blablabla */
-
-/* text-decoration: line-through; */
-
-/* text-decoration-color: orange; */
-
-/* list-style-type: decimal-leading-zero; */
-
-/* list-style-position: outside; */
-
-/* -webkit-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);*/
-
-/* -moz-box-shadow: 10px 10px 99px 16px rgba(246, 157, 99, 0.9);  */
-
-/* box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.479); */
-
-/* text-transform: uppercase; */
-
-/* background-image: url(https://github.com/mag-da-lenka/HYF-heptapods/blob/master/IMGP0011fiafiolki_nav.jpg?raw=true); */
-
-/* border-color: transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151);
-    border-style: solid solid solid solid;
-    border-radius: 0px 0px 5px 5px; */
-
-/* border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) transparent rgba(228, 228, 228, 0.151);
-    border-style: solid solid solid solid;
-    border-radius: 5px 5px 0px 0px; */
