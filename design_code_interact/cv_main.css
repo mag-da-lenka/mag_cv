@@ -29,20 +29,20 @@ nav {
 
 h1, h2, h3, h4 {
   color: rgb(194, 165, 181);
-  border: none;
+  border: none; 
   font-weight: 500;
 }
 
 h1 {
-  font-size: 3.0vw;
+  font-size: 3.7vw;
 }
 
 h2 {
-  font-size: 2.0vw;
+  font-size: 2.5vw;
 }
 
 h3, button {
-  font-size: 1.3vw;
+  font-size: 1.7vw; 
 }
 
 p, ul, li {
@@ -69,20 +69,24 @@ p, ul, li {
   border-radius: 50%;
 }
 
-
-
 .squirrel_icon {
- width: 11vw;
+ width: 10vw;
  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
- opacity: 70%;
+ opacity: 30%;
 }
 
 .hallmark {
   width: 10vw;
-  border: 0px solid none; 
+  border: 0vw solid none; 
   border-radius: 50%; 
   filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
-  opacity: 70%;
+  opacity: 30%;
+}
+
+/* clearfix */
+.clearfix {
+  /* overflow: auto; */
+  overflow: hidden;
 }
 
 .anchor {
@@ -133,6 +137,12 @@ main {
 .link_bars {
   margin-top: 1vh;
   width: 30vw;
+} 
+
+.link_bars:hover {
+  margin-top: 1vh;
+  width: 30vw;
+  opacity: 50%;
 }
 
 address {
@@ -140,7 +150,6 @@ address {
 }
 
 /* LISTS */
-
 ul {
   /* border: pink solid 1px; */
   margin: 1% 0% 1% 0%;
@@ -148,7 +157,6 @@ ul {
   text-align: left;
   list-style-type: none;
 }
-
 li {
   /* border: white dotted 1px;  */
   display: block;
@@ -157,11 +165,7 @@ li {
   text-align: left;
   list-style-type: none;
 }
-
-
-
 /* LISTS > ASIDEs */
-
 aside>section>ul {
   /* border: pink solid 1px; */
   margin: 1% 0% 1% 0%;
@@ -169,7 +173,6 @@ aside>section>ul {
   text-align: right;
   list-style-type: none;
 }
-
 aside>section>ul>li {
   /* border: yellowgreen solid 1px; */
   margin: 0% 0% 0% 0%;
@@ -178,8 +181,8 @@ aside>section>ul>li {
   list-style-type: none;
 }
 
-/* FLOAT_R > magda's and other contact icon rows */
 
+/* FLOAT_R > magda's and other contact icon rows */
 .contact_icon_line_mag, 
 .contact_icon_line {
   /* border: yellow 1px dotted; */
@@ -231,8 +234,7 @@ a:link {
   border: 0.2vw;
   border-color: transparent transparent rgba(228, 228, 228, 0.151)rgba(228, 228, 228, 0.151);
   border-style: solid solid solid solid;
-  border-radius: 0px 0px 0px 5px;
- 
+  border-radius: 0px 0px 0px 5px; 
 }
 a:hover, a:active, a:focus {
   padding: 0.0em 0.2em 0.0em 0.2em;
@@ -241,16 +243,14 @@ a:hover, a:active, a:focus {
   border-style: solid solid solid solid;
   border-radius: 0px 5px 0px 0px;
 }
-
 a:visited {
   color: rgb(228, 228, 228);
   border: rgba(228, 228, 228, 0.151) 1px solid;
 }
 
-
-
 /* LINKS - aside/main/footer - overriden */
-#aside_text_link1, #aside_text_link2, 
+#aside_text_link1,
+#aside_text_link2, 
 main a:link, 
 footer a:link {
   color: rgb(228, 228, 228);
@@ -277,10 +277,9 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
 }
 
 
-
 /* contact round icon_links  */
-
-.contact_icon_line>a:link, .contact_icon_line_mag>a:link {
+.contact_icon_line>a:link, 
+.contact_icon_line_mag>a:link {
   color: rgb(228, 228, 228);
   text-decoration: none;
   background-image: none;
@@ -303,23 +302,24 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
   display: flex;
   justify-content: space-between;
 }
-
+.buttons_row > a  {
+  border: none;
+}
 /* the up/down navigation arrow buttons L=UP, R=DOWN */
 .button_l, 
 .button_r {
-  font-size: 1.2vw;
-  border: rgb(228, 228, 228) 2px solid;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0px 50px 0px 50px;
+  color: rgba(228, 228, 228, 0.623);
+  text-align: center;
+  font-size: 1.5vw; 
   width: 3.2vw;
   height: 3.2vw;
-  text-align: center;
+  border: rgba(228, 228, 228, 0.623) 0.2vw solid;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0px 50px 0px 50px; 
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  /* background-color: rgb(148, 124, 137);  */
   background-color: transparent;
-  color: rgb(228, 228, 228);
+  transition: all 0.2s ease-in-out;
   box-shadow: -6px -6px 10px rgb(57, 87, 83), 6px 6px 10px rgba(0, 0, 0, 0.178);
 }
 button:focus {
@@ -329,11 +329,10 @@ button:focus {
 .button_r>span>a {
   border: none;
 }
-body .button_l:hover, 
-body .button_l:focus, 
-body .button_r:hover, 
-body .button_r:focus {
-  background-color: rgb(160, 106, 135);
+body .button_l:hover, body .button_l:focus, 
+body .button_r:hover, body .button_r:focus {
+  color: rgb(228, 228, 228);
+  background-color: rgb(121, 94, 109);
   box-shadow: -6px -6px 10px rgba(57, 87, 83, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
 body .button_l:active, 
@@ -342,16 +341,6 @@ body .button_r:active {
   box-shadow: inset -4px -4px 8px rgb(141, 86, 116), inset 8px 8px 16px rgb(141, 86, 116);
 }
 /* the up/down navigation arrow buttons L=UP, R=DOWN    -->  end  */
-
-
-
-/* clearfix */
-.clearfix {
-  /* overflow: auto; */
-  overflow: hidden;
-}
-
-
 
 
 
@@ -364,44 +353,37 @@ body .button_r:active {
 }
 .slideshow-container img {
   vertical-align: middle;
-  border: 1px transparent solid; 
+  border: 0px transparent solid; 
   border-radius: 50%; 
   width: 100%;
 }
-
-/* Slideshow container */
 .slideshow-container {
-  max-width: 16vw;
+  max-width: 15vw;
   position: relative;
-  margin: 0;
+  margin: auto;
 }
-
-/* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: rgb(228, 228, 228);
+  padding: 0.5vw;
+  margin-top: -2vw;
+  color: rgba(228, 228, 228, 0.651);
   font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  font-size: 3vh;
   user-select: none;
 }
-
-/* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 0; 
 }
-
-/* On hover, add a grey background color */
 .prev:hover, .next:hover {
-  background-color: rgb(228, 228, 228);
-  color: black;
+  cursor: pointer; 
+  user-select: none;
+  position: absolute;
+  padding: 0.5vw;
+  color: rgb(238, 238, 238); 
+  border: none;
+  transition: 0.5s ease;
 }
 /* SLIDES - end */
 
@@ -409,74 +391,64 @@ body .button_r:active {
 
 
 /* ACCORDION */
-
-/* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-  background-color: rgba(124, 124, 124, 0);
+  background-color: rgba(255, 192, 203, 0.068); 
+  border: none;
+  transition: 0.4s;
+  padding: 1% 1% 1% 1%;
+  margin: 1% 0% 0% 0%; 
+  width: 37vw;
   color: rgb(194, 165, 181);
   font-family: 'Abel';
   font-size: 1.5vw;
   font-style: bold;
-  cursor: pointer;
-  padding: 0% 1% 0% 1%;
-  margin: 1% 0% 1% 0%;
-  width: 31vw;
-  /* width: 100%; */
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+  text-align: left; 
+  cursor:pointer; 
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), 
-and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: rgba(255, 192, 203, 0.137);
+.accordion:hover {
+  background-color: rgba(145, 145, 145, 0.068); 
 }
-
-/* Style the accordion panel. Note: hidden by default */
-/* .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
-} */
-
-.panel {
-  padding-left: 1%;
-  background-color: rgba(128, 128, 128, 0);
-  color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+.active {
+  background-color: rgba(255, 192, 203, 0.068); 
 }
-
 .accordion:after {
-  content: '\02795';
-  /* Unicode character for "plus" sign (+) */
+  content: '\02795'; 
   content: "\02BC6";
   content:"▼";
-  font-size: 1.0vw;
+  font-size: 1.1vw;
   color: rgba(228, 228, 228, 0.61);
-  border: rgba(228, 228, 228, 0.61) solid 1px;
+  border: rgba(228, 228, 228, 0.61) solid 0.1vw;
   border-radius: 50%;
   width: 1.5vw;
   height: 1.5vw;
   padding: 0.3vw;
   float: right;
   text-align: center;
-  /* margin-left: 5px; */
 }
-
 .active:after {
-  content: "\2796";
-  /* Unicode character for "minus" sign (-) */
+  content: "\2796"; 
   content: "\02BC5"; 
   content:"▲";
-  font-size: 1.0vw;
 }
-
+.panel {
+  color: rgba(228, 228, 228, 0.897);
+  max-height: 0;  
+  padding-left: 1vw;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
 /* ACCORDION - end  */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
