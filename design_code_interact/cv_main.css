@@ -51,8 +51,7 @@ p, ul, li {
   display: flex;
   flex-direction: row; 
   margin-top: 25vh;
-  margin-bottom:25vh;
-  /* border: 1px white solid; */
+  margin-bottom: 29vh;
 }
 
 .flex_row {
@@ -64,15 +63,6 @@ p, ul, li {
   display: flex;
   flex-direction: column;
 }
-
-/* MAGDA'S PICTURES */
-/* .img-logo-width {
-  max-width: 10vw;
-  border: 0.5vw solid rgb(194, 165, 181);
-  border-radius: 50%; 
-} */
-
-
 
 .squirrel_icon {
  width: 10vw;
@@ -256,8 +246,9 @@ a:visited {
 /* LINKS - aside/main/footer - overriden */
 #aside_text_link1,
 #aside_text_link2, 
-main a:link, 
-footer a:link {
+#aside_text_link3,
+      main a:link, 
+    footer a:link {
   color: rgb(228, 228, 228);
   text-decoration: none;
   padding: 0.0em 0.2em 0.0em 0.2em;
@@ -269,8 +260,9 @@ footer a:link {
 }
 #aside_text_link1:hover, #aside_text_link1:active, #aside_text_link1:focus, 
 #aside_text_link2:hover, #aside_text_link2:active, #aside_text_link2:focus, 
-main a:link:hover, main a:link:active, main a:link:focus, 
-footer a:link:hover, footer a:link:active, footer a:link:focus {
+#aside_text_link3:hover, #aside_text_link3:active, #aside_text_link3:focus, 
+      main a:link:hover,       main a:link:active,       main a:link:focus, 
+    footer a:link:hover,     footer a:link:active,     footer a:link:focus {
   color: rgb(228, 228, 228);
   text-decoration: none;
   padding: 0.0em 0.2em 0.0em 0.2em;
@@ -283,19 +275,14 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
 
 
 /* contact round icon_links  */
-.contact_icon_line>a:link, 
-.contact_icon_line_mag>a:link {
+.contact_icon_line>a:link, .contact_icon_line_mag>a:link {
   color: rgb(228, 228, 228);
   text-decoration: none;
   background-image: none;
   border: none; 
 }
-.contact_icon_line>a>img:hover, 
-.contact_icon_line>a>img:active, 
-.contact_icon_line>a>img:focus, 
-.contact_icon_line_mag>a>img:hover, 
-.contact_icon_line_mag>a>img:active, 
-.contact_icon_line_mag>a>img:focus {
+    .contact_icon_line>a>img:hover,     .contact_icon_line>a>img:active,     .contact_icon_line>a>img:focus, 
+.contact_icon_line_mag>a>img:hover, .contact_icon_line_mag>a>img:active, .contact_icon_line_mag>a>img:focus {
   border: 1px rgb(228, 228, 228) solid;
   box-shadow: 0px 0px 1px 2px rgba(228, 228, 228, 0.849);
 }
@@ -311,9 +298,7 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
   border: none;
 }
 /* the up/down navigation arrow buttons L=UP, R=DOWN */
-.button_l, 
-.button_r, 
-.button_r_landing {
+.button_l, .button_r, .button_r_landing {
   color: rgba(228, 228, 228, 0.623);
   text-align: center;
   font-size: 1.5vw; 
@@ -331,20 +316,20 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
 button:focus {
   outline: 0;
 }
-.button_l>span>a, 
-.button_r>span>a
-, .button_r_landing>span>a {
+        .button_l>span>a, 
+        .button_r>span>a, 
+.button_r_landing>span>a {
   border: none;
 }
-body .button_l:hover, body .button_l:focus, 
-body .button_r:hover, body .button_r:focus,
+        body .button_l:hover,         body .button_l:focus, 
+        body .button_r:hover,         body .button_r:focus,
 body .button_r_landing:hover, body .button_r_landing:focus {
   color: rgb(228, 228, 228);
   background-color: rgb(121, 94, 109);
   box-shadow: -6px -6px 10px rgba(57, 87, 83, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-body .button_l:active, 
-body .button_r:active,
+        body .button_l:active, 
+        body .button_r:active,
 body .button_r_landing:active {
   background-color: rgb(148, 97, 124);
   box-shadow: inset -4px -4px 8px rgb(141, 86, 116), inset 8px 8px 16px rgb(141, 86, 116);
@@ -353,10 +338,51 @@ body .button_r_landing:active {
 
 
 
-/* SLIDES */
-* {
-  box-sizing: border-box;
+/* AUTOMATIC SLIDES */
+.autoslides_container_outer {
+  width: 12vw; 
+  height: 12vw;
+  /* border: 1px solid darkblue; */
+  margin: auto; 
 }
+.autoslides_container {
+  /* border: 1px dashed blue; */
+  border-radius: 0;
+  position: relative; 
+  width: 11.5vw; 
+  height: 11.5vw;
+  margin: auto; 
+} 
+.auto_slides {
+  /* border: 1px solid rgb(82, 191, 241); */
+  height: 15vw; 
+  display: none;
+  width: 11vw; 
+  height: 11vw;
+}   
+.auto_images {
+  width: 10.7vw; 
+  height: 10.7vw;
+  border: 0.5vw solid rgb(194, 165, 181);
+  border-radius: 50%;
+  border-radius: 50%; width: 100%; /* vertical-align: middle; */
+}
+.auto_dots { 
+  display: inline-block;
+  display: none;
+  height: 10px;  width: 10px; margin: 0 2px; border-radius: 50%;
+  background-color: #bbb; transition: background-color 0.6s ease;
+}
+.auto_active {background-color: #000000;}
+.auto_fade {-webkit-animation-name: auto_fade;   -webkit-animation-duration: 0.2s; 
+                    animation-name: auto_fade;           animation-duration: 0.2s;}
+@-webkit-keyframes auto_fade {from {opacity: .7} to {opacity: 1}}
+        @keyframes auto_fade {from {opacity: .7} to {opacity: 1}}
+
+
+
+
+/* JEWELLERY SLIDES */
 .mySlides1, .mySlides2 {
   display: none;
 }
@@ -394,12 +420,9 @@ body .button_r_landing:active {
   border: none;
   transition: 0.5s ease;
 }
-/* SLIDES - end */
 
 
-
-
-/* ACCORDION */
+/* ACCORDION */ 
 .accordion {
   background-color: rgba(255, 192, 203, 0.068); 
   border: none;
@@ -426,7 +449,6 @@ body .button_r_landing:active {
   content:"▼";
   content:"+";
   /* content:"˅"; */
-  
   font-size: 1.1vw;
   color: rgba(228, 228, 228, 0.61);
   border: rgba(228, 228, 228, 0.61) solid 0.1vw;
@@ -443,7 +465,6 @@ body .button_r_landing:active {
   content:"▲"; 
   content:"-"; 
   /* content:"˄"; */
-  
 }
 .panel {
   color: rgba(228, 228, 228, 0.897);
@@ -452,70 +473,6 @@ body .button_r_landing:active {
   overflow: hidden;
   transition: 0.2s ease-out;
 }
-/* ACCORDION - end  */
-
-
-
-
-
-
-
-
-   
-
-
-    
-
-
-
-    .autoslides_container_outer {
-      /* border: 3px solid rgb(119, 2, 2); */
-    }
-    
-    .autoslides_container {
-      border-radius: 0;
-      position: relative; 
-      width: 10vw; 
-      border-radius: 50%;
-      margin: auto; 
-    }
-    
-    .auto_slides {
-      /* border: 1px solid rgb(179, 0, 0);  */
-      display: none;
-    }
-    
-        .auto_images {
-      width: 100%;
-      border: 0.5vw solid rgb(194, 165, 181);
-      border-radius: 50%;
-      border-radius: 50%; width: 100%; /* vertical-align: middle; */
-    }
- 
-    
-
-
-
-
-
-.auto_dots { 
-    display: inline-block;
-    height: 15px;  width: 15px; margin: 0 2px; border-radius: 50%;
-    background-color: #bbb; transition: background-color 0.6s ease;
-}
-
-
-.auto_active {background-color: #000000;}
-
-.auto_fade {-webkit-animation-name: auto_fade;   -webkit-animation-duration: 0.2s; 
-               animation-name: auto_fade;           animation-duration: 0.2s;}
-
-@-webkit-keyframes auto_fade {from {opacity: .7} to {opacity: 1}}
-        @keyframes auto_fade {from {opacity: .7} to {opacity: 1}}
-
-
-
-
 
 
 
@@ -526,10 +483,6 @@ body .button_r_landing:active {
 
 
 @media screen and (min-width: 1px) and (max-width: 1025px)  {
-
-  body {
-    /* color:pink; */
-  }
 
   .break_mobile_none {
     display: none;
@@ -547,22 +500,16 @@ body .button_r_landing:active {
     height: 10vh;
   }
 
-  h1 {    font-size: 4.0vw;  }
-  h1 {    font-size: 6.0vw; margin-top: 5vh; }
-  h2 {    font-size: 4.8vw;  }
-  h3 {    font-size: 3.7vw;  }
+  h1 {  font-size: 4.0vw;  }
+  h1 {  font-size: 6.0vw; margin-top: 5vh; }
+  h2 {  font-size: 4.8vw;  }
+  h3 {  font-size: 3.7vw;  }
 
   p, ul, li {    font-size: 3.2vw;  } 
-  /* also 3.5 vw default link > see further below */
+
   .smaller_font {    font-size: 3.0vw;  } 
 
  
-  .i_am_magda {
-    display: flex; flex-direction: row; 
-    margin-top: 35vh;
-    margin-bottom:35vh;
-  }
-
   .i_am_magda { /*experimental*/
     display: flex; flex-direction: column; 
     margin-top: 15vh;
@@ -572,13 +519,15 @@ body .button_r_landing:active {
 
   .autoslides_container_outer {
     order: -1;
+    width: 30vw;
+    height: 30vw; 
   }
-
-  .autoslides_container {
-    width: 30vw; 
-
+  .autoslides_container,
+  .auto_slides, 
+  .auto_images {
+    width: 20vw;
+    height: 20vw;   
   }
-
 
   .squirrel_icon {
     width: 35vw;
@@ -633,8 +582,6 @@ body .button_r_landing:active {
     text-align: left;
   }
 
-
-
   /* FLOAT_R > magda's and other contact icon rows */
   .contact_icon_line_mag, .contact_icon_line {
     float: left;
@@ -653,9 +600,6 @@ body .button_r_landing:active {
   }
   /* tech skills icon --> style */
   .skills_icon_line>img {    height: 7vw;   }
-
-
-
 
 
   /* the up/down navigation arrow buttons L=UP, R=DOWN */
@@ -691,8 +635,6 @@ body .button_r_landing:active {
   }
 
 
-
-
   /* ACCORDION */
   .accordion {
     font-size: 3.7vw;
@@ -709,22 +651,15 @@ body .button_r_landing:active {
   } 
 
 
-
-
-
-/* design slidwshow */ 
-
+  /* JEWELLERY SLIDES*/
   .slideshow-container {
-  max-width: 35vw;
-  position: relative;
-  margin: 0;
+    max-width: 35vw;
+    position: relative;
+    margin: 0;
   }
 
   .hallmark {
   width: 20vw;
   }
 
-
 }
-
-

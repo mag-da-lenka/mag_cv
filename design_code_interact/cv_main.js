@@ -74,7 +74,7 @@ function showAutoSlides() {
 
     autoDots[autoSlideIndex - 1].className += " auto_active";
 
-    setTimeout(showAutoSlides, 666 / 2);
+    setTimeout(showAutoSlides, 666 / 1.666);
 }
 
 showAutoSlides();
