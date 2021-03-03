@@ -51,7 +51,7 @@ p, ul, li {
   display: flex;
   flex-direction: row; 
   margin-top: 25vh;
-  margin-bottom: 29vh;
+  margin-bottom: 28vh;
 }
 
 .flex_row {
@@ -81,7 +81,7 @@ p, ul, li {
 /* clearfix */
 .clearfix {
   /* overflow: auto; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .anchor {
@@ -90,20 +90,23 @@ p, ul, li {
 }
 
 .screen {
-  /* border: dotted yellow 2px; */
+  /* border: solid yellow 2px; */
   margin-top: 10vh;
   margin-bottom: 0vh;
-  height: 90vh;
+  padding-bottom: 0vh;
+  min-height: 90vh;
   width: 98vw;
   display: flex;
   flex-direction: column;
 }
 
 .screen_flex_layout {
+  /* border: dotted yellow 2px; */
   display: flex;
   flex-direction: row;
   max-width: 100vw;
-  height: 80vh;
+  min-height: 80vh;
+  margin-bottom: 0vh;
 }
 
 aside, main {
@@ -291,6 +294,8 @@ a:visited {
 
 /* the up/down navigation arrow buttons ROW */
 .buttons_row {
+  /* border: white 1px solid;  */
+  padding: 1.5vh;
   display: flex;
   justify-content: space-between;
 }
