@@ -136,6 +136,7 @@ main {
 .link_bars {
   margin-top: 1vh;
   width: 30vw;
+  filter: saturate(20%);
 } 
 
 .link_bars:hover {
@@ -211,6 +212,7 @@ aside>section>ul>li {
   height: 3vw;
   margin: 1% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
+  filter: saturate(20%);
 }
 
 footer {
@@ -368,6 +370,7 @@ body .button_r_landing:active {
   border: 0.5vw solid rgb(194, 165, 181);
   border-radius: 50%;
   border-radius: 50%; width: 100%; /* vertical-align: middle; */
+  filter: saturate(50%);
 }
 .auto_dots { 
   display: inline-block;
@@ -393,6 +396,7 @@ body .button_r_landing:active {
   border: 0px transparent solid; 
   border-radius: 50%; 
   width: 100%;
+  filter: saturate(50%);
 }
 .slideshow-container {
   max-width: 11vw;
