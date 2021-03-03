@@ -39,12 +39,13 @@ h2 {font-size: 2.5vw;}
 h3 {font-size: 1.7vw;}
 
 p, ul, li {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   font-weight: 100;
 }
 
 .smaller_font {
   font-size: 1.0vw;
+  color: rgba(228, 228, 228, 0.658);
 }
 
 .i_am_magda {
@@ -247,11 +248,9 @@ a:visited {
 }
 
 /* LINKS - aside/main/footer - overriden */
-#aside_text_link1,
-#aside_text_link2, 
-#aside_text_link3,
-      main a:link, 
-    footer a:link {
+.aside_text_link:link,
+          main a:link, 
+        footer a:link {
   color: rgb(228, 228, 228);
   text-decoration: none;
   padding: 0.0em 0.2em 0.0em 0.2em;
@@ -261,11 +260,9 @@ a:visited {
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px; 
 }
-#aside_text_link1:hover, #aside_text_link1:active, #aside_text_link1:focus, 
-#aside_text_link2:hover, #aside_text_link2:active, #aside_text_link2:focus, 
-#aside_text_link3:hover, #aside_text_link3:active, #aside_text_link3:focus, 
-      main a:link:hover,       main a:link:active,       main a:link:focus, 
-    footer a:link:hover,     footer a:link:active,     footer a:link:focus {
+.aside_text_link:hover,  .aside_text_link:active,  .aside_text_link:focus,
+     main a:link:hover,       main a:link:active,       main a:link:focus, 
+   footer a:link:hover,     footer a:link:active,     footer a:link:focus {
   color: rgb(228, 228, 228);
   text-decoration: none;
   padding: 0.0em 0.2em 0.0em 0.2em;
