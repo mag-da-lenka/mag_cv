@@ -73,9 +73,7 @@ p, ul, li     {  font-size: 1.2vw;  font-weight: 100;}
 }
 
 /* clearfix */
-
 .clearfix {
-  /* overflow: auto; */
   overflow: hidden;
 }
 
@@ -182,18 +180,14 @@ aside>section>ul>li {
 
 
 
-
-
-
-
-
-/* tech skills icon --> style */
+/* each tech skills icon --> style */
 .skills_icon_line>img {
   height: 3vw;
   margin: 1% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
   filter: saturate(30%);
 }
+
 
 footer {
   background-image: linear-gradient(to bottom, rgb(51, 78, 75), rgb(51, 61, 60));
@@ -260,9 +254,8 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
 
 
 
-/* ALL CONTACT ICONS === LINKS  */
-
-/* contact icon rows > FLOAT RIGHT */
+/* ALL CONTACT-ICON-LINKS  */
+/* each contact icon row > FLOAT RIGHT */
 .contact_icon_line_mag, .contact_icon_line {
   /* border: yellow 1px dotted; */
   display: inline-flex;
@@ -271,8 +264,7 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
   padding: 0% 0% 0% 0%;
 }
 .clearing_div {clear: both;}
-
-/*this is each image.png styled */
+/* each image.png styled */
 .icon_link {
   width: 2.5vw;
   margin: 0% 0% 0% 0%;
@@ -283,7 +275,6 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
   -webkit-transition: transform 0.3s;
   transition: transform 0.3s;
 }
-
 /* contact round icon_links  */
 .contact_icon_line>a:link, 
 .contact_icon_line_mag>a:link {
@@ -316,7 +307,6 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
 .buttons_row>a {
   border: none;
 }
-
 /* the up/down navigation arrow buttons L=UP, R=DOWN */
 .button_l, 
 .button_r, 
@@ -521,9 +511,6 @@ body .button_r_landing:active {
 
 /* blinky blinky */
 .glow {
-  /* font-size: 80px; */
-  /* color: rgb(48, 46, 75); */
-  text-align: center;
   -webkit-animation: glow 0.5s ease-in-out infinite alternate;
   -moz-animation: glow 0.5s ease-in-out infinite alternate;
   animation: glow 0.666s ease-in-out infinite alternate;
@@ -561,6 +548,7 @@ body .button_r_landing:active {
   .break_mobile_none {
     display: none;
   }
+
   .nav_background {
     position: fixed;
     width: 100%;
@@ -579,16 +567,14 @@ body .button_r_landing:active {
 
   p, ul, li     {    font-size: 3.2vw;  }
   .smaller_font {    font-size: 3.0vw;  }
-  .larger_font  {    font-size: 3.5vw;  }
+   .larger_font {    font-size: 3.5vw;  }
 
 
   .i_am_magda {
-    /*experimental*/
     display: flex;
     flex-direction: column;
     margin-top: 15vh;
     margin-bottom: 15vh;
-    /* border: white 1px solid; */
   }
 
 
@@ -598,7 +584,9 @@ body .button_r_landing:active {
     width: 30vw;
     height: 30vw;
   }
-  .autoslides_container, .auto_slides, .auto_images {
+  .autoslides_container, 
+  .auto_slides, 
+  .auto_images {
     width: 20vw;
     height: 20vw;
   }
@@ -625,14 +613,16 @@ body .button_r_landing:active {
     display: flex;
     flex-direction: column;
   }
+
   .screen_flex_layout {
-    /* border: rgba(255, 255, 0, 0.315) 1px solid; */
     display: flex;
     flex-direction: column;
     max-width: 100%;
     height: 100%;
     padding-bottom: 0px;
   }
+
+
   aside, main {
     width: 90vw;
     height: 100%;
@@ -641,12 +631,10 @@ body .button_r_landing:active {
     border: 0.4vw;
   }
   aside {
-    /* border: orange 1px dotted; */
     text-align: left;
     margin: 0% 0% 3% 0%;
   }
   main {
-    /* border: orange 1px dashed; */
     order: -1;
   }
 
@@ -662,13 +650,11 @@ body .button_r_landing:active {
   }
 
 
-  /* LISTS > ASIDEs */
   aside>section>ul, aside>section>ul>li {
     text-align: left;
   }
 
 
-  /* FLOAT_R > magda's and other contact icon rows */
   .contact_icon_line_mag, .contact_icon_line {
     float: left;
     margin: 0% 0% 0% 0%;
@@ -679,22 +665,17 @@ body .button_r_landing:active {
 
 
 
-  /* magda's and other contact icons --> styled */
   .icon_link {
     width: 8vw;
     margin: 5% 0% 1% 0%;
   }
 
 
-  /* tech skills icon --> style */
   .skills_icon_line>img {
     height: 7vw;
   }
 
 
-
-
-  /* the up/down navigation arrow buttons L=UP, R=DOWN */
   .button_l, .button_r, .button_r_landing {
     font-size: 4.5vw;
     border: rgb(228, 228, 228) 1px solid;
@@ -720,15 +701,12 @@ body .button_r_landing:active {
   }
 
 
-
-  /* LINKS - defaults */
   a:link {
     font-size: 3.2vw;
   }
 
 
 
-  /* ACCORDION */
   .accordion {
     font-size: 3.7vw;
     padding: 1% 1% 1% 1%;
