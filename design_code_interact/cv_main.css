@@ -33,33 +33,13 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-h1 {
-  font-size: 3.7vw;
-}
+h1 {  font-size: 3.7vw;}
+h2 {  font-size: 2.5vw;}
+h3 {  font-size: 1.7vw;  color: rgb(228, 228, 228);}
 
-h2 {
-  font-size: 2.5vw;
-}
-
-h3 {
-  font-size: 1.7vw;
-  color: rgb(228, 228, 228);
-}
-
-p, ul, li {
-  font-size: 1.1vw;
-  font-weight: 100;
-}
-
-.smaller_font {
-  font-size: 1.0vw;
-  color: rgba(228, 228, 228, 0.658);
-}
-
-.larger_font {
-  font-size: 1.9vw;
-  color: rgba(228, 228, 228);
-}
+p, ul, li     {  font-size: 1.2vw;  font-weight: 100;}
+.smaller_font {  font-size: 1.0vw;  color: rgba(228, 228, 228, 0.658);}
+ .larger_font {  font-size: 1.9vw;  color: rgba(228, 228, 228);}
 
 .i_am_magda {
   display: flex;
@@ -201,34 +181,18 @@ aside>section>ul>li {
 }
 
 
-/* FLOAT_R > magda's and other contact icon rows */
-.contact_icon_line_mag, .contact_icon_line {
-  /* border: yellow 1px dotted; */
-  float: right;
-  margin: 0% 0% 0% 0%;
-  padding: 1% 0% 1% 0%;
-}
-.clearing_div {
-  clear: both;
-}
 
 
-/* magda's and other contact icons --> styled */
-.icon_link {
-  width: 2.5vw;
-  margin: 5% 0% 1% 0%;
-  border: rgb(228, 228, 228) solid 1.5px;
-  border-radius: 50%;
-  background-color: rgb(228, 228, 228);
-  box-shadow: 0px 0px 1px 1px rgb(228, 228, 228);
-}
+
+
+
 
 /* tech skills icon --> style */
 .skills_icon_line>img {
   height: 3vw;
   margin: 1% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
-  filter: saturate(20%);
+  filter: saturate(30%);
 }
 
 footer {
@@ -268,6 +232,8 @@ a:visited {
 }
 
 
+
+
 /* LINKS - aside/main/footer - overriden */
 .aside_text_link:link, main a:link, footer a:link {
   color: rgb(228, 228, 228);
@@ -292,10 +258,35 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
 }
 
 
+
+
+/* ALL CONTACT ICONS === LINKS  */
+
+/* contact icon rows > FLOAT RIGHT */
+.contact_icon_line_mag, .contact_icon_line {
+  /* border: yellow 1px dotted; */
+  display: inline-flex;
+  float: right;
+  margin: 5% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+}
+.clearing_div {clear: both;}
+
+/*this is each image.png styled */
+.icon_link {
+  width: 2.5vw;
+  margin: 0% 0% 0% 0%;
+  background-color: none; 
+  border: none;
+  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
+  opacity: 100%;
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+
 /* contact round icon_links  */
 .contact_icon_line>a:link, 
 .contact_icon_line_mag>a:link {
-  color: rgb(228, 228, 228);
   text-decoration: none;
   background-image: none;
   border: none;
@@ -306,9 +297,11 @@ footer a:link:hover, footer a:link:active, footer a:link:focus {
 .contact_icon_line_mag>a>img:hover, 
 .contact_icon_line_mag>a>img:active, 
 .contact_icon_line_mag>a>img:focus {
-  border: 1px rgb(228, 228, 228) solid;
-  box-shadow: 0px 0px 1px 2px rgba(228, 228, 228, 0.849);
+  transform: scale(1.2);
 }
+
+
+
 
 
 
@@ -612,12 +605,12 @@ body .button_r_landing:active {
 
 
   .squirrel_icon {
-    width: 35vw;
+    width: 40vh;
   }
 
   .anchor {
     position: absolute;
-    margin: -14vh;
+    margin: -12vh;
   }
 
 
@@ -690,10 +683,6 @@ body .button_r_landing:active {
   .icon_link {
     width: 8vw;
     margin: 5% 0% 1% 0%;
-    border: rgb(228, 228, 228) solid 0.5px;
-    border-radius: 50%;
-    background-color: rgb(228, 228, 228);
-    box-shadow: 0px 0px 1px 1px rgba(228, 228, 228, 0.603);
   }
 
 
