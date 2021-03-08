@@ -228,6 +228,7 @@ a:visited {
 
 
 
+
 /* LINKS - aside/main/footer - overriden */
 .aside_text_link:link, main a:link, footer a:link {
   color: rgb(228, 228, 228);
