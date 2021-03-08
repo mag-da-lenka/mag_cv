@@ -517,7 +517,7 @@ body .button_r_landing:active {
   animation: glow 0.666s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 
     0 0 0.05vh rgb(194, 165, 181), 
