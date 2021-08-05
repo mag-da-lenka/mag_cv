@@ -293,7 +293,11 @@ a:visited {
   transform: scale(1.2);
 }
 
+
+
+
 /* the up/down navigation arrow buttons ROW */
+
 .buttons_row {
   /* border: white 1px solid;  */
   padding: 1.5vh;
@@ -305,7 +309,9 @@ a:visited {
 }
 
 
+
 /* the up/down navigation arrow buttons L=UP, R=DOWN */
+
 .button_l, .button_r, .button_r_landing {
   color: rgba(228, 228, 228, 0.623);
   text-align: center;
@@ -321,9 +327,26 @@ a:visited {
   transition: all 0.2s ease-in-out;
   box-shadow: -6px -6px 10px rgb(57, 87, 83), 6px 6px 10px rgba(0, 0, 0, 0.178);
 }
-button:focus {  outline: 0;}
+.button_simulacrum {
+  color: rgba(228, 228, 228, 0);
+  text-align: center;
+  font-size: 1.5vw;
+  width: 3.2vw;
+  height: 3.2vw;
+  border: rgba(228, 228, 228, 0) 0.2vw solid;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0px 50px 0px 50px;
+  /* cursor: pointer; */
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  box-shadow: -6px -6px 10px rgba(57, 87, 83, 0), 6px 6px 10px rgba(0, 0, 0, 0);
+}
 
-.button_l>span>a, .button_r>span>a, .button_r_landing>span>a {  border: none;}
+button:focus {  outline: 0;} 
+
+.button_l>span>a, .button_r>span>a, .button_r_landing>span>a {  border: none;} 
+/* .button_simulacrum>span>a {  border: none;}  */
 
 body .button_l:hover,         body .button_l:focus, 
 body .button_r:hover,         body .button_r:focus, 
@@ -332,6 +355,13 @@ body .button_r_landing:hover, body .button_r_landing:focus {
   background-color: rgb(121, 94, 109);
   box-shadow: -6px -6px 10px rgba(57, 87, 83, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
+body .button_simulacrum:hover, body .button_simulacrum:focus {
+  color: rgba(228, 228, 228, 0);
+  background-color: rgba(121, 94, 109, 0);
+  box-shadow: -6px -6px 10px rgba(57, 87, 83, 0), 6px 6px 10px rgrgba(0, 0, 0, 0)
+}
+
+
 
 body .button_l:active, 
 body .button_r:active, 
@@ -339,6 +369,14 @@ body .button_r_landing:active {
   background-color: rgb(148, 97, 124);
   box-shadow: inset -4px -4px 8px rgb(141, 86, 116), inset 8px 8px 16px rgb(141, 86, 116);
 }
+body .button_simulacrum:active {
+  background-color: rgba(148, 97, 124, 0);
+  box-shadow: inset -4px -4px 8px rgba(141, 86, 116, 0), inset 8px 8px 16px rgba(141, 86, 116, 0);
+}
+
+
+
+
 
 
 
