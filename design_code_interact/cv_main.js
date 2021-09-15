@@ -5,11 +5,11 @@ console.log(`hello Hello`)
 const slideIndex = [1, 1];
 const slideId = ["mySlides1", "mySlides2"]
 
-function plusSlides(num, idNum) {
+const plusSlides = (num, idNum) => {
     showSlides(slideIndex[idNum] += num, idNum);
 }
 
-function showSlides(num, idNum) {
+const showSlides = (num, idNum) => {
     let i;
     let slides = document.getElementsByClassName(slideId[idNum]);
     if (num > slides.length) { slideIndex[idNum] = 1 }
@@ -29,7 +29,6 @@ showSlides(1, 1);
 
 const acc = document.getElementsByClassName("accordion");
 
-
 for (i = 0; i < acc.length; i++) {
 
     acc[i].addEventListener("click", function () {
@@ -48,11 +47,14 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+
+
+
 // automatic slideshow
 
 let autoSlideIndex = 0;
 
-function showAutoSlides() {
+const showAutoSlides = () => {
 
     let index;
     let autoSlides = document.getElementsByClassName("auto_slides");
@@ -80,11 +82,13 @@ function showAutoSlides() {
 showAutoSlides();
 
 
+/* MOBILE NAV */
 
-
-
-
-
+const openMobileNav =
+    () => { document.getElementById("mobileNav").style.height = "100%"; }
+    
+const closeMobileNav =
+    () => { document.getElementById("mobileNav").style.height = "0%"; }
 
 
 

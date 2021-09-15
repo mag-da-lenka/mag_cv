@@ -21,24 +21,81 @@
 
 
 
+
+
+
   <!-- NAVIGATION BAR -->
+
   <div class="nav_background">
+
     <nav>
+
       <!-- <div class="nav_link_box1"><a href="#" style="background-color: rgba(0, 0, 0, 0.788)">I am</a></div> -->
-      <div class="nav_box1"> <a href="#">I am</a></div> &nbsp; &nbsp;
-      <div class="nav_box2"> <a href="#about-link">about</a></div>
+      <div class="nav_box1"> <a href="#"> I am </a></div> &nbsp; &nbsp;
+
+      <div class="nav_box2"> <a href="#about-link">about</a></div> &nbsp; &nbsp;
       <div class="nav_box"> : : </div>
+
       <div class="nav_box3"> <a href="#design-experience-link">
           <span class="glow" style="color: rgb(230, 193, 213)" ;>UX/UI</span> </a></div>
       <div class="nav_box"> + </div>
+
       <div class="nav_box4"> <a href="#coding-experience-link">&lt;coding&gt;</a></div>
       <div class="nav_box"> + </div>
+
       <div class="nav_box5"> <a href="#interaction-experience-link">interaction</a></div>
       <div class="nav_box"> : : </div>
+
       <div class="nav_box6"> <a href="#contact-link"> contact </a></div>
-      <div class="nav_box7"> <a href="#"> ≡ </a></div>
+
+      <!-- MOBILE NAVIGATION -->
+
+      <!-- overlay and content -->
+      <div id="mobileNav" class="overlay">
+        <a href="javascript:void(0)" class="close_X" onclick="closeMobileNav()"> &times; </a>
+        <div class="overlay-content">
+          <a href="#" onclick="closeMobileNav()">I am </a>
+          <a href="#about-link" onclick="closeMobileNav()">about</a> <br>
+          <a href="#design-experience-link" class="glow" style="color: rgb(230, 193, 213)" ;
+            onclick="closeMobileNav()">ux/ui</a>
+          <a href="#coding-experience-link" onclick="closeMobileNav()">&lt;coding&gt;</a>
+          <a href="#interaction-experience-link" onclick="closeMobileNav()">interaction</a> <br>
+          <a href="#contact-link" onclick="closeMobileNav()">contact me</a>
+        </div>
+      </div>
+      <!-- hamburger button -->
+      <div class="nav_box7">
+        <!-- <a href="#"> ≡ </a> -->
+        <span style="font-size:30px;cursor:pointer" onclick="openMobileNav()">&#9776;</span>
+      </div>
+
+
     </nav>
+
   </div class="nav_background">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- SCREEN 01 > HEADER --------------------------------------------------------------------------->
@@ -48,13 +105,10 @@
 
     <div class="screen_flex_layout1" style="border: none">
       <!-- <div class="screen_flex_layout1" style="border: orange dotted 1px;"> -->
-
       <div class="i_am_magda_1_background">
 
         <div class="i_am_magda_1" class="clearfix">
-
           <h1>: : I am Magda : : &nbsp; </h1> <br>
-
           <div class="flex_row autoslides_container_outer">
             <div>
               <div class="autoslides_container">
@@ -75,15 +129,11 @@
               </div>
             </div> <br>
           </div>
+          <h1 class="narrow_mobile"> &nbsp; : : I like <span class="glow">UX/UI</span> adventures : : </h1> <br>
+        </div class="i_am_magda_1" class="clearfix">
 
-          <h1> &nbsp; : : I like <span class="glow">UX/UI</span> adventures : : </h1> <br>
-
-        </div>
-
-      </div>
-
-    </div>
-
+      </div class="i_am_magda_1_background">
+    </div class="screen_flex_layout1" style="border: none">
 
 
     <div class="buttons_row">
@@ -92,7 +142,15 @@
       </a>
     </div>
 
+
   </header>
+
+
+
+
+
+
+
 
 
 
@@ -106,6 +164,8 @@
 
     <!-- anchor contact and intro -->
     <div class="anchor" id="about-link"></div>
+
+
 
     <div class="screen_flex_layout2">
 
@@ -122,9 +182,7 @@
         </h3> <br>
 
         <article>
-
           <section>
-
             <p class="larger_font"> &nbsp; &nbsp; and wish to</p> <br>
             <p class="larger_font">
               : : devote my energy to <span class=" glow" style="color: rgb(194, 165, 181)">UX/UI</span> design : : <br>
@@ -133,7 +191,6 @@
               : : utilize my affection for all things <br>
               &nbsp; &nbsp; visual / functional / interaction-related : :
             </p> <br> <br>
-
             <button class="accordion" style="color: rgb(228, 228, 228)">
               privately I am a human squirreloid who enjoys ...
             </button>
@@ -147,25 +204,30 @@
                 <li> music > to find out more, please book three days off ...</li>
               </ul>
             </div>
-
           </section>
-
         </article>
 
       </main>
 
-    </div>
+    </div class="screen_flex_layout2">
+
+
+
+
 
     <div class="buttons_row">
       <a href="#">
         <button class="button_l"> ▲ </button>
       </a>
+      <div class="button_middle_space"></div>
       <a href="#design-experience-link">
         <button class="button_r"> ▼ </button>
       </a>
     </div>
 
-  </div>
+
+
+  </div class="screen2">
 
 
 
@@ -218,38 +280,37 @@
       <aside class="clearfix">
 
         <!-- <h2>design &nbsp; > &nbsp; education</h2> <br> <br> -->
-        <h2> > education</h2>
+        <h2> > education </h2> <br>
 
         <section>
           <h3 style="padding-bottom: 1%;"><span class="glow">UX/UI </span> and graphic design </h3>
-          <p>at
-            <a class="aside_text_link" href="https://talentgarden.org/en/about/" target="_blank"
-              rel="noopener noreferrer">
-              Talent Garden /Copenhagen
+          <p> at
+            <a class="text_link" href="https://talentgarden.org/en/about/" target="_blank" rel="noopener noreferrer">
+              Talent Garden Copenhagen
             </a>
           </p>
           <p> with
-            <a class="aside_text_link" href="and https://kea.dk/en/" target="_blank" rel="noopener noreferrer">
-              CPH School of Design and Technology [KEA]
+            <a class="text_link" href="https://kea.dk/en/" target="_blank" rel="noopener noreferrer">
+              Copenhagen School of Design and Technology [KEA]
             </a>
           </p>
           <p> and at
-            <a class="aside_text_link" href="https://www.hackyourfuture.dk/" target="_blank" rel="noopener noreferrer">
-              Hack-Your-Future/Copenhagen [coding school]
+            <a class="text_link" href="https://www.hackyourfuture.dk/" target="_blank" rel="noopener noreferrer">
+              Hack-Your-Future Copenhagen [coding school]
             </a>
           </p>
         </section>
-
+        <br>
         <section>
           <p>TAG / KEA CERTIFICATE : :
-            <a class="aside_text_link"
+            <a class="text_link"
               href="https://certificatesdk.talentgarden.com/1190d59c-6dae-4a08-b900-be0a96481b22#gs.9dw376"
               target="_blank" rel="noopener noreferrer">
               here
             </a>
           </p>
         </section>
-
+        <br>
         <section>
           <p>TOOLS : : Figma + Photoshop <br> </p>
           <div class="skills_icon_line">
@@ -265,8 +326,7 @@
           <h3> jewellery design /silversmithing </h3>
           <ul>
             <li>
-              at <a class="aside_text_link" href="https://www.pomorskaizba.pl/" target="_blank"
-                rel="noopener noreferrer">
+              <a class="text_link" href="https://www.pomorskaizba.pl/" target="_blank" rel="noopener noreferrer">
                 The Association of Pomeranian Craftsmen, Gdansk, Poland
               </a>
             </li>
@@ -294,7 +354,7 @@
         <article>
 
           <h2>
-            <span class="glow" style="font-size: 4.9rem;">
+            <span class="glow, XXL_font">
               UX/UI </span>
             + other design &nbsp; > &nbsp; projects
           </h2> <br>
@@ -310,18 +370,20 @@
               <ul>
                 <li>
                   <h3>A complete redo of a small buisness website:</h3>
-                  stakeholders' interview &nbsp; > &nbsp;
-                  user research &nbsp; > &nbsp;
-                  sitemap &nbsp; > &nbsp;
-                  wireframing &nbsp; > &nbsp; <br>
-                  moodboard &nbsp; > &nbsp;
-                  UI design &nbsp; > &nbsp;
-                  interactive prototype in Figma <br>
-                  + &nbsp; extensive testing at all stages
-                  &nbsp; + &nbsp; written assignment.
-                  <br>
-                  Due to copyright policy the link to the full project in Figma and the research data
-                  will only be available on demand.
+                  <p>
+                    stakeholders' interview &nbsp; > &nbsp;
+                    user research &nbsp; > &nbsp;
+                    sitemap &nbsp; > &nbsp;
+                    wireframing &nbsp; > &nbsp; <br>
+                    moodboard &nbsp; > &nbsp;
+                    UI design &nbsp; > &nbsp;
+                    interactive prototype in Figma <br>
+                    + &nbsp; extensive testing at all stages
+                    &nbsp; + &nbsp; written assignment.
+                    <br>
+                    Due to copyright policy the link to the full project in Figma and the research data
+                    will only be available on demand.
+                  </p>
                 </li>
                 <li>
                   <img class="non_hover_bars" src="image 64.png" alt="Figma screenshot">
@@ -347,22 +409,26 @@
             <div class="panel"> <br>
               <ul>
                 <li> projects &nbsp; > &nbsp;
-                  <a href="https://mag-da-lenka.github.io/hack_your_future//14_js3_3_home_classes/js33hw_1_art/js33hw_1_art.html"
+                  <a class="text_link"
+                    href="https://mag-da-lenka.github.io/hack_your_future//14_js3_3_home_classes/js33hw_1_art/js33hw_1_art.html"
                     target="_blank" rel="noopener noreferrer">
                     art_fun
                   </a>
                   &nbsp;
-                  <a href="https://mag-da-lenka.github.io/hack_your_future//11_js2_3_home_callback_async/fastest_presser/fastest_presser.html"
+                  <a class="text_link"
+                    href="https://mag-da-lenka.github.io/hack_your_future//11_js2_3_home_callback_async/fastest_presser/fastest_presser.html"
                     target="_blank" rel="noopener noreferrer">
                     game
                   </a>
                   &nbsp;
-                  <a href="https://mag-da-lenka.github.io/hack_your_future//12_js3_1_home_json_api_fetch/4_giphy_api/giphy.html"
+                  <a class="text_link"
+                    href="https://mag-da-lenka.github.io/hack_your_future//12_js3_1_home_json_api_fetch/4_giphy_api/giphy.html"
                     target="_blank" rel="noopener noreferrer">
                     giphy
                   </a>
                   &nbsp;
-                  <a href="https://mag-da-lenka.github.io/hack_your_future/03_html_css_3_home_online_form/w03_hw_form/index.html"
+                  <a class="text_link"
+                    href="https://mag-da-lenka.github.io/hack_your_future/03_html_css_3_home_online_form/w03_hw_form/index.html"
                     target="_blank" rel="noopener noreferrer">
                     form
                   </a>
@@ -374,22 +440,23 @@
                   &nbsp; -->
                 </li>
                 <li> videos <br>
-                  <a href="https://www.youtube.com/channel/UCiu_xkQSjWBiv2uD4ujUfqA" style="border-style: none;"
-                    target="_blank" rel="noopener noreferrer">
+                  <a class="text_link" href="https://www.youtube.com/channel/UCiu_xkQSjWBiv2uD4ujUfqA"
+                    style="border-style: none;" target="_blank" rel="noopener noreferrer">
                     <img class="link_bars" src="img_yt_vid_bar.png" alt="a screenshot of my YouTube videos">
                   </a>
                 </li>
               </ul> <br>
               <ul>
                 <li> our first hackathon (won!) &nbsp; > &nbsp;
-                  <a href="https://hackyourfuturecopenhagen.medium.com/how-i-won-my-first-hackathon-f010742f182e"
+                  <a class="text_link"
+                    href="https://hackyourfuturecopenhagen.medium.com/how-i-won-my-first-hackathon-f010742f182e"
                     target="_blank" rel="noopener noreferrer">
                     'How I won my first hackathon' &nbsp; by Svetlana Stosic
                   </a>
                 </li>
                 <li> our app on Heroku <br>
-                  <a href="https://kraftige-sammen.herokuapp.com" style="border-style: none;" target="_blank"
-                    rel="noopener noreferrer">
+                  <a class="text_link" href="https://kraftige-sammen.herokuapp.com" style="border-style: none;"
+                    target="_blank" rel="noopener noreferrer">
                     <img class="link_bars" src="img_kraftigesammen_bar.png"
                       alt="a screenshot of our kraftigesammen app">
                   </a>
@@ -466,9 +533,11 @@
             <div class="panel">
               <ul>
                 <li>photo studios in London [Soho] / Edinburgh <br>
-                  <a href="https://www.snappysnaps.co.uk/soho/" target="_blank" rel="noopener noreferrer">
+                  <a class="text_link" href="https://www.snappysnaps.co.uk/soho/" target="_blank"
+                    rel="noopener noreferrer">
                     Soho Photo Lab</a>
-                  <a href="https://www.yelp.com/biz/snappy-snaps-edinburgh" target="_blank" rel="noopener noreferrer">
+                  <a class="text_link" href="https://www.yelp.com/biz/snappy-snaps-edinburgh" target="_blank"
+                    rel="noopener noreferrer">
                     Edinburgh Photo Lab</a>
                 </li>
                 <li>developing /processing C-41 /b&w /135 /medium format /APSs</li>
@@ -490,6 +559,7 @@
       <a href="#about-link">
         <button class="button_l"> ▲ </button>
       </a>
+      <div class="button_middle_space"></div>
       <a href="#coding-experience-link">
         <button class="button_r"> ▼ </button>
       </a>
@@ -541,15 +611,17 @@
         </div class="skills_icon_line"> <br>
 
         <section>
+
           <p>all skills learned at <br>
-            <a class="aside_text_link" href="https://www.hackyourfuture.dk/" target="_blank" rel="noopener noreferrer">
+            <a class="text_link" href="https://www.hackyourfuture.dk/" target="_blank" rel="noopener noreferrer">
               Hack-Your-Future/Copenhagen
             </a>
           </p>
+
           <ul>
             <li style="opacity: 70%;">
               <!-- HackYourFuture Social Media interactive icons -->
-              <div class="contact_icon_line">
+              <div class="contact_icon_line_hyf">
                 <a href="https://www.linkedin.com/school/hackyourfuture-copenhagen/" target="_blank"
                   rel="noopener noreferrer">
                   <img class="icon_link" src="ic_in.png" alt="LinkedIn icon">
@@ -567,10 +639,12 @@
                 <a href="https://twitter.com/HackyourfutureC" target="_blank" rel="noopener noreferrer">
                   <img class="icon_link" src="ic_tweet.png" alt="Twitter icon">
                 </a>
-              </div class="contact_icon_line">
+              </div class="contact_icon_line_hyf">
             </li>
           </ul>
+
         </section>
+
         <div class="clearing_div"></div> <br>
 
 
@@ -581,29 +655,35 @@
 
         <article>
 
-          <h2> <span style="font-size: 4.9rem"> coding </span> > projects </h2> <br>
+          <h2> <span class="XXL_font"> coding </span> > projects </h2> <br>
 
 
           <!-- CODING :: what I've done > code -->
           <section>
             <h3>our first hackathon &nbsp;</h3> <br>
-            <a href="https://github.com/cecastosic/kraftige-sammen" target="_blank" rel="noopener noreferrer">
-              kraftige sammen on Github
-            </a>
-            &nbsp;
+            <ul>
+              <li>
+                <a class="text_link" href="https://github.com/cecastosic/kraftige-sammen" target="_blank"
+                  rel="noopener noreferrer">
+                  kraftige sammen on Github
+                </a>
+                &nbsp;
+              </li>
+            </ul>
           </section> <br> <br>
 
           <section>
             <h3>my projects </h3> <br>
             <ul>
               <li>
-                <a href="https://github.com/mag-da-lenka/hack_your_future" target="_blank" rel="noopener noreferrer">
-                  my HackYourFuture repository (to be continued...)
+                <a class="text_link" href="https://github.com/mag-da-lenka/hack_your_future" target="_blank"
+                  rel="noopener noreferrer">
+                  one my HackYourFuture repositories
                 </a>
                 &nbsp;
               </li> <br>
               <li>
-                <a href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
+                <a class="text_link" href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
                   my GitHub
                 </a>
                 &nbsp;
@@ -679,6 +759,7 @@
       <a href="#design-experience-link">
         <button class="button_l"> ▲ </button>
       </a>
+      <div class="button_middle_space"></div>
       <a href="#interaction-experience-link">
         <button class="button_r"> ▼ </button>
       </a>
@@ -705,7 +786,7 @@
         <section>
           <h3> English literature /teaching : : MA </h3>
           <ul>
-            <li> <a class="aside_text_link" href="https://en.ug.edu.pl/" target="_blank" rel="noopener noreferrer">
+            <li> <a class="text_link" href="https://en.ug.edu.pl/" target="_blank" rel="noopener noreferrer">
                 University of Gdansk, Poland </a>
             </li>
             <!-- <li class="smaller_font">thesis:
@@ -718,7 +799,7 @@
           <h3>English teaching : : BA </h3>
           <ul>
             <li>
-              <a class="aside_text_link" href="https://en.ug.edu.pl/" target="_blank" rel="noopener noreferrer">
+              <a class="text_link" href="https://en.ug.edu.pl/" target="_blank" rel="noopener noreferrer">
                 University of Gdansk, Poland
               </a>
             </li>
@@ -741,7 +822,7 @@
 
         <article>
 
-          <h1 style="font-size: 4.9rem;"> human interaction </h1> <br>
+          <h1 > human <span class="XXL_font">interaction</span>  </h1> <br>
 
           <section>
             <ul>
@@ -759,7 +840,7 @@
             <div class="panel">
               <ul>
                 <li>Edinburgh /London /Tczew(PL)
-                  <a href="http://www.magnes.tczew.pl/" target="_blank" rel="noopener noreferrer">
+                  <a class="text_link" href="http://www.magnes.tczew.pl/" target="_blank" rel="noopener noreferrer">
                     magnes.tczew.pl</a>
                 </li>
               </ul>
@@ -774,12 +855,17 @@
             <div class="panel">
               <ul>
                 <li>CPH Cruise Terminal /Aiport
-                  for <a href="https://www.dmcdenmark.dk/" target="_blank" rel="noopener noreferrer">DMC</a>
-                  and <a href="https://smscruises.com/" target="_blank" rel="noopener noreferrer">SMS</a>
+                  for <a class="text_link" href="https://www.dmcdenmark.dk/" target="_blank"
+                    rel="noopener noreferrer">DMC</a>
+                  and <a class="text_link" href="https://smscruises.com/" target="_blank"
+                    rel="noopener noreferrer">SMS</a>
                   >
-                  <a href="https://disneycruise.disney.go.com/" target="_blank" rel="noopener noreferrer">Disney</a>
-                  <a href="https://www.princess.com/" target="_blank" rel="noopener noreferrer">Princess</a>
-                  <a href="https://www.ncl.com/" target="_blank" rel="noopener noreferrer">Norwegian</a>
+                  <a class="text_link" href="https://disneycruise.disney.go.com/" target="_blank"
+                    rel="noopener noreferrer">Disney</a>
+                  <a class="text_link" href="https://www.princess.com/" target="_blank"
+                    rel="noopener noreferrer">Princess</a>
+                  <a class="text_link" href="https://www.ncl.com/" target="_blank"
+                    rel="noopener noreferrer">Norwegian</a>
                 </li>
                 <li>verifying travel documents to meet formal requirements </li>
                 <li>providing essential tourist information </li>
@@ -796,9 +882,11 @@
               <ul>
                 <li>photo studios in Edinburgh /London</li>
                 <li>
-                  <a href="https://www.snappysnaps.co.uk/soho/" target="_blank" rel="noopener noreferrer">
+                  <a class="text_link" href="https://www.snappysnaps.co.uk/soho/" target="_blank"
+                    rel="noopener noreferrer">
                     Soho Photo Lab</a>
-                  <a href="https://www.yelp.com/biz/snappy-snaps-edinburgh" target="_blank" rel="noopener noreferrer">
+                  <a class="text_link" href="https://www.yelp.com/biz/snappy-snaps-edinburgh" target="_blank"
+                    rel="noopener noreferrer">
                     Edinburgh Photo Lab</a>
                 </li>
               </ul>
@@ -818,6 +906,7 @@
       <a href="#coding-experience-link">
         <button class="button_l"> ▲ </button>
       </a>
+      <div class="button_middle_space"></div>
       <a href="#contact-link">
         <button class="button_r"> ▼ </button>
       </a>
@@ -849,10 +938,13 @@
 
           <!-- gmail -->
           <div class="contact_icon_line_mag">
-            <a href="mailto:magdalena.s.wojtakowska@gmail.com" target="_blank" rel="noopener noreferrer">
+            <a class="text_link" href="mailto:magdalena.s.wojtakowska@gmail.com" target="_blank"
+              rel="noopener noreferrer">
               magdalena.s.wojtakowska@gmail.com
             </a>
-            <a href="mailto:magdalena.s.wojtakowska@gmail.com" target="_blank" rel="noopener noreferrer">
+            <div class="space_1vw"></div>
+            <a class="text_link" href="mailto:magdalena.s.wojtakowska@gmail.com" target="_blank"
+              rel="noopener noreferrer">
               <img class="icon_link" src="ic_mail2.png" alt="gmail icon">
             </a>
           </div>
@@ -860,10 +952,13 @@
 
           <!-- linked in -->
           <div class="contact_icon_line_mag">
-            <a href="http://www.linkedin.com/in/magdalena-wojtakowska/" target="_blank" rel="noopener noreferrer">
+            <a class="text_link" href="http://www.linkedin.com/in/magdalena-wojtakowska/" target="_blank"
+              rel="noopener noreferrer">
               /in/magdalena-wojtakowska/
             </a>
-            <a href="https://www.linkedin.com/in/magdalena-wojtakowska/" target="_blank" rel="noopener noreferrer">
+            <div class="space_1vw"></div>
+            <a class="text_link" href="https://www.linkedin.com/in/magdalena-wojtakowska/" target="_blank"
+              rel="noopener noreferrer">
               <img class="icon_link" src="ic_in.png" alt="LinkedIn icon">
             </a>
           </div>
@@ -871,10 +966,11 @@
 
           <!-- git hub -->
           <div class="contact_icon_line_mag">
-            <a href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
+            <a class="text_link" href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
               github.com/mag-da-lenka
             </a>
-            <a href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
+            <div class="space_1vw"></div>
+            <a class="text_link" href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
               <img class="icon_link" src="ic_gh.png" alt="GitHub icon">
             </a>
           </div>
@@ -882,8 +978,10 @@
 
           <!-- mobile phone -->
           <div class="contact_icon_line_mag">
-            <a href="tel:+45 9185 9682" target="_blank" rel="noopener noreferrer">+45 9185 9682</a>
-            <a href="tel:+45 9185 9682" target="_blank" rel="noopener noreferrer">
+            <a class="text_link" href="tel:+45 9185 9682" target="_blank" rel="noopener noreferrer">+45 9185
+              9682</a>
+            <div class="space_1vw"></div>
+            <a class="text_link" href="tel:+45 9185 9682" target="_blank" rel="noopener noreferrer">
               <img style="padding: 2px;" class="icon_link" src="ic_call.png" alt="telephone icon">
             </a>
           </div>
@@ -897,7 +995,7 @@
 
       <main class="clearfix">
 
-        <h2>feel free to contact me </h2> <br>
+        <h2>contact me </h2> <br>
 
 
         <section>
@@ -922,6 +1020,8 @@
 
 
 
+
+
       </main>
 
     </div>
@@ -931,6 +1031,7 @@
       <a href="#interaction-experience-link">
         <button class="button_l"> ▲ </button>
       </a>
+      <div class="button_middle_space"></div>
       <a href="#exit_to_nowhere">
         <button class="button_simulacrum"> ▼ </button>
       </a>
@@ -944,17 +1045,7 @@
 
 
 
-  <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"
-    style="display: flex; flex-direction: row-reverse;"></img>
 
-
-
-  <div class="footer">
-    <div class="content">
-      <!-- <a href="#">Footer link 1</a>
-      <a href="#">Footer link 2</a> -->
-    </div>
-  </div>
 
 
 
@@ -962,11 +1053,21 @@
 
 
   <footer>
-    <br>
-    <p>by Magdalena Wojtakowska [Voigt] &copy; 2020 MSW
+
+    <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"
+      style="display: flex; flex-direction: row-reverse; width: 200px;"></img>
+
+    <div class="blob">
+      <div class="content">
+        <!-- <a href="#">Footer link 1</a> -->
+        <!-- <a href="#">Footer link 2</a> -->
+      </div>
+    </div>
+
+    <p> <br> by Magdalena Wojtakowska [Voigt] &copy; 2020 MSW
       <time datetime='2019-10-09 23:00+0100'></time>
     </p>
-    <br>
+
 
   </footer>
 
