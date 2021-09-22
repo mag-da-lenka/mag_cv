@@ -99,6 +99,12 @@ nav {
 .nav_box7 {
   padding-left: 1%; 
   visibility: hidden;
+  margin-right: 10px; 
+  min-width: auto;
+  height: 3.9vw;
+  margin: 2vh 0 0 0 ;
+  align-items:flex-end;
+  font-size: 2rem;
 }
 
 
@@ -898,7 +904,7 @@ button:focus {
   font-size: 2rem;;
   color: rgb(228, 228, 228);
   display: block;
-  /* transition: 0.666s; */
+  /* transition: 0.666s; */ 
 }
 
 .overlay a:hover, 
@@ -908,10 +914,12 @@ button:focus {
 
 .overlay .close_X {
   position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 2rem;
+  top: 2.5vh;
+  right: 4vh; 
+  font-size: 5rem; 
+  /* border: orange dashed 1px; */
 }
+
 
 
 
@@ -1188,7 +1196,7 @@ button:focus {
   .nav_box7 {
     border: none;
     display: flex!important; 
-    visibility: visible;
+    visibility: visible; 
   }
 
   .nav_background nav div a {
@@ -1203,16 +1211,12 @@ button:focus {
     
   /* font sizes from XXS to XXL as in the tablet width */
   /* accordion >>> see down below */
-    /* font sizes from XXS to XXL except accordion >>> see down below */
-  .smaller_font {
-    font-size: 1.0rem; color: rgb(228, 228, 228);
+
+  html {  font-size: 3vw; }  /* default html size */
+  h1 { font-size: 2.5rem;} /* the real h1 font size is in .i_am_magda_1 */
+  .text_link:link, .text_link:visited {
+    font-size: 1.2rem; font-weight: 100;
   }
-  .text_link:link, .text_link:visited{
-    font-size: 1.4rem; font-weight: 100; 
-  }
-  p, ul, li {
-    font-size: 1.4rem; font-weight: 100;  
-  } 
 
 
   .anchor {
@@ -1390,7 +1394,7 @@ button:focus {
     font-size: 3.9vw;
     padding: 1% 1% 1% 1%;
     margin: 3% 0% 0% 0%;
-    width: 90vw;
+    width: 80vw;
   }
   .accordion:after {
     font-size: 3.9vw;
@@ -1412,15 +1416,15 @@ button:focus {
 }
 
 
-@media screen and (min-width: 1px) and (max-width: 570px)  {
+@media screen and (min-width: 1px) and (max-width: 300px)  {
 
-
-
-  h1 {  font-size: 2.0rem;
+  html {  font-size: 3vw; }  /* default html size */
+  h1 { font-size: 2.5rem;} /* the real h1 font size is in .i_am_magda_1 */ 
+  .text_link:link, .text_link:visited {
+    font-size: 1.2rem; font-weight: 100;; 
   }
-  .narrow_mobile {
-    font-size: 1.6rem
-  }
+
+
 }
 
 
