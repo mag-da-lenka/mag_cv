@@ -127,9 +127,9 @@ p, ul, li {
      font-size: 1.6rem; /* all other accordion styles down below */
 }
 .larger_font {
-     font-size: 1.7rem; color: rgba(228, 228, 228);
+     font-size: 1.9rem; color: rgba(228, 228, 228);
 }
-h3 { font-size: 1.7rem;  color: rgb(228, 228, 228);} 
+h3 { font-size: 1.9rem;  color: rgb(228, 228, 228);} 
 h2 { font-size: 2.5rem; }
 h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 .XXL_font {
@@ -174,7 +174,7 @@ h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 
 .squirrel_icon {
   margin-top: 10vh;
-  width: 20vw;
+  width: 10vw;
   filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
   opacity: 30%; 
   animation: squirrel_flip 5s infinite; 
@@ -1212,12 +1212,15 @@ button:focus {
   /* font sizes from XXS to XXL as in the tablet width */
   /* accordion >>> see down below */
 
-  html {  font-size: 3vw; }  /* default html size */
-  h1 { font-size: 2.5rem;} /* the real h1 font size is in .i_am_magda_1 */
-  .text_link:link, .text_link:visited {
+  html {  font-size: 3vw; }  /* default html size */ 
+   .text_link:link, .text_link:visited {
     font-size: 1.2rem; font-weight: 100;
   }
-
+  .larger_font {
+    font-size: 1.5rem; color: rgba(228, 228, 228);
+  }
+  h1 { font-size: 2.5rem;} /* the real h1 font size is in .i_am_magda_1 */
+ 
 
   .anchor {
     position: absolute;
@@ -1423,7 +1426,6 @@ button:focus {
   .text_link:link, .text_link:visited {
     font-size: 1.2rem; font-weight: 100;; 
   }
-
 
 }
 
