@@ -101,34 +101,33 @@ nav {
   visibility: hidden;
 }
 
-h1, h2, h3, h4 {
-  color: rgb(194, 165, 181);
-  color: rgb(230, 193, 213);
-  border: none;
-  font-weight: 500;
-}
-h1 {  font-size: 3.9vw; font-size: 4.5}
-h2 {  font-size: 2.7vw; font-size: 3.0}
-h3 {  font-size: 1.9vw; font-size: 2.2; color: rgb(228, 228, 228);}
 
-p, ul, li {
-  font-size: 1.2rem;
-  font-weight: 100;
-}
 
+
+h1, h2, h3, h4 {  color: rgb(194, 165, 181); color: rgb(230, 193, 213); border: none; font-weight: 500; } 
+/* default html size */
+html {  font-size: 14px; }  
+/* font sizes from XXS to XXL */
 .smaller_font {
-  font-size: 1.2vw; 
-  font-size: 1.0rem;
-  color: rgba(228, 228, 228, 0.658);
+     font-size: 1.4rem; color: rgb(228, 228, 228);
 }
-
+.text_link:link, .text_link:visited {
+     font-size: 1.4rem; font-weight: 100;; 
+}
+p, ul, li {
+     font-size: 1.5rem; font-weight: 100;;  
+} 
+.accordion {
+     font-size: 1.6rem; /* all other accordion styles down below */
+}
 .larger_font {
-  font-size: 1.9vw; font-size: 1.8rem;
-  color: rgba(228, 228, 228);
+     font-size: 1.7rem; color: rgba(228, 228, 228);
 }
-
+h3 { font-size: 1.7rem;  color: rgb(228, 228, 228);} 
+h2 { font-size: 2.5rem; }
+h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 .XXL_font {
-  font-size: 4.9rem;
+     font-size: 4.9rem;;
 }
 
 
@@ -145,7 +144,9 @@ p, ul, li {
 
 .i_am_magda_1 {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; 
+  /* border: white dashed 1px;  */
+  min-width: 1100px;  
 }
 
 .i_am_magda_1_background {
@@ -157,6 +158,7 @@ p, ul, li {
   margin: 0;
   height: 100%;
   align-items: center;
+  /* border: white solid 1px; */
 }
 
 
@@ -375,9 +377,7 @@ footer {
   clip-path: ellipse(42% 100% at 58% 100%);  
 }
 
-.content {
-  font-size: xx-large;
-}  
+  
 
 
 
@@ -437,11 +437,19 @@ a:active:not(button) {
 
 
 
+
+
+
+
+
+
+
+
+
 /* TEXT LINKS in aside + main + footer  --------------------------------------------------------------*/
 
 .text_link:link, 
 .text_link:visited {
-  font-size: 1.1vw; 
   color: white; 
   color: rgb(228, 228, 228);
   text-decoration: none;
@@ -779,7 +787,6 @@ button:focus {
   width: 37vw;
   color: rgb(228, 228, 228);
   font-family: 'Abel';
-  font-size: 1.5vw;
   font-style: bold;
   text-align: left;
   cursor: pointer;
@@ -934,7 +941,11 @@ button:focus {
 
 
 
-@media screen and (min-width: 701px) and (max-width: 1225px)  {
+@media screen and (min-width: 701px) and (max-width: 1225px)  { 
+
+  /* body {
+    background-color: darkmagenta;
+  } */
   
   .break_mobile_none {
     display: none;
@@ -954,32 +965,26 @@ button:focus {
   }
 
 
-  h1 {  font-size: 3.5rem}
-  h2 {  font-size: 1.8rem}
-  h3 {  font-size: 1.5rem; 
-        color: rgb(228, 228, 228);}
-  p, ul, li {
-  font-size: 1.2rem;
-  font-weight: 100;
-  }
+
+
+   
+  /* font sizes from XXS to XXL except accordion >>> see down below */
   .smaller_font {
-  font-size: 1.1rem;
-  color: rgba(228, 228, 228, 0.658);
+       font-size: 1.4rem; color: rgb(228, 228, 228);
   }
-  .larger_font { /* the same as <h3> size*/
-  font-size: 1.5rem;
-  color: rgb(228, 228, 228);
+  .text_link:link, .text_link:visited{
+       font-size: 1.6rem; font-weight: 100; 
   }
-  .XXL_font {
-    font-size: 4.2rem;
-  }
+  p, ul, li {
+       font-size: 1.7rem; font-weight: 100;  
+  } 
 
  
-  
   .i_am_magda_1 {
     flex-direction: column;
     margin-top: 15vh;
     margin-bottom: 15vh;
+    min-width: 701px;
   }
   .i_am_magda_1_background {
     height: 82vh;  
@@ -1131,12 +1136,6 @@ button:focus {
     width: 20vw;
   }
   
-  .text_link:link, 
-  .text_link:visited {
-    font-size: 1.1rem;
-  }
-
-
 }
 
 
@@ -1158,7 +1157,7 @@ button:focus {
 @media screen and (min-width: 1px) and (max-width: 700px)  {
 
   body {
-    background-color: #333352;;
+    background-color: #333352; 
   }
 
   .break_mobile_none {
@@ -1201,24 +1200,19 @@ button:focus {
     margin: 0;
   }
 
-
-
- 
-  h1 {  font-size: 2.5rem;}
-  h2 {  font-size: 2.7vw; font-size: 1.7rem}
-  h3 {  font-size: 1.9vw; font-size: 1.5rem; color: rgb(228, 228, 228);}
-  p, ul, li {
-  font-size: 1.0rem;
-  font-weight: 100;
-  }
+    
+  /* font sizes from XXS to XXL as in the tablet width */
+  /* accordion >>> see down below */
+    /* font sizes from XXS to XXL except accordion >>> see down below */
   .smaller_font {
-  font-size: 1.0rem;
-  color: rgba(228, 228, 228, 0.658);
+    font-size: 1.0rem; color: rgb(228, 228, 228);
   }
-  .larger_font {
-  font-size: 1.1rem;
-  color: rgba(228, 228, 228, 0.658);
+  .text_link:link, .text_link:visited{
+    font-size: 1.4rem; font-weight: 100; 
   }
+  p, ul, li {
+    font-size: 1.4rem; font-weight: 100;  
+  } 
 
 
   .anchor {
@@ -1234,6 +1228,7 @@ button:focus {
     flex-direction: column;
     margin-top: 15vh;
     margin-bottom: 15vh;
+    min-width: 1px;
   }
 
   .i_am_magda_1_background {
@@ -1272,7 +1267,7 @@ button:focus {
     margin-bottom: 10vh;
     padding-bottom: 2vh;
     height: 100%;
-    width: 94vw;
+    min-width: 96vw;
     display: flex;
     flex-direction: column;
   }
@@ -1390,22 +1385,15 @@ button:focus {
 
   
 
-
-
-  .text_link:link, 
-  .text_link:visited {
-    font-size: 1.2rem;
-  }
-
   
   .accordion {
-    font-size: 3.7vw;
+    font-size: 3.9vw;
     padding: 1% 1% 1% 1%;
     margin: 3% 0% 0% 0%;
-    width: 85vw;
+    width: 90vw;
   }
   .accordion:after {
-    font-size: 3.7vw;
+    font-size: 3.9vw;
     width: 4.7vw;
     height: 4.7vw;
     padding: 0.1vw;
