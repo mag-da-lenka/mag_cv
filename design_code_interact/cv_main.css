@@ -111,20 +111,28 @@ nav {
 
 
 h1, h2, h3, h4 {  color: rgb(194, 165, 181); color: rgb(230, 193, 213); border: none; font-weight: 500; } 
-/* default html size */
-html {  font-size: 14px; }  
-/* font sizes from XXS to XXL */
+
+html { font-size: 14px; } /* default html size */
+
+/* font sizes from XXS to XXL (except nav links and nav buttons) */
 .smaller_font {
      font-size: 1.4rem; color: rgb(228, 228, 228);
 }
 .text_link:link, .text_link:visited {
-     font-size: 1.4rem; font-weight: 100;; 
+     font-size: 1.4rem; font-weight: 100;
 }
 p, ul, li {
-     font-size: 1.5rem; font-weight: 100;;  
+     font-size: 1.5rem; font-weight: 100; 
 } 
 .accordion {
-     font-size: 1.6rem; /* all other accordion styles down below */
+     font-size: 1.6rem; /* afects the text on the panel (NOT plus/minus) */
+     /* all other accordion styles down below */
+}
+.accordion:after { /*PLUS*/
+     font-size: 1.6rem;  
+}
+.accordion.active:after { /*MINUS*/
+     font-size: 1.6rem;
 }
 .larger_font {
      font-size: 1.9rem; color: rgba(228, 228, 228);
@@ -416,7 +424,7 @@ footer {
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 5px; */
 
-a:link:not(.nav_background nav div a) 
+/* a:link:not(.nav_background nav div a) 
 a:link:not(button){ 
   background-color: black;
 }
@@ -439,7 +447,7 @@ background-color: rgb(200, 255, 0);
 a:active:not(.nav_background nav div a) 
 a:active:not(button) {
   background-color: rgb(49, 255, 186);
-}
+} */
 
 
 
@@ -555,6 +563,8 @@ a:active:not(button) {
 .button_simulacrum {
   height: 3.2vw;
   width: 3.2vw;
+  height: 3.2rem;
+  width: 3.2rem;
   padding: 0;
   margin: 0px 0px 0px 0px;
   color: rgba(228, 228, 228, 0.623);
@@ -562,10 +572,10 @@ a:active:not(button) {
   transition: all 0.2s ease-in-out;
   /* box-shadow: -6px -6px 10px rgb(57, 87, 83), 6px 6px 10px rgba(0, 0, 0, 0.178); */
   box-shadow: -6px -6px 10px rgba(0, 0, 0, 0), 6px 6px 10px rgba(0, 0, 0, 0.178);
-  border: rgba(228, 228, 228, 0.623) 0.2vw solid;
+  border: rgba(228, 228, 228, 0.623) 0.15rem solid;
   border-radius: 50%;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 1.7rem;
   cursor: pointer;
 }
 
@@ -598,8 +608,8 @@ a:active:not(button) {
 }
 
 .button_middle_space {
-  width: 3.2vw;
-  height: 3.2vw; 
+  width: 3.2rem;
+  height: 3.2rem; 
 }
 
 button:focus {
@@ -784,54 +794,48 @@ button:focus {
 
 /* ACCORDION */
 
-.accordion {
+.accordion { /* the panel and text on it  !!! without dingbats */
   background-color: rgba(255, 192, 203, 0.014);
-  border: none;
+  border:none;
+  border-radius: 0.2rem;
   transition: 0.4s;
   padding: 1% 1% 1% 1%;
   margin: 1% 0% 0% 0%;
-  width: 37vw;
+  width: 100%;
   color: rgb(228, 228, 228);
   font-family: 'Abel';
-  font-style: bold;
   text-align: left;
-  cursor: pointer;
+  cursor: pointer; 
 }
+.accordion:hover  {background-color: rgba(145, 145, 145, 0.068);}
+.accordion.active {background-color: rgba(255, 192, 203, 0.151);}
 
-.accordion:hover {
-  background-color: rgba(145, 145, 145, 0.068);
-}
 
-.active {
-  background-color: rgba(255, 192, 203, 0.068);
-}
-
-.accordion:after {
-  content: '\02795';
-  content: "\02BC6";
-  content: "▼";
+.accordion:after { 
+  content: '\02795'; /* DINGBATS PLUS */
+  /* content: "\02BC6"; */
+  /* content: "▼"; */
   content: "+";
   /* content:"˅"; */
-  font-size: 1.1vw;
-  color: rgba(228, 228, 228, 0.61);
-  border: rgba(228, 228, 228, 0.61) solid 0.1vw;
-  border-radius: 50%;
-  width: 1.5vw;
-  height: 1.5vw;
-  padding: 0.3vw;
+  color: rgba(228, 228, 228, 0.37);
+  /* filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%); */
+  /* filter: invert(94%) sepia(1%) saturate(397%) hue-rotate(136deg) brightness(111%) contrast(79%); */
+  padding: 0;
   float: right;
-  text-align: center;
+  text-align: center; 
+  font-family: 'Fira Code Medium';
 }
 
-.active:after {
-  content: "\2796";
-  content: "\02BC5";
-  content: "▲";
+.accordion.active:after {
+  content: "\2796"; /* DINGBATS MINUS */
+  /* content: "\02BC5"; */
+  /* content: "▲"; */
   content: "-";
   /* content:"˄"; */
+  
 }
 
-.panel {
+.panel { /* the text inside the button */
   color: rgba(228, 228, 228, 0.897);
   max-height: 0;
   padding-left: 1vw;
@@ -1107,33 +1111,31 @@ button:focus {
   }
 
 
-  .button_l, 
-  .button_r, 
-  .button_r_landing {
-    font-size: 4.0vw;
-    border: rgb(228, 228, 228) 0.2vw solid;
-    width: 7.5vw;
-    height: 7.5vw;
-  }
   .button_r {
     display: none;
   }
   .button_r_landing {
     margin-top: 5vh;
   }
+
+
+  
   
   .accordion {
-    font-size: 3.7vw;
+    font-size: 1.6rem;
     padding: 1% 1% 1% 1%;
     margin: 3% 0% 0% 0%;
     width: 85vw;
   }
+
   .accordion:after {
-    font-size: 3.7vw;
-    width: 4.7vw;
-    height: 4.7vw;
-    padding: 0.1vw;
+    font-size: 1.6rem;
+
   }
+
+
+
+
   /* JEWELLERY SLIDES*/
   .slideshow-container {
     max-width: 35vw;
@@ -1220,7 +1222,11 @@ button:focus {
     font-size: 1.5rem; color: rgba(228, 228, 228);
   }
   h1 { font-size: 2.5rem;} /* the real h1 font size is in .i_am_magda_1 */
- 
+
+
+
+
+
 
   .anchor {
     position: absolute;
@@ -1371,14 +1377,7 @@ button:focus {
 
 
 
-  .button_l, 
-  .button_r, 
-  .button_r_landing {
-    font-size: 4.5vw;
-    border: rgb(228, 228, 228) 0.2vw solid;
-    width: 10vw;
-    height: 10vw;
-  }
+
   .button_r {
     display: none;
   }
@@ -1391,20 +1390,11 @@ button:focus {
   }
 
   
-
   
   .accordion {
-    font-size: 3.9vw;
-    padding: 1% 1% 1% 1%;
-    margin: 3% 0% 0% 0%;
-    width: 80vw;
+    width: 88vw;
   }
-  .accordion:after {
-    font-size: 3.9vw;
-    width: 4.7vw;
-    height: 4.7vw;
-    padding: 0.1vw;
-  }
+
   /* JEWELLERY SLIDES*/
   .slideshow-container {
     max-width: 35vw;
@@ -1433,6 +1423,5 @@ button:focus {
 
 /* 
 Photo by <a href="https://unsplash.com/@viniciusamano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vinicius "amnx" Amano</a> on <a href="https://unsplash.com/backgrounds/colors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
-Photo by <a href="https://unsplash.com/@gamell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joan Gamell</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+Photo by <a href="https://unsplash.com/@gamell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joan Gamell</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
 */
