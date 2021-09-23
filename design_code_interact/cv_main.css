@@ -756,49 +756,53 @@ button:focus {
 
 /* JEWELLERY SLIDES */
 
-.mySlides1, .mySlides2 {
-  display: none;
+.mySlides1, .mySlides2 {  
+  display: none; 
 }
 
+.slideshow-container {
+  width: 250px;
+  position: relative;
+  margin: auto;
+}
 .slideshow-container img {
   vertical-align: middle;
-  border: 0px transparent solid;
+  border: 0px transparent solid; 
   border-radius: 50%;
   width: 100%;
   filter: saturate(50%);
 }
 
-.slideshow-container {
-  max-width: 11vw;
-  position: relative;
-  margin: auto;
-}
-
 .prev, .next {
   position: absolute;
-  top: 50%;
+  top: 90px;
   width: auto;
-  padding: 0.5vw;
-  margin-top: -2vw;
+  padding: 0px 5px 0px 5px;
+  margin-top: 0;
   color: rgba(228, 228, 228, 0.651);
-  font-weight: bold;
-  font-size: 3vh;
+  font-size: 50px;
   user-select: none;
+}
+
+.prev:hover, .next:hover {
+  cursor: pointer;
+  user-select: none;
+  color: rgb(238, 238, 238);
+  border: none;
+  transition: 0.5s ease;
 }
 
 .next {
   right: 0;
 }
 
-.prev:hover, .next:hover {
-  cursor: pointer;
-  user-select: none;
-  position: absolute;
-  padding: 0.5vw;
-  color: rgb(238, 238, 238);
-  border: none;
-  transition: 0.5s ease;
-}
+
+
+
+
+
+
+
 
 /* ACCORDION */
 
@@ -887,8 +891,7 @@ button:focus {
 
 
 
-
-
+/* MOBILE NAVIGATION OVERLAY */
 
 .overlay {
   height: 0%;
@@ -962,10 +965,7 @@ button:focus {
 
 @media screen and (min-width: 701px) and (max-width: 1225px)  { 
 
-  /* body {
-    background-color: darkmagenta;
-  } */
-  
+   
   .break_mobile_none {
     display: none;
   }
@@ -1148,23 +1148,8 @@ button:focus {
   }
 
 
-
-
-  /* JEWELLERY SLIDES*/
-  .slideshow-container {
-    max-width: 35vw;
-    position: relative;
-    margin: 0;
-  }
-  .hallmark {
-    width: 20vw;
-  }
   
 }
-
-
-
-
 
 
 
@@ -1396,7 +1381,6 @@ button:focus {
 
 
 
-
   .button_r {
     display: none;
   }
@@ -1409,20 +1393,11 @@ button:focus {
   }
 
   
-  
   .accordion {
     width: 88vw;
   }
 
-  /* JEWELLERY SLIDES*/
-  .slideshow-container {
-    max-width: 35vw;
-    position: relative;
-    margin: 0;
-  }
-  .hallmark {
-    width: 5vw; 
-  }  
+ 
 
   
 }
@@ -1434,6 +1409,15 @@ button:focus {
   h1 { font-size: 2.5rem;} /* the real h1 font size is in .i_am_magda_1 */ 
   .text_link:link, .text_link:visited {
     font-size: 1.2rem; font-weight: 100;; 
+  } 
+
+  /* JEWELLERY SLIDES */
+  .slideshow-container {
+    width: 200px;
+  }
+  .prev, .next {
+    top: 70px;
+    font-size: 40px;
   }
 
 }
