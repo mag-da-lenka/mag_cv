@@ -123,7 +123,8 @@ html { font-size: 14px; } /* default html size */
 }
 p, ul, li {
      font-size: 1.5rem; font-weight: 100; 
-} 
+}
+
 .accordion {
      font-size: 1.6rem; /* afects the text on the panel (NOT plus/minus) */
      /* all other accordion styles down below */
@@ -133,6 +134,13 @@ p, ul, li {
 }
 .accordion.active:after { /*MINUS*/
      font-size: 1.6rem;
+}
+.panel h3,  
+.panel ul, 
+.panel ul li, 
+.panel ul li p { 
+  /* color: yellowgreen; */
+  padding-right: 1rem;
 }
 .larger_font {
      font-size: 1.9rem; color: rgba(228, 228, 228);
@@ -810,7 +818,6 @@ button:focus {
 .accordion:hover  {background-color: rgba(145, 145, 145, 0.068);}
 .accordion.active {background-color: rgba(255, 192, 203, 0.151);}
 
-
 .accordion:after { 
   content: '\02795'; /* DINGBATS PLUS */
   /* content: "\02BC6"; */
@@ -989,6 +996,13 @@ button:focus {
   }
   p, ul, li {
        font-size: 1.7rem; font-weight: 100;  
+  }
+  .panel h3,  /* preventing 'overflow' in accordion */
+  .panel ul, 
+  .panel ul li, 
+  .panel ul li p { 
+  /* color: yellowgreen; */
+       padding-right: 3.0rem;
   } 
 
  
@@ -1222,7 +1236,12 @@ button:focus {
     font-size: 1.5rem; color: rgba(228, 228, 228);
   }
   h1 { font-size: 2.5rem;} /* the real h1 font size is in .i_am_magda_1 */
-
+  .panel h3,  /* preventing 'overflow' in accordion */
+  .panel ul, 
+  .panel ul li, 
+  .panel ul li p { 
+    padding-right: 3.0vw;
+  }
 
 
 
