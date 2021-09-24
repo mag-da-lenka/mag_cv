@@ -88,7 +88,7 @@ nav {
 .nav_box2 {  background-color: #333352;}
 
 .nav_box3 {  background-color: #333352;  
-  color: rgb(230, 193, 213);
+  color: rgb(230, 193, 213); 
   animation: flip_text 0.3s infinite;   
 } @keyframes flip_text { 20% {transform: rotate(2deg); } } 
 
@@ -110,7 +110,10 @@ nav {
 
 
 
-h1, h2, h3, h4 {  color: rgb(194, 165, 181); color: rgb(230, 193, 213); border: none; font-weight: 500; } 
+h1, h2, h3, h4 {  color: rgb(194, 165, 181); 
+                  color: rgb(230, 193, 213); 
+                  /* color: rgb(121, 94, 109); */
+                  border: none; font-weight: 500; } 
 
 html { font-size: 14px; } /* default html size */
 
@@ -188,14 +191,37 @@ h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 .flex_column {  display: flex;  flex-direction: column;}
 
 
-.squirrel_icon {
-  margin-top: 10vh;
+.squirrel_icon_flip {
+  margin-top: 5vh;
   width: 10vw;
   filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
   opacity: 30%; 
   animation: squirrel_flip 5s infinite; 
 } @keyframes squirrel_flip {  100% {transform: rotate(360deg);}}
 
+.squirrel_icon_jump {
+  position: relative;
+  margin-top: 8vh;
+  padding: 0;
+  width: 10vw;
+  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
+  opacity: 30%; 
+  animation: squirrel_jump 0.666s infinite;   
+} @keyframes squirrel_jump {
+  000%  {bottom:  -020px;}
+  080%  {bottom:  +100px;}
+  100%  {bottom:  -020px;}
+  
+}
+
+
+/* @keyframes squirrel_jump { 100% { */
+  /* transform: translateX(20px);  */
+  /* transform: translateY(20px);  */
+  /* transform: rotateZ(9deg);   */
+  /* rotate, scale, move (translate), and skew elements */ 
+  /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+  /* transform: matrix(2, 0, 0, 0, 0, 0);} } */
 
 .hallmark {
   width: 10vw;
@@ -384,20 +410,38 @@ aside>section>ul>li {
 footer {
   /* background-image: linear-gradient(to bottom, rgb(51, 78, 75), rgb(51, 61, 60)); */
   background-image: linear-gradient(to bottom, #333352, #3a3a57);
+  background-image: linear-gradient(to bottom, #333352, #262638);
   /* background-color: #333352; */
   margin: 0% 0% 0% 0%;
   padding: 2% 2% 2% 2%;
+  padding: 0% 0% 0% 0%;
   text-align: center;
 }
+
+/* footer_buttons are styled in the nav buttons section down below */
+
 
 .blob {
   /* display: block;
   box-sizing: border-box; */
+  display: flex; 
+  flex-direction: row; 
+  align-items: flex-end; 
+  justify-content: flex-end;
   height: 500px;
   background-color: #7f7faf;
   background-image: linear-gradient(to top , #7f7faf, #9595b3);
-  clip-path: ellipse(42% 100% at 58% 100%);  
+  clip-path: ellipse(42% 100% at 58% 100%); 
 }
+
+.blob p {
+ /* background-color: blueviolet; */
+ color: #333352;
+ margin: 0;
+ padding: 0 50px 20px 0; 
+}
+
+
 
   
 
@@ -551,7 +595,8 @@ a:active:not(button) {
 
 
 
-/* ROUND UP/DOWN BUTTONS --------------------------------------------------------------------------  */
+/* ROUND UP/DOWN BUTTONS --------------------------------------------------------------------------  */ 
+/* -------------------------------------------------  footer buttons layout is in the footer section */
 
 /* the up/down navigation ROW  */
 .buttons_row {
@@ -575,12 +620,11 @@ a:active:not(button) {
   width: 3.2rem;
   padding: 0;
   margin: 0px 0px 0px 0px;
-  color: rgba(228, 228, 228, 0.623);
+  color: rgba(228, 228, 228, 0.37);
   background-color: transparent;
   transition: all 0.2s ease-in-out;
-  /* box-shadow: -6px -6px 10px rgb(57, 87, 83), 6px 6px 10px rgba(0, 0, 0, 0.178); */
   box-shadow: -6px -6px 10px rgba(0, 0, 0, 0), 6px 6px 10px rgba(0, 0, 0, 0.178);
-  border: rgba(228, 228, 228, 0.623) 0.15rem solid;
+  border: rgba(228, 228, 228, 0.37) 0.15rem solid;
   border-radius: 50%;
   text-align: center;
   font-size: 1.7rem;
@@ -605,8 +649,8 @@ a:active:not(button) {
 .button_r:active, 
 .button_r_landing:active,
 .button_simulacrum:active {
-  background-color: rgb(148, 97, 124);
-  box-shadow: inset -4px -4px 8px rgb(141, 86, 116), inset 8px 8px 16px rgb(141, 86, 116);
+  background-color: rgb(121, 94, 109);
+  box-shadow: inset -4px -4px 8px rgb(121, 94, 109), inset 8px 8px 16px rgb(121, 94, 109);
 }
 
 .button_simulacrum,
@@ -615,6 +659,13 @@ a:active:not(button) {
 .button_simulacrum:active {
   cursor: none; 
   visibility: hidden;
+}
+
+.footer_buttons {
+  display: flex; 
+  flex-direction: row;
+  width: 250px; 
+
 }
 
 
@@ -626,6 +677,7 @@ a:active:not(button) {
 button:focus {
   outline: 0;
 }
+
 
 
 
@@ -1029,7 +1081,8 @@ button:focus {
     width: 20vw;
     height: 20vw;
   }
-  .squirrel_icon {
+  .squirrel_icon_flip, 
+  .squirrel_icon_jump {
     width: 20vw;
   }
 
@@ -1274,7 +1327,8 @@ button:focus {
     width: 20vw;
     height: 20vw;
   }
-  .squirrel_icon {
+  .squirrel_icon_flip, 
+  .squirrel_icon_jump {
     width: 20vh;
   }
 
@@ -1401,7 +1455,13 @@ button:focus {
   }
 
  
+  .blob p {
+    font-size: 1rem; 
+  }
 
+  .squirrel_icon_jump {
+    padding-left: 10vw;
+  }
   
 }
 
@@ -1422,6 +1482,8 @@ button:focus {
     top: 70px;
     font-size: 40px;
   }
+
+ 
 
 }
 

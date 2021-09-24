@@ -170,7 +170,7 @@
     <div class="screen_flex_layout2">
 
       <aside class="clearfix">
-        <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"></img>
+        <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon_flip"></img>
       </aside>
 
 
@@ -387,13 +387,13 @@
                   </p>
                 </li>
                 <li>
-                  <img class="non_hover_bars" src="image 64.png" alt="Figma screenshot">
+                  <img class="non_hover_bars" src="image 64.png" alt="Figma screenshot 64">
                 </li>
                 <li>
-                  <img class="non_hover_bars" src="image 65.png" alt="Figma screenshot">
+                  <img class="non_hover_bars" src="image 65.png" alt="Figma screenshot 65">
                 </li>
                 <li>
-                  <img class="non_hover_bars" src="image 66.png" alt="Figma screenshot">
+                  <img class="non_hover_bars" src="image 66.png" alt="Figma screenshot 66">
                 </li>
               </ul> <br>
 
@@ -918,6 +918,9 @@
       </a>
     </div>
 
+
+
+
   </div>
 
 
@@ -1038,10 +1041,12 @@
         <button class="button_l"> ▲ </button>
       </a>
       <div class="button_middle_space"></div>
-      <div href="#exit_to_nowhere">
-        <button class="button_simulacrum"> ▼ </button>
-      </div>
+      <a href="#footer">
+        <button class="button_r"> ▼ </button>
+      </a>
     </div>
+
+
 
   </div>
 
@@ -1060,27 +1065,56 @@
 
   <footer>
 
-    <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"
-      style="display: flex; flex-direction: row-reverse;"></img>
+    <!-- anchor footer -->
+    <div class="anchor" id="footer"></div>
+
+
+    
+
+    <div class="footer_buttons">
+
+      <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon_jump"
+        style="display: flex; flex-direction: row-reverse;">
+      </img>
+
+      <a href="#">
+        <button class="button_r" style="font-family: 'Abel';"> up^ </button>
+      </a>
+
+    </div class="footer_buttons">
+
+
 
     <div class="blob">
-      <div class="content">
-        <!-- <a href="#">Footer link 1</a> -->
-        <!-- <a href="#">Footer link 2</a> -->
-      </div>
-    </div>
+      <p> by Magdalena Wojtakowska [Voigt] &copy; 2020 MSW
+        <time datetime='2019-10-09 23:00+0100'></time>
+      </p> 
 
-    <p> <br> by Magdalena Wojtakowska [Voigt] &copy; 2020 MSW
-      <time datetime='2019-10-09 23:00+0100'></time>
-    </p>
+    </div class="blob">
+
+
+
+    <!-- <div class="buttons_row" style="border: solid orange 1px; font-family: 'Abel';">
+      <div href="#exit_to_nowhere">
+        <button class="button_simulacrum"> ▼ </button>
+      </div>
+      <div class="button_middle_space"></div>
+      <a href="#">
+        <button class="button_r"> top </button>
+      </a>
+    </div> -->
 
 
   </footer>
 
 
 
+
+
   <script src="cv_main.js"></script>
 
 </body>
+
+
 
 </html>
