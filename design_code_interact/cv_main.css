@@ -588,7 +588,6 @@ a:active:not(button) {
 }
 
 
-
 .button_l:focus, 
 .button_l:hover, 
 .button_r:focus, 
@@ -610,10 +609,14 @@ a:active:not(button) {
   box-shadow: inset -4px -4px 8px rgb(141, 86, 116), inset 8px 8px 16px rgb(141, 86, 116);
 }
 
-
-.button_simulacrum {
+.button_simulacrum,
+.button_simulacrum:focus, 
+.button_simulacrum:hover, 
+.button_simulacrum:active {
+  cursor: none; 
   visibility: hidden;
 }
+
 
 .button_middle_space {
   width: 3.2rem;
