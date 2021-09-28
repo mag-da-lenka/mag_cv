@@ -1,6 +1,7 @@
 console.log(`hello Hello`)
 
-
+// 01
+// slideshow 
 
 const slideIndex = [1, 1];
 const slideId = ["mySlides1", "mySlides2"]
@@ -27,6 +28,9 @@ showSlides(1, 1);
 
 
 
+// 02 
+// accordion
+
 const acc = document.getElementsByClassName("accordion");
 
 for (i = 0; i < acc.length; i++) {
@@ -49,7 +53,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-
+// 03
 // automatic slideshow
 
 let autoSlideIndex = 0;
@@ -82,7 +86,12 @@ const showAutoSlides = () => {
 showAutoSlides();
 
 
-/* MOBILE NAV */
+
+
+
+
+// 04 
+// mobile nav
 
 const openMobileNav =
     () => { document.getElementById("mobileNav").style.height = "100%"; }

@@ -4,9 +4,6 @@
 }
 
 body {
-  /* background-image: linear-gradient(to bottom, rgb(59, 100, 95), rgb(51, 78, 75)); */
-  /* background-image: linear-gradient(to bottom, #333352, #27273b); */
-  /* background-image: linear-gradient(to bottom, #333352, #3c3c55); */
   background-color: #333352;
   color: rgb(228, 228, 228);
   font-family: 'Abel';
@@ -14,20 +11,16 @@ body {
 
 
 .nav_background {
-  /* background-image: linear-gradient(to bottom, rgb(52, 59, 59), rgb(59, 100, 95)); */
-  /* background-color: rgb(44, 44, 44);  */
-  /* background-color: rgb(80, 46, 71); */
-  /* background-color: rgb(56, 31, 50); */
   background-color: #333352;
   position: fixed; 
   justify-content: space-between;
   width: 100%;
-  height: 12vh;
   height: 15vh;
   margin-top: -10vh; 
-  padding-left: 7vw;
+  padding: 0 0 0 0;
   z-index: 10;
-  /* border: red solid 1px; */
+
+  /* background-color: rgb(0, 0, 0); */
 }
 
 nav {
@@ -36,21 +29,19 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* justify-content: space-evenly; */
   z-index: 10;
-  /* border: red dashed 1px; */
+
+  /* background-color: rgb(25, 25, 119); */
 }
 
 /* .nav_background nav div === see below :) */
 .nav_box, /* in between */
 .nav_box1, .nav_box2, .nav_box3, 
-.nav_box4, .nav_box5, .nav_box6, .nav_box7
-{
-/* .nav_background nav div */
+.nav_box4, .nav_box5, .nav_box6 {
   min-width: auto;
-  height: 3.9vw;
+  height: 4vw;
   margin: 2vh 3px 1vh 3px;
-  padding: 0.0em 0.1em 0.0em 0.1em;
+  padding: 0 0 0 0;
   border: 1px rgba(228, 228, 228, 0.212) solid;
   align-items: center;
   text-decoration: none;
@@ -61,52 +52,38 @@ nav {
 }
 
 .nav_box  {  
-  /*
-  background-color: rgb(56, 31, 50);
-  background-color: rgb(80, 46, 71);
-  background-color: rgb(0, 65, 65); 
-  background-color: rgba(51, 78, 75, 0.39); 
-  background-color: rgb(9, 82, 74); 
-  background-color: rgb(0, 65, 65);
-  background-color: rgb(20, 78, 71);
-  background-color: rgb(0, 65, 65); 
-  background-color: rgb(104, 0, 78); 
-  background-color: rgba(80, 46, 71, 0); 
-  background-color: rgb(6, 156, 139);
-  background-color:rgb(128, 173, 160);
-  background-color: rgb(73, 72, 138); 
-  background-color: rgb(20, 78, 71); 
-  background-color: rgb(0, 65, 65); 
-  background-color: rgb(49, 48, 94);
-  background-color: rgb(118, 83, 122);
-  background-color: rgb(95, 85, 102); 
-  */
   background-color: none; 
-  border: none;}
+  border: none;
+}
   
 .nav_box1 {  background-color: #333352;}
 .nav_box2 {  background-color: #333352;}
-
 .nav_box3 {  background-color: #333352;  
   color: rgb(230, 193, 213); 
   animation: flip_text 0.3s infinite;   
 } @keyframes flip_text { 20% {transform: rotate(2deg); } } 
-
 .nav_box4 {  background-color: #333352;}
 .nav_box5 {  background-color: #333352;}
 .nav_box6 {  background-color: #333352;}
 
-.nav_box7 {
-  padding-left: 1%; 
+/* .nav_box7 {
+  padding: 0 0 0 0;
   visibility: hidden;
-  margin-right: 10px; 
   min-width: auto;
-  height: 3.9vw;
+  height: 4vw;
   margin: 2vh 0 0 0 ;
   align-items:flex-end;
-  font-size: 2rem;
+  font-size: 40px;
+  
+} */
+.nav_box7 {
+  visibility: hidden; 
+  padding: 0 0 0 0;
+  margin: 0 0 0 0 ;
+  width: 0;
+  height: 0;
+  font-size: 0;
 }
-
 
 
 
@@ -480,33 +457,22 @@ footer {
 a:link:not(button){ 
   background-color: black;
 }
-
 a:visited:not(.nav_background nav div a) 
 a:visited:not(button) {
   background-color: gray;
 }
-
 a:focus:not(.nav_background nav div a) 
 a:focus:not(button) {
   background-color: rgb(253, 0, 190);
 }
-
 a:hover:not(.nav_background nav div a) 
 a:hover:not(button) {
 background-color: rgb(200, 255, 0);
 }
-
 a:active:not(.nav_background nav div a) 
 a:active:not(button) {
   background-color: rgb(49, 255, 186);
 } */
-
-
-
-
-
-
-
 
 
 
@@ -681,8 +647,6 @@ button:focus {
 
 
 
-
-
 /* NAVIGATION BAR LINKS -------------------------------------------------------------------------------------------- */
 
 .nav_background nav div a {
@@ -694,16 +658,16 @@ button:focus {
   padding: 0.0em 0.5em 0.0em 0.2em;
 }
 
-.nav_background nav div:hover:not(.nav_box), 
-.nav_background nav div:active:not(.nav_box), 
-.nav_background nav div:focus:not(.nav_box) {
-  background-color: #30304b;
+.nav_background nav div:hover:not(.nav_box, .nav_box7), 
+.nav_background nav div:active:not(.nav_box, .nav_box7), 
+.nav_background nav div:focus:not(.nav_box, .nav_box7) {
   color: rgb(228, 228, 228);
 }
 
 .nav_background nav div:visited {
   color: rgb(228, 228, 228);
 }
+
 
 
 
@@ -956,7 +920,9 @@ button:focus {
   top: 0; left: 0;
   background-color: #333352;
   overflow-y: hidden;
-  transition: 0.666s;
+  transition: 0.666s; 
+
+  /* border: rgb(153, 255, 167) 1px solid; */
 }
 
 .overlay-content {
@@ -964,28 +930,46 @@ button:focus {
   top: 10vh;
   width: 100%;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 10vh; 
+
+  /* background-color: rgb(9, 70, 9); */
 }
 
-.overlay a {
+.overlay a:not(.close_X) {
   padding: 8px;
   text-decoration: none;
-  font-size: 2rem;;
   color: rgb(228, 228, 228);
   display: block;
-  /* transition: 0.666s; */ 
+  font-size: 40px;
+  transition: 0.666s; 
+
+  /* background-color: rgb(16, 126, 16); */
 }
 
 .overlay a:hover, 
 .overlay a:focus {
   color: rgb(228, 228, 228);
+  /* transform: scale(1.1); */
+  
 }
 
-.overlay .close_X {
+.overlay .close_X { 
+  /*compare mq mobile nav box 7  line 1228*/
   position: absolute;
-  top: 2.5vh;
-  right: 4vh; 
-  font-size: 5rem; 
+  top: 0;
+  right: 0; 
+  
+  display: flex!important; 
+  align-items: center; 
+  justify-content: center;
+  width: 10vh;
+  height: 10vh; 
+  margin: 0 0 0 0;
+  padding: 0 15px 0 0; 
+   
+  font-size: 7.5vh;
+  
+  background-color: none;
   /* border: orange dashed 1px; */
 }
 
@@ -1239,9 +1223,8 @@ button:focus {
   nav {
     width: 10vh;
     height: 10vh;
-    padding-right: 5vw;;
+    right: 2vw;;
     float: right; 
-    /* border: orange solid 1px; */
   }
 
   .nav_box, /* in between */
@@ -1250,10 +1233,22 @@ button:focus {
     display: none;
   }
 
-  .nav_box7 {
+  .nav_box7 { /* HAMBURGER */
     border: none;
-    display: flex!important; 
     visibility: visible; 
+
+    display: flex!important; 
+    align-items: center; 
+    justify-content: center;
+
+    width: 10vh;
+    height: 10vh; 
+    margin: 0 0 0 0;
+    padding: 0 20px 0 0; 
+ 
+    font-size: 5.5vh;
+
+    /* border: red solid 1px; */
   }
 
   .nav_background nav div a {

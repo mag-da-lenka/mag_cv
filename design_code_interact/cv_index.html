@@ -24,6 +24,8 @@
 
 
 
+
+
   <!-- NAVIGATION BAR -->
 
   <div class="nav_background">
@@ -31,9 +33,9 @@
     <nav>
 
       <!-- <div class="nav_link_box1"><a href="#" style="background-color: rgba(0, 0, 0, 0.788)">I am</a></div> -->
-      <div class="nav_box1"> <a href="#"> I am </a></div> &nbsp; &nbsp;
+      <div class="nav_box1"> <a href="#"> I am </a></div> &nbsp;
 
-      <div class="nav_box2"> <a href="#about-link">about</a></div> &nbsp; &nbsp;
+      <div class="nav_box2"> <a href="#about-link">about</a></div> &nbsp;
       <div class="nav_box"> : : </div>
 
       <div class="nav_box3"> <a href="#design-experience-link">
@@ -48,11 +50,16 @@
 
       <div class="nav_box6"> <a href="#contact-link"> contact </a></div>
 
-      <!-- MOBILE NAVIGATION -->
 
-      <!-- overlay and content -->
-      <div id="mobileNav" class="overlay">
+
+      <!-- MOBILE NAVIGATION overlay and content-->
+
+      <div class="overlay" id="mobileNav">
+
+        <!-- X  --- in overlay -->
         <a href="javascript:void(0)" class="close_X" onclick="closeMobileNav()"> &times; </a>
+
+        <!-- overlay content -->
         <div class="overlay-content">
           <a href="#" onclick="closeMobileNav()"> : : I am : : </a>
           <a href="#about-link" onclick="closeMobileNav()">: : about : : </a> <br> <br> <br>
@@ -62,17 +69,25 @@
           <a href="#interaction-experience-link" onclick="closeMobileNav()">interaction</a> <br> <br> <br>
           <a href="#contact-link" onclick="closeMobileNav()"> : : contact me : : </a>
         </div>
+
       </div>
+
+
       <!-- hamburger button -->
-      <div class="nav_box7">
-        <!-- <a href="#"> ≡ </a> -->
-        <span style="font-size:30px;cursor:pointer" onclick="openMobileNav()">&#9776;</span>
+      <!-- <div class="nav_box7">
+        <span onclick="openMobileNav()">&#9776;</span>
+      </div> -->
+
+      <div class="nav_box7" onclick="openMobileNav()">
+        &#9776;
       </div>
 
 
     </nav>
 
-  </div class="nav_background">
+  </div>
+
+
 
 
 
@@ -1069,7 +1084,7 @@
     <div class="anchor" id="footer"></div>
 
 
-    
+
 
     <div class="footer_buttons">
 
@@ -1088,7 +1103,7 @@
     <div class="blob">
       <p> by Magdalena Wojtakowska [Voigt] &copy; 2020 MSW
         <time datetime='2019-10-09 23:00+0100'></time>
-      </p> 
+      </p>
 
     </div class="blob">
 
