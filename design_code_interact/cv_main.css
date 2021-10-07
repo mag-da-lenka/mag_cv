@@ -370,7 +370,7 @@ aside>section>ul>li {
   height: 3vw;
   margin: 1% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
-  filter: saturate(30%);
+  filter: saturate(80%);
 }
 
 /* FOOTER ---------------------------------- */
