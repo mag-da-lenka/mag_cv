@@ -777,7 +777,8 @@ button:focus {
 .auto_images {
   width: 10.7vw;
   height: 10.7vw;
-  border: 0.3vw solid rgb(194, 165, 181);
+  border: 0.3vw solid #4a7d8a6b;
+  /* rgb(194, 165, 181)  */
   border-radius: 50%;
   border-radius: 50%;
   width: 100%;
