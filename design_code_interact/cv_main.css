@@ -8,6 +8,7 @@ body {
   background-color: #333352;
   color: rgb(228, 228, 228);
   font-family: 'Abel';
+  cursor: crosshair;
 } 
 
 /* body {
@@ -24,7 +25,7 @@ body {
     100%{background-position:47% 0%}
 }*/
 
-#holographic {
+#holo_fun {
   background-image: linear-gradient(
     0.12turn,
     #45666da4,
@@ -36,7 +37,7 @@ body {
   background-size: 369.20%;
 }
 
-/* #holographic {
+/* #holo_fun {
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(

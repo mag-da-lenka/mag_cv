@@ -93,11 +93,9 @@ showAutoSlides();
 // 04 
 // mobile nav
 
-const openMobileNav =
-    () => { document.getElementById("mobileNav").style.height = "100%"; }
+const openMobileNav = () => { document.getElementById("mobileNav").style.height = "100%"; }
 
-const closeMobileNav =
-    () => { document.getElementById("mobileNav").style.height = "0%"; }
+const closeMobileNav = () => { document.getElementById("mobileNav").style.height = "0%"; }
 
 
 
@@ -105,37 +103,54 @@ const closeMobileNav =
 
 
 
+// 05
+// HOLOGRAPHIC BODY 
 
+// start a holographic body
+const holoBody = document.getElementById("holo_fun");
 
+// get mouse X position in mili
+const handleMouseMove = (event) => {
 
+    console.log(`1) new_move: `)
 
+    const positionX_value = event.clientX;
+    console.log(`2) positionX_value: `, positionX_value);                       //  2) positionX_value:  522
 
-const holographicElement = document.getElementById("holographic");
+    const clientWidth_value = document.documentElement.clientWidth;
+    console.log(`3) clientWidth_value: `, clientWidth_value)                    //  3) clientWidth_value:  1536
 
-function updateHolographicBackground(value) {
-    const percentage = value * 100;
-    holographicElement.style.backgroundPosition = percentage + "%";
+    const calculated_value_mili = positionX_value / clientWidth_value;
+    console.log(`4) calculated_value_mili: `, calculated_value_mili.toFixed(3)) //  4) calculated_value_mili:  0.340
+
+    updateHolographicBackground(calculated_value_mili);
 }
 
-function handleMouseMove(event) {
-    const x = event.clientX;
-    const width = document.documentElement.clientWidth;
-    const value = x / width;
-    updateHolographicBackground(value);
+// mouse X position in %
+const updateHolographicBackground = (O_xxx) => {
+
+    const percentage_value = O_xxx * 100;                                       // 5) percentage_value:  0.000 (initial)
+    console.log(`5) percentage_value: `, percentage_value.toFixed(3))           // 5) percentage_value:  33.984
+
+    holoBody.style.backgroundPosition = percentage_value + "%";
 }
 
-function handleDeviceOrientation(event) {
-    const z = Math.abs(event.alpha); // rotation degrees from 0 to 360
-    const value = z / 360;
-    updateHolographicBackground(value);
-}
 
-window.addEventListener("deviceorientation", handleDeviceOrientation, true);
+// const handleDeviceOrientation = (event) => {
+
+//     const z = Math.abs(event.alpha); // rotation degrees from 0 to 360
+//     console.log(`z_value: `, z)
+
+//     const rotation_value = z / 360;
+//     console.log(`rotation_value: `, rotation_value)
+
+//     updateHolographicBackground(rotation_value);
+// } 
 
 
+// window.addEventListener("deviceorientation", handleDeviceOrientation, true);
 
-
-
+// ------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
