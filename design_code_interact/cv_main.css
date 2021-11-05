@@ -811,10 +811,10 @@ button:focus {
 }
 
 .auto_active {
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 
-.auto_fade {
+/* .auto_fade {
   -webkit-animation-name: auto_fade;
   -webkit-animation-duration: 0.2s;
   animation-name: auto_fade;
@@ -822,12 +822,12 @@ button:focus {
 }
 
 @-webkit-keyframes auto_fade {
-  from {    opacity: .7  }  to {    opacity: 1  }
+  from {    opacity: .9  }  to {    opacity: 1  }
 }
 
 @keyframes auto_fade {
-  from {    opacity: .7  }  to {    opacity: 1  }
-}
+  from {    opacity: .9  }  to {    opacity: 1  }
+} */
 
 
 
