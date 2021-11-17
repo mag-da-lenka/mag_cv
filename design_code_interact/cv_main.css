@@ -9,7 +9,12 @@ body {
   color: rgb(228, 228, 228);
   font-family: 'Abel';
   cursor: crosshair;
-} 
+}
+
+::selection {
+  color: #333352;
+  background: rgb(228, 228, 228);
+}
 
 /* body {
   font-family: 'Abel';
