@@ -93,8 +93,7 @@ showAutoSlides();
 // 04 
 // mobile nav
 
-const openMobileNav = () => { document.getElementById("mobileNav").style.height = "100%"; }
-
+const  openMobileNav = () => { document.getElementById("mobileNav").style.height = "100%"; }
 const closeMobileNav = () => { document.getElementById("mobileNav").style.height = "0%"; }
 
 
@@ -151,7 +150,6 @@ const updateHolographicBackground = (O_xxx) => {
 // window.addEventListener("deviceorientation", handleDeviceOrientation, true);
 
 // ------------------------------------------------------------------------------------------------------------------------------------------
-
 
 
 

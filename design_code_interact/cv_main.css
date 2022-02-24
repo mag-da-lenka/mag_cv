@@ -30,25 +30,13 @@ body {
     100%{background-position:47% 0%}
 }*/
 
-#holo_fun {
-  background-image: linear-gradient(
-    0.12turn,
-    #45666da4,
-    /* #47476d, */
-    #333352,
-    /* #39294480, */
-    #45666D
-  );
-  background-size: 369.20%;
-}
+
 
 #holo_fun {
   background-image: linear-gradient(
     0.12turn,
     #45666d,
-    /* #47476d, */
     #333352,
-    /* #39294480, */
     #45666D
   );
   background-size: 369.20%;
