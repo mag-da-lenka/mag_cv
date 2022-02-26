@@ -140,28 +140,28 @@ h1, h2, h3, h4 {  color: rgb(194, 165, 181);
                   /* color: rgb(121, 94, 109); */
                   border: none; font-weight: 500; } 
 
-html { font-size: 14px; } /* default html size */
+html { font-size: 15px; } /* default html size */
 
 /* font sizes from XXS to XXL (except nav links and nav buttons) */
 .smaller_font {
-     font-size: 1.4rem; color: rgb(228, 228, 228);
+     font-size: 1.0rem; color: rgb(228, 228, 228);
 }
 .text_link:link, .text_link:visited {
-     font-size: 1.4rem; font-weight: 100;
+     font-size: 1.1rem; font-weight: 100;
 }
-p, ul, li {
-     font-size: 1.5rem; font-weight: 100; 
+a, p, ul, li {
+     font-size: 1.1rem; font-weight: 100; 
 }
 
 .accordion {
-     font-size: 1.6rem; /* afects the text on the panel (NOT plus/minus) */
+     font-size: 1.1rem; /* afects the text on the panel (NOT plus/minus) */
      /* all other accordion styles down below */
 }
 .accordion:after { /*PLUS*/
-     font-size: 1.6rem;  
+     font-size: 1.1rem;  
 }
 .accordion.active:after { /*MINUS*/
-     font-size: 1.6rem;
+     font-size: 1.1rem;
 }
 .panel h3,  
 .panel ul, 
@@ -171,13 +171,13 @@ p, ul, li {
   padding-right: 1rem;
 }
 .larger_font {
-     font-size: 1.9rem; color: rgba(228, 228, 228);
+     font-size: 1.2rem; color: rgba(228, 228, 228);
 }
-h3 { font-size: 1.9rem;  color: rgb(228, 228, 228);} 
-h2 { font-size: 2.5rem; }
+h3 { font-size: 1.5rem;  color: rgb(228, 228, 228);} 
+h2 { font-size: 2.0rem; }
 h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 .XXL_font {
-     font-size: 4.9rem;;
+     font-size: 3.9rem;
 }
 
 
@@ -210,7 +210,7 @@ h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
   height: 100%;
   align-items: center;
   /* border-radius: 20px; */
-  background-image: url("fig_aurora.png");
+  background-image: url("./images/fig_aurora.png");
   background-size: cover;
   transform: scale(1.1);
 }
@@ -351,10 +351,15 @@ aside, main {
   padding: 2% 2% 2% 2%;
   padding: 2% 1.5% 0% 1%;
   border: 0.2vw;
+} 
+
+aside {
+  margin: 0% 1% 0% 17%;
 }
 
 aside {
-  width: 30vw;
+  width: 30vw; 
+  width: 420px;
   text-align: right;
   /* flex: 3 3 10em; */
   border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) transparent transparent;
@@ -364,6 +369,7 @@ aside {
 
 main {
   width: 60vw;
+  width: 600px;
   /* flex: 5 5 15em; */
   border-color: transparent transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151);
   border-style: solid solid solid solid;
@@ -447,7 +453,7 @@ aside>section>ul>li {
 /* each tech skills icon --> style */
 
 .skills_icon_line>img {
-  height: 3vw;
+  height: 2vw;
   margin: 1% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
   filter: saturate(80%);
@@ -572,7 +578,7 @@ a:active:not(button) {
   border-color: transparent transparent rgba(228, 228, 228, 0.322)rgba(228, 228, 228, 0.61);
   /* border-color: orange; */
   border-style: solid solid solid solid;
-  border-radius: 0px 0px 0px 5px;
+  border-radius: 0px 0px 0px 2px;
 }
 
 .text_link:hover, 
@@ -583,7 +589,7 @@ a:active:not(button) {
   text-decoration: none;
   border-color: rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61) transparent transparent;
   border-style: solid solid solid solid;
-  border-radius: 0px 5px 0px 0px;
+  border-radius: 0px 3px 0px 0px;
 }
 
 
@@ -609,7 +615,7 @@ a:active:not(button) {
 
 /* >>> each round png :: styled */
 .icon_link {
-  width: 2.5vw;
+  width: 2.0vw;
   margin: 0% 0% 0% 0%;
   background-color: none;
   border: none;
@@ -863,7 +869,7 @@ button:focus {
 }
 
 .slideshow-container {
-  width: 250px;
+  width: 200px;
   position: relative;
   margin: auto;
 }
@@ -871,18 +877,19 @@ button:focus {
   vertical-align: middle;
   border: 0px transparent solid; 
   border-radius: 50%;
+  border-radius: 10px;
   width: 100%;
   filter: saturate(50%);
 }
 
 .prev, .next {
   position: absolute;
-  top: 90px;
+  top: 75px;
   width: auto;
   padding: 0px 5px 0px 5px;
   margin-top: 0;
   color: rgba(228, 228, 228, 0.651);
-  font-size: 50px;
+  font-size: 30px;
   user-select: none;
 }
 
@@ -914,8 +921,8 @@ button:focus {
   border-radius: 0.2rem;
   transition: 0.4s;
   padding: 1% 1% 1% 1%;
-  margin: 1% 0% 0% 0%;
-  width: 100%;
+  margin: 0% 0% 1% 0%;
+  width: 570px;
   color: rgb(228, 228, 228);
   font-family: 'Abel';
   text-align: left;
@@ -933,7 +940,7 @@ button:focus {
   color: rgba(228, 228, 228, 0.37);
   /* filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%); */
   /* filter: invert(94%) sepia(1%) saturate(397%) hue-rotate(136deg) brightness(111%) contrast(79%); */
-  padding: 0;
+  padding-right: 15px;
   float: right;
   text-align: center; 
   font-family: 'Fira Code Medium';
@@ -949,9 +956,12 @@ button:focus {
 }
 
 .panel { /* the text inside the button */
-  color: rgba(228, 228, 228, 0.897);
-  max-height: 0;
-  padding-left: 1vw;
+  color: rgba(228, 228, 228, 0.897); 
+  background-color: rgba(255, 192, 203, 0.014);
+  max-height: 0; 
+  width: 570px;
+  padding: 0% 0% 0% 1%;
+  margin: 0% 0% 3% 0%;
   overflow: hidden;
   transition: 0.2s ease-out;
 }
