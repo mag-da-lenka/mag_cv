@@ -1,0 +1,6 @@
+#code_screen {
+  background-size: 99% 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(54, 45, 50, 0.578) 50%, rgba(255, 255, 255, 0.001) 100%), url("background_code2opacity70.png");
+  background-blend-mode: darken;
+}

@@ -16,46 +16,16 @@ body {
   background: rgb(228, 228, 228);
 }
 
-/* body {
-  font-family: 'Abel';
-  color: rgb(228, 228, 228); 
-  background: linear-gradient(121deg, #4adfb8, #65849d, #57cfd0);
-  background: linear-gradient(91deg, #4adfb8, #65849d, #57cfd0);
-  background-size: 600% 600%;
-  animation: Animation_01 15s ease infinite;
-}
-@keyframes Animation_01 {
-    0%{background-position:47% 0%}
-    50%{background-position:54% 100%}
-    100%{background-position:47% 0%}
-}*/
-
-
 
 #holo_fun {
   background-image: linear-gradient(
     0.12turn,
     #45666d,
-    #333352,
-    #45666D
-  );
+    #33335265,
+    #45666d
+);
   background-size: 369.20%;
 }
-
-/* #holo_fun {
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(
-    to right,
-    rgb(194, 255, 182),
-    rgb(255, 163, 182),
-    rgb(221, 169, 255),
-    rgb(162, 209, 255)
-  );
-  background-size: 200%;
-}  */
-/* https://codepen.io/toomuchome/pen/VVpOOB*/
-
 
 
 .nav_background {
@@ -77,8 +47,6 @@ nav {
   flex-direction: row;
   justify-content: center;
   z-index: 10;
-
-  /* background-color: rgb(25, 25, 119); */
 }
 
 /* .nav_background nav div === see below :) */
@@ -89,8 +57,8 @@ nav {
   height: 4vw;
   margin: 2vh 3px 1vh 3px;
   padding: 0 0 0 0;
-  border: 1px rgba(228, 228, 228, 0.212) solid;
-  border: 2px #4a7d8a6b solid;
+  /* border: 1px rgba(228, 228, 228, 0.212) solid; */
+  /* border: 2px #4a7d8a6b solid; */
   align-items: center;
   text-decoration: none;
   font-size: 3.0vw;
@@ -103,27 +71,14 @@ nav {
   background-color: none; 
   border: none;
 }
-  
-.nav_box1 {  background-color: #333352;}
-.nav_box2 {  background-color: #333352;}
-.nav_box3 {  background-color: #333352;  
+
+.nav_box3 {  
   color: rgb(230, 193, 213); 
   animation: flip_text 0.3s infinite;   
 } @keyframes flip_text { 20% {transform: rotate(2deg); } } 
-.nav_box4 {  background-color: #333352;}
-.nav_box5 {  background-color: #333352;}
-.nav_box6 {  background-color: #333352;}
 
-/* .nav_box7 {
-  padding: 0 0 0 0;
-  visibility: hidden;
-  min-width: auto;
-  height: 4vw;
-  margin: 2vh 0 0 0 ;
-  align-items:flex-end;
-  font-size: 40px;
-  
-} */
+
+
 .nav_box7 {
   visibility: hidden; 
   padding: 0 0 0 0;
@@ -138,9 +93,10 @@ nav {
 h1, h2, h3, h4 {  color: rgb(194, 165, 181); 
                   color: rgb(230, 193, 213); 
                   /* color: rgb(121, 94, 109); */
-                  border: none; font-weight: 500; } 
+                  border: none; font-weight: 500; 
+                  text-shadow: 2px 2px 5px #07071f;} 
 
-html { font-size: 15px; } /* default html size */
+html { font-size: 16px; } /* default html size */
 
 /* font sizes from XXS to XXL (except nav links and nav buttons) */
 .smaller_font {
@@ -167,17 +123,18 @@ a, p, ul, li {
 .panel ul, 
 .panel ul li, 
 .panel ul li p { 
-  /* color: yellowgreen; */
-  padding-right: 1rem;
+  padding-right: 1rem; 
 }
 .larger_font {
      font-size: 1.2rem; color: rgba(228, 228, 228);
 }
 h3 { font-size: 1.5rem;  color: rgb(228, 228, 228);} 
 h2 { font-size: 2.0rem; }
-h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
+h1 { font-size: 2.0rem;} /* the real h1 font size is in .i_am_magda_1 */
 .XXL_font {
-     font-size: 3.9rem;
+     font-size: 3.9rem; 
+     /* text-shadow: 1px 1px #333352;  */
+     text-shadow: 2px 2px 5px #07071f;
 }
 
 
@@ -192,28 +149,7 @@ h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 
 /* ---- LANDING PAGE === screen 1 ----- + basics ------------------ */ 
 
-.i_am_magda_1 {
-  display: flex;
-  flex-direction: row; 
-  /* border: white dashed 1px;  */
-  min-width: 1100px; 
-  /* background-color: #4a7d8a6b;   */
-  
-}
 
-.i_am_magda_1_background {
-  display: flex;
-  width: 90vw;
-  padding-left: 3vh; 
-  padding-right: 3vh;
-  margin: 0;
-  height: 100%;
-  align-items: center;
-  /* border-radius: 20px; */
-  background-image: url("./images/fig_aurora.png");
-  background-size: cover;
-  transform: scale(1.1);
-}
 
 
 
@@ -301,7 +237,7 @@ h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 /* ----- OUTER SCREENS ------------------------- */
 .screen1, .screen2, .screen3, 
 .screen4, .screen5, .screen6 {
-  /* border: solid yellow 1px; */
+  border: solid yellow 2px;
   background-color: none;
   margin-top: 10vh;
   margin-bottom: 0vh;
@@ -314,16 +250,13 @@ h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
 .screen1 {  
   width:100%;  
   height: 85vh; 
-  /* border: dotted rgb(0, 247, 255) 1px; */
 }
-
-
 
 
 /* INNER SCREENS, ASIDES, MAINS and modifications ---------------------- */
 .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3, 
 .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
-  /* border: dotted yellow 1px; */
+  border: dashed yellow 1.5px;
   background-color: none;
   display: flex;
   flex-direction: row;
@@ -333,24 +266,38 @@ h1 { font-size: 3.4rem;} /* the real h1 font size is in .i_am_magda_1 */
   min-height: 70vh;
   margin-bottom: 0vh;
 }
-.screen_flex_layout1 { 
-  min-height: 60vh;
-  flex-direction: column;
-  /* background-image: url("fig_aurora.png"); */
-  /* background-image: url("https://external-preview.redd.it/TySiptBx5RtSyYDRpmYIAAI72qY6rTUzRZVtqv_Wrmw.png?auto=webp&s=514026eb8a5d77e80cdd12d4a495b0ed7164b3d8"); */
-  background-position: center;
-  background-repeat: space;
+
+
+/* INSIDE .screen_flex_layout1 */
+.i_am_magda_1_background { 
+  display: flex;
+  width: 90vw;
+  padding-left: 3vh; 
+  padding-right: 3vh;
+  margin: 0;
+  height: 100%;
+  align-items: center;
+  background-image: url("./images/fig_aurora_40.png");
   background-size: cover;
+  transform: scale(1.105); 
+  border: dotted yellow 1px; 
+} 
+
+
+/* INSIDE .i_am_magda_1_background */
+.i_am_magda_1 {
+  display: flex;
+  flex-direction: row; 
+  min-width: 100px;  
+  /* background-color: blueviolet;   */
 }
-
-
 
 
 aside, main {
   margin: 0% 1% 0% 1%;
   padding: 2% 2% 2% 2%;
   padding: 2% 1.5% 0% 1%;
-  border: 0.2vw;
+  border: 0.2vw; 
 } 
 
 aside {
@@ -578,7 +525,8 @@ a:active:not(button) {
   border-color: transparent transparent rgba(228, 228, 228, 0.322)rgba(228, 228, 228, 0.61);
   /* border-color: orange; */
   border-style: solid solid solid solid;
-  border-radius: 0px 0px 0px 2px;
+  border-radius: 0px 0px 0px 2px; 
+  transition: 0.366s ease-out; 
 }
 
 .text_link:hover, 
@@ -589,7 +537,8 @@ a:active:not(button) {
   text-decoration: none;
   border-color: rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61) transparent transparent;
   border-style: solid solid solid solid;
-  border-radius: 0px 3px 0px 0px;
+  border-radius: 0px 3px 0px 0px; 
+  transition: 0.366s ease-out;
 }
 
 
@@ -740,6 +689,7 @@ button:focus {
 .nav_background nav div a {
   align-items: center;
   text-decoration: none;
+  font-size: 3.0vw; 
   font-size: 3.0vw;
   font-weight: 520;
   color: rgb(228, 228, 228);
@@ -925,7 +875,8 @@ button:focus {
   width: 570px;
   color: rgb(228, 228, 228);
   font-family: 'Abel';
-  text-align: left;
+  text-align: left; 
+  text-shadow: 2px 2px 5px #07071f;
   cursor: pointer; 
 }
 .accordion:hover  {background-color: rgba(145, 145, 145, 0.068);}
@@ -1013,8 +964,7 @@ button:focus {
   top: 0; left: 0;
   background-color: #333352;
   overflow-y: hidden;
-  transition: 0.666s; 
-
+  transition: 0.666s ease-out; 
   /* border: rgb(153, 255, 167) 1px solid; */
 }
 
