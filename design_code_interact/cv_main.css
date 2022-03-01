@@ -237,7 +237,7 @@ h1 { font-size: 2.0rem;} /* the real h1 font size is in .i_am_magda_1 */
 /* ----- OUTER SCREENS ------------------------- */
 .screen1, .screen2, .screen3, 
 .screen4, .screen5, .screen6 {
-  border: solid yellow 2px;
+  /* border: solid yellow 2px; */
   background-color: none;
   margin-top: 10vh;
   margin-bottom: 0vh;
@@ -256,7 +256,7 @@ h1 { font-size: 2.0rem;} /* the real h1 font size is in .i_am_magda_1 */
 /* INNER SCREENS, ASIDES, MAINS and modifications ---------------------- */
 .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3, 
 .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
-  border: dashed yellow 1.5px;
+  /* border: dashed yellow 1.5px; */
   background-color: none;
   display: flex;
   flex-direction: row;
@@ -280,7 +280,7 @@ h1 { font-size: 2.0rem;} /* the real h1 font size is in .i_am_magda_1 */
   background-image: url("./images/fig_aurora_40.png");
   background-size: cover;
   transform: scale(1.105); 
-  border: dotted yellow 1px; 
+  /* border: dotted yellow 1px;  */
 } 
 
 
