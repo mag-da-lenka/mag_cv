@@ -1,0 +1,436 @@
+/* AUTOMATIC SLIDES */
+
+.autoslides_container_outer {
+  /* border: 1px solid darkblue; */
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+
+.autoslides_container {
+  /* border: 1px dashed rgb(71, 71, 255); */
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.auto_slides {
+  /* border: 1px solid rgb(82, 191, 241); */
+  display: none;
+  width: 150px;
+  height: 150px;
+}
+
+.auto_images {
+  border: 0.3vw solid #4a7d8a6b;
+  border: 0.3vw solid #4a7d8a9f;
+  border-radius: 50%;
+  border-radius: 50%;
+  width: 100%;
+  filter: saturate(50%) opacity(70%);
+}
+
+.auto_dots {
+  display: inline-block;
+  height: 0px;
+  width: 0px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+/* .auto_active {
+  background-color: #000000;
+} */
+
+/* .auto_fade {
+  -webkit-animation-name: auto_fade;
+  -webkit-animation-duration: 0.2s;
+  animation-name: auto_fade;
+  animation-duration: 0.2s;
+}
+
+@-webkit-keyframes auto_fade {
+  from {    opacity: .9  }  to {    opacity: 1  }
+}
+
+@keyframes auto_fade {
+  from {    opacity: .9  }  to {    opacity: 1  }
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* JEWELLERY SLIDES */
+
+.mySlides1, .mySlides2 {
+  display: none;
+}
+
+.slideshow-container {
+  display: flex;
+  align-items: flex-start;
+  width: 200px;
+  position: relative;
+  margin: 0;
+}
+
+.slideshow-container img {
+  vertical-align: middle;
+  border: 3px transparent solid;
+  border: 1rem #333352 solid;
+  border-radius: 50%;
+  width: 100%;
+  filter: saturate(50%);
+  filter: opacity(80%);
+
+}
+
+.mySlides1_dot_descr p {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border: 0px transparent solid;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #333352;
+  padding-left: 40px;
+}
+
+
+.prev, .next {
+  position: absolute;
+  top: 80px;
+  width: auto;
+  padding: 0px 15px 0px 15px;
+  margin-top: 0;
+  color: rgba(228, 228, 228, 0.664);
+  font-size: 30px;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  cursor: pointer;
+  user-select: none;
+  color: rgb(238, 238, 238);
+  border: none;
+  transition: 0.7s ease;
+}
+
+.next {
+  right: 0;
+}
+
+
+
+
+
+
+
+
+
+/* ACCORDION */
+
+.accordion {
+  /* the panel and text on it  !!! without dingbats */
+  background-color: rgba(255, 192, 203, 0.014);
+  border: none;
+  border-radius: 0.2rem;
+  transition: 0.4s;
+  padding: 1% 1% 1% 1%;
+  margin: 0% 0% 1% 0%;
+  width: 666px;
+  color: rgb(228, 228, 228);
+  font-family: 'Abel';
+  text-align: left;
+  text-shadow: 2px 2px 4px #333352ee;
+  cursor: pointer;
+}
+
+.accordion:hover {
+  background-color: rgba(145, 145, 145, 0.068);
+}
+
+.accordion.active {
+  background-color: rgba(255, 192, 203, 0.151);
+}
+
+.accordion:after {
+  content: '\02795';
+  /* DINGBATS PLUS */
+  /* content: "\02BC6"; */
+  /* content: "▼"; */
+  content: "+";
+  /* content:"˅"; */
+  color: rgba(228, 228, 228, 0.37);
+  /* filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%); */
+  /* filter: invert(94%) sepia(1%) saturate(397%) hue-rotate(136deg) brightness(111%) contrast(79%); */
+  padding-right: 15px;
+  float: right;
+  text-align: center;
+  font-family: 'Fira Code Medium';
+}
+
+.accordion.active:after {
+  content: "\2796";
+  /* DINGBATS MINUS */
+  /* content: "\02BC5"; */
+  /* content: "▲"; */
+  content: "-";
+  /* content:"˄"; */
+
+}
+
+.panel {
+  /* the text inside the button-bar */
+  color: rgba(228, 228, 228, 0.897);
+  background-color: rgba(255, 192, 203, 0.014);
+  background-color: rgba(255, 192, 203, 0.0);
+  background: linear-gradient(180deg, rgba(255, 192, 203, 0.014), rgba(255, 192, 203, 0) 100%);
+  max-height: 0;
+  width: 666px;
+
+  padding: 0% 0% 0% 1%;
+  margin: 0% 0% 1% 0%;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
+
+
+
+
+
+
+
+
+
+/* LIGHTBOX SLIDESHOW ******************************************************************************************* */
+
+/*----------------------------------------------*/
+
+.lightbox {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  /* background-color: #ff439b; */
+  /* padding: 2px; */
+  color: #e4e4e4;
+  width: 300px;
+  width: 500px;
+  box-sizing: border-box
+}
+
+.smallPicDiv_row {
+  display: flex;
+  /* background-color: #ff7eba; */
+  /* padding: 2px; */
+}
+
+.smallPicDiv_row:after {
+  content: ""
+}
+
+.smallPicDiv {
+  margin: auto;
+  margin-right: 20px;;
+  width: 25%;
+  /* background-color: #ffb3d6; */
+  /* padding: 2px; */
+}
+
+.smallPic {
+  width: 100%;
+  cursor: pointer;
+  transition: .3s;
+  /* background-color: #ffe2ef; */
+  padding: 0px; 
+  border: rgba(255, 255, 255, 0.582) solid 1px;
+  border-radius: 7px;
+
+}
+
+.smallPic:hover {
+  /* box-shadow: 7px 7px 3px #2d2d42;  */
+  transform: scale(1.08);
+}
+
+/*----------------------------------------------*/
+
+.overlay_lightbox_full {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding: 0;
+  left: 0;
+  top: 0;
+  width: 99vw;
+  /*wtf*/
+  height: 100vh;
+  overflow: auto;
+  background-color: #333352
+}
+
+.closing_XXX {
+  color: rgb(228, 228, 228);
+  position: absolute;
+  top: 1.5vh;
+  right: 2.5vh;
+  font-size: 3rem;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.closing_XXX:focus, .closing_closing_XXX:hover {
+  color: rgba(228, 228, 228, .479);
+  text-decoration: none
+}
+
+/*----------------------------------------------*/
+
+.overlay_lightbox_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 1.5vh;
+  width: 1200px;
+  height: 700px;
+  padding: 3px;
+  background-color: #333352;
+  /* border: red solid 1px; */
+}
+
+.slideDivs_div {
+  margin-top: 0vh;
+  margin: 0 auto;
+  width: 1200px;
+  height: 700px;
+  padding: 3px;
+  /* border: red dashed 1px; */
+}
+
+
+.slideDiv {
+  margin: 0 auto;
+  width: 1200px;
+  height: 700px;
+  padding: 3px;
+  display: none;
+  /* border: red dotted 2px; */
+  display: block;
+
+}
+
+.aSingleSlide {
+  margin: 0;
+  /* width: 100%; */
+  /* height: 100%; */
+  width: 60vw;
+  height: 37vw;
+  width: 1200px;
+  height: 700px;
+  padding: 3px;
+  /* border: orange dotted 2px; */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 50% 50%; */
+}
+
+
+/*----------------------------------------------*/
+
+.nextSlide_lightbox, .prevSlide_lightbox {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1.2rem;
+  margin-top: 1vh;
+  background-color: #333352;
+  color: rgb(228, 228, 228);
+  font-weight: 700;
+  font-size: 20px;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prevSlide_lightbox {
+  right: 30;
+  border-radius: 0 6px 6px 0;
+}
+
+.nextSlide_lightbox {
+  right: 0;
+  border-radius: 6px 0 0 6px;
+}
+
+.divPrevNext {
+  display: flex;
+  align-content: space-between;
+  width: 100%;
+}
+
+.nextSlide_lightbox:hover, .prevSlide_lightbox:hover {
+  background-color: rgba(0, 0, 0, .329)
+}
+
+/*----------------------------------------------*/
+
+.slideNumTxt {
+  color: #f2f2f2;
+  font-size: 32px;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  background-color: #333352; 
+  border-radius: 50%;
+}
+
+/*----------------------------------------------*/
+
+.slideDescrDiv {
+  text-align: center;
+  height: 50px;
+  width: 700px;
+  background-color: #333352;
+  padding: 2px 16px;
+  color: rgb(228, 228, 228);
+  margin: 0 auto;
+}
+
+/*----------------------------------------------*/
+
+.smallPicDotDivs_div {
+  display: flex;
+  width: 20%;
+  margin-top: 5vh;
+  /* border: #ffffff solid 1px; */
+}
+
+.smallPicDotDiv {
+  /* border: #ffffff dashed 1px; */
+  margin: auto;
+}
+
+.smallPicDot {
+  /* border: #ffffff dotted 1px; */
+  opacity: .2;
+  width: 100%;
+  cursor: pointer
+}
+
+.activeSmallPicDot, .smallPicDot:hover {
+  opacity: .8
+}

@@ -1,5 +1,52 @@
 console.log(`hello Hello`)
 
+
+const mobileBreak = () => {
+    alert("The mobile layout is currently being rebuilt, please view the page on your laptop.");
+}
+
+
+// 04 
+// mobile nav
+
+const openMobileNav = () => { document.getElementById("mobileNav").style.height = "100%"; }
+const closeMobileNav = () => { document.getElementById("mobileNav").style.height = "0%"; }
+
+
+
+// 05
+// HOLOGRAPHIC BODY 
+
+// start a holographic body
+const holoBody = document.getElementById("holo_fun");
+
+// get mouse X position in mili
+const handleMouseMove = (event) => {
+
+    console.log(`1) new_move: `)
+
+    const positionX_value = event.clientX;
+    console.log(`2) positionX_value: `, positionX_value); //  2) positionX_value:  522
+
+    const clientWidth_value = document.documentElement.clientWidth;
+    console.log(`3) clientWidth_value: `, clientWidth_value) //  3) clientWidth_value:  1536
+
+    const calculated_value_mili = positionX_value / clientWidth_value;
+    console.log(`4) calculated_value_mili: `, calculated_value_mili.toFixed(3)) //  4) calculated_value_mili:  0.340
+
+    updateHolographicBackground(calculated_value_mili);
+}
+
+// mouse X position in %
+const updateHolographicBackground = (O_xxx) => {
+
+    const percentage_value = O_xxx * 100; // 5) percentage_value:  0.000 (initial)
+    console.log(`5) percentage_value: `, percentage_value.toFixed(3)) // 5) percentage_value:  33.984
+
+    holoBody.style.backgroundPosition = percentage_value + "%";
+}
+
+
 // 01
 // slideshow 
 
@@ -53,6 +100,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
+
 // 03
 // automatic slideshow
 
@@ -80,7 +128,7 @@ const showAutoSlides = () => {
 
     autoDots[autoSlideIndex - 1].className += " auto_active";
 
-    setTimeout(showAutoSlides, 956);
+    setTimeout(showAutoSlides, 1666);
 }
 
 showAutoSlides();
@@ -90,49 +138,38 @@ showAutoSlides();
 
 
 
-// 04 
-// mobile nav
+// LIGHTBOX 
 
-const openMobileNav = () => { document.getElementById("mobileNav").style.height = "100%"; }
-const closeMobileNav = () => { document.getElementById("mobileNav").style.height = "0%"; }
+function openSlide_lightbox() { document.getElementById("overlay_lightbox_full_id").style.display = "block"; }
+function closeSlide_lightbox() { document.getElementById("overlay_lightbox_full_id").style.display = "none"; }
 
+var slideIdx = 1;
+runSlideShow(slideIdx);
 
+function nextSlide_lightboxPlease(n) { runSlideShow(slideIdx += n); }
+function currentSlide(n) { runSlideShow(slideIdx = n); }
 
+function runSlideShow(n) {
 
+    let idx;
+    let slides_lb = document.getElementsByClassName("slideDiv");
+    let dots_lb = document.getElementsByClassName("smallPicDot");
+    let description_lb = document.getElementById("slideDescr");
 
+    if (n > slides_lb.length) { slideIdx = 1 }
+    if (n < 1) { slideIdx = slides_lb.length }
+    for (idx = 0; idx < slides_lb.length; idx++) { slides_lb[idx].style.display = "none"; }
+    for (idx = 0; idx < dots_lb.length; idx++) {
+        dots_lb[idx].className = dots_lb[idx].className.replace(" activeSmallPicDot", "");
+    }
 
-
-// 05
-// HOLOGRAPHIC BODY 
-
-// start a holographic body
-const holoBody = document.getElementById("holo_fun");
-
-// get mouse X position in mili
-const handleMouseMove = (event) => {
-
-    console.log(`1) new_move: `)
-
-    const positionX_value = event.clientX;
-    console.log(`2) positionX_value: `, positionX_value); //  2) positionX_value:  522
-
-    const clientWidth_value = document.documentElement.clientWidth;
-    console.log(`3) clientWidth_value: `, clientWidth_value) //  3) clientWidth_value:  1536
-
-    const calculated_value_mili = positionX_value / clientWidth_value;
-    console.log(`4) calculated_value_mili: `, calculated_value_mili.toFixed(3)) //  4) calculated_value_mili:  0.340
-
-    updateHolographicBackground(calculated_value_mili);
+    slides_lb[slideIdx - 1].style.display = "block";
+    dots_lb[slideIdx - 1].className += " activeSmallPicDot";
+    description_lb.innerHTML = dots_lb[slideIdx - 1].alt;
 }
 
-// mouse X position in %
-const updateHolographicBackground = (O_xxx) => {
 
-    const percentage_value = O_xxx * 100; // 5) percentage_value:  0.000 (initial)
-    console.log(`5) percentage_value: `, percentage_value.toFixed(3)) // 5) percentage_value:  33.984
 
-    holoBody.style.backgroundPosition = percentage_value + "%";
-}
 
 
 // const handleDeviceOrientation = (event) => {

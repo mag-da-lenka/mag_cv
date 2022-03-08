@@ -8,32 +8,36 @@
     <meta name="description" content="Magdalena Wojtakowska [Voigt] CV">
     <meta name="keywords" content=" web developer, software engineer, frontend, backend, UX, UI, UXUI, UX/UI">
     <meta name="author" content="Magdalena Wojtakowska [Voigt]">
+
     <title> magda / design : : code : : interact </title>
+
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    <link rel="stylesheet" href="cv_animations.css">
+    <link rel="stylesheet" href="cv_all_slides_accordion.css">
     <link rel="stylesheet" href="cv_main.css">
 
 </head>
 
 
-<body id="holo_fun" onmousemove="handleMouseMove(event)">
+<body id="holo_fun" onmousemove="handleMouseMove(event)"  onload="mobileBreak()">
 
 
 
 
 
 
-
-
-
-
+    <!-- ****************************************************************************************** -->
+    <!-- SCREEN 01 a > NAVIGATION  -->
+    <!-- ****************************************************************************************** -->
 
     <!-- NAVIGATION BAR -->
     <div class="nav_background">
         <nav>
 
             <!-- <div class="nav_link_box1"><a href="#" style="background-color: rgba(0, 0, 0, 0.788)">I am</a></div> -->
-            <div class="nav_box1"> <a href="#"> I am </a></div> &nbsp;
-            <div class="nav_box2"> <a href="#about-link">about</a></div> &nbsp;
+            <div class="nav_box1"> <a href="#"> HOME </a></div> &nbsp;
+            <!-- <div class="nav_box2"> <a href="#about-link">about</a></div> &nbsp; -->
             <div class="nav_box"> : : </div>
             <div class="nav_box3">
                 <a href="#design-experience-link">
@@ -52,8 +56,8 @@
                 <a href="javascript:void(0)" class="close_X" onclick="closeMobileNav()"> &times; </a>
                 <!-- overlay content -->
                 <div class="overlay-content">
-                    <a href="#" onclick="closeMobileNav()"> : : I am : : </a>
-                    <a href="#about-link" onclick="closeMobileNav()">: : about : : </a> <br> <br> <br>
+                    <a href="#" onclick="closeMobileNav()"> : : HOME : : </a>
+                    <!-- <a href="#about-link" onclick="closeMobileNav()">: : about : : </a> <br> <br> <br> -->
                     <a href="#design-experience-link" class="glow" style="color: rgb(230, 193, 213)" ;
                         onclick="closeMobileNav()">ux/ui</a>
                     <a href="#coding-experience-link" onclick="closeMobileNav()">&lt;coding&gt;</a>
@@ -75,75 +79,125 @@
     </div>
 
 
+    <!-- ****************************************************************************************** -->
+    <!-- SCREEN 01 b > I AM MAGDA / ABOUT / INTRO  -->
+    <!-- ****************************************************************************************** -->
 
 
-
-
-    <!-- SCREEN 01 > I AM MAGDA ------------------------------------------------------------------>
-    <!-- <header class="screen1" style="border:none;"> <br> -->
     <header class="screen1"> <br>
-        <!-- <header class="screen1" style="border: orange solid 1px"> <br> -->
+
 
         <div class="screen_flex_layout1">
 
-            <!-- <div class="screen_flex_layout1" style="border: orange dotted 1px;"> -->
-            <div class="i_am_magda_1_background">
 
-                <div class="i_am_magda_1" class="clearfix">
-                    <h1>: : I am Magda : : &nbsp; </h1> <br>
-                    <div class="flex_row autoslides_container_outer">
+            <div class="scr1_articlesLR" style="width:1100px; height:700px;  
+                margin: 0 auto; display:flex; align-items: space-between;">
 
-                        <div>
-                            <div class="autoslides_container">
-                                <!-- <div class="auto_slides auto_fade">
-                                    <img class="auto_images" src="20211104_165331_arctic.jpg">
+
+
+                <article style="width:500px; height:700px; margin: 0">
+
+
+                    <section class="flex_row" style="align-items: center; align-content: space-between; 
+                        margin: 30px 0px 10px 0px; width: 500px;">
+                        <div class="autoslides_container_outer">
+                            <div>
+                                <div class="autoslides_container">
+                                    <div class="auto_slides auto_fade">
+                                        <img class="auto_images" src="./images/mag_sq_1.jpg">
+                                    </div>
+                                    <div class="auto_slides auto_fade">
+                                        <img class="auto_images" src="./images/mag_sq_2.jpg">
+                                    </div>
+                                </div class="autoslides_container">
+                                <div>
+                                    <span class="auto_dots" style="width:0%; height: 0%;"></span>
+                                    <!-- <span class="auto_dots"></span> -->
+                                    <!-- <span class="auto_dots"></span> -->
+                                    <!-- <span class="auto_dots"></span> -->
+                                    <!-- <span class="auto_dots"></span> -->
                                 </div>
-                                <div class="auto_slides auto_fade">
-                                    <img class="auto_images" src="20211104_165337_arctic.jpg">
-                                </div> -->
-                                <!-- <div class="auto_slides auto_fade">
-                                    <img class="auto_images" src="mag_sq_1.jpg">
-                                </div>
-                                <div class="auto_slides auto_fade">
-                                    <img class="auto_images" src="mag_sq_2.jpg">
-                                </div>
-                                <div class="auto_slides auto_fade">
-                                    <img class="auto_images" src="mag_sq_3.jpg">
-                                </div> -->
-                                <!-- <div class="auto_slides auto_fade">
-                                    <img class="auto_images" src="helmet.gif" style="animation-duration: 20s;">
-                                </div> -->
-                                <div class="auto_slides auto_fade">
-                                    <video class="auto_images" autoplay loop muted style="width: 100%; height: 100%;">
-                                        <source src="./videos/helmet_vid.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-                                <!-- <div class="auto_slides auto_fade">
-                                    <video class="auto_images" muted style="width: 100%; height: 100%;">
-                                        <source src="helmet_vid.mp4" type="video/mp4" />
-                                    </video>
-                                </div> -->
-                            </div class="autoslides_container">
+                            </div> <br>
+                        </div class="autoslides_container_outer">
+                    </section>
 
-                            <div style="text-align:center;">
-                                <span class="auto_dots"></span>
-                                <!-- <span class="auto_dots"></span> -->
-                                <!-- <span class="auto_dots"></span> -->
-                                <!-- <span class="auto_dots"></span> -->
-                                <!-- <span class="auto_dots"></span> -->
-                            </div style="text-align:center;">
 
-                        </div> <br>
-
-                    </div class="flex_row autoslides_container_outer">
-
-                    <h1 class="narrow_mobile"> &nbsp; : : I like <span class="glow">UX/UI</span> adventures : :
+                    <h1 class="typewriter_area" style="margin: 0px 0px 0px 7px; width: 500px;">
+                        I am Magda
                     </h1>
-                    <br>
 
-                </div class="i_am_magda_1" class="clearfix">
 
-            </div class="i_am_magda_1_background">
+                    <section style="margin: 0; width: 500px;">
+                        <!-- INTRODUCTION to a squirreloid person -->
+                        <p class="larger_font" style="margin: 10px 0px 10px 7px; line-height: 2.3rem;">
+                            I design <span class="glow">UX/UI</span> : : &lt;code&gt; : : interact <br>
+                            and utilize my affection for all things <br>
+                            visual, functional and interaction-related. <br>
+                        </p>
+                        <!-- accordion -->
+                        <button class="accordion" style="color: rgb(228, 228, 228); width: 410px;">
+                            Privately I'm a 70% human / 30% squirrel who ...</span>
+                        </button>
+                        <div class="panel" style=" width: 410px;">
+                            <ul> ... enjoys ...
+                                <li> dark sense of humour, Sci-Fi, </li>
+                                <li> interacting with fellow non/human beings,</li>
+                                <li> outdoor adventures, abandoned places, deserts,</li>
+                                <li> water (despite being a very wobbly swimmer),</li>
+                                <li> creating jewellery and interior decorations,</li>
+                                <li> music (to find out more, book a day off).</li>
+                            </ul>
+                            <img class="squirrel_icon_flip_svg"
+                                style="width: 100px; margin: 5px 0px 20px 270px; display: flex; align-content: flex-end;"
+                                src="./icons/wiorka_02.svg" ; alt=" an icon showing a squirrel">
+                            </img>
+                        </div>
+                    </section>
+
+
+                </article>
+
+
+
+
+                <article style="width:600px; height:700px; margin: 0;">
+                    <!-- <div class="dot_anime_01">
+                        <img src="./images/mag_sq_1.jpg" alt="kropeczka_01">
+                    </div>  -->
+                    <div class="dot_anime_01">
+                        <p class="glow">UX/UI</p>
+                    </div>
+                    <div class="dot_anime_02">
+                        <p>code</p>
+                    </div>
+                    <div class="dot_anime_03">
+                        <p>interact</p>
+                    </div>
+                    <div class="dot_anime_04">
+                        <p>interact</p>
+                    </div>
+                </article>
+                <article style="width:600px; height:700px; margin: 0; margin-left: -700px; margin-top: -200px;">
+                    <div class="dot_anime_05a">
+                        <p> </p>
+                    </div>
+                    <div class="dot_anime_05b">
+                        <p>user </p>
+                    </div>
+                    <div class="dot_anime_06">
+                        <p>empathy</p>
+                    </div>
+                    <div class="dot_anime_07">
+                        <p>design <br>thinking</p>
+                    </div>
+                    <div class="dot_anime_08">
+                        <p>magda</p>
+                    </div>
+                </article>
+
+
+            </div>
+
 
 
 
@@ -151,13 +205,13 @@
 
 
         <div class="buttons_row">
-            <a href="#about-link">
+            <a href="#design-experience-link">
                 <button class="button_r_landing"> ▼ </button>
             </a>
         </div>
 
 
-    </header>
+    </header class="screen1">
 
 
 
@@ -173,128 +227,34 @@
 
 
 
-    <!-- SCREEN 02 >  about -------------------------------------------------------------------------------->
+
+    <!-- ****************************************************************************************** -->
+    <!-- SCREEN 02 > UX/UI edu skills projects experience  -->
+    <!-- ****************************************************************************************** -->
+
+
+
+
     <div class="screen2">
 
-        <!-- anchor contact and intro -->
-        <div class="anchor" id="about-link"></div>
+        <!-- anchor screen 02 :: DESIGN -->
+        <div class="anchor" id="design-experience-link"></div>
+
+        <div class="screen_title">
+            <h1>UX/UI + other design</h1>
+        </div>
+
 
 
 
         <div class="screen_flex_layout2">
 
-            <aside class="clearfix">
-                <!-- <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon_flip"></img> -->
-                <img src="./icons/wiorka_03.svg" alt="an icon showing a squirrel" class="squirrel_icon_flip_svg"></img>
-            </aside>
 
-
-            <main class="clearfix">
-
-                <!-- INTRODUCTION to a squirreloid person -->
-                <h2> about : : </h2> <br>
-                <h3>I design <span class=" glow" style="color: rgb(194, 165, 181)">UX/UI</span> : : &lt;code&gt; : :
-                    interact
-                </h3>
-
-                <article>
-                    <section>
-                        <p class="larger_font">
-                            <!-- : : settle in the digital production world : : <br> -->
-                            <!-- : : keep thinking <span class=" glow" style="color: rgb(194, 165, 181)"> the design way </span>: : <br> -->
-                            and utilize my affection for all things <br> visual, functional and interaction-related.
-                        </p> <br>
-                        <button class="accordion" style="color: rgb(228, 228, 228)">
-                            <span class="larger_font"> Privately I am a 70% human / 30% squirrel who...</span>
-                        </button>
-                        <div class="panel">
-                            <ul> ... enjoys ...
-                                <li> dark sense of humour, Sci-Fi </li>
-                                <li> interacting with fellow non/human beings</li>
-                                <li> outdoor adventures / abandoned places / deserts</li>
-                                <li> water (despite being a very wobbly swimmer)</li>
-                                <li> creating > jewellery and interior decorations</li>
-                                <li> music > to find out more, book a day off ...</li>
-                            </ul>
-                        </div>
-                    </section>
-                </article>
-
-            </main>
-
-        </div class="screen_flex_layout2">
-
-
-
-
-
-        <div class="buttons_row">
-            <a href="#">
-                <button class="button_l"> ▲ </button>
-            </a>
-            <div class="button_middle_space"></div>
-            <a href="#design-experience-link">
-                <button class="button_r"> ▼ </button>
-            </a>
-        </div>
-
-
-
-    </div class="screen2">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- screen 03 DESIGN ------------------------------------------------------------------>
-    <div class="screen3">
-
-        <!-- anchor screen 03 :: DESIGN -->
-        <div class="anchor" id="design-experience-link"></div>
-
-        <div class="screen_flex_layout3">
 
             <aside class="clearfix">
 
                 <!-- <h2>design &nbsp; > &nbsp; education</h2> <br> <br> -->
-                <h2> design education </h2> <br>
-
+                <h2> education /skills /tools </h2> <br> <br>
                 <section>
                     <h3 style="padding-bottom: 1%;"><span class="glow">UX/UI </span> and graphic design
                         <a class="text_link"
@@ -303,13 +263,11 @@
                             certificate
                         </a>
                     </h3>
-
                     <p>
                         <!-- <a class="text_link" href="https://talentgarden.org/en/about/" target="_blank"
                             rel="noopener noreferrer">
                             Talent Garden Copenhagen [TAG]
                         </a> -->
-
                         <a class="text_link" href="https://kea.dk/en/" target="_blank" rel="noopener noreferrer">
                             Copenhagen School of Design and Technology [KEA]
                         </a>
@@ -320,16 +278,25 @@
                             HackYourFuture Copenhagen coding school [HYF]
                         </a>
                     </p> -->
-                </section>
-                <br>
-
-                <br>
-
-
-
+                    <p>user research, sitemaps, wireframes, moodboards,<br>
+                        visual design, interactive prototyping, testing
+                    </p>
+                    <div class="skills_icon_line">
+                        <!-- git and front end -->
+                        <img src="./icons/7564187_figma_logo_brand_icon.png" alt="Figma icon">
+                        <img src="./icons/icon_ps.png" alt="PhotoShop icon">
+                        <img src="./icons/ic_whimsical.png" alt="Whimsical icon">
+                        <img src="./icons/ic_canva.png" alt="Canva icon">
+                        <img src="./icons/mural-icon.png" alt="Mural icon">
+                        <img src="./icons/miro-2.svg" alt="Miro icon">
+                        <!-- <img src="./icons/ic_pencil.png" alt="pencil icon"> -->
+                    </div class="skills_icon_line">
+                    <p>Figma, Photoshop, Whimsical, Canva,<br>
+                        MURAL, Miro, crayons + paper</p>
+                </section> <br> <br>
 
                 <section>
-                    <h3> jewellery design /silversmithing </h3>
+                    <h3> jewellery design and silversmithing </h3>
                     <ul>
                         <li>
                             <a class="text_link" href="https://www.pomorskaizba.pl/" target="_blank"
@@ -337,145 +304,216 @@
                                 The Assoc. of Pomeranian Craftsmen, Gdansk, Poland
                             </a>
                         </li>
-                        <!-- <li> hallmark below </li><br>
-                        <li>
-                            <img class="hallmark" src="hallmark2.png" alt="some icon with hallmark">
-                        </li> -->
+                        <li>inventing, designing, manufacturing my own projects</li>
+                        <li>wax sculpting, precious metals, stone setting </li>
+                        <!-- <li> hallmark below </li>
+                        <li> <img class="hallmark" src="./images/hallmark2.png" alt="some icon with hallmark"> </li> -->
                     </ul>
-                </section> <br>
+                </section> <br> <br>
 
                 <section>
                     <h3>photography technology </h3>
-                    <p>learned hands-on at photo studios</p>
+                    <ul>
+                        <li>graphic design (collages, posters) restoring</li>
+                        <li>developing, color processing, tech control</li>
+                        <li>C-41, b&w, 135, medium format, APS</li>
+                        <li>photoshoots, passport photos</li>
+                    </ul>
                 </section>
-
                 <!-- <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"></img> -->
 
             </aside>
 
 
 
-
             <main class="clearfix">
 
                 <article>
-
-                    <h2>
-                        <span class="glow, XXL_font"> UX/UI </span> projects
-                    </h2> <br>
+                    <h2> projects /experience </h2> <br> <br>
 
                     <section>
-                        <p>SKILLS : : user research, sitemapping, wireframing, moodboards, <br> visual and graphic
-                            design, interactive hi-res prototyping, testing
+                        <h3>restaurant website redesign / rebranding</h3> <br>
+                        <p>
+                            A full redo of the company's website using the double diamond principles and user-centered
+                            design while iterating and testing multiple times: see the overview screenshots of my Figma
+                            file. [Due to copyright policy the high-res link to project and the
+                            research data will only be available on demand.]
+                        </p> <br>
+                        <p>
+                            Figma SCREENSHOTS:
+                        </p> <br>
+                        <div class="lightbox">
+                            <!-- 1) SMALL PICTURES befor opening -->
+                            <div class="smallPicDiv_row">
+                                <div class="smallPicDiv">
+                                    <img class="smallPic" src="./images/slidegl01.jpg"
+                                        onclick="openSlide_lightbox();currentSlide(1)">
+                                </div>
+                                <div class="smallPicDiv">
+                                    <img class="smallPic" src="./images/slidegl02.jpg"
+                                        onclick="openSlide_lightbox();currentSlide(2)">
+                                </div>
+                                <div class="smallPicDiv">
+                                    <img class="smallPic" src="./images/slidegl03.jpg"
+                                        onclick="openSlide_lightbox();currentSlide(3)">
+                                </div>
+                                <div class="smallPicDiv">
+                                    <img class="smallPic" src="./images/slidegl04.jpg"
+                                        onclick="openSlide_lightbox();currentSlide(4)">
+                                </div>
+                                <div class="smallPicDiv">
+                                    <img class="smallPic" src="./images/slidegl05.jpg"
+                                        onclick="openSlide_lightbox();currentSlide(5)">
+                                </div>
+                            </div>
+                            <!-- 2) FULL OVERLAY #333352 -->
+                            <div id="overlay_lightbox_full_id" class="overlay_lightbox_full">
+                                <!-- 2a -->
+                                <span class="closing_XXX" onclick="closeSlide_lightbox()">&times;</span>
+                                <!-- 2b -->
+                                <div class="overlay_lightbox_content">
+                                    <div class="slideDivs_div">
+                                        <div class="slideDiv">
+                                            <div class="slideNumTxt">1 / 5</div>
+                                            <img class="aSingleSlide" src="./images/slidegl01.jpg">
+                                        </div>
+                                        <div class="slideDiv">
+                                            <div class="slideNumTxt">2 / 5</div>
+                                            <img class="aSingleSlide" src="./images/slidegl02.jpg">
+                                        </div>
+                                        <div class="slideDiv">
+                                            <div class="slideNumTxt">3 / 5</div>
+                                            <img class="aSingleSlide" src="./images/slidegl03.jpg">
+                                        </div>
+                                        <div class="slideDiv">
+                                            <div class="slideNumTxt">4 / 5</div>
+                                            <img class="aSingleSlide" src="./images/slidegl04.jpg">
+                                        </div>
+                                        <div class="slideDiv">
+                                            <div class="slideNumTxt">5 / 5</div>
+                                            <img class="aSingleSlide" src="./images/slidegl05.jpg">
+                                        </div>
+                                        <!-- alt property used as description !!! -->
+                                        <div class="slideDescrDiv">
+                                            <p id="slideDescr"></p>
+                                        </div>
+                                    </div>
+                                    <!-- active/inactive dost as pictures -->
+                                    <div class="smallPicDotDivs_div">
+                                        <div class="smallPicDotDiv">
+                                            <img class="smallPicDot" onclick="currentSlide(1) 
+                                            " src="./images/slidegl01.jpg" alt="alt_pic1">
+                                        </div>
+                                        <div class="smallPicDotDiv">
+                                            <img class="smallPicDot" onclick="currentSlide(2) 
+                                            " src="./images/slidegl02.jpg" alt="alt_pic2">
+                                        </div>
+                                        <div class="smallPicDotDiv">
+                                            <img class="smallPicDot" onclick="currentSlide(3) 
+                                            " src="./images/slidegl03.jpg" alt="alt_pic2">
+                                        </div>
+                                        <div class="smallPicDotDiv">
+                                            <img class="smallPicDot" onclick="currentSlide(4) 
+                                            " src="./images/slidegl04.jpg" alt="alt_pic4">
+                                        </div>
+                                        <div class="smallPicDotDiv">
+                                            <img class="smallPicDot" onclick="currentSlide(4) 
+                                            " src="./images/slidegl05.jpg" alt="alt_pic4">
+                                        </div>
+                                    </div class="smallPicDotDivs_div">
+                                </div class="overlay_lightbox_content">
+                                <!-- 2c previous/next buttons -->
+                                <div class="divPrevNext">
+                                    <a class="prevSlide_lightbox" onclick="nextSlide_lightboxPlease(-1)">&#10094;</a>
+                                    <a class="nextSlide_lightbox" onclick="nextSlide_lightboxPlease(1)">&#10095;</a>
+                                </div>
+                            </div id="overlay_lightbox_full_id" class="overlay_lightbox_full">
+
+                        </div class="lightbox">
+                    </section> <br> <br>
+
+
+                    <section>
+                        <h3>other UX/UI project in the making</h3> <br>
+                        <p>
+                            I will be glad to show and discuss my other projects, eg. certain pain points I have spotted
+                            in the M3 copenhagen circle line, the UX flow of my building or the rationale and process
+                            behind designing THIS site :)
                         </p>
+                        <br> <br>
                     </section>
-                    <br>
-
-                    <section>
-                        <p>TOOLS : : Figma, Photoshop, Whimsical, Canva, MURAL, Miro, crayons + paper
-                        </p>
-                        <div class="skills_icon_line">
-                            <!-- git and front end -->
-                            <img src="./icons/7564187_figma_logo_brand_icon.png" alt="Figma icon">
-                            <img src="./icons/icon_ps.png" alt="PhotoShop icon">
-                            <img src="./icons/ic_whimsical.png" alt="Whimsical icon">
-                            <img src="./icons/ic_canva.png" alt="Canva icon">
-                            <img src="./icons/mural-icon.png" alt="Mural icon">
-                            <img src="./icons/miro-2.svg" alt="Miro icon">
-                            <!-- <img src="./icons/ic_pencil.png" alt="pencil icon"> -->
-                        </div class="skills_icon_line"> <br>
-                    </section>
-
-                    <!-- UX/UI :: what I've done > hide/show -->
-                    <section>
-                        demand.
-                        <button class="accordion">
-                            <span class="glow"> UX/UI</span> design &nbsp; : : &nbsp; restaurant website redesign /
-                            rebranding
-                        </button>
-                        <!-- UX/UI :: what I've done > hide/show -->
-                        <div class="panel"> <br>
-                            <ul>
-                                <li>
-                                    <p>
-                                        Due to copyright policy the link to the full project in Figma and the
-                                        research
-                                        data will only be available on </p>
-                                </li>
-                                <li>
-                                    <img class="non_hover_bars" src="./images/image 64.png" alt="Figma screenshot 64">
-                                </li>
-                                <li>
-                                    <img class="non_hover_bars" src="./images/image 65.png" alt="Figma screenshot 65">
-                                </li>
-                                <li>
-                                    <img class="non_hover_bars" src="./images/image 66.png" alt="Figma screenshot 66">
-                                </li>
-                            </ul> <br>
-
-                        </div>
-                    </section>
-
-
 
 
                     <!-- JEWELLERY :: what I've done > hide/show -->
                     <section>
                         <button class="accordion">
-                            other design &nbsp; : : &nbsp; jewellery
+                            other design &nbsp; : : &nbsp; my jewellery projects
                         </button>
                         <div class="panel">
-                            <ul>
-                                <li>inventing /designing /manufacturing my own projects</li>
-                                <li>wax sculpting /precious metals /stone setting </li> <br>
-                                <li>
-                                    <div style="display: inline-flex; float: left;">
-                                        <section>
-                                            <!-- JEWELLERY SLIDES :: sneak peek -->
-                                            <div class="slideshow-container">
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_antring1.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_antring2.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_celticrings2.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_flowers1.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_flowers2.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_flowers3.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_icering1.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_icering2.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_kitty2.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_radioactivering1.jpg">
-                                                </div>
-                                                <div class="mySlides1">
-                                                    <img src="./images/img1_radioactivering2.jpg">
-                                                </div>
-                                                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                                                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                                            </div> <br>
-                                        </section>
+                            <div class="flex_row" style="padding: .9rem 0">
+                                <!-- JEWELLERY SLIDES :: sneak peek -->
+                                <div class="slideshow-container">
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_antring1.jpg">
                                     </div>
-                                    <div class="clearing_div"> </div>
-                                </li>
-                            </ul>
-                        </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_antring2.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_celticrings2.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_flowers1.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_flowers2.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_flowers3.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_icering1.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_icering2.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_kitty2.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_radioactivering1.jpg">
+                                    </div>
+                                    <div class="mySlides1">
+                                        <img src="./images/img1_radioactivering2.jpg">
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                                </div>
+                                <!-- <div class="clearing_div"> </div> -->
+                                <div class="mySlides1_dot_descr">
+                                    <p>
+                                        Here are <br>
+                                        some of the projects <br>
+                                        I have designed <br>
+                                        and hand crafted.
+                                    </p>
+                                </div>
+                                <div class="mySlides1_dot_descr">
+                                    <p>
+                                        My sweet spot <br>
+                                        has always been <br>
+                                        statement rings <br>
+                                        and mixed media <br>
+                                        techniques.
+                                    </p>
+                                </div>
+                            </div class="flex_row">
+                        </div class="panel">
                     </section>
+
+
+
 
 
                     <!-- PHOTO :: what I've done > hide/show -->
@@ -485,18 +523,21 @@
                         </button>
                         <div class="panel">
                             <ul>
-                                <li>photo studios in London [Soho] / Edinburgh <br>
+                                <li>photo studios and labs in
                                     <a class="text_link" href="https://www.snappysnaps.co.uk/soho/" target="_blank"
                                         rel="noopener noreferrer">
-                                        Soho Photo Lab</a>
+                                        London [Soho]</a> and
                                     <a class="text_link" href="https://www.yelp.com/biz/snappy-snaps-edinburgh"
                                         target="_blank" rel="noopener noreferrer">
-                                        Edinburgh Photo Lab</a>
+                                        Edinburgh</a>
+                                </li> <br>
+                                <li>
+                                    I have done photoshoots and graphic design (collages, posters, retouch, photo
+                                    restoring) while
+                                    working for photo studios. I have also developed and digitally processed various
+                                    film formats (C-41, b&w, 135, medium format, APS). Other responsibilities: technical
+                                    and quality control of the products and the machines as well as customer care.
                                 </li>
-                                <li>developing /processing C-41 /b&w /135 /medium format /APSs</li>
-                                <li>Photoshop /restoring photographs /collages /posters</li>
-                                <li>photoshoots /passport photographs</li>
-                                <li>Noritsu machines maintenance</li>
                             </ul>
                         </div>
                     </section>
@@ -510,7 +551,7 @@
 
 
         <div class="buttons_row">
-            <a href="#about-link">
+            <a href="#">
                 <button class="button_l"> ▲ </button>
             </a>
             <div class="button_middle_space"></div>
@@ -536,17 +577,21 @@
 
 
 
-    <!-- screen 04 CODING ----------------------------------------------------------------------->
-    <div class="screen4">
+    <!-- screen 03 CODING ----------------------------------------------------------------------->
+    <div class="screen3">
 
-        <!-- anchor screen 04 :: CODING -->
+        <!-- anchor screen 03 :: CODING -->
         <div class="anchor" id="coding-experience-link"></div>
 
-        <div class="screen_flex_layout4" id="code_screen">
+        <div class="screen_title">
+            <h1>coding</h1>
+        </div>
+
+        <div class="screen_flex_layout3" id="code_screen">
 
             <aside class="clearfix">
 
-                <h2> coding education</h2> <br>
+                <h2> education /skills</h2> <br>
                 <h3> fullstack web development </h3>
                 <section>
                     <p>
@@ -605,19 +650,14 @@
 
                 <article>
 
-                    <h2> <span class="XXL_font"> CODING </span> projects </h2> <br>
+                    <h2> projects </h2> <br> <br>
 
-                    <p>
-                        <a class="text_link" href="https://github.com/mag-da-lenka" target="_blank"
-                            rel="noopener noreferrer">
-                            my GitHub
-                        </a>
-                    </p>
-                    <br>
-
+                    &nbsp; <a class="text_link" href="https://github.com/mag-da-lenka" target="_blank"
+                        rel="noopener noreferrer">
+                        my GitHub
+                    </a> <br> <br>
 
                     <!-- NON UX/UI coding stuff :: what I've done > hide/show -->
-
                     <section>
                         <button class="accordion">
                             giphy searcher app
@@ -639,10 +679,9 @@
                             <br>
                         </div>
                     </section>
-
                     <section>
                         <button class="accordion">
-                            a drawing app
+                            a drawing app made with JS classes
                         </button>
                         <div class="panel">
                             <br>
@@ -661,10 +700,9 @@
                             <br>
                         </div>
                     </section>
-
                     <section>
                         <button class="accordion">
-                            "fastest presser in the realm" game
+                            "fastest presser in the realm" clicking game
                         </button>
                         <div class="panel">
                             <br>
@@ -683,11 +721,9 @@
                             <br>
                         </div>
                     </section>
-
-
                     <section>
                         <button class="accordion">
-                            an online form with radio buttons and checkboxes
+                            an online form in tabs
                         </button>
                         <div class="panel">
                             <br>
@@ -706,7 +742,6 @@
                             <br>
                         </div>
                     </section>
-
                     <section>
                         <button class="accordion">
                             kraftige_sammen Covid-19 hackathon app
@@ -738,23 +773,24 @@
                             <br>
                         </div>
                     </section>
-
-
-
-                    <!-- coding videos -->
-                    <ul>
-                        </li>
-                        <li> videos <br>
-                            <a class="text_link" href="https://www.youtube.com/channel/UCiu_xkQSjWBiv2uD4ujUfqA"
-                                style="border-style: none;" target="_blank" rel="noopener noreferrer">
-                                <img class="link_bars" src="./images/img_yt_vid_bar.png"
-                                    alt="a screenshot of my YouTube videos">
-                            </a>
-                        </li>
-                    </ul> <br>
-
-
-
+                    <section>
+                        <button class="accordion">
+                            videos
+                        </button>
+                        <div class="panel">
+                            <br>
+                            <ul>
+                                <li>
+                                    <a class="text_link" href="https://www.youtube.com/channel/UCiu_xkQSjWBiv2uD4ujUfqA"
+                                        style="border-style: none;" target="_blank" rel="noopener noreferrer">
+                                        <img class="link_bars" src="./images/img_yt_vid_bar.png"
+                                            alt="a screenshot of my YouTube videos">
+                                    </a>
+                                </li>
+                            </ul>
+                            <br>
+                        </div>
+                    </section>
                     <!-- Slideshow 2 COMING SOON coding screenshots -->
                     <div style="display: inline-flex; float: left; display: none;">
                         <section>
@@ -774,7 +810,6 @@
                         </section>
                     </div>
                     <div class="clearing_div"></div>
-
 
                 </article>
 
@@ -804,20 +839,24 @@
 
 
 
-    <!-- screen 05 HUMAN INTERACTION -->
-    <div class="screen5">
+    <!-- screen 04 HUMAN INTERACTION -->
+    <div class="screen4">
 
         <!-- anchor screen 03 :: HUMAN INTERACTION -->
         <div class="anchor" id="interaction-experience-link"></div>
 
-        <div class="screen_flex_layout5">
+        <div class="screen_title">
+            <h1>interaction</h1>
+        </div>
+
+        <div class="screen_flex_layout4">
 
             <aside class="clearfix">
 
-                <h2> other education</h2> <br>
+                <h2> other education /skills</h2> <br> <br>
 
                 <section>
-                    <h3> MA &nbsp; : : British literature and teaching <br /> English as a second language</h3>
+                    <h3> MA: British literature and teaching <br /> English as a second language</h3>
                     <a class="text_link" href="https://en.ug.edu.pl/" target="_blank" rel="noopener noreferrer">
                         University of Gdansk, Poland
                     </a>
@@ -826,6 +865,17 @@
                         of “Integration” in the Poetry of Philip Larkin’
                     </li> -->
                 </section> <br>
+
+                <section>
+                    <p>
+                        SKILLS: teaching English as a second language
+                    </p>
+                    <p>
+                        English course curriculum design, presenting
+                    </p>
+                </section>
+                <br> <br>
+
 
 
                 <section>
@@ -841,14 +891,21 @@
 
                 <article>
 
-                    <h2> human <span class="XXL_font">interaction</span> </h2> <br>
+                    <h2> human interaction experience </h2> <br> <br>
 
                     <section>
-                        <ul>
-                            <li># patience / diplomacy / smiiile </li>
-                            <li># prioritising / decent stress management</li>
-                            <li># multicultural work environment sensitivity</li>
-                        </ul>
+                        <p>
+                            15+ years as a TEACHER OF ENGLISH who DESIGNS COURSES based on students’ individual needs
+                            for
+                            optimal learner exerience (yes, LX!) and results. LXD is just a version of UXD which
+                            requires
+                            the same amount of empathy and user- or learner-centered thinking.
+                        </p> <br>
+                        <p>
+                            The jobs mentioned below helped me to learn and practice a multitude of interaction SOFT
+                            SKILLS through customer service: empathy, diplomacy, prioritising, decent stress
+                            management, multicultural work environment sensitivity. <br> <br>
+                        </p>
                     </section>
 
                     <!-- TEACHING :: what I've done > hide/show -->
@@ -858,10 +915,17 @@
                         </button>
                         <div class="panel">
                             <ul>
-                                <li>Edinburgh /London /Tczew(PL)
+                                <li>
+                                    Poland: state/private schools and my language studio
                                     <a class="text_link" href="http://www.magnes.tczew.pl/" target="_blank"
                                         rel="noopener noreferrer">
-                                        magnes.tczew.pl</a>
+                                        magnes.tczew.pl</a> est. 2010,
+                                </li>
+                                <li>
+                                    Scotland: ESOL tutor for the City of Edinburgh Council,
+                                </li>
+                                <li>
+                                    Denmark: volunteering as a teacher of English for my coding school.
                                 </li>
                             </ul>
                         </div>
@@ -895,19 +959,18 @@
                     <!-- PHOTO :: what I've done > hide/show -->
                     <section>
                         <button class="accordion">
-                            photo technician
+                            customer care as photo technician
                         </button>
                         <div class="panel">
                             <ul>
-                                <li>photo studios in Edinburgh /London</li>
-                                <li>
+                                <li>photo studios and labs in
                                     <a class="text_link" href="https://www.snappysnaps.co.uk/soho/" target="_blank"
                                         rel="noopener noreferrer">
-                                        Soho Photo Lab</a>
+                                        London [Soho]</a> and
                                     <a class="text_link" href="https://www.yelp.com/biz/snappy-snaps-edinburgh"
                                         target="_blank" rel="noopener noreferrer">
-                                        Edinburgh Photo Lab</a>
-                                </li>
+                                        Edinburgh</a>
+                                </li> <br>
                             </ul>
                         </div>
                     </section>
@@ -950,6 +1013,10 @@
 
         <!-- anchor contact  -->
         <div class="anchor" id="contact-link"></div>
+
+        <div class="screen_title">
+            <h1>contact</h1>
+        </div>
 
         <div class="screen_flex_layout6">
 
@@ -1118,11 +1185,10 @@
       <a href="#">
         <button class="button_r"> top </button>
       </a>
-    </div> -->
+      </div> -->
 
 
     </footer>
-
 
 
 

@@ -1,0 +1,217 @@
+
+/******************************************************************************/
+/* TYPEWRITER CSS  */
+
+.typewriter_area {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .0em;
+  animation: typing 3.1s steps(66, start);
+}
+
+@keyframes typing {
+  from {    width: 0  }
+  to   {    width: 100%  }
+}
+
+
+/******************************************************************************/
+/* blinky blinky */
+
+.glow {
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 0.666s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 0.05vh rgb(194, 165, 181),
+      0 0 0.10vh rgb(194, 165, 181),
+      0 0 0.15vh rgb(194, 165, 181),
+      0 0 0.20vh rgb(209, 203, 207),
+      0 0 0.25vh rgb(209, 203, 207),
+      0 0 0.30vh rgb(209, 203, 207)
+  }
+  to {
+    text-shadow:
+      0 0 0.05vh rgb(146, 163, 161),
+      0 0 0.10vh rgb(146, 163, 161),
+      0 0 0.15vh rgb(146, 163, 161),
+      0 0 0.20vh rgb(59, 100, 95),
+      0 0 0.25vh rgb(59, 100, 95)
+  }
+}
+
+
+/******************************************************************************/
+/* squirrels flip */
+
+.squirrel_icon_flip_svg {
+  margin-top: 1vh;
+  margin-right: 1vh;
+  color: rgb(228, 228, 228);
+  width: 8vw;
+  opacity: 60%;
+  animation: squirrel_flip 12s infinite;
+}
+@keyframes squirrel_flip {  50% {
+    transform: rotate(360deg);  }
+}
+/* if PNG */
+/* .squirrel_icon_flip {
+  margin-top: 5vh;
+  width: 10vw;
+  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
+  opacity: 30%; 
+  animation: squirrel_flip 5s infinite; 
+} @keyframes squirrel_flip {  100% {transform: rotate(360deg);}}  */
+
+
+/******************************************************************************/
+/* squirrels jump */
+
+
+.squirrel_icon_jump_svg {
+  position: relative;
+  margin-top: 8vh;
+  padding: 0;
+  width: 10vw;
+  color: rgb(228, 228, 228);
+  width: 8vw;
+  opacity: 60%;
+  animation: squirrel_jump 0.666s infinite;
+}
+@keyframes squirrel_jump {
+  000% {    bottom: -020px;  }
+  080% {    bottom: +100px;  }
+  100% {    bottom: -020px;  }
+}
+
+/* if PNG */
+/* .squirrel_icon_jump {
+  position: relative;
+  margin-top: 8vh;
+  padding: 0;
+  width: 10vw;
+  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
+  opacity: 30%; 
+  animation: squirrel_jump 0.666s infinite;   
+} @keyframes squirrel_jump {
+  000%  {bottom:  -020px;}
+  080%  {bottom:  +100px;}
+  100%  {bottom:  -020px;}
+} */
+
+/* @keyframes squirrel_jump { 100% { */
+/* transform: translateX(20px);  */
+/* transform: translateY(20px);  */
+/* transform: rotateZ(9deg);   */
+/* rotate, scale, move (translate), and skew elements */
+/* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+/* transform: matrix(2, 0, 0, 0, 0, 0);} } */
+
+
+
+/******************************************************************************/
+/* DOTS FOR THE MAIN SCREEN */
+
+.dot_anime_01, .dot_anime_02, .dot_anime_03, .dot_anime_04,
+.dot_anime_05a, .dot_anime_05b, .dot_anime_06, .dot_anime_07, .dot_anime_08 {
+  filter: opacity(90%);
+  /* background-image: url("./images/mag_sq_1.jpg");  */
+  margin: 0; padding: 0;
+  width: 100px;   height: 100px;
+  border-radius: 50%;
+  position: relative; 
+  transition: 1000ms;
+  /* animation-delay: 10s;  */
+  display: flex;
+  align-content: center;
+}
+
+.dot_anime_01  {animation: dot_01  06.666s infinite; }
+.dot_anime_02  {animation: dot_02  07.666s infinite; }
+.dot_anime_03  {animation: dot_03  05.666s infinite; }
+.dot_anime_04  {animation: dot_04  05.666s infinite; }
+.dot_anime_05a {animation: dot_05a 4.666s; }
+.dot_anime_05b {animation: dot_05b 4.666s infinite; width: 150px; height: 150px; }
+.dot_anime_06 {animation: dot_06 05.666s infinite; }
+.dot_anime_07 {animation: dot_07 07.666s infinite; }
+.dot_anime_08 {animation: dot_08 10.000s infinite; }
+
+@keyframes dot_01 { /*UX/UI*/
+  000% {left:+000px; top:+000px; background-color:#33335254; }
+  025% {left:+400px; top:+000px; background-color:#33335296; }
+  050% {left:+400px; top:+200px; background-color:#333352c0; }
+  075% {left:+000px; top:+200px; background-color:#3333522a; }
+  100% {left:+000px; top:+000px; background-color:#33335254; }
+} 
+@keyframes dot_02 { /*code*/
+  000% {left:+000px; top:-100px; background-color:#33335254; }
+  025% {left:+400px; top:+000px; background-color:#33335296; }
+  050% {left:+400px; top:+200px; background-color:#333352c0; }
+  075% {left:+000px; top:+200px; background-color:#3333522a; }
+  100% {left:+000px; top:-100px; background-color:#33335254; }
+} 
+@keyframes dot_03 { /*interact1*/
+  0%   {left:300px; top:-100px; background-color:#33335254; }
+  25%  {left:400px; top:000px; background-color:#33335296; }
+  50%  {left:400px; top:100px; background-color:#a571a54b; }
+  75%  {left:000px; top:100px; background-color:#9469946b; }
+  100% {left:300px; top:-100px; background-color:#33335254; }
+}
+@keyframes dot_04 { /*interact2*/
+  0%   {left:400px; top:-100px; background-color:#33335254; }
+  25%  {left:400px; top:000px; background-color:#33335296; }
+  50%  {left:400px; top:070px; background-color:#cf78cf3a; }
+  75%  {left:000px; top:070px; background-color:#805e806b; }
+  100% {left:400px; top:-100px; background-color:#33335254; }
+} 
+
+@keyframes dot_05a { /*user1*/
+  0%   {left:+000px; top:300px; background-color:#478f891f; }
+  40%  {left:+200px; top:300px; background-color:#33335296; }
+  50%  {left:+200px; top:300px; background-color:#4386813a; }
+  60%  {left:+200px; top:300px; background-color:#3333522a; }
+  100% {left:+200px; top:300px; background-color:#478f891f; }
+}
+@keyframes dot_05b { /*user2*/
+  0%   {left:+200px; top:300px; background-color:#478f891f; }
+  40%  {left:+200px; top:300px; background-color:#33335296; }
+  50%  {left:+200px; top:300px; background-color:#4386813a; }
+  60%  {left:+200px; top:300px; background-color:#3333522a; }
+  100% {left:+200px; top:300px; background-color:#478f891f; }
+}
+
+@keyframes dot_06 { /*empathy*/
+  0%   {left:000px; top:000px; background-color:#33335254; }
+  25%  {left:000px; top:000px; background-color:#33335296; }
+  50%  {left:000px; top:000px; background-color:#333352c0; }
+  75%  {left:000px; top:000px; background-color:#3333522a; }
+  100% {left:000px; top:000px; background-color:#33335254; }
+}
+@keyframes dot_07 { /*design thinking*/ 
+  0%   {left:000px; top:000px; background-color:#33335254; }
+  25%  {left:000px; top:000px; background-color:#33335296; }
+  50%  {left:000px; top:000px; background-color:#333352c0; }
+  75%  {left:000px; top:000px; background-color:#3333522a; }
+  100% {left:000px; top:000px; background-color:#33335254; }
+}
+@keyframes dot_08 { /*magda*/
+  0%   {left:400px; top:-200px; background-color:#2494851e; }
+  10%  {left:400px; top:-200px; background-color:#2494852c; }
+  20%  {left:400px; top:-100px; background-color:#24948554; }
+  30%  {left:400px; top:-000px; background-color: #24948554 }
+  40%  {left:100px; top:+100px; background-color: #24948554 }
+  50%  {left:100px; top:-100px; background-color:#33335254; }
+  60%  {left:100px; top:-200px; background-color:#24948554 }
+  80%  {left:100px; top:-150px; background-color:#24948554; }
+  90%  {left:100px; top:-150px; background-color:#24948534; }
+  100% {left:400px; top:-200px; background-color:#2494851e; }
+}
+
+
+

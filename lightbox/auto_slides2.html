@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox slideshow</title>
+    <link rel="stylesheet" href="auto_slides2.css">
+</head>
+
+
+
+<body>
+
+    <div class="lightbox">
+
+
+        <h2>LIGHTBOX (uniqNam)</h2>
+
+
+        <!-- 1) SMALL PICTURES befor opening -->
+        <div class="smallPicDiv_row">
+            <div class="smallPicDiv">
+                <img class="smallPic" src="img_nature.jpg" onclick="openSlide_lightbox();currentSlide(1)">
+            </div>
+            <div class="smallPicDiv">
+                <img class="smallPic" src="img_snow.jpg" onclick="openSlide_lightbox();currentSlide(2)">
+            </div>
+            <div class="smallPicDiv">
+                <img class="smallPic" src="img_mountains.jpg" onclick="openSlide_lightbox();currentSlide(3)">
+            </div>
+            <div class="smallPicDiv">
+                <img class="smallPic" src="img_lights.jpg" onclick="openSlide_lightbox();currentSlide(4)">
+            </div>
+        </div>
+
+
+        <!-- 2) FULL OVERLAY #333352 -->
+        <div id="overlay_lightbox_full_id" class="overlay_lightbox_full">
+            <!-- 2a -->
+            <span class="closing_XXX" onclick="closeSlide_lightbox()">&times;</span>
+            <!-- 2b -->
+            <div class="overlay_lightbox_content">
+                <div class="slideDivs_div">
+                    <div class="slideDiv">
+                        <div class="slideNumTxt">1 / 4</div>
+                        <img class="aSingleSlide" src="img_nature2.jpg">
+                    </div>
+                    <div class="slideDiv">
+                        <div class="slideNumTxt">2 / 4</div>
+                        <img class="aSingleSlide" src="img_snow2.jpg">
+                    </div>
+                    <div class="slideDiv">
+                        <div class="slideNumTxt">3 / 4</div>
+                        <img class="aSingleSlide" src="img_mountains2.jpg">
+                    </div>
+                    <div class="slideDiv">
+                        <div class="slideNumTxt">4 / 4</div>
+                        <img class="aSingleSlide" src="img_lights2.jpg">
+                    </div>
+                    <!-- alt property used as description !!! -->
+                    <div class="slideDescrDiv">
+                        <p id="slideDescr"></p>
+                    </div>
+                </div>
+                <!-- active/inactive dost as pictures -->
+                <div class="smallPicDotDivs_div">
+                    <div class="smallPicDotDiv">
+                        <img class="smallPicDot" onclick="currentSlide(1) 
+                        " src="img_nature2.jpg" alt="alt_pic1">
+                    </div>
+                    <div class="smallPicDotDiv">
+                        <img class="smallPicDot" onclick="currentSlide(2) 
+                        " src="img_snow2.jpg" alt="alt_pic2">
+                    </div>
+                    <div class="smallPicDotDiv">
+                        <img class="smallPicDot" onclick="currentSlide(3) 
+                        " src="img_mountains2.jpg" alt="alt_pic2">
+                    </div>
+                    <div class="smallPicDotDiv">
+                        <img class="smallPicDot" onclick="currentSlide(4) 
+                        " src="img_lights2.jpg" alt="alt_pic4">
+                    </div>
+                </div class="smallPicDotDivs_div">
+            </div class="overlay_lightbox_content">
+
+
+            <!-- 2c previous/next buttons -->
+            <div class="divPrevNext">
+                <a class="prevSlide_lightbox" onclick="nextSlide_lightboxPlease(-1)">&#10094;</a>
+                <a class="nextSlide_lightbox" onclick="nextSlide_lightboxPlease(1)">&#10095;</a>
+            </div>
+
+
+        </div id="overlay_lightbox_full_id" class="overlay_lightbox_full">
+
+        
+    </div class="lightbox">
+
+
+    <script src="auto_slides2.js"></script>
+
+</body>
+
+</html>
