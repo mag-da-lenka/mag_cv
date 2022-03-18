@@ -2,9 +2,9 @@ console.table(`hello Hello`)
 
 
 
-// setTimeout(() => {
-//     alert("The mobile layout is currently being rebuilt, please view the page on your laptop.")
-// }, 2666);
+setTimeout(() => {
+    alert("The mobile layout is currently being rebuilt, please view the page on your laptop.")
+}, 2666);
 
 
 
