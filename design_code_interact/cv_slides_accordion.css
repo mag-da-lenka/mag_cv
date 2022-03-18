@@ -210,9 +210,6 @@
 
 
 
-
-
-
 /* LIGHTBOX SLIDESHOW ******************************************************************************************* */
 
 /*----------------------------------------------*/
@@ -223,7 +220,7 @@
   margin: 0;
   /* background-color: #ff439b; */
   /* padding: 2px; */
-  color: #ffffffd3;
+  color: rgba(228, 228, 228, 0.733);
   width: 300px;
   width: 500px;
   box-sizing: border-box
@@ -276,7 +273,9 @@
   /*wtf*/
   height: 100vh;
   overflow: auto;
-  background-color: #333352;
+  background-color: #333352e3; 
+  background-image: linear-gradient(0.92turn, #333352, #45666dc7);
+  background-size: 169.20%;
 }
 
 .closing_XXX {
@@ -291,7 +290,7 @@
 }
 
 .closing_XXX:focus, .closing_closing_XXX:hover {
-  color: rgba(228, 228, 228, .479);
+  color: rgba(228, 228, 228, 0.733);
   text-decoration: none
 }
 
@@ -306,8 +305,9 @@
   width: 1200px;
   height: 700px;
   padding: 3px;
+  padding: 0px;
   background-color: #333352;
-  /* border: red solid 1px; */
+  /* border: rgba(228, 228, 228, 0.733) solid 1px; */
 }
 
 .slideDivs_div {
@@ -316,6 +316,7 @@
   width: 1200px;
   height: 700px;
   padding: 3px;
+  padding: 0px;
   /* border: red dashed 1px; */
 }
 
@@ -324,7 +325,8 @@
   margin: 0 auto;
   width: 1200px;
   height: 700px;
-  padding: 3px;
+  padding: 3px; 
+  padding: 0px;
   display: none;
   /* border: red dotted 2px; */
   display: block;
@@ -340,6 +342,7 @@
   width: 1200px;
   height: 700px;
   padding: 3px;
+  padding: 0px;
   /* border: orange dotted 2px; */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
@@ -357,23 +360,24 @@
   padding: 1.2rem;
   margin-top: 1vh;
   background-color: #333352;
-  color: rgb(228, 228, 228);
+  color: rgba(228, 228, 228, 0.733);
   font-weight: 700;
   font-size: 20px;
   transition: .6s ease;
   border-radius: 0 3px 3px 0;
+  /* border-radius: 0 50% 50* 0; */
   user-select: none;
   -webkit-user-select: none;
 }
 
 .prevSlide_lightbox {
   right: 30;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 30px 30px 0;
 }
 
 .nextSlide_lightbox {
   right: 0;
-  border-radius: 6px 0 0 6px;
+  border-radius: 30px 0 0 30px;
 }
 
 .divPrevNext {
@@ -383,7 +387,7 @@
 }
 
 .nextSlide_lightbox:hover, .prevSlide_lightbox:hover {
-  background-color: rgba(0, 0, 0, .329)
+  background-color: rgba(0, 0, 0, 0.233)
 }
 
 /*----------------------------------------------*/
@@ -403,10 +407,10 @@
 .slideDescrDiv {
   text-align: center;
   height: 50px;
-  width: 1100px;
+  width: 1200px;
   background-color: #333352;
   padding: 2px 16px;
-  color: rgb(228, 228, 228);
+  color: rgba(228, 228, 228, 0.733);
   margin: 0 auto;
 }
 

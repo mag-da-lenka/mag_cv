@@ -8,6 +8,10 @@
   margin: 0 auto;
   letter-spacing: .0em;
   animation: typing 3.1s steps(66, start);
+
+  margin: 0px 0px 0px 7px; 
+  width: auto;
+  /* border: greenyellow 1px solid; */
 }
 
 @keyframes typing {
@@ -16,34 +20,41 @@
 }
 
 
+
+
+
+
+
 /******************************************************************************/
 /* blinky blinky */
 
 .glow {
   -webkit-animation: glow 0.5s ease-in-out infinite alternate;
   -moz-animation: glow 0.5s ease-in-out infinite alternate;
-  animation: glow 0.666s ease-in-out infinite alternate;
+  animation: glow 1.666s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
     text-shadow:
-      0 0 0.05vh rgb(194, 165, 181),
-      0 0 0.10vh rgb(194, 165, 181),
-      0 0 0.15vh rgb(194, 165, 181),
-      0 0 0.20vh rgb(209, 203, 207),
-      0 0 0.25vh rgb(209, 203, 207),
-      0 0 0.30vh rgb(209, 203, 207)
+      0 0 0.05rem rgb(194, 165, 181),
+      0 0 0.05rem rgb(194, 165, 181),
+      0 0 0.05rem rgb(194, 165, 181),
+      0 0 0.10rem rgb(209, 203, 207),
+      0 0 0.10rem rgb(209, 203, 207),
+      0 0 0.11rem rgb(209, 203, 207)
   }
   to {
     text-shadow:
-      0 0 0.05vh rgb(146, 163, 161),
-      0 0 0.10vh rgb(146, 163, 161),
-      0 0 0.15vh rgb(146, 163, 161),
-      0 0 0.20vh rgb(59, 100, 95),
-      0 0 0.25vh rgb(59, 100, 95)
+    0 0 0.05rem rgb(194, 165, 181),
   }
 }
+
+
+
+
+
+
 
 
 /******************************************************************************/
@@ -55,9 +66,9 @@
   color: rgb(228, 228, 228);
   width: 8vw;
   opacity: 60%;
-  animation: squirrel_flip 12s infinite;
+  animation: squirrel_flip 3s infinite;
 }
-@keyframes squirrel_flip {  50% {
+@keyframes squirrel_flip {  0% {
     transform: rotate(360deg);  }
 }
 /* if PNG */
@@ -72,7 +83,6 @@
 
 /******************************************************************************/
 /* squirrels jump */
-
 
 .squirrel_icon_jump_svg {
   position: relative;
@@ -115,8 +125,16 @@
 
 
 
+
+
+
+
+
+
+
+
 /******************************************************************************/
-/* DOTS FOR THE MAIN SCREEN */
+/* DOTS FOR the \\ MAIN SCREEN > .scr1_articles > .scr1_article2_dots */ 
 
 .dot_anime_01, .dot_anime_02, .dot_anime_03, .dot_anime_04,
 .dot_anime_05a, .dot_anime_05b, .dot_anime_06, .dot_anime_07, .dot_anime_08 {

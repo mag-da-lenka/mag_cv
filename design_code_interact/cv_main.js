@@ -1,4 +1,4 @@
-console.log(`hello Hello`)
+console.table(`hello Hello`)
 
 
 
@@ -125,7 +125,7 @@ const showAutoSlides = () => {
     if (autoSlideIndex > autoSlides.length) { autoSlideIndex = 1 }
 
     for (index = 0; index < autoDots.length; index++) {
-        autoDots[index].className = autoDots[index].className.replace(" auto_active", "");
+        autoDots[index].className = autoDots[index].className.replace("auto_active", "");
     }
 
     autoSlides[autoSlideIndex - 1].style.display = "block";
