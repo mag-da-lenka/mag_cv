@@ -9,7 +9,8 @@
   letter-spacing: .0em;
   animation: typing 3.1s steps(66, start);
 
-  margin: 0px 0px 0px 7px; 
+  margin: 0px 0px 0px 5px; 
+  padding: 0px 0px 10px 0px; 
   width: auto;
   /* border: greenyellow 1px solid; */
 }
