@@ -219,12 +219,12 @@
   000% {left:400px; top:-200px; background-color:#2494851e; }
   010% {left:400px; top:-200px; background-color:#24948513; }
   020% {left:400px; top:-100px; background-color:#2494851f; }
-  030% {left:400px; top:-000px; background-color:#24948513; }
-  040% {left:100px; top:+100px; background-color:#24948518; }
-  050% {left:100px; top:-100px; background-color:#33335254; }
-  060% {left:100px; top:-200px; background-color:#24948513; }
-  080% {left:100px; top:-150px; background-color:#24948515; }
-  090% {left:100px; top:-150px; background-color:#2494851c; }
+  030% {left:400px; top:+000px; background-color:#24948513; }
+  040% {left:100px; top:+000px; background-color:#24948518; }
+  050% {left:100px; top:+000px; background-color:#33335254; }
+  060% {left:100px; top:-100px; background-color:#24948513; }
+  080% {left:150px; top:-250px; background-color:#24948515; }
+  090% {left:200px; top:-350px; background-color:#2494851c; }
   100% {left:400px; top:-200px; background-color:#2494851e; }
 }
 
