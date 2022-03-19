@@ -29,6 +29,8 @@
     padding: 2% 2% 1% 1%;
   }
 
+  .dot_explanation {display:none; }
+
 
   /******************************************************************************/
   /* NAVIGATION */
@@ -119,7 +121,7 @@
   }
 
   aside {    text-align: left;  }
-  main {    order: -1;  }
+  main  {    order: -1;  }
   aside>section>ul, aside>section>ul>li {    text-align: left;  } 
   
   
