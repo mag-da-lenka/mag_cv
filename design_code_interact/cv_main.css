@@ -55,7 +55,7 @@ h3 {                                   font-size: 1.80rem;  font-weight: 600; li
   linear-gradient(to right, rgb(194, 165, 181) 0%, rgba(228, 228, 228, 0.733) 70%);
 	-webkit-background-clip: text; 	-webkit-text-fill-color: transparent;  }
 h2 {                                   font-size: 2.50rem;  line-height: 2.5rem; }
-h1 {                                   font-size: 3.00rem;  line-height: 3.0rem; padding: 0; margin: o; } /* the real h1 font size is in .i_am_magda_1 */
+h1 {                                   font-size: 3.00rem;  line-height: 3.0rem; padding: 0; margin: 0; } /* the real h1 font size is in .i_am_magda_1 */
 .XXL_font {                            font-size: 3.50rem;  line-height: 3.5rem;   text-shadow: 2px 2px 5px #07071f; }
 .panel h3,    .panel ul, 
 .panel ul li, .panel ul li p {                              line-height: 1.4rem;     padding-right: 1.4rem; }
