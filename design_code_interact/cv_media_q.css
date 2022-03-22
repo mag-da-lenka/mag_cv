@@ -6,8 +6,9 @@
 
   body {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column;  
+    /* background-color: darkblue; */
+  } 
 
   .break_mobile_none {
     display: none;
@@ -18,21 +19,20 @@
     margin: -12.666vh;
   }
 
-
-  .screen_title {
-    width: 90vw;
-    height: 10vh;
-  }
   .screen_title h1 {
     font-size: 4rem;
     text-align: end;
     padding: 2% 2% 1% 1%;
   }
-
+  .screen_title {
+    /* border: white solid 1px; */
+    width: 100%;
+  }
+  
   .dot_explanation {display:none; }
 
 
-  /******************************************************************************/
+  /**** 1 - 1225px **************************************************************************/
   /* NAVIGATION */
   .nav_background {
     height: 10vh;
@@ -51,7 +51,7 @@
 
 
 
-  /******************************************************************************/
+  /**** 1 - 1225px **************************************************************************/
   /* SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */
   .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
     border: rgba(228, 228, 228, 0.151) 0.2rem solid;
@@ -171,7 +171,7 @@
 
 
 
-  /******************************************************************************/
+  /**** 1 - 1225px **************************************************************************/
   /* BARS contacts HYF + CONTACTS MAGDA */
 
   .non_hover_bars {
@@ -225,7 +225,7 @@
 
 
 
-  /******************************************************************************/
+  /**** 1 - 1225px **************************************************************************/
   /* FOOTER */
 
   footer {
@@ -240,7 +240,7 @@
   
   
     
-  /******************************************************************************/
+  /**** 1 - 1225px **************************************************************************/
   /* ROUND UP/DOWN BUTTONS */
 
   .button_r {
@@ -252,14 +252,26 @@
   }
 
 
-  /******************************************************************************/
-  /* all SLIDES, ACCORDION and ANIMATIONS */
+  /**** 1 - 1225px **************************************************************************/
+  /* all SLIDES, ACCORDION and ANIMATIONS */ 
 
-  .autoslides_container, .auto_slides, .auto_images {
-    width: 10rem;
-    height: 10rem;
+ 
+  .jewellery_presentation_container {
+    display: flex; 
+    flex-direction: row;
+    padding-left: 2vw; 
+    align-content: space-between;
   }
-
+  
+  .slideshow-container, .mySlides1_dot_descr {
+    display: flex;
+    align-items: flex-start;
+    width: 18rem;
+    height: 18rem;
+    margin: 0vw 0.5vw 0vw 0.5vw;
+  } 
+  
+ 
   .accordion {
     font-size: 1.6rem;
     padding: 1% 1% 1% 1%;
@@ -277,6 +289,43 @@
   .squirrel_icon_flip_svg,
   .squirrel_icon_jump_svg {
     width: 10rem;
+  } 
+
+
+
+
+
+
+
+
+  .lightbox {
+    flex-direction: row; 
+    align-items: flex-start;
+    padding: 0;
+    width: 80vw;
+  }
+
+  .overlay_lightbox_content {
+    width: 100vw;
+    height: 100vh;
+  }
+  .slideDivs_div, .slideDiv, .aSingleSlide {
+    width: 90vw;
+    height: 52.5vw;
+  }
+  .slideNumTxt {
+    transform: scale(0.8);
+  }
+   .slideDescrDiv {
+    width: 90vw; 
+    height: 10vw;
+    padding: 1vw;
+  }
+  .smallPicDotDivs_div {
+    width: 80vw;
+    height: 20vw;
+    padding: 0rem;
+    margin-top: 14vw;
   }
 
 
@@ -288,309 +337,382 @@
 
 
 
-  @media screen and (min-width: 1px) and (max-width: 700px) { 
-    
-    /******************************************************************************/
-    /******************************************************************************/
-    /* BASICS */  
 
-    h3 {  font-size: 1.50rem;  line-height: 1.50rem; }
-    h2 {  font-size: 2.00rem;  line-height: 2.00rem; }
-    p, ul, li {
-      margin: 0; 
-      padding: 0;
-      max-width: 85vw;
-    }
-    .accordion { font-size: 1.20rem; }
-      /* afects the text on the bar (NOT plus/minus) */   
-       
-    
-    
+  @media screen and (min-width: 1px) and (max-width: 1000px) {  
 
-    /******************************************************************************/
-    /******************************************************************************/
-    /* NAVIGATION */
-    .nav_background {
-      position: fixed;
-      width: 100%;
-      height: 10vh;
-      margin-top: 0vh;
-      border: none;
+
+
+
+    body {
+      /* background-color: blue;  */
     }
-    nav {
-      width: 10vh;
-      height: 10vh;
-      right: 2vw;
-      float: right;
+
+
+
+    /* JEWELLERY SLIDES 701px - 1000px  */
+    .jewellery_presentation_container {
+      display: flex; 
+      flex-direction: row-reverse; 
+      flex-wrap: wrap;
+      padding: 2vw 2vw 2vw 2vw; 
     }
-    nav div a {
-      align-items: center;
-      text-decoration: none;
-      font-size: 11.0vw;
-      font-weight: 520;
-      padding: 0;
-      margin: 0;
-    }
-    .nav_box,
-    .nav_box1, .nav_box2, .nav_box3,
-    .nav_box4, .nav_box5, .nav_box6 {
+    .mySlides1_dot_descr, .mySlides1_dot_descr p {
       display: none;
-    }
-    .nav_box7 {
-      /* HAMBURGER */
-      border: none;
-      visibility: visible;
-      display: flex !important;
-      align-items: center;
-      justify-content: center;
-      width: 10vh;
-      height: 10vh;
-      margin: 0 0 0 0;
-      padding: 0 20px 0 0;
-      font-size: 5.5vh;
+     }
+    .slideshow-container, .mySlides1_dot_descr_mobile {
+      width: 38vw;
+      height: 38vw;
+      margin: 0vw 0.5vw 0vw 0.5vw;
     } 
+    .slideshow-container {      order: -1; /* !!!!!!! */    }
+    .mySlides1_dot_descr_mobile p {
+      border: 0px transparent solid;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      background-color: #33335227;
+      font-size: 2.4vw;
+      line-height: 2.4vw; 
+      padding: 9vw 4.9vw 0 6.5vw;
+      align-items: flex-start;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 16vw;
+      font-size: 4vw;
+    } 
+
+
+
+    .overlay_lightbox_content {
+      padding-top: 10vw;
+    }
+    .smallPicDotDivs_div {
+      margin-top: 44vw;
+    }
+
+
+
+
     
     
+
     
-    /******************************************************************************/
-    /******************************************************************************/
-    /* OUTER/INNER SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */
-   
-    .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
+
+
+
+  
+
+
+
+    @media screen and (min-width: 1px) and (max-width: 700px) { 
       
-      margin-top: 10vh;       
-      margin-bottom: 5vh;  
-    }
-    .screen1 {
-      width: 100vw;
-    }
 
-    .screen_title {
-      text-align: start;
-      height: 3rem;
-      width: 90vw;
-      margin-bottom: 5rem;
-    }
+
+      body {
+        /* background-color: lightskyblue; */
+      }
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* BASICS */  
   
-    .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
-    .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
-      flex-direction: column;
-      width: 100%; 
-      margin: auto;
-      height: 100%;
-      padding-bottom: 0px;
-    }
-
-    .screen_flex_layout1 {
-      width: 100%;
-      height: auto;
-      flex-direction: column;
-    }
-    .scr1_articles {
-      width: 100%;
-      height: auto;
-      margin: 0 auto;
-    }
-    .scr1_article1_magda {
-      width:100% ; 
-      height:auto;   
-      margin: 0 auto;
-    }
-   .scr1_article1_magda  section {
-      width: 100%;
-      height: auto; 
-      /* margin: 1rem 0rem 1rem 1rem;  */
-      margin: 0 auto;
-    }  
-    
-    
-    
-    aside, main {
-      width: 95vw;
-      height: 100%;
-      margin: 0% 0% 0% 0%;
-      padding: 1% 1% 2% 2%;
-      border: 0.4vw;
-    }
-    aside {
-      text-align: left;
-      margin: 0% 0% 3% 0%;
-    }
-    main {
-      order: -1;
-    }
-    
-
-
-    /******************************************************************************/
-    /******************************************************************************/
-    /* INNER SCREENS : LISTS */
+      h3 {  font-size: 1.50rem;  line-height: 1.50rem; }
+      h2 {  font-size: 2.00rem;  line-height: 2.00rem; }
+      p, ul, li {
+        margin: 0; 
+        padding: 0;
+        max-width: 85vw;
+      }
+      .accordion { font-size: 1.20rem; }
+        /* afects the text on the bar (NOT plus/minus) */   
+      
+          
   
-    aside>section>ul,
-    aside>section>ul>li {
-      text-align: left;
-    } 
-    
-    
-    /******************************************************************************/
-    /******************************************************************************/
-    /* INNER SCREENS : icons and icon bars */
-    .non_hover_bars  {  width: 80vw;    }
-    .link_bars       {  width: 80vw;    }
-    .link_bars:hover {  width: 80vw;    }  
-    
-    .skills_icon_line>img {
-      height: 2.50rem;
-    }
-
- 
-  
-
-    /******************************************************************************/
-    /******************************************************************************/
-    /* FOOTER */  /* footer_buttons are styled in the nav buttons section */
-    
-    footer {
-      width: 100%;
-      /* border: solid 2ps rgb(228, 228, 228); */
-    }
-    .blob {
-      /* display: block;
-      box-sizing: border-box; */
-      height: 50vw;
-      width: 100vw;
-      border: none;
-      clip-path: ellipse(52% 100% at 58% 100%);
-    }
-    .blob p {
-      font-size: 1rem;
-    }
-    
-    
-
-    /******************************************************************************/
-    /******************************************************************************/
-    /* ROUND CONTACT-ICONS-LINKS (coding education + contact screen) */
-
-    .contact_icon_line_mag,
-    .contact_icon_line_hyf {
-      margin: 0% 0% 0% 0%;
-      padding: 1% 2% 1% 0%;
-    }
-
-    .icon_link {
-      width: 8vw;
-      margin: 5% 0% 1% 0%;
-    }  
-    
-    
-    
-    /******************************************************************************/
-    /******************************************************************************/
-    /* ROUND UP/DOWN BUTTONS */
-
-    .button_r {
-      display: none;
-    }
-    .button_r_landing {
-      margin-top: 0vh;
-    }
-    .button_simulacrum {
-      display: none;
-    }    
-    
-    
-    
-    
-    /******************************************************************************/
-    /******************************************************************************/
-    /* all SLIDES, ACCORDION and ANIMATIONS */
-
-    .accordion {
-      width: 86vw;
-    }    
-
-    
-    .autoslides_container_outer {
-      order: -1;
-      width: 30vw;
-      height: 30vw;
-    }
-    .autoslides_container,
-    .auto_slides,
-    .auto_images {
-      width: 20vw;
-      height: 20vw;
-    }
-
-
-
-
-    .lightbox {
-      width: 350px;
+      /**** 1 - 0700px **************************************************************************/
+      /* NAVIGATION */
+      .nav_background {
+        position: fixed;
+        width: 100%;
+        height: 10vh;
+        margin-top: 0vh;
+        border: none;
+      }
+      nav {
+        width: 10vh;
+        height: 10vh;
+        right: 2vw;
+        float: right;
+      }
+      nav div a {
+        align-items: center;
+        text-decoration: none;
+        font-size: 11.0vw;
+        font-weight: 520;
+        padding: 0;
+        margin: 0;
+      }
+      .nav_box,
+      .nav_box1, .nav_box2, .nav_box3,
+      .nav_box4, .nav_box5, .nav_box6 {
+        display: none;
+      }
+      .nav_box7 {
+        /* HAMBURGER */
+        border: none;
+        visibility: visible;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 10vh;
+        height: 10vh;
+        margin: 0 0 0 0;
+        padding: 0 20px 0 0;
+        font-size: 5.5vh;
+      } 
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* OUTER/INNER SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */
      
-    }
-
-
-
-    .squirrel_icon_flip_svg,
-    .squirrel_icon_jump_svg {
-      width: 20vh;
-    }
-    .squirrel_icon_jump {
-      padding-left: 10vw;
-    }
-
-
-
-
-
-
+      .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
+        
+        margin-top: 10vh;       
+        margin-bottom: 5vh;  
+      }
+      .screen1 {
+        width: 100vw;
+      }
+  
+      .screen_title {
+        text-align: start;
+        height:10rem;
+      }
     
+      .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
+      .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
+        flex-direction: column;
+        width: 100%; 
+        margin: auto;
+        height: 100%;
+        padding-bottom: 0px;
+      }
+  
+      .screen_flex_layout1 {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+      }
+      .scr1_articles {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      .scr1_article1_magda {
+        width:100% ; 
+        height:auto;   
+        margin: 0 auto;
+      }
+     .scr1_article1_magda  section {
+        width: 100%;
+        height: auto; 
+        /* margin: 1rem 0rem 1rem 1rem;  */
+        margin: 0 auto;
+      }  
+      
+         
+      aside, main {
+        width: 95vw;
+        height: 100%;
+        margin: 0% 0% 0% 0%;
+        padding: 1% 1% 2% 2%;
+        border: 0.4vw;
+      }
+      aside {
+        text-align: left;
+        margin: 0% 0% 3% 0%;
+      }
+      main {
+        order: -1;
+      }
+      
+  
+  
+      /**** 1 - 0700px **************************************************************************/
+      /* INNER SCREENS : LISTS */
+    
+      aside>section>ul,
+      aside>section>ul>li {
+        text-align: left;
+      } 
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* INNER SCREENS : icons and icon bars */
+      .non_hover_bars  {  width: 80vw;    }
+      .link_bars       {  width: 80vw;    }
+      .link_bars:hover {  width: 80vw;    }  
+      
+      .skills_icon_line  {
+        display: flex;
+        width: 400px;
+        margin: 0;
+        padding:0;
+      }
+      .skills_icon_line>img {
+        height: 3.00rem;
+        margin: 0% 0% 0% 0%;
+        padding: 1% 1% 0% 0%;
+      }
+  
+      /**** 1 - 0700px **************************************************************************/
+      /* FOOTER */  /* footer_buttons are styled in the nav buttons section */
+      
+      footer {
+        width: 100%;
+        /* border: solid 2ps rgb(228, 228, 228); */
+      }
+      .blob {
+        /* display: block;
+        box-sizing: border-box; */
+        height: 50vw;
+        width: 100vw;
+        border: none;
+        clip-path: ellipse(52% 100% at 58% 100%);
+      }
+      .blob p {
+        font-size: 1rem;
+      }
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* ROUND CONTACT-ICONS-LINKS (coding education + contact screen) */
+  
+      .contact_icon_line_mag,
+      .contact_icon_line_hyf {
+        margin: 0% 0% 0% 0%;
+        padding: 1% 2% 1% 0%;
+      }
+  
+      .icon_link {
+        width: 8vw;
+        margin: 5% 0% 1% 0%;
+      }  
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* ROUND UP/DOWN BUTTONS */
+  
+      .button_r {
+        display: none;
+      }
+      .button_r_landing {
+        margin-top: 0vh;
+      }
+      .button_simulacrum {
+        display: none;
+      }    
+       
+      /**** 1 - 0700px **************************************************************************/
+      /* all SLIDES, ACCORDION and ANIMATIONS */
+  
+      .accordion {
+        width: 86vw;
+      }    
+  
+      /* blinking magda screen 1 */
+      .autoslides_container_outer {      order: -1;    } 
+      .mySlides1_dot_descr p {      padding: auto;       font-size: 1.0rem;
+      }
+  
+     
+  
+  
+       /* all squirrels */
+      .squirrel_icon_flip_svg,
+      .squirrel_icon_jump_svg {  width: 20vh;    }
+      .squirrel_icon_jump     {  padding-left: 10vw;    } 
+
+
+      .jewellery_presentation_container {
+        flex-direction: column-reverse;  
+        align-items: flex-end;
+      } 
+      .slideshow-container {
+        width: 50vw;
+        height: 50vw;
+        margin: 0vw 0.5vw 0vw 0.5vw;
+      }
+      .mySlides1_dot_descr_mobile {
+        width: 100%;
+        height: 100%;
+        margin: 0vw 0.5vw 0vw 0.5vw;
+      }  
+         
+      .mySlides1_dot_descr_mobile p {
+        border: none;
+        border-radius: 0%;
+        background-color: #33335200;
+        font-size: 1.3rem;
+        line-height: 1.3rem; 
+        padding: 2vw 0vw 2vw 2vw;
+        margin: 0;
+        text-align: right;
+      }
+      .prev, .next {
+        position: absolute;
+        top: 20vw;
+        font-size: 5vw;
+      } 
+
 
 
 
    
+  
+  
 
 
 
+    
 
 
 
+      @media screen and (min-width: 1px) and (max-width: 500px) {
+
+        body {
+          background-color: violet; 
+          flex-wrap: wrap;
+        }
+
+        .slideshow-container {
+          width: 70vw;
+          height: 70vw;
+          margin: 0vw 0.5vw 0vw 0.5vw;
+        }
+        .prev, .next {
+          position: absolute;
+          top: 30vw;
+          font-size: 7vw;
+        } 
+
+        .skills_icon_line  {
+          display: flex; 
+          flex-wrap: wrap;
+          width: 85vw;
+        }
+        .skills_icon_line>img {
+          height: 3.00rem;
+        }
+
+      }
+
+      
 
 
 
-
-
-
-
-
-
-
+      
+    }
 
 
 
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

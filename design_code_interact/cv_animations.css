@@ -144,7 +144,14 @@
   transition: 1000ms;
   /* animation-delay: 10s;  */
   display: flex;
-  align-content: center;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.dot_anime_05b {
+  padding-top: 60px;
+}
+.dot_anime_08 {
+  padding-top: 0px;
 }
 
 .dot_anime_01  {animation: dot_01  06.666s infinite; }

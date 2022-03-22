@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-  margin: auto;
+  margin: 0 auto;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
   color: rgba(228, 228, 228, 0.733);
   font-family: 'Abel';
   cursor: crosshair;
+  width: 100vw;
 }
 
 ::selection {
@@ -65,7 +66,7 @@ h1 {                                   font-size: 3.00rem;  line-height: 3.0rem;
 .flex_column {  display: flex;  flex-direction: column;}
 .clearfix    {  overflow: hidden; }
 .anchor {  position: absolute;  margin: -12.666vh;}
-.anchor {  position: absolute;  margin: -9.666vh;}
+.anchor {  position: absolute;  margin: -10.666vh;}
 
 
 
@@ -190,9 +191,7 @@ nav {
 
 .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
   background-color: none;
-  margin-top: 9vh;   
-  margin-bottom: 0vh;
-  padding-bottom: 0vh;
+  margin-top: 9vh; 
   min-height: 89vh;
   width: 100vw;
   display: flex;
@@ -202,18 +201,19 @@ nav {
 
 .screen1 {
   /* border:rgb(27, 190, 190) solid 2px; */
-  width: 100vw;
   min-height: 90vh; 
   margin-top: 10vh;
   background-image: url("./images/fig_aurora_40.png");
   background-size: cover; 
+  /* transform: scale(0.95); */
 }
 
 .screen_title {
+  /* border: white solid 1px; */
   text-align: start;
   height: 2rem;
   width: 1100px;
-  padding: 0;
+  padding: 0rem 0 3rem 0;
 }
 
 
@@ -368,6 +368,9 @@ aside>section>ul>li {
 
 
 /* each tech skills > a single icon*/
+.skills_icon_line {
+  /* border: pink solid 1px;  */
+}
 .skills_icon_line>img {
   height: 3rem;
   margin: 1% 0% 0% 0%;

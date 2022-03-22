@@ -1,3 +1,5 @@
+
+/******************************************************************************/
 /* AUTOMATIC SLIDES */
 
 .autoslides_container_outer {
@@ -5,6 +7,7 @@
   width: 150px;
   height: 150px;
   margin: 0;
+  margin-left: -0.2rem;
 }
 
 .autoslides_container {
@@ -16,18 +19,18 @@
 
 .auto_slides {
   /* border: 1px solid rgb(82, 191, 241); */
-  display: none;
+  /* display: none; */
   width: 150px;
   height: 150px;
 }
 
 .auto_images {
   border: 0.3vw solid #4a7d8a6b;
-  border: 0.3vw solid #4a7d8a9f;
+  border: 0.25rem solid #4a7d8a9f;
   border-radius: 50%;
   border-radius: 50%;
   width: 100%;
-  filter: saturate(50%) opacity(70%);
+  filter: saturate(70%) opacity(90%);
 }
 
 .auto_dots {
@@ -36,28 +39,23 @@
   width: 0px;
   margin: 0 2px;
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: rgb(248, 240, 240);
   transition: background-color 0.6s ease;
 }
 
-/* .auto_active {
+.auto_active {
   background-color: #000000;
-} */
+}
 
-/* .auto_fade {
+.auto_fade {
   -webkit-animation-name: auto_fade;
   -webkit-animation-duration: 0.2s;
   animation-name: auto_fade;
-  animation-duration: 0.2s;
+  animation-duration: 0.7s;
 }
 
-@-webkit-keyframes auto_fade {
-  from {    opacity: .9  }  to {    opacity: 1  }
-}
-
-@keyframes auto_fade {
-  from {    opacity: .9  }  to {    opacity: 1  }
-} */
+@-webkit-keyframes auto_fade {  from {    opacity: .3  }  to {    opacity: 1  }}
+@keyframes         auto_fade {  from {    opacity: .3  }  to {    opacity: 1  }}
 
 
 
@@ -68,53 +66,74 @@
 
 
 
-
+/******************************************************************************/
 /* JEWELLERY SLIDES */
 
 .mySlides1, .mySlides2 {
   display: none;
 }
 
-.slideshow-container {
+.jewellery_presentation_container {
+  /* border: red solid 1px;  */
   display: flex;
-  align-items: flex-start;
-  width: 200px;
-  position: relative;
-  margin: 0;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
-.slideshow-container img {
+.slideshow-container, .mySlides1_dot_descr {
+  /* border: orange solid 1px; */
+  display: flex;
+  align-items: flex-start;
+  width: 33%;
+  position: relative;
+  margin: 0;
+} 
+
+
+.slideshow-container img { 
   vertical-align: middle;
-  border: 3px transparent solid;
-  border: 1rem #333352 solid;
+  border: 0.20rem #33335267 solid;
   border-radius: 50%;
   width: 100%;
-  filter: saturate(50%);
+  height: 100%;
+  filter: saturate(70%);
   filter: opacity(80%);
+  /* border: yellow solid 1px; */
 
 }
 
 .mySlides1_dot_descr p {
   display: flex;
   align-items: center;
-  align-content: center;
+  align-content: center; 
   border: 0px transparent solid;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  background-color: #333352;
-  padding-left: 40px;
+  width: 100%;
+  height: 100%;
+  background-color: #33335227;
+  padding-left: 3rem; 
+  font-size: 1.266rem;
+  /* border: yellow solid 1px; */
+}
+
+.mySlides1_dot_descr_mobile, .mySlides1_dot_descr_mobile p {
+  /* border: pink solid 1px; */
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0; 
+  font-size: 0; 
+  line-height: 0;
 }
 
 
 .prev, .next {
   position: absolute;
-  top: 80px;
+  top: 40%;
   width: auto;
-  padding: 0px 15px 0px 15px;
+  padding: 0px 1rem 0px 1rem;
   margin-top: 0;
   color: rgba(228, 228, 228, 0.664);
-  font-size: 30px;
+  font-size: 2rem;
   user-select: none;
 }
 
@@ -238,7 +257,7 @@
 
 .smallPicDiv {
   margin: auto;
-  margin-right: 20px;;
+  margin-right: 0.2rem;
   width: 25%;
   /* background-color: #ffb3d6; */
   /* padding: 2px; */
@@ -249,14 +268,14 @@
   cursor: pointer;
   transition: .3s;
   /* background-color: #ffe2ef; */
-  padding: 0px; 
+  /* padding: 0px;  */
   border: #333352 solid 2px;
   border-radius: 7px;
 
 }
 
 .smallPic:hover {
-  /* box-shadow: 7px 7px 3px #2d2d42;  */
+  box-shadow: 7px 7px 3px #2d2d42; 
   transform: scale(1.08);
 }
 
@@ -270,7 +289,6 @@
   left: 0;
   top: 0;
   width: 99vw;
-  /*wtf*/
   height: 100vh;
   overflow: auto;
   background-color: #333352e3; 
@@ -300,14 +318,13 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 1.5vh;
   width: 1200px;
-  height: 700px;
-  padding: 3px;
+  height: 98.5vh;
   padding: 0px;
-  background-color: #333352;
-  /* border: rgba(228, 228, 228, 0.733) solid 1px; */
+  /* background-color: #333352; */
+ 
 }
 
 .slideDivs_div {
@@ -315,7 +332,6 @@
   margin: 0 auto;
   width: 1200px;
   height: 700px;
-  padding: 3px;
   padding: 0px;
   /* border: red dashed 1px; */
 }
@@ -328,22 +344,20 @@
   padding: 3px; 
   padding: 0px;
   display: none;
-  /* border: red dotted 2px; */
+  /* border: red dotted 1px; */
   display: block;
 
 }
 
 .aSingleSlide {
-  margin: 0;
-  /* width: 100%; */
-  /* height: 100%; */
+  margin: 0 auto;
   width: 60vw;
   height: 37vw;
   width: 1200px;
   height: 700px;
-  padding: 3px;
   padding: 0px;
-  /* border: orange dotted 2px; */
+  border: rgba(228, 228, 228, 0.733) solid 2px;
+  /* border: orange dotted 1px; */
   /* background-size: cover; */
   /* background-repeat: no-repeat; */
   /* background-position: 50% 50%; */
@@ -393,22 +407,25 @@
 /*----------------------------------------------*/
 
 .slideNumTxt {
-  color: #f2f2f2;
-  font-size: 32px;
+  /* border: pink solid 1px; */
+  color: rgba(228, 228, 228, 0.712);
+  font-size: 28px;
   padding: 2rem;
   position: absolute;
   top: 0;
   background-color: #333352; 
   border-radius: 50%;
+  display: none; /* !!!!!!!!!!!!!!!!!! */
 }
 
 /*----------------------------------------------*/
 
 .slideDescrDiv {
+  /* border: green solid 1px; */
   text-align: center;
   height: 50px;
   width: 1200px;
-  background-color: #333352;
+  /* background-color: #333352; */
   padding: 2px 16px;
   color: rgba(228, 228, 228, 0.733);
   margin: 0 auto;
@@ -430,7 +447,7 @@
 }
 
 .smallPicDot {
-  /* border: #ffffff dotted 1px; */
+  border: rgba(228, 228, 228, 0.664) solid 1px;
   opacity: .2;
   width: 100%;
   cursor: pointer

@@ -132,7 +132,7 @@ const showAutoSlides = () => {
 
     autoDots[autoSlideIndex - 1].className += " auto_active";
 
-    setTimeout(showAutoSlides, 1666);
+    setTimeout(showAutoSlides, 2666);
 }
 
 showAutoSlides();
