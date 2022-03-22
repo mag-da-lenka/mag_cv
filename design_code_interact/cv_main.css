@@ -20,10 +20,10 @@ body {
   background: rgba(228, 228, 228, 0.733);
 }
 
-#holo_fun {
+/* #holo_fun {
   background-image: linear-gradient(0.12turn, #45666d, #33335265, #45666d);
   background-size: 369.20%;
-} 
+}  */
 
 
 /******************************************************************************/
@@ -286,14 +286,19 @@ nav {
 /* dot animations are in the relevant css */
 .scr1_article2_dots {
   /* border: yellow 1px solid; */
-  width:620px;   height:700px; 
+  width:520px;   height:500px; 
   position:static;   z-index: 0;   margin: 0;
 }
 .happy_dots01, .happy_dots02 {
   /* border: azure 2px solid; */
-  width:520px;   height:700px; 
+  width:520px;   height:500px; 
   position: absolute; z-index: -1; margin: 0;
 }
+
+/* .dot_explanation_right  {height: 0%; width: 0%; font-size: 0; line-height: 0%;} */
+.dot_explanation_mobile {height: 0%; width: 0%; font-size: 0; line-height: 0%;} 
+
+
 
 
 

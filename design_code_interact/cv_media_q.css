@@ -7,7 +7,7 @@
   body {
     display: flex;
     flex-direction: column;  
-    /* background-color: darkblue; */
+    /* background-color: rgb(0, 0, 59); */
   } 
 
   .break_mobile_none {
@@ -30,7 +30,6 @@
     margin-bottom: 3rem;
   }
   
-  .dot_explanation {display:none; }
 
 
   /**** 1 - 1225px **************************************************************************/
@@ -88,28 +87,43 @@
     padding: 1rem 1rem 1rem 1rem;
   }
 
+
+
+  /* dot animations --> SCREEN SIZES and LAYOUT */
   .scr1_articles {
-    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    width: 940px;
     height: auto;
-    margin: 0 auto;
+    margin: 0 auto; 
   }
-
   .scr1_article1_magda {
-    width: 90vw;
+    width: 420px;
     height: auto;
     margin: 0 auto;
   }
-
   .scr1_article1_magda  section {
-    width: 90vw;
+    width: 420px;
     height: auto;
     margin: 0 auto;
-  
   }
-
   .scr1_article2_dots {
-    display: none;
-  }  
+    width:520px;   
+    height:500px; 
+    position:static;   z-index: 0;   margin: 0;
+    transform: scale(0.9);
+  }
+  .happy_dots01, .happy_dots02 {
+    width:520px;   
+    height:500px; 
+    position: absolute; z-index: -1; margin: 0;
+  }
+  .scr1_article2_dots {
+    /* display: none; */
+  }
+  /* .dot_explanation_right  {height: 0%; width: 0%; font-size: 0; line-height: 0%;} */
+  .dot_explanation_mobile {height: 0%; width: 0%; font-size: 0; line-height: 0%;}
+  
 
   
 
@@ -348,8 +362,9 @@
 
     body {
       /* background-color: blue;  */
-    }
+    }  
 
+   
 
 
     /* JEWELLERY SLIDES 701px - 1000px  */
@@ -392,19 +407,58 @@
     }
     .smallPicDotDivs_div {
       margin-top: 44vw;
+    } 
+
+
+
+
+    /* dot animations --> SCREEN SIZES and LAYOUT  */
+    .scr1_articles {
+      display: flex;
+      flex-direction: column;
+      width:520px;
+      height: auto;
+      margin: 0 auto; 
     }
-
-
-
+    .scr1_article1_magda,
+    .scr1_article1_magda  section {
+      width:520px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .scr1_article2_dots {
+      width:500px;   
+      height:500px; 
+      position:static;   z-index: 0;   margin: 0;
+      transform: scale(1.00);
+      margin: 0 auto;
+    }
+    .happy_dots01, .happy_dots02 {
+      width:500px;   height:500px; 
+      position: absolute; z-index: -1; margin: 0;
+    }
+    .scr1_article2_dots {
+      /* display: none; */
+    }
+    .dot_explanation_right  {height: 0%; width: 0%; font-size: 0; line-height: 0%;}
+    .dot_explanation_mobile {font-size: 1.80rem;  line-height: 1.8rem; } 
 
     
-    
-
-    
-
-
-
+      
   
+
+
+
+    
+
+
+
+
+    
+    
+
+    
+
 
 
 
@@ -504,22 +558,44 @@
         height: auto;
         flex-direction: column;
       }
-      .scr1_articles {
-        width: 100%;
-        height: auto;
+
+
+      /* dot animations --> SCREEN SIZES and LAYOUT  */
+      .scr1_articles, 
+      .scr1_article1_magda, 
+      .scr1_article1_magda  section {
+        width:80vw;
+      }
+      .scr1_article2_dots {
+        width:80vw;   
+        height:80vw; 
+        transform: scale(1.00);
         margin: 0 auto;
       }
-      .scr1_article1_magda {
-        width:100% ; 
-        height:auto;   
-        margin: 0 auto;
+      .happy_dots01, .happy_dots02 {
+        width:80vw;   
+        height:80vw;  
       }
-     .scr1_article1_magda  section {
-        width: 100%;
-        height: auto; 
-        /* margin: 1rem 0rem 1rem 1rem;  */
-        margin: 0 auto;
-      }  
+      .dot_anime_01, .dot_anime_02, .dot_anime_03, .dot_anime_04,
+      .dot_anime_05a, .dot_anime_05b, .dot_anime_06, .dot_anime_07, .dot_anime_08 {
+        align-items: center;
+        align-content: center;
+        margin-left: -25vw;
+      }
+      .dot_anime_07 {        padding-top: 30px;      }
+
+
+
+
+
+
+
+
+
+
+
+
+
       
          
       aside, main {
@@ -681,7 +757,7 @@
       @media screen and (min-width: 1px) and (max-width: 500px) {
 
         body {
-          /* background-color: violet;  */
+          /* background-color: purple;  */
           /* flex-wrap: wrap; */
         } 
         
@@ -711,7 +787,15 @@
         }
         .skills_icon_line>img {
           height: 3.00rem;
-        }
+        } 
+
+
+
+        
+
+
+
+        
 
 
 
@@ -720,6 +804,10 @@
 
 
         @media screen and (min-width: 1px) and (max-width: 400px) {
+
+          body {
+            /* background-color: violet;  */
+          }
 
           html {  font-size: 10px;}
           .larger_font {font-size: 1.80rem;  line-height: 1.8rem; }
