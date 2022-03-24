@@ -68,6 +68,7 @@
   width: 8vw;
   opacity: 60%;
   animation: squirrel_flip 3s infinite;
+  
 }
 @keyframes squirrel_flip {  0% {
     transform: rotate(360deg);  }
@@ -94,6 +95,7 @@
   width: 8vw;
   opacity: 60%;
   animation: squirrel_jump 0.666s infinite;
+  
 }
 @keyframes squirrel_jump {
   000% {    bottom: -020px;  }

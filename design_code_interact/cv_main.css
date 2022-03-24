@@ -3,16 +3,29 @@
 
 * {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0 auto; 
+  padding: 0;
+  /* border: green solid 1px; */
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+  /* background-color: #333352; */
+  
 }
 
+html {  font-size: 14px; width: 100vw;}
+
 body {
-  /* margin: 0; */
+  margin: 0 auto; 
+
+  padding: 0;
   background-color: #333352;
   color: rgba(228, 228, 228, 0.733);
   font-family: 'Abel';
   cursor: crosshair;
-  width: 100vw;
+  width: 100vw;   
+  
+  overflow-x: hidden;
+  
 }
 
 ::selection {
@@ -20,16 +33,17 @@ body {
   background: rgba(228, 228, 228, 0.733);
 }
 
-/* #holo_fun {
+#holo_fun {
   background-image: linear-gradient(0.12turn, #45666d, #33335265, #45666d);
   background-size: 369.20%;
-}  */
+  
+} 
 
 
 /******************************************************************************/
 /* FONTS */
 
-html {  font-size: 14px;}
+
 
 h1, h2, h3, h4 {
   color: rgb(194, 165, 181);
@@ -38,6 +52,9 @@ h1, h2, h3, h4 {
   border: none;
   padding: 0 0 0.3rem 0 ;
   margin: 0;
+
+
+  
 }
 
 /* font sizes from XXS to XXL (except nav links and nav buttons) */
@@ -64,9 +81,11 @@ h1 {                                   font-size: 3.00rem;  line-height: 3.0rem;
 /* other basics */
 .flex_row    {  display: flex;  flex-direction: row;}
 .flex_column {  display: flex;  flex-direction: column;}
-.clearfix    {  overflow: hidden; }
+.clearfix    {  overflow: hidden; } 
+
+
 .anchor {  position: absolute;  margin: -12.666vh;}
-.anchor {  position: absolute;  margin: -10.666vh;}
+.anchor {  position: absolute;  margin: -09.666vh 0 0 0 ; border: 0px solid red;}
 
 
 
@@ -82,13 +101,18 @@ h1 {                                   font-size: 3.00rem;  line-height: 3.0rem;
   justify-content: space-between;
   width: 100vw;
   height: 10vh;
+  
+  
 }
 
 nav {
-  width: 85vw; width: 1120px; /*aside + main widths*/
+  width: 85vw; 
+  width: 1120px; 
+  /*aside + main widths*/
   height: 10vh;
   display: flex;
   justify-content: space-between;
+
 }
 
 /* .nav_background nav div === see below :) */
@@ -105,6 +129,7 @@ nav {
   padding: 0;
   border: 2px #4a7d8a6b solid;
   border-radius: 0.2rem;
+
 }
 
 .nav_box {
@@ -126,6 +151,7 @@ nav {
   width: 0;
   height: 0;
   font-size: 0;
+
 }
  
 
@@ -139,9 +165,10 @@ nav {
   width: 100%;
   position: fixed;top: 0; left: 0;
   z-index: 1;
-    background-color: #333352;
+  background-color: #333352;
   overflow-y: hidden;
   transition: 0.666s ease-out;
+  
 }
 
 .overlay-content {
@@ -150,6 +177,8 @@ nav {
   width: 100%;
   text-align: center;
   margin-top: 10vh;
+  
+  
 }
 
 .overlay a:not(.close_X) {
@@ -203,9 +232,11 @@ nav {
   /* border:rgb(27, 190, 190) solid 2px; */
   min-height: 90vh; 
   margin-top: 10vh;
+  width: 100vw;
   background-image: url("./images/fig_aurora_40.png");
   background-size: cover; 
-  /* transform: scale(0.95); */
+  /* transform: scale(0.95); */ 
+  
 }
 
 .screen_title {
@@ -402,6 +433,7 @@ footer {
   padding: 2% 2% 2% 2%;
   padding: 0% 0% 0% 0%;
   text-align: center;
+  width: 90vw;
 }
 
 .blob {
@@ -418,7 +450,8 @@ footer {
 .blob p {
   color: #333352;  color: rgba(228, 228, 228, 0.733);
   margin: 0;
-  padding: 0 50px 20px 0;
+  padding: 0 50px 20px 0; 
+  
 }
 
 
@@ -439,6 +472,7 @@ footer {
   text-decoration: none;
   color: rgba(228, 228, 228, 0.733);
   padding: 0.0em 0.2em 0.0em 0.2em;
+  
 }
 
 .nav_background nav div:hover:not(.nav_box, .nav_box7),
@@ -527,8 +561,8 @@ footer {
   display: inline-flex; 
   float: inline-start;
 }
-.clearing_div {  clear: both; height: 0; width: 0;}
-.space_1vw {  width: 0.30rem;}
+.clearing_div {  clear: both; height: 0; width: 0; }
+.space_1vw {  width: 0.30rem; }
 
 /* >>> each round png :: styled */
 .icon_link {
@@ -571,6 +605,7 @@ footer {
   padding: 1.5vh;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .buttons_row>a {  border: none; }
