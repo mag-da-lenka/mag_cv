@@ -288,12 +288,12 @@
   padding: 0;
   left: 0;
   top: 0;
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   overflow: auto;
-  background-color: #333352e3; 
-  background-image: linear-gradient(0.92turn, #333352, #45666dc7);
-  background-size: 169.20%;
+  background-color: #333352; 
+  /* background-image: linear-gradient(0.92turn, #333352, #45666dc7);
+  background-size: 169.20%; */
 }
 
 .closing_XXX {

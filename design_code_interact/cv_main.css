@@ -5,38 +5,35 @@
   box-sizing: border-box;
   margin: 0 auto; 
   padding: 0;
-  /* border: green solid 1px; */
+  /* border: pink solid 1px; */
   /* overflow-x: scroll; */
   /* overflow-y: scroll; */
   /* background-color: #333352; */
   
 }
 
-html {  font-size: 14px; width: 100vw;}
+html {  font-size: 16px; width: 100vw; font-weight: 100;}
 
 body {
   margin: 0 auto; 
-
   padding: 0;
   background-color: #333352;
-  color: rgba(228, 228, 228, 0.733);
-  font-family: 'Abel';
+  color: rgba(228, 228, 228);
+  font-family: 'Abel'; 
+  font-weight: 100; 
   cursor: crosshair;
-  width: 100vw;   
-  
+  width: 100vw;    
   overflow-x: hidden;
-  
 }
 
 ::selection {
   color: #333352;
-  background: rgba(228, 228, 228, 0.733);
+  background: rgba(228, 228, 228);
 }
 
 #holo_fun {
   background-image: linear-gradient(0.12turn, #45666d, #33335265, #45666d);
   background-size: 369.20%;
-  
 } 
 
 
@@ -47,35 +44,32 @@ body {
 
 h1, h2, h3, h4 {
   color: rgb(194, 165, 181);
-  font-weight: 500;
   text-shadow: 1px 1px 2px #333352;
   border: none;
-  padding: 0 0 0.3rem 0 ;
-  margin: 0;
-
-
-  
+  padding: 0 0 0rem 0 ;
+  margin: 0; 
+  font-weight: 100; 
 }
 
 /* font sizes from XXS to XXL (except nav links and nav buttons) */
-.smaller_font {                        font-size: 1.20rem;  font-weight: 100; color:rgba(228, 228, 228, 0.733); }
-.text_link:link, .text_link:visited {  font-size: 1.20rem;  font-weight: 100; }
-a, p, ul, li {                         font-size: 1.25rem;  font-weight: 100; }
+.smaller_font {                        font-size: 1.00rem;  font-weight: 100; color:rgb(228, 228, 228); }
+.text_link:link, .text_link:visited {  font-size: 1.00rem;  font-weight: 100; }
+a, p, ul, li {                         font-size: 1.00rem;  font-weight: 100; }
 .accordion {  /* afects the text on the panel (NOT plus/minus) */   /* all other accordion styles down below */ 
-                                       font-size: 1.40rem;  font-weight: 100;}
-.accordion:after {         /*PLUS*/    font-size: 1.40rem;  font-weight: 100;}
-.accordion.active:after {  /*MINUS*/   font-size: 1.40rem;  font-weight: 100;}
-.larger_font {                         font-size: 1.80rem;  font-weight: 100; line-height: 1.8rem;  color:rgba(228, 228, 228, 0.733); }
-h3 {                                   font-size: 1.80rem;  font-weight: 600; line-height: 1.9rem; 
+                                       font-size: 1.00rem;  font-weight: 100; }
+.accordion:after {         /*PLUS*/    font-size: 1.00rem;  font-weight: 100; }
+.accordion.active:after {  /*MINUS*/   font-size: 1.00rem;  font-weight: 100; }
+.larger_font {                         font-size: 1.20rem;  font-weight: 100;  color:rgba(228, 228, 228); }
+h3 {                                   font-size: 1.20rem;  font-weight: 100; font-weight: 100; line-height: 1.20rem; padding: 0; margin: 0; 
   text-shadow: 0.1px 0.1px 0.2px #33335200;
-  background: 
-  linear-gradient(to right, rgb(194, 165, 181) 0%, rgba(228, 228, 228, 0.733) 70%);
-	-webkit-background-clip: text; 	-webkit-text-fill-color: transparent;  }
-h2 {                                   font-size: 2.50rem;  line-height: 2.5rem; }
-h1 {                                   font-size: 3.00rem;  line-height: 3.0rem; padding: 0; margin: 0; } /* the real h1 font size is in .i_am_magda_1 */
-.XXL_font {                            font-size: 3.50rem;  line-height: 3.5rem;   text-shadow: 2px 2px 5px #07071f; }
+  /* background:   linear-gradient(to right, rgb(194, 165, 181) 0%, rgba(228, 228, 228) 70%);
+	-webkit-background-clip: text; 	-webkit-text-fill-color: transparent;   */
+}
+h2 {                                   font-size: 1.40rem;  font-weight: 100; line-height: 1.40rem; padding: 0; margin: 0; }
+h1 {                                   font-size: 2.00rem;  font-weight: 100; line-height: 2.00rem; padding: 0; margin: 0; color:rgba(228, 228, 228);} /* the real h1 font size is in .i_am_magda_1 */
+.XXL_font {                            font-size: 1.60rem;  font-weight: 100; line-height: 1.60rem; padding: 0; margin: 0; text-shadow: 2px 2px 5px #333352; }
 .panel h3,    .panel ul, 
-.panel ul li, .panel ul li p {                              line-height: 1.4rem;     padding-right: 1.4rem; }
+.panel ul li, .panel ul li p {                              padding-right: 1.4rem; }
 
 
 /* other basics */
@@ -85,7 +79,7 @@ h1 {                                   font-size: 3.00rem;  line-height: 3.0rem;
 
 
 .anchor {  position: absolute;  margin: -12.666vh;}
-.anchor {  position: absolute;  margin: -09.666vh 0 0 0 ; border: 0px solid red;}
+.anchor {  position: absolute;  margin: -11.666vh 0 0 0 ; border: 0px solid red;}
 
 
 
@@ -93,14 +87,14 @@ h1 {                                   font-size: 3.00rem;  line-height: 3.0rem;
 /* NAVIGATION */
 
 .nav_background {
-  background-color: #33335265; background-color: #333352;
+  background-color: #333352;
   position: fixed;  
   z-index: 1;
   margin-top: -10vh; 
   padding: 0 0 0 0;
   justify-content: space-between;
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   
   
 }
@@ -109,9 +103,10 @@ nav {
   width: 85vw; 
   width: 1120px; 
   /*aside + main widths*/
-  height: 10vh;
+  height: 8vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; 
+  /* background-color: #2e2e9bda; */
 
 }
 
@@ -120,14 +115,15 @@ nav {
 .nav_box1, .nav_box2, .nav_box3,
 .nav_box4, .nav_box5, .nav_box6 {
   display: flex;
-  color: rgba(228, 228, 228, 0.733); 
+  color: rgba(228, 228, 228); 
   text-decoration: none;
   align-items: center;
   align-content: center;
-  height: 3.50rem;
+  height: 1.50rem;
   margin: 2.50vh 0.1vw 2.50vh 0.1vw;
   padding: 0;
-  border: 2px #4a7d8a6b solid;
+  border: 1px #4a7d8a6b solid;
+  border: none;
   border-radius: 0.2rem;
 
 }
@@ -225,7 +221,7 @@ nav {
   width: 100vw;
   display: flex;
   flex-direction: column; 
-  /* border: azure solid 5px; */
+  /* border: azure solid 1px; */
 }
 
 .screen1 {
@@ -235,7 +231,8 @@ nav {
   width: 100vw;
   background-image: url("./images/fig_aurora_40.png");
   background-size: cover; 
-  /* transform: scale(0.95); */ 
+  background-position-y: top; 
+  transform: scale(1.00); 
   
 }
 
@@ -467,10 +464,10 @@ footer {
 
 .nav_background nav div a, .nav_box {
   align-content: space-between;
-  font-size: 2.60rem;
-  font-weight: 420;
+  font-size: 1.50rem;
+  font-weight: 100;
   text-decoration: none;
-  color: rgba(228, 228, 228, 0.733);
+  color: rgba(228, 228, 228);
   padding: 0.0em 0.2em 0.0em 0.2em;
   
 }
@@ -478,11 +475,11 @@ footer {
 .nav_background nav div:hover:not(.nav_box, .nav_box7),
 .nav_background nav div:active:not(.nav_box, .nav_box7),
 .nav_background nav div:focus:not(.nav_box, .nav_box7) {
-  color: rgba(228, 228, 228, 0.733);
+  color: rgba(228, 228, 228);
 }
 
 .nav_background nav div:visited {
-  color: rgba(228, 228, 228, 0.733);
+  color: rgba(228, 228, 228);
 }
 
 
@@ -491,20 +488,20 @@ footer {
 /* TEXT LINKS in aside + main + footer */
 
 .text_link:link, .text_link:visited {
-  color: rgba(228, 228, 228, 0.733);
+  color: rgba(228, 228, 228);
   text-decoration: none;
   padding: 0.0em 0.2em 0.0em 0.2em;
-  border: 0.1vw;
-  border-color: transparent transparent rgba(228, 228, 228, 0.322)rgba(228, 228, 228, 0.61);
+  border: 1px;
+  border-color: transparent transparent rgba(228, 228, 228) rgba(228, 228, 228);
   border-style: solid solid solid solid;
   border-radius: 0px 0px 0px 2px;
   transition: 0.366s ease-out;
 }
 
 .text_link:hover, .text_link:active, .text_link:focus {
-  color: rgba(228, 228, 228, 0.733);
+  color: rgba(228, 228, 228);
   text-decoration: none;
-  border-color: rgba(228, 228, 228, 0.61)rgba(228, 228, 228, 0.61) transparent transparent;
+  border-color: rgba(228, 228, 228) rgba(228, 228, 228) transparent transparent;
   border-style: solid solid solid solid;
   border-radius: 0px 3px 0px 0px;
   transition: 0.366s ease-out;
@@ -670,3 +667,29 @@ button:focus {
 Photo by <a href="https://unsplash.com/@viniciusamano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vinicius "amnx" Amano</a> on <a href="https://unsplash.com/backgrounds/colors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
 Photo by <a href="https://unsplash.com/@gamell?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joan Gamell</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> 
 */
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px 333352; 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(228, 228, 228); 
+  border-radius: 0px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(228, 228, 228); 
+}
