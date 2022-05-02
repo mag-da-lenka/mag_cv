@@ -385,7 +385,7 @@
 
     .nav_box1 {
       margin-right: 0vw;
-      margin-left: 0vw;
+      margin-left: 0vw; 
     }
 
 
@@ -559,10 +559,21 @@
         width:80vw;
         height: auto;
         margin: 0 auto;
-      }
+      } 
 
-    
    
+      
+      .scr1_article2_dots, 
+      .happy_dots { 
+        width:   80vw;   
+        height:  80vw; 
+        /* border: orange 1px solid; */
+      } 
+
+   
+
+      
+
     
       /**** 1 - 0700px **************************************************************************/
       /* INNER SCREENS : LISTS */
@@ -696,16 +707,14 @@
       @media screen and (min-width: 1px) and (max-width: 500px) {
 
         body {
-          /* background-color: purple;  */
+          background-color: purple; 
         } 
 
         .large_font  { font-size: 1.20rem;  }
         h1 {          font-size: 1.5rem;        }
   
       
-       
-
-
+      
        .slideshow-container {
           width: 60vw;
           height: 60vw;
@@ -725,7 +734,10 @@
         }
         .skills_icon_line>img {
           height: 2.50rem;
-        } 
+        }  
+
+
+
 
 
 
@@ -744,12 +756,11 @@
         @media screen and (min-width: 1px) and (max-width: 400px) {
 
           body {
-            /* background-color: violet;  */
+            background-color: violet; 
           }
 
           html {  font-size: 11px;}
        
-
         }
 
 
