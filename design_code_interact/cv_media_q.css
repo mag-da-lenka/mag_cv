@@ -7,7 +7,7 @@
   body {
     display: flex;
     flex-direction: column;  
-    /* background-color: rgb(0, 0, 59); */
+    /* background-color: rgb(0, 0, 0); */
   } 
 
   .break_mobile_none {
@@ -20,7 +20,7 @@
   }
 
   .screen_title h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: end;
     padding: 2% 2% 1% 1%;
   }
@@ -45,10 +45,13 @@
     width: 90vw;
   }
   .nav_background nav div a, .nav_box {
-    font-size: 3vw;
+    font-size: 1.5rem;
     height: auto;
   }
 
+  .nav_box1 {
+    margin-right: 30rem;
+  }
 
 
   /**** 1 - 1225px **************************************************************************/
@@ -59,7 +62,7 @@
     margin-top: 5rem;
     padding-bottom: 2vh;
     height: 100%;
-    width: 90vw; 
+    width: 80vw; 
 
     
   }
@@ -76,7 +79,7 @@
   .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
   .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
     flex-direction: column;
-    max-width: 100%;
+    width: 60vw;
     height: 100%;
     padding-bottom: 0px;
   }
@@ -91,44 +94,29 @@
 
 
 
-  /* dot animations --> SCREEN SIZES and LAYOUT */
+  /* dot animations --> SCREEN SIZES and LAYOUT  */
   .scr1_articles {
     display: flex;
-    flex-direction: row;
-    width: 940px;
+    flex-direction: column;
+    width:600px;
     height: auto;
     margin: 0 auto; 
   }
-  .scr1_article1_magda {
-    width: 420px;
-    height: auto;
-    margin: 0 auto;
-  }
+  .scr1_article1_magda,
   .scr1_article1_magda  section {
-    width: 420px;
+    width:600px;
     height: auto;
     margin: 0 auto;
   }
+
   .scr1_article2_dots {
-    width:520px;   
-    height:500px; 
-    position:static;   z-index: 0;   margin: 0;
-    transform: scale(0.9);
-  }
-  .happy_dots01, .happy_dots02 {
-    width:520px;   
-    height:500px; 
-    position: absolute; z-index: -1; margin: 0;
-  }
-  .scr1_article2_dots {
-    /* display: none; */
+    display: none;
   }
   /* .dot_explanation_right  {height: 0%; width: 0%; font-size: 0; line-height: 0%;} */
-  .dot_explanation_mobile {height: 0%; width: 0%; font-size: 0; line-height: 0%;}
+  /* .dot_explanation_mobile {font-size: 1.80rem;  line-height: 1.8rem; }  */
   
-
-  
-
+ 
+  /* -------------------------------------- */
 
 
   aside, main {
@@ -150,7 +138,7 @@
     margin: 0 auto;
     margin-top: 9vh;
     min-height: 50vh;
-    width: 90vw;
+    width: 80vw;
     display: flex;
     flex-direction: column;
   }
@@ -164,7 +152,7 @@
     display: flex; 
     flex-direction: row;
     min-height: 29vh; 
-    width: 100%; 
+    width: 60vw;
   } 
   .screen_flex_layout6 aside .contact_languages {
     margin: 0;
@@ -185,7 +173,6 @@
     width: 400px;
   }
 
-  /* -------------------------------------- */
 
 
 
@@ -193,17 +180,9 @@
   /**** 1 - 1225px **************************************************************************/
   /* BARS contacts HYF + CONTACTS MAGDA */
 
-  .non_hover_bars {
-    width: 80vw;
-  }
-
-  .link_bars {
-    width: 80vw;
-  }
-
-  .link_bars:hover {
-    opacity: 50%;
-  }
+  .non_hover_bars  {    width: 40vw;  }
+  .link_bars       {    width: 40vw;  }
+  .link_bars:hover {    opacity: 100%;  }
 
   .contact_icon_line_hyf {
     float: left;
@@ -269,7 +248,28 @@
     margin-top: 0vh;
     padding: 0;
   }
+ 
 
+  #up_button {
+    display: none;
+    position: fixed;
+    bottom: 0rem;
+    right: 0vw;
+     
+  
+    height: 0em;
+    width: 0rem;
+    padding: 0;
+    font-size: 0rem;
+    cursor: none; 
+    border: rgba(228, 228, 228, 0.6) 0rem solid;
+    
+  }
+  
+  #up_button:hover {
+    color: rgba(228, 228, 228, 0.9);
+    border: rgba(228, 228, 228, 0.9) 0rem solid;
+  }
 
   /**** 1 - 1225px **************************************************************************/
   /* all SLIDES, ACCORDION and ANIMATIONS */ 
@@ -285,23 +285,23 @@
   .slideshow-container, .mySlides1_dot_descr {
     display: flex;
     align-items: flex-start;
-    width: 18rem;
-    height: 18rem;
+    width: 17vw;
+    height: 17vw;
     margin: 0vw 0.5vw 0vw 0.5vw;
   } 
   
  
   .accordion {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
     padding: 1% 1% 1% 1%;
     margin: 1% 0% 0% 0%;
-    width: 85vw;
+    width: 58vw;
   }
   .accordion:after {
-    font-size: 1.6rem;
+    /* font-size: 1.6rem; */
   }
   .panel {
-    width: 85vw;
+    width: 58vw;
   }
 
 
@@ -309,11 +309,6 @@
   .squirrel_icon_jump_svg {
     width: 10rem;
   } 
-
-
-
-
-
 
 
 
@@ -357,16 +352,41 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media screen and (min-width: 1px) and (max-width: 1000px) {  
 
 
 
 
     body {
-      /* background-color: blue;  */
+      /* background-color: darkcyan;  */
     }  
 
-   
+
+    nav {
+      height: 10vh;
+      width: 80vw;
+      justify-content: space-around;
+    }
+
+    .nav_box1 {
+      margin-right: 0vw;
+      margin-left: 0vw;
+    }
 
 
     /* JEWELLERY SLIDES 701px - 1000px  */
@@ -374,14 +394,14 @@
       display: flex; 
       flex-direction: row-reverse; 
       flex-wrap: wrap;
-      padding: 2vw 2vw 2vw 2vw; 
+      padding: 2vw 1vw 2vw 1vw; 
     }
     .mySlides1_dot_descr, .mySlides1_dot_descr p {
       display: none;
      }
     .slideshow-container, .mySlides1_dot_descr_mobile {
-      width: 38vw;
-      height: 38vw;
+      width: 26.5vw;
+      height: 26.5vw;
       margin: 0vw 0.5vw 0vw 0.5vw;
     } 
     .slideshow-container {      order: -1; /* !!!!!!! */    }
@@ -391,14 +411,15 @@
       width: 100%;
       height: 100%;
       background-color: #33335227;
-      font-size: 2.4vw;
-      line-height: 2.4vw; 
-      padding: 9vw 4.9vw 0 6.5vw;
-      align-items: flex-start;
+      font-size: 2.2vw;
+      line-height: 2.2vw; 
+      padding: 3vw 4.9vw 0 6.5vw;
+      align-items: center;
+      align-content: center;
     }
     .prev, .next {
       position: absolute;
-      top: 16vw;
+      top: 10vw;
       font-size: 4vw;
     } 
 
@@ -411,39 +432,13 @@
       margin-top: 44vw;
     } 
 
+    .non_hover_bars  {    width: 60vw;  }
+    .link_bars       {    width: 60vw;  }
+    .link_bars:hover {    opacity: 100%;  }
 
 
 
-    /* dot animations --> SCREEN SIZES and LAYOUT  */
-    .scr1_articles {
-      display: flex;
-      flex-direction: column;
-      width:520px;
-      height: auto;
-      margin: 0 auto; 
-    }
-    .scr1_article1_magda,
-    .scr1_article1_magda  section {
-      width:520px;
-      height: auto;
-      margin: 0 auto;
-    }
-    .scr1_article2_dots {
-      width:500px;   
-      height:500px; 
-      position:static;   z-index: 0;   margin: 0;
-      transform: scale(1.00);
-      margin: 0 auto;
-    }
-    .happy_dots01, .happy_dots02 {
-      width:500px;   height:500px; 
-      position: absolute; z-index: -1; margin: 0;
-    }
-    .scr1_article2_dots {
-      /* display: none; */
-    }
-    .dot_explanation_right  {height: 0%; width: 0%; font-size: 0; line-height: 0%;}
-    .dot_explanation_mobile {font-size: 1.80rem;  line-height: 1.8rem; } 
+    
 
     
       
@@ -469,38 +464,46 @@
 
 
       body {
-        /* background-color: lightskyblue; */
+        /* background-color: cyan; */
       }
       
       /**** 1 - 0700px **************************************************************************/
       /* BASICS */  
-  
-      h3 {  font-size: 1.50rem;  line-height: 1.50rem; }
-      h2 {  font-size: 2.00rem;  line-height: 2.00rem; }
-      p, ul, li {
-        margin: 0; 
-        padding: 0;
-        max-width: 85vw;
+   
+      html {
+        font-size:14px;
       }
-      .accordion { font-size: 1.20rem; }
-        /* afects the text on the bar (NOT plus/minus) */   
-      
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .screen1 {
+        min-height: 75vh; 
+      }
+
+      .screen_flex_layout1 {
+        margin: 0 auto; 
+        margin-top: 3rem;
+      }
+
+
           
-  
       /**** 1 - 0700px **************************************************************************/
-      /* NAVIGATION */
+      /* NAVIGATION FOR MOBILE LAYOUT */
       .nav_background {
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 10vh;
         margin-top: 0vh;
         border: none;
+        /* border: pink solid 1px; */
       }
       nav {
-        width: 10vh;
+        /* border: pink dashed 1px; */
+        justify-content: end;
+        width: 100%;
         height: 10vh;
-        right: 2vw;
-        float: right;
       }
       nav div a {
         align-items: center;
@@ -529,94 +532,38 @@
         font-size: 5.5vh;
       } 
       
+      
       /**** 1 - 0700px **************************************************************************/
-      /* OUTER/INNER SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */
+      /* OUTER/INNER SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */ 
      
       .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
-        
-        margin-top: 10vh;       
-        margin-bottom: 5vh;  
+        width: 96vw; 
       }
-      .screen1 {
-        width: 100vw;
-      }
-  
-      .screen_title {
-        text-align: start;
-        height:10rem;
-      }
-    
+
       .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
       .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
         flex-direction: column;
-        width: 100%; 
-        margin: auto;
-        height: 100%;
-        padding-bottom: 0px;
-      }
-  
-      .screen_flex_layout1 {
-        width: 100%;
-        height: auto;
+        width: 90vw;
+      } 
+
+
+      .scr1_articles {
+        display: flex;
         flex-direction: column;
+        width:80vw;
+        height: auto;
+        margin: 0 auto; 
       }
-
-
-      /* dot animations --> SCREEN SIZES and LAYOUT  */
-      .scr1_articles, 
-      .scr1_article1_magda, 
+      .scr1_article1_magda,
       .scr1_article1_magda  section {
         width:80vw;
-      }
-      .scr1_article2_dots {
-        width:80vw;   
-        height:80vw; 
-        transform: scale(1.00);
+        height: auto;
         margin: 0 auto;
       }
-      .happy_dots01, .happy_dots02 {
-        width:80vw;   
-        height:80vw;  
-      }
-      .dot_anime_01, .dot_anime_02, .dot_anime_03, .dot_anime_04,
-      .dot_anime_05a, .dot_anime_05b, .dot_anime_06, .dot_anime_07, .dot_anime_08 {
-        align-items: center;
-        align-content: center;
-        margin-left: -25vw;
-      }
-      .dot_anime_07 {        padding-top: 30px;      }
 
-
-
-
-
-
-
-
-
-
-
-
-
-      
-         
-      aside, main {
-        width: 95vw;
-        height: 100%;
-        margin: 0% 0% 0% 0%;
-        padding: 1% 1% 2% 2%;
-        border: 0.4vw;
-      }
-      aside {
-        text-align: left;
-        margin: 0% 0% 3% 0%;
-      }
-      main {
-        order: -1;
-      }
-      
-  
-  
+    
+   
+    
       /**** 1 - 0700px **************************************************************************/
       /* INNER SCREENS : LISTS */
     
@@ -627,13 +574,10 @@
       
       /**** 1 - 0700px **************************************************************************/
       /* INNER SCREENS : icons and icon bars */
-      .non_hover_bars  {  width: 80vw;    }
-      .link_bars       {  width: 80vw;    }
-      .link_bars:hover {  width: 80vw;    }  
       
       .skills_icon_line  {
         display: flex;
-        width: 400px;
+        width: 80vw;
         margin: 0;
         padding:0;
       }
@@ -643,26 +587,8 @@
         padding: 1% 1% 0% 0%;
       }
   
-      /**** 1 - 0700px **************************************************************************/
-      /* FOOTER */  /* footer_buttons are styled in the nav buttons section */
-      
-      footer {
-        width: 100%;
-        /* border: solid 2ps rgb(228, 228, 228); */
-      }
-      .blob {
-        /* display: block;
-        box-sizing: border-box; */
-        height: 50vw;
-        width: 100vw;
-        border: none;
-        clip-path: ellipse(52% 100% at 58% 100%);
-      }
-      .blob p {
-        font-size: 1rem;
-      }
-      
-      /**** 1 - 0700px **************************************************************************/
+  
+            /**** 1 - 0700px **************************************************************************/
       /* ROUND CONTACT-ICONS-LINKS (coding education + contact screen) */
   
       .contact_icon_line_mag,
@@ -691,25 +617,28 @@
        
 
 
-
       /**** 1 - 0700px **************************************************************************/
       /* all SLIDES, ACCORDION and ANIMATIONS */
-  
+   
 
-      /* accordion */
       .accordion {
-        width: 86vw;
-      }    
-  
-      /* blinking magda screen 1 */
-      .autoslides_container_outer {      order: -1;    } 
-      .mySlides1_dot_descr p {      padding: auto;       font-size: 1.0rem;
+        /* font-size: 1.6rem; */
+        padding: 1% 1% 1% 1%;
+        margin: 1% 0% 0% 0%;
+        width: 80vw;
       }
+      .accordion:after {
+        /* font-size: 1.6rem; */
+      }
+      .panel {
+        width: 80vw;
+      } 
+
+
+      .non_hover_bars  {    width: 80vw;  }
+      .link_bars       {    width: 80vw;  }
+      .link_bars:hover {    opacity: 100%;  }
   
-      /* all squirrels */
-      .squirrel_icon_flip_svg,
-      .squirrel_icon_jump_svg {  width: 20vh;    }
-      .squirrel_icon_jump     {  padding-left: 10vw;    } 
 
 
       /* jewellery slides */
@@ -756,18 +685,25 @@
 
 
 
+
+
+
+
+
+
+
+
       @media screen and (min-width: 1px) and (max-width: 500px) {
 
         body {
           /* background-color: purple;  */
-          /* flex-wrap: wrap; */
         } 
-        
-        html {  font-size: 11px;}
-        .larger_font {font-size: 1.80rem;  line-height: 1.8rem; }
-        .typewriter_area {
-          margin-top: 2rem;
-        }
+
+        .large_font  { font-size: 1.20rem;  }
+        h1 {          font-size: 1.5rem;        }
+  
+      
+       
 
 
        .slideshow-container {
@@ -788,7 +724,7 @@
           width: 85vw;
         }
         .skills_icon_line>img {
-          height: 3.00rem;
+          height: 2.50rem;
         } 
 
 
@@ -811,11 +747,8 @@
             /* background-color: violet;  */
           }
 
-          html {  font-size: 10px;}
-          .larger_font {font-size: 1.80rem;  line-height: 1.8rem; }
-          .typewriter_area {
-            margin-top: 2rem;
-          }
+          html {  font-size: 11px;}
+       
 
         }
 

@@ -1,6 +1,6 @@
 
 /******************************************************************************/
-/* AUTOMATIC SLIDES */
+/* AUTOMATIC SLIDES for my profile picture */
 
 .autoslides_container_outer {
   /* border: 1px solid darkblue; */
@@ -111,7 +111,7 @@
   height: 100%;
   background-color: #33335227;
   padding-left: 3rem; 
-  font-size: 1.266rem;
+  font-size: 1.0rem;
   /* border: yellow solid 1px; */
 }
 
@@ -167,7 +167,7 @@
   transition: 0.4s;
   padding: 1% 1% 1% 1%;
   margin: 0% 0% 1% 0%;
-  width: 666px;
+  width: 600px;
   color: rgb(228, 228, 228);
   font-family: 'Abel';
   text-align: left;
@@ -214,9 +214,9 @@
   color: rgba(228, 228, 228, 0.897);
   background-color: rgba(255, 192, 203, 0.014);
   background-color: rgba(255, 192, 203, 0.0);
-  background: linear-gradient(180deg, rgba(255, 192, 203, 0.014), rgba(255, 192, 203, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 192, 203, 0.045), rgba(255, 192, 203, 0) 100%);
   max-height: 0;
-  width: 666px;
+  width: 600px;
 
   padding: 0% 0% 0% 1%;
   margin: 0% 0% 1% 0%;

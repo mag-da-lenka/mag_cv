@@ -2,15 +2,34 @@ console.table(`hello Hello`)
 
 
 
-setTimeout(() => {
-    alert("The mobile layout is currently being rebuilt, please view the page on your laptop.")
-}, 2666);
+// setTimeout(() => {
+//     alert("The mobile layout is currently being rebuilt, please view the page on your laptop.")
+// }, 2666);
+
+
+// up BUTTON
+
+const toTopButton = document.getElementById("up_button");
+
+window.onscroll = () => { showBtnOnScrollDown() };
+
+const showBtnOnScrollDown = () => {
+    if (document.body.scrollTop > 50 ||
+        document.documentElement.scrollTop > 50) {
+        toTopButton.style.display = "block";
+    } else {
+        toTopButton.style.display = "none";
+    }
+}
+
+const goToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 
 
-
-
-// 04 
+ 
 // mobile nav
 
 const openMobileNav = () => { document.getElementById("mobileNav").style.height = "100%"; }
@@ -18,10 +37,9 @@ const closeMobileNav = () => { document.getElementById("mobileNav").style.height
 
 
 
-// 05
+
 // HOLOGRAPHIC BODY 
 
-// start a holographic body
 const holoBody = document.getElementById("holo_fun");
 
 // get mouse X position in mili
@@ -51,7 +69,8 @@ const updateHolographicBackground = (O_xxx) => {
 }
 
 
-// 01
+
+
 // slideshow 
 
 const slideIndex = [1, 1];
@@ -79,7 +98,7 @@ showSlides(1, 1);
 
 
 
-// 02 
+
 // accordion
 
 const acc = document.getElementsByClassName("accordion");
@@ -105,7 +124,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-// 03
+
 // automatic slideshow
 
 let autoSlideIndex = 0;
@@ -172,99 +191,3 @@ function runSlideShow(n) {
     description_lb.innerHTML = dots_lb[slideIdx - 1].alt;
 }
 
-
-
-
-
-// const handleDeviceOrientation = (event) => {
-
-//     const z = Math.abs(event.alpha); // rotation degrees from 0 to 360
-//     console.log(`z_value: `, z)
-
-//     const rotation_value = z / 360;
-//     console.log(`rotation_value: `, rotation_value)
-
-//     updateHolographicBackground(rotation_value);
-// }
-
-
-// window.addEventListener("deviceorientation", handleDeviceOrientation, true);
-
-// ------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let dots1 = document.getElementById("dots1");
-// let moreText1 = document.getElementById("more1");
-// let btnText1 = document.getElementById("moreLess_btn1");
-// let dots2 = document.getElementById("dots2");
-// let moreText2 = document.getElementById("more2");
-// let btnText2 = document.getElementById("moreLess_btn2");
-// let dots3 = document.getElementById("dots3");
-// let moreText3 = document.getElementById("more3");
-// let btnText3 = document.getElementById("moreLess_btn3");
-
-// let dotsArray = [dots1, dots2, dots3]
-// let moreTextArray = [moreText1, moreText2, moreText3]
-// let btnTextArray = [btnText1, btnText2, btnText3]
-
-// const snippets = [
-//     {
-//         "dotsName": "dots1",
-//         "textName": "moreText1",
-//         "btnTextName": "btnText1"
-//     },
-//     {
-//         "dotsName": "dots2",
-//         "textName": "moreText2",
-//         "btnTextName": "btnText2"
-//     },
-//     {
-//         "dotsName": "dots3",
-//         "textName": "moreText3",
-//         "btnTextName": "btnText3"
-//     }
-// ];
-// // console.log("\nadvanced ARRAY methods");
-// // console.log("snippets", snippets);
-
-// let dots = snippets.forEach((aSnippet) => aSnippet.dotsName);
-// console.log(dots);
-// let btnText = snippets.forEach((aSnippet) => aSnippet.btnTextName);
-// let moreText = snippets.forEach((aSnippet) => aSnippet.textName);
-
-// function showHide() {
-
-//     if (dots.style.display === "none") {
-//         dots.style.display = "inline";
-//         btnText.innerHTML = "▼";
-//         moreText.style.display = "none";
-
-//     }
-
-//     else {
-//         dots.style.display = "none";
-//         btnText.innerHTML = "▲";
-//         moreText.style.display = "inline";
-//     }
-// }
-
-
-// snippets.forEach((aSnippet) => console.log("aSnippet.dotsName from .forEach: ", aSnippet.dotsName))
-// snippets.forEach((aSnippet) => console.log("aSnippet.textName from .forEach: ", aSnippet.textName))
-// snippets.forEach((aSnippet) => console.log("aSnippet.btnTextName from .forEach: ", aSnippet.btnTextName))
