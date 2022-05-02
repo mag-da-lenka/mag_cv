@@ -707,7 +707,7 @@
       @media screen and (min-width: 1px) and (max-width: 500px) {
 
         body {
-          background-color: purple; 
+          /* background-color: purple;  */
         } 
 
         .large_font  { font-size: 1.20rem;  }
@@ -756,7 +756,7 @@
         @media screen and (min-width: 1px) and (max-width: 400px) {
 
           body {
-            background-color: violet; 
+            /* background-color: violet;  */
           }
 
           html {  font-size: 11px;}
