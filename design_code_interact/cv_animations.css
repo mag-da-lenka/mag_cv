@@ -66,8 +66,8 @@
   margin-right: 1vh;
   color: rgb(228, 228, 228);
   width: 8vw;
-  opacity: 60%;
-  animation: squirrel_flip 3s infinite;
+  opacity: 100%;
+  animation: squirrel_flip 2.666s infinite;
   
 }
 @keyframes squirrel_flip {  0% {
@@ -134,45 +134,29 @@
 
 /* SCREEN 1 > DOTS > div sizes only */ 
 
-
 .scr1_article2_dots {
-
   position:static;   
-   
-  margin:  0 0 0 0; 
-  padding: 0 0 0 0; 
-  width:   600px;   
-  height:  600px; 
-
-  /* border: orange 1px solid; */
-}
-
-
-.happy_dots {
-
-  position: absolute;
-  z-index: 0;
-
-  display: flex;
-  flex-direction: row; 
-
   margin:  0 0 0 0; 
   padding: 0 0 0 0; 
   width:   37.5rem;   
   height:  37.5rem; /* ===600px if HTML font size === 16px */ 
- 
-  /* border: rgba(255, 166, 0, 0.466) 1px dashed; */
+  /* border: orange 1px solid; */
+}
+
+.happy_dots {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  flex-direction: row; 
+  margin:  0 0 0 0; 
+  padding: 0 0 0 0; 
+  width:   37.5rem;   
+  height:  37.5rem; /* ===600px initial HTML font size === 16px */ 
+   /* border: rgba(255, 166, 0, 0.466) 1px dashed; */
 } 
-
-
-
-
-
-
 
 /******************************************************************************/
 /* DOTS FOR the \\ MAIN SCREEN > .scr1_articles > .scr1_article2_dots */ 
-
 
 .dot_anime_01, .dot_anime_02, .dot_anime_03, .dot_anime_04,
 .dot_anime_05, .dot_anime_06, .dot_anime_07, .dot_anime_08, 
@@ -181,45 +165,41 @@
 .dot_anime_17, .dot_anime_18, .dot_anime_19, .dot_anime_20,
 .dot_anime_21, .dot_anime_22, .dot_anime_23, .dot_anime_24 {
   position: relative;
-
   display: flex;
   flex-direction: row; 
-
   margin:  0 0 0 0; 
   padding: 0 0 0 0; 
   width:   020%;   
   height:  020%;
-
   border-radius: 50%;
   transition: 1000ms;
   /* animation-delay: 3s;  */
   filter: opacity(100%);  
-  
   align-items: center;
   justify-content: center;
-
 } 
 
+.dot_anime_09, .dot_anime_10, .dot_anime_11, .dot_anime_12 {
+  width:   015%;   
+  height:  015%;
+}
 
+.dot_anime_01  {animation: dot_01  07.666s infinite; position: absolute; z-index: -01; }
+.dot_anime_02  {animation: dot_02  07.666s infinite; position: absolute; z-index: -02; }
+.dot_anime_03  {animation: dot_03  07.666s infinite; position: absolute; z-index: -03; }
+.dot_anime_04  {animation: dot_04  07.666s infinite; position: absolute; z-index: -04; }
+.dot_anime_05  {animation: dot_05  07.666s infinite; position: absolute; z-index: -05; width:033%; height:033%; }
+.dot_anime_06  {animation: dot_06  07.666s infinite; position: absolute; z-index: -06; }
+.dot_anime_07  {animation: dot_07  07.666s infinite; position: absolute; z-index: -07; }
+.dot_anime_08  {animation: dot_08  06.666s infinite; position: absolute; z-index: -08; }
 
+.dot_anime_09  {animation: dot_09  01.666s infinite; position: absolute; z-index: -09; }
+.dot_anime_10  {animation: dot_10  02.666s infinite; position: absolute; z-index: -10; }
+.dot_anime_11  {animation: dot_11  03.666s infinite; position: absolute; z-index: -11; }
+.dot_anime_12  {animation: dot_12  04.666s infinite; position: absolute; z-index: -12; }
 
-.dot_anime_01  {animation: dot_01  04.666s infinite; position: absolute; z-index: -1; }
-.dot_anime_02  {animation: dot_02  07.666s infinite; position: absolute; z-index: -2; animation-delay: 0s}
-.dot_anime_03  {animation: dot_03  05.666s infinite; position: absolute; z-index: -3; }
-.dot_anime_04  {animation: dot_04  05.666s infinite; position: absolute; z-index: -4; }
-.dot_anime_05  {animation: dot_05  04.666s infinite; position: absolute; z-index: -5; 
-  filter: opacity(100%); 
-  width:   033%;  
-  height:  033%;}
-.dot_anime_06  {animation: dot_06  05.666s infinite; position: absolute; z-index: -6; }
-.dot_anime_07  {animation: dot_07  07.666s infinite; position: absolute; z-index: -7; }
-.dot_anime_08  {animation: dot_08  10.000s infinite; position: absolute; z-index: -8; }
-.dot_anime_09  {animation: dot_09  05.666s infinite; position: absolute; z-index: -9; }
-.dot_anime_10  {animation: dot_10  07.666s infinite; position: absolute; z-index: -10; }
-.dot_anime_11  {animation: dot_11  10.000s infinite; position: absolute; z-index: -11; }
-.dot_anime_12  {animation: dot_12  05.666s infinite; position: absolute; z-index: -12; }
 .dot_anime_13  {animation: dot_13  07.666s infinite; position: absolute; z-index: -13; }
-.dot_anime_14  {animation: dot_14  10.000s infinite; position: absolute; z-index: -14; }
+.dot_anime_14  {animation: dot_14  07.666s infinite; position: absolute; z-index: -14; }
 .dot_anime_15  {animation: dot_15  07.666s infinite; position: absolute; z-index: -15; }
 .dot_anime_16  {animation: dot_16  10.000s infinite; position: absolute; z-index: -16; }
 .dot_anime_17  {animation: dot_17  07.666s infinite; position: absolute; z-index: -17; }
@@ -231,33 +211,33 @@
 .dot_anime_23  {animation: dot_23  07.666s infinite; position: absolute; z-index: -23; }
 .dot_anime_24  {animation: dot_24  10.000s infinite; position: absolute; z-index: -24; }
 
-@keyframes dot_01 { /*UX/UI*/
+@keyframes dot_01 { /*coding*/
   000% {left:+020%; top:+020%; background-color:#33335296; }
-  025% {left:+060%; top:+020%; background-color:#33335254; }
-  050% {left:+060%; top:+060%; background-color:#333352c0; }
-  075% {left:+020%; top:+060%; background-color:#3333522a; }
+  025% {left:+070%; top:+020%; background-color:#33335254; }
+  050% {left:+070%; top:+063%; background-color:#333352c0; }
+  075% {left:+020%; top:+063%; background-color:#3333522a; }
   100% {left:+020%; top:+020%; background-color:#33335254; }
 } 
-@keyframes dot_02 { /*code*/
-  000% {left:+000%; top:+060%; background-color:#33335296; }
-  025% {left:+000%; top:+020%; background-color:#33335254; }
-  050% {left:+040%; top:+020%; background-color:#333352c0; }
-  075% {left:+040%; top:+060%; background-color:#3333522a; }
-  100% {left:+000%; top:+060%; background-color:#33335254; }
+@keyframes dot_02 { /*UX/UI*/
+  000% {left:+005%; top:+070%; background-color:#33335296; }
+  025% {left:+005%; top:+010%; background-color:#33335254; }
+  050% {left:+045%; top:+010%; background-color:#333352c0; }
+  075% {left:+045%; top:+070%; background-color:#3333522a; }
+  100% {left:+005%; top:+070%; background-color:#33335254; }
 } 
 @keyframes dot_03 { /*interaction 1*/
-  000% {left:+010%; top:+060%; background-color:#ae00ff04; }
-  025% {left:+010%; top:+040%; background-color:#00ffea04; }
+  000% {left:+012%; top:+060%; background-color:#ae00ff04; }
+  025% {left:+012%; top:+040%; background-color:#00ffea04; }
   050% {left:+060%; top:+030%; background-color:#00ffea0a; }
   075% {left:+060%; top:+040%; background-color:#3333522a; }
-  100% {left:+010%; top:+060%; background-color:#d38fa30e; }
+  100% {left:+015%; top:+060%; background-color:#d38fa30e; }
 }
 @keyframes dot_04 { /*interaction 2*/
-  000% {left:+010%; top:+060%; background-color:#ae00ff04; }
-  025% {left:+020%; top:+040%; background-color:#00ffea0a; }
+  000% {left:+015%; top:+060%; background-color:#ae00ff04; }
+  025% {left:+025%; top:+040%; background-color:#00ffea0a; }
   050% {left:+065%; top:+045%; background-color:#333352c0; }
   075% {left:+065%; top:+055%; background-color:#3333522a; }
-  100% {left:+010%; top:+060%; background-color:#d38fa310; }
+  100% {left:+015%; top:+060%; background-color:#d38fa310; }
 } 
 
 @keyframes dot_05 { /*user */
@@ -269,91 +249,91 @@
 }
 
 @keyframes dot_06 { /*empathy*/
-  000% {left:+020%; top:+060%; background-color:#3b3b5096; }
-  025% {left:+020%; top:+020%; background-color:#33335254; }
-  050% {left:+060%; top:+020%; background-color:#333352c0; }
-  075% {left:+060%; top:+060%; background-color:#3333522a; }
-  100% {left:+020%; top:+060%; background-color:#33335254; }
+  000% {left:+020%; top:+070%; background-color:#3b3b5096; }
+  025% {left:+020%; top:+010%; background-color:#33335254; }
+  050% {left:+060%; top:+010%; background-color:#333352c0; }
+  075% {left:+060%; top:+070%; background-color:#3333522a; }
+  100% {left:+020%; top:+070%; background-color:#33335254; }
 }
 @keyframes dot_07 { /*design thinking*/ 
-  000% {left:+020%; top:+060%; background-color:#3b3b5096; }
-  025% {left:+020%; top:+020%; background-color:#33335254; }
-  050% {left:+060%; top:+020%; background-color:#333352c0; }
-  075% {left:+060%; top:+060%; background-color:#3333522a; }
-  100% {left:+020%; top:+060%; background-color:#33335254; }
+  000% {left:+030%; top:+020%; background-color:#33335296; }
+  025% {left:+060%; top:+020%; background-color:#33335254; }
+  050% {left:+060%; top:+060%; background-color:#333352c0; }
+  075% {left:+030%; top:+060%; background-color:#3333522a; }
+  100% {left:+030%; top:+020%; background-color:#33335254; }
 }
 @keyframes dot_08 { /*magda*/
-  000% {left:+010%; top:+060%; background-color:#3b3b5096; }
-  025% {left:+010%; top:+020%; background-color:#33335254; }
-  050% {left:+050%; top:+020%; background-color:#333352c0; }
-  075% {left:+050%; top:+060%; background-color:#3333522a; }
-  100% {left:+010%; top:+060%; background-color:#33335254; }
+  000% {left:+010%; top:+060%; background-color:#3b3b5000; }
+  025% {left:+010%; top:+020%; background-color:#33335200; }
+  050% {left:+050%; top:+020%; background-color:#33335200; }
+  075% {left:+050%; top:+060%; background-color:#33335200; }
+  100% {left:+010%; top:+060%; background-color:#33335200; }
 } 
 @keyframes dot_09 { /*This is*/
-  000% {left:+000%; top:+000%; background-color:#3b3b5096; }
-  050% {left:+000%; top:+007%; background-color:#3b3b5096; }
-  100% {left:+000%; top:+000%; background-color:#33335254; }
+  000% {left:+000%; top:+001%; background-color:#33335200; }
+  050% {left:+000%; top:+000%; background-color:#33335200; }
+  100% {left:+000%; top:+001%; background-color:#d38fa300; }
 }
 @keyframes dot_10 { /*how I*/
-  000% {left:+020%; top:+000%; background-color:#3b3b5096; }
-  050% {left:+025%; top:+007%; background-color:#3b3b5096; }
-  100% {left:+020%; top:+000%; background-color:#33335254; }
+  000% {left:+008%; top:+000%; background-color:#33335200; }
+  050% {left:+007%; top:+001%; background-color:#33335200; }
+  100% {left:+008%; top:+000%; background-color:#d38fa300; }
 }
 @keyframes dot_11 { /*think*/
-  000% {left:+040%; top:+000%; background-color:#3b3b5096; }
-  050% {left:+040%; top:+007%; background-color:#3b3b5096; }
-  100% {left:+040%; top:+000%; background-color:#33335254; }
+  000% {left:+016%; top:+001%; background-color:#33335200; }
+  050% {left:+015%; top:+000%; background-color:#33335200; }
+  100% {left:+016%; top:+001%; background-color:#d38fa300; }
 }
-@keyframes dot_12 { /*% work*/
-  000% {left:+060%; top:+000%; background-color:#3b3b5096; }
-  050% {left:+057%; top:+007%; background-color:#3b3b5096; }
-  100% {left:+060%; top:+000%; background-color:#33335254; }
+@keyframes dot_12 { /*& work*/
+  000% {left:+024%; top:+000%; background-color:#33335200; }
+  050% {left:+026%; top:+001%; background-color:#33335200; }
+  100% {left:+024%; top:+000%; background-color:#d38fa300; }
 }
-@keyframes dot_13 { /*!*/
-  000% {left:+080%; top:+000%; background-color:#3b3b5096; }
-  100% {left:+080%; top:+000%; background-color:#33335254; }
+@keyframes dot_13 { /*iteration*/
+  000% {left:+062%; top:+040%; background-color:#33335296; }
+  025% {left:+062%; top:+060%; background-color:#33335254; }
+  050% {left:+010%; top:+050%; background-color:#333352c0; }
+  075% {left:+015%; top:+010%; background-color:#3333522a; }
+  100% {left:+062%; top:+040%; background-color:#33335254; }
 }
-@keyframes dot_14 { /*!*/
-  000% {left:+080%; top:+020%; background-color:#3b3b5096; }
-  100% {left:+080%; top:+020%; background-color:#33335254; }
+@keyframes dot_14 { /*testing*/
+  000% {left:+060%; top:+050%; background-color:#33335296; }
+  025% {left:+060%; top:+066%; background-color:#33335254; }
+  050% {left:+010%; top:+030%; background-color:#333352c0; }
+  075% {left:+025%; top:+020%; background-color:#3333522a; }
+  100% {left:+060%; top:+050%; background-color:#33335254; }
 }
-@keyframes dot_15 { /*work*/
-  000% {left:+080%; top:+040%; background-color:#3b3b5096; }
-  100% {left:+080%; top:+040%; background-color:#33335254; }
+@keyframes dot_15 { /* ideation */
+  000% {left:+040%; top:+060%; background-color:#33335296; }
+  025% {left:+040%; top:+070%; background-color:#33335254; }
+  050% {left:+020%; top:+015%; background-color:#333352c0; }
+  075% {left:+055%; top:+020%; background-color:#3333522a; }
+  100% {left:+040%; top:+060%; background-color:#33335254; }
 }
 @keyframes dot_16 { /*!*/
-  000% {left:+080%; top:+060%; background-color:#3b3b5096; }
-  100% {left:+080%; top:+060%; background-color:#33335254; }
+
 }
 @keyframes dot_17 { /*!*/
-  000% {left:+080%; top:+080%; background-color:#3b3b5096; }
-  100% {left:+080%; top:+080%; background-color:#33335254; }
+
 }
 @keyframes dot_18 { /*!*/
-  000% {left:+060%; top:+080%; background-color:#3b3b5096; }
-  100% {left:+060%; top:+080%; background-color:#33335254; }
+  
 }
 @keyframes dot_19 { /*!*/
-  000% {left:+040%; top:+080%; background-color:#3b3b5096; }
-  100% {left:+040%; top:+080%; background-color:#33335254; }
+  
 }
 @keyframes dot_20 { /*!*/
-  000% {left:+020%; top:+080%; background-color:#3b3b5096; }
-  100% {left:+020%; top:+080%; background-color:#33335254; }
+
 }
 @keyframes dot_21 { /*!*/
-  000% {left:+000%; top:+080%; background-color:#3b3b5096; }
-  100% {left:+000%; top:+080%; background-color:#33335254; }
+ 
 }
 @keyframes dot_22 { /*!*/
-  000% {left:+000%; top:+060%; background-color:#3b3b5096; }
-  100% {left:+000%; top:+060%; background-color:#33335254; }
+  
 }
 @keyframes dot_23 { /*!*/
-  000% {left:+000%; top:+040%; background-color:#3b3b5096; }
-  100% {left:+000%; top:+040%; background-color:#33335254; }
+ 
 }
 @keyframes dot_24 { /*!*/
-  000% {left:+000%; top:+020%; background-color:#3b3b5096; }
-  100% {left:+000%; top:+020%; background-color:#33335254; }
+  
 }
