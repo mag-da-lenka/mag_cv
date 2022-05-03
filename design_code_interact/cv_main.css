@@ -21,7 +21,7 @@ body {
   color: rgba(228, 228, 228);
   font-family: 'Abel'; 
   font-weight: 100; 
-  cursor: crosshair;
+  /* cursor: crosshair; */
   width: 100vw;    
   overflow-x: hidden;
 }
@@ -385,7 +385,7 @@ aside>section>ul>li {
   height: 3rem;
   margin: 1% 0% 0% 0%;
   padding: 0% 0% 0% 0%;
-  filter: saturate(50%);
+  filter: saturate(30%);
 }
 
 .hallmark {
