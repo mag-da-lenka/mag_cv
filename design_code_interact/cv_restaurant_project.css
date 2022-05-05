@@ -260,3 +260,36 @@ section {
   overflow: hidden;
   transition: 0.2s ease-out;
 }
+
+
+
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  html {  font-size: 15px }
+  .intro, .article  { 
+    width: 80vw;
+  }
+  section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  html {  font-size: 14px }
+  .intro, .article  { 
+    width: 80vw;
+  }
+  section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 600px) {
+  html {  font-size: 12px }
+  .intro, .article  { 
+    width: 90vw;
+  }
+  section {
+    width: 100%;
+  }
+}
