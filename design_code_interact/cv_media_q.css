@@ -7,7 +7,7 @@
   body {
     display: flex;
     flex-direction: column;  
-    /* background-color: rgb(0, 0, 0); */
+    /* background-color: rgb(219, 0, 0); */
   } 
 
   .break_mobile_none {
@@ -42,18 +42,15 @@
   }
   nav {
     height: 10vh;
-    width: 90vw;
+    width: 80vw; 
   }
   .nav_background nav div a, .nav_box {
     font-size: 1.5rem;
     height: auto;
   }
 
-  .nav_box1 {
-    margin-right: 30rem;
-  }
-
-
+  
+  
   /**** 1 - 1225px **************************************************************************/
   /* SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */
   .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
@@ -63,59 +60,43 @@
     padding-bottom: 2vh;
     height: 100%;
     width: 80vw; 
-
-    
-  }
-
-  .screen1 {
-    position: static;
-    /* min-height: 0vh; */
-    background-size: cover;
-    margin-top: 10vh;
-    width: 100vw;
-    border: none;
   }
 
   .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
   .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
     flex-direction: column;
-    width: 60vw;
-    height: 100%;
+    width: 80vw;
     padding-bottom: 0px;
   }
 
+  
+  .scr1_articles,
+   
+  .screen_flex_layout1, 
+  .scr1_article1_magda,
+  .scr1_article1_magda  section {
+    width: 80vw;
+  }
+  .screen1 {
+    width: 100vw;
+    border: none;
+  }
   .screen_flex_layout1 {
     display: flex;
     flex-direction: column;
-    width: 98vw;
     margin-top: 2rem;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0;
   }
-
-
-
-  /* dot animations --> SCREEN SIZES and LAYOUT  */
-  .scr1_articles {
-    display: flex;
-    flex-direction: column;
-    width:600px;
-    height: auto;
-    margin: 0 auto; 
-  }
-  .scr1_article1_magda,
-  .scr1_article1_magda  section {
-    width:600px;
-    height: auto;
-    margin: 0 auto;
-  }
-
   .scr1_article2_dots {
-    /* display: none; */
+    width:  37.5rem; /* ===600px if HTML font size === 16px */
   }
-  /* .dot_explanation_right  {height: 0%; width: 0%; font-size: 0; line-height: 0%;} */
-  /* .dot_explanation_mobile {font-size: 1.80rem;  line-height: 1.8rem; }  */
-  
- 
+
+
+
+
+
+
+
   /* -------------------------------------- */
 
 
@@ -139,7 +120,7 @@
     margin-top: 9vh;
     min-height: 50vh;
     width: 80vw;
-    display: flex;
+    display: flex; 
     flex-direction: column;
   }
 
@@ -154,7 +135,7 @@
     flex-direction: row;
     min-height: 29vh; 
     width: 100%; 
-    padding: 0;
+    padding: 3% 3% 3% 3%;
     margin: 0;
 
   } 
@@ -190,7 +171,7 @@
     min-height: 30vh;
     width: 100%; 
     margin: 0;
-    padding: 0;
+    padding: 3% 3% 3% 3%;
   } 
   .screen_flex_layout6 main p {
     margin: 0;
@@ -405,13 +386,30 @@
     nav {
       height: 10vh;
       width: 80vw;
-      justify-content: space-around;
+
     }
 
-    .nav_box1 {
-      margin-right: 0vw;
-      margin-left: 0vw; 
+   
+    .scr1_articles,
+    .screen1, 
+    .screen_flex_layout1, 
+    .scr1_article1_magda,
+    .scr1_article1_magda  section {
+      width: 80vw;
     }
+    .screen1 {
+      width: 100vw;
+      border: none;
+    }
+    .screen_flex_layout1 {
+      padding: 0;
+    }
+ 
+
+
+    
+    
+
 
 
     /* JEWELLERY SLIDES 701px - 1000px  */
@@ -489,7 +487,7 @@
 
 
       body {
-        /* background-color: cyan; */
+        /* background-color: pink; */
       }
       
       /**** 1 - 0700px **************************************************************************/
@@ -503,16 +501,7 @@
         font-size: 2rem;
       }
 
-      .screen1 {
-        min-height: 75vh; 
-      }
-
-      .screen_flex_layout1 {
-        margin: 0 auto; 
-        margin-top: 3rem;
-      }
-
-
+     
           
       /**** 1 - 0700px **************************************************************************/
       /* NAVIGATION FOR MOBILE LAYOUT */
@@ -527,8 +516,9 @@
       nav {
         /* border: pink dashed 1px; */
         justify-content: end;
-        width: 100%;
+        width: 96vw;
         height: 10vh;
+        padding: 0;
       }
       nav div a {
         align-items: center;
@@ -553,16 +543,17 @@
         width: 10vh;
         height: 10vh;
         margin: 0 0 0 0;
-        padding: 0 20px 0 0;
+        padding: 0 0px 0 0;
         font-size: 5.5vh;
       } 
       
       
       /**** 1 - 0700px **************************************************************************/
       /* OUTER/INNER SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */ 
-     
+      
+   
       .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
-        width: 96vw; 
+        width: 90vw; 
       }
 
       .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
@@ -571,29 +562,35 @@
         width: 90vw;
       } 
 
-
-      .scr1_articles {
-        display: flex;
-        flex-direction: column;
-        width:80vw;
-        height: auto;
-        margin: 0 auto; 
-      }
+      .scr1_articles,
+      .screen1, 
+      .screen_flex_layout1, 
       .scr1_article1_magda,
       .scr1_article1_magda  section {
-        width:80vw;
-        height: auto;
-        margin: 0 auto;
-      } 
+        width: 90vw;
+      }
+      .screen1 {
+        width: 100vw;
+        border: none;
+      }
+      .screen_flex_layout1 {
+        padding: 0;
+        margin: 0 auto; 
+        margin-top: 3rem;
+      }
 
    
-      
+
       .scr1_article2_dots, 
       .happy_dots { 
         width:   80vw;   
         height:  80vw; 
         /* border: orange 1px solid; */
       } 
+
+      .squirrel_icon_flip_svg {
+        width: 20vw;
+      }
 
    
 
@@ -738,8 +735,7 @@
         .large_font  { font-size: 1.20rem;  }
         h1 {          font-size: 1.5rem;        }
   
-      
-      
+            
        .slideshow-container {
           width: 60vw;
           height: 60vw;

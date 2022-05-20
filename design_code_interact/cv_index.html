@@ -50,44 +50,59 @@
 
         <nav>
 
-            <div class="nav_box1"> <a onClick="window.location.reload()" href="#"> HOME </a></div>
 
-            <div class="nav_box3">
-                <a href="#design-experience-link">
-                    <!-- <span class="glow";> UX/UI </span> -->
-                    UX/UI
-                </a>
+
+            <div class="nav_left">
+                <div class="nav_box1"> <a onClick="window.location.reload()" href="#"> HOME </a></div>
             </div>
-            <!-- <div class="nav_box"> + </div> -->
-            <div class="nav_box4"> <a href="#coding-experience-link">coding</a></div>
-            <!-- <div class="nav_box"> + </div> -->
-            <div class="nav_box5"> <a href="#interaction-experience-link">interaction</a></div>
-            <!-- <div class="nav_box"> : : </div> -->
-            <div class="nav_box6"> <a href="#contact-link"> contact/me </a></div>
-
-
-            <!-- MOBILE NAVIGATION overlay and content-->
-            <div class="overlay" id="mobileNav">
-                <!-- X  --- in overlay -->
-                <a href="javascript:void(0)" class="close_X" onclick="closeMobileNav()"> &times; </a>
-                <!-- overlay content -->
-                <div class="overlay-content">
-                    <a href="#" onclick="closeMobileNav()"> : : HOME : : </a>
-                    <!-- <a href="#about-link" onclick="closeMobileNav()">: : about : : </a> <br> <br> <br> -->
-                    <a href="#design-experience-link" class="glow" style="color: rgb(230, 193, 213)" ;
-                        onclick="closeMobileNav()">ux/ui</a>
-                    <a href="#coding-experience-link" onclick="closeMobileNav()">&lt;coding&gt;</a>
-                    <a href="#interaction-experience-link" onclick="closeMobileNav()">interaction</a> <br> <br> <br>
-                    <a href="#contact-link" onclick="closeMobileNav()"> : : contact me : : </a>
+            <div class="nav_right">
+                <div class="nav_box3">
+                    <a href="#design-experience-link">
+                        <!-- <span class="glow";> UX/UI </span> -->
+                        UX/UI
+                    </a>
                 </div>
+                <!-- <div class="nav_box"> + </div> -->
+                <div class="nav_box4"> <a href="#coding-experience-link">coding</a></div>
+                <!-- <div class="nav_box"> + </div> -->
+                <div class="nav_box5"> <a href="#interaction-experience-link">interaction</a></div>
+                <!-- <div class="nav_box"> : : </div> -->
+                <div class="nav_box6"> <a href="#contact-link"> contact/me </a></div>
+
+                <div class="mobile_nav_section">
+                    <!-- MOBILE NAVIGATION overlay and content-->
+                    <div class="overlay" id="mobileNav">
+                        <!-- X  --- in overlay -->
+                        <a href="javascript:void(0)" class="close_X" onclick="closeMobileNav()"> &times; </a>
+                        <!-- overlay content -->
+                        <div class="overlay-content">
+                            <a href="#" onclick="closeMobileNav()"> : : HOME : : </a>
+                            <!-- <a href="#about-link" onclick="closeMobileNav()">: : about : : </a> <br> <br> <br> -->
+                            <a href="#design-experience-link" class="glow" style="color: rgb(230, 193, 213)" ;
+                                onclick="closeMobileNav()">ux/ui</a>
+                            <a href="#coding-experience-link" onclick="closeMobileNav()">&lt;coding&gt;</a>
+                            <a href="#interaction-experience-link" onclick="closeMobileNav()">interaction</a> <br> <br>
+                            <br>
+                            <a href="#contact-link" onclick="closeMobileNav()"> : : contact me : : </a>
+                        </div>
+                    </div>
+
+                    <!-- hamburger button -->
+                    <div class="nav_box7" onclick="openMobileNav()">
+                        &#9776;
+                    </div>
+                </div>
+
             </div>
 
-            <!-- hamburger button -->
-            <div class="nav_box7" onclick="openMobileNav()">
-                &#9776;
-            </div>
+
+
+
+
 
         </nav>
+
+
     </div>
 
 
@@ -250,7 +265,7 @@
                         </div>
                         <div class="dot_anime_08">
                             <p>
-                                <img class="squirrel_icon_flip_svg" style="width: 90px;" src="./icons/wiorka_02.svg" ;
+                                <img class="squirrel_icon_flip_svg" src="./icons/wiorka_02.svg" ;
                                     alt=" an icon showing a squirrel">
                                 </img>
                             </p>

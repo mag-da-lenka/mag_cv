@@ -1,0 +1,98 @@
+/* body {
+    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #FF00C7 100%), 
+    linear-gradient(121.28deg, #213100 0%, #FF0000 100%), 
+    linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), 
+    linear-gradient(114.9deg, #00C6A2 0%, #6A45A8 100%), 
+    radial-gradient(100% 148.07% at 0% 0%, #FFFFFF 0%, #1DCD00 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;    
+    height: 100vh;
+} */
+
+/* body {
+    background: 
+    radial-gradient(50% 123.47% at 50% 50%, #79c5a5 0%, #b876a9a1 100%),
+    linear-gradient(360deg, #061353 0%, #3a5e0c 100%), 
+    linear-gradient(114.9deg, #0a6352 0%, #6A45A8 100%), 
+    radial-gradient(100% 148.07% at 0% 0%, #373a58 0%, #3f5c3b 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal; 
+    height: 100vh;   
+} */
+
+/* https://gradienta.io/editor */
+/* body {
+    background: 
+    repeating-conic-gradient(from 0deg at 50% 50%, rgba(255, 255, 255, 0) 99%, #000 99.54%); 
+    background-blend-mode: luminosity; 
+    height: 100vh;
+} */ 
+
+
+/* body {
+    background: 
+    radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #FF00C7 100%), 
+    linear-gradient(121.28deg, #213100 0%, #FF0000 100%), 
+    linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), 
+    linear-gradient(114.9deg, #00C6A2 0%, #6A45A8 100%), 
+    radial-gradient(100% 148.07% at 0% 0%, #FFFFFF 0%, #1DCD00 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;    
+    height: 100vh;
+} */
+
+
+/* body {
+    background: linear-gradient(238.72deg, #FFE5C7 0%, #00C288 100%), 
+    radial-gradient(90.88% 100% at 50% 0%, #439246 0%, #183766 100%), 
+    linear-gradient(121.28deg, #FFEAB6 0%, #003C2A 100%), 
+    radial-gradient(64.89% 100% at 50% 0%, #80BAFF 0%, #001E41 100%), 
+    linear-gradient(65.05deg, #6F0072 0%, #FFC700 100%);
+    background-blend-mode: overlay, screen, color-burn, lighten, normal;
+    height: 100vh;
+} */
+    
+/* body {
+    background: 
+    linear-gradient(120deg, #0029FF 0%, #001270 100%), 
+    radial-gradient(100% 222% at 0% 100%, #CD04FF 0%, #FF004D 57%), 
+    linear-gradient(270deg, #F2096B 0%, #ED0B0B 100%), 
+    linear-gradient(300deg, #C478B3 0%, #EA2856 100%), 
+    radial-gradient(90% 110% at 100% 100%, #96A300 45%, #875901 100%), 
+    linear-gradient(6.54deg, #20ADFD 7%, #1700A4 50%);
+    background-blend-mode: exclusion, color-dodge, color-burn, color-burn, color-dodge, normal;
+    height: 100vh;
+} */
+
+body {
+    background: 
+    radial-gradient(90% 100% at 50% 0%, #D7D7D7 0%, #000000 100%), 
+    radial-gradient(90% 100% at 50% 0%, #FF0000 0%, #000000 100%), 
+    radial-gradient(110% 215% at 100% 0%, #000AFF 0%, #70FF00 100%), 
+    linear-gradient(230deg, #7EFF41 0%, #05FF00 100%), 
+    linear-gradient(130deg, #D50000 0%, #7856FF 100%);
+    background-blend-mode: overlay, difference, difference, exclusion, normal;
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(121deg, #4adfb8, #65849d, #57cfd0);
+    background-size: 600% 600%;
+
+    -webkit-animation: Animation1 15s ease infinite;
+    -moz-animation: Animation2 15s ease infinite;
+    animation: Animation3 15s ease infinite;
+}
+
+@-webkit-keyframes Aanimation1 {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
+@-moz-keyframes Animation2 {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
+@keyframes Animation3 {
+    0%{background-position:0% 36%}
+    50%{background-position:100% 65%}
+    100%{background-position:0% 36%}
+}
