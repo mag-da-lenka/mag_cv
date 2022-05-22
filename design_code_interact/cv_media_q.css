@@ -91,6 +91,11 @@
     width:  37.5rem; /* ===600px if HTML font size === 16px */
   }
 
+  .squirrel_icon_flip_svg {
+    width: 7.5rem;
+    /* border: solid white 2px; */
+  }
+
 
 
 
@@ -310,11 +315,6 @@
     width: 58vw;
   }
 
-
-  .squirrel_icon_flip_svg,
-  .squirrel_icon_jump_svg {
-    width: 10rem;
-  } 
 
 
 

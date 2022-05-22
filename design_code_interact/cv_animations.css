@@ -66,8 +66,9 @@
   margin-right: 1vh;
   color: rgb(228, 228, 228);
   width: 7.5rem;
-  opacity: 20%;
+  opacity: 50%;
   animation: squirrel_flip 2.666s infinite;
+  /* border: solid red 2px; */
 }
 @keyframes squirrel_flip {  0% {
     transform: rotate(360deg);  }
