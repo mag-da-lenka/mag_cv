@@ -59,9 +59,27 @@
 
 
 /******************************************************************************/
-/* squirrels flip */
+/* squirrels flip */ 
+
+.ux_person_animated {
+  position: relative; 
+  top:0; 
+  left: 0;
+  z-index: 50;
+  width: 7.5rem;
+  opacity: 60%; 
+  filter: saturate(20%);
+  animation: ux_person_dot 2.666s infinite;
+  /* border: solid red 2px;  */
+  border-radius: 50%;
+  
+}
+
 
 .squirrel_icon_flip_svg {
+  position: absolute; 
+  top:0; 
+  left: 0;
   margin-top: 1vh;
   margin-right: 1vh;
   color: rgb(228, 228, 228);
