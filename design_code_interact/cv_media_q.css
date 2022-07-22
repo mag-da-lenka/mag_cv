@@ -2,7 +2,7 @@
 /* MEDIA QUERIES : medium width // tablets and stuff */
 
 
-@media screen and (min-width: 1px) and (max-width: 1225px) {
+@media screen and (max-width: 1225px) {
 
   body {
     display: flex;
@@ -35,13 +35,13 @@
   /**** 1 - 1225px **************************************************************************/
   /* NAVIGATION */
   .nav_background {
-    height: 10vh;
+    height: 8vh;
     width: 100vw;
     margin-top: 0vh;
     padding: 0;
   }
   nav {
-    height: 10vh;
+    height: 8vh;
     width: 80vw; 
   }
   .nav_background nav div a, .nav_box {
@@ -352,31 +352,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  /* NEST 1 >>> 1-1000 */ 
 
   @media screen and (min-width: 1px) and (max-width: 1000px) {  
-
-
-
 
     body {
       /* background-color: darkcyan;  */
@@ -389,7 +367,6 @@
 
     }
 
-   
     .scr1_articles,
     .screen1, 
     .screen_flex_layout1, 
@@ -405,14 +382,7 @@
       padding: 0;
     }
  
-
-
-    
-    
-
-
-
-    /* JEWELLERY SLIDES 701px - 1000px  */
+    /* JEWELLERY SLIDES 1 - 1000px  */
     .jewellery_presentation_container {
       display: flex; 
       flex-direction: row-reverse; 
@@ -459,30 +429,14 @@
     .link_bars       {    width: 60vw;  }
     .link_bars:hover {    opacity: 100%;  }
 
-
-
-    
-
-    
-      
   
 
-
-
     
 
 
+    /* NEST 2 >>> 1- 700 */ 
 
-
-    
-    
-
-    
-
-
-
-
-    @media screen and (min-width: 1px) and (max-width: 700px) { 
+    @media screen and (max-width: 700px) { 
       
 
 
@@ -501,14 +455,12 @@
         font-size: 2rem;
       }
 
-     
-          
-      /**** 1 - 0700px **************************************************************************/
+      /**** 1 - 700px **************************************************************************/
       /* NAVIGATION FOR MOBILE LAYOUT */
       .nav_background {
         position: fixed;
         width: 100vw;
-        height: 10vh;
+    
         margin-top: 0vh;
         border: none;
         /* border: pink solid 1px; */
@@ -517,7 +469,7 @@
         /* border: pink dashed 1px; */
         justify-content: end;
         width: 96vw;
-        height: 10vh;
+
         padding: 0;
       }
       nav div a {
@@ -540,18 +492,29 @@
         display: flex !important;
         align-items: center;
         justify-content: center;
-        width: 10vh;
-        height: 10vh;
+        width: 8vh;
+        height: 8vh;
         margin: 0 0 0 0;
         padding: 0 0px 0 0;
-        font-size: 5.5vh;
+        font-size: 4vh;
       } 
+
+      /* nav overlay X */ 
+      .overlay .close_X {
+        width: 8vh;
+        height: 8vh;
+        font-size: 4vh;
+      }
+
+      .overlay a:not(.close_X) {
+        font-size: 2rem;
+      }
       
       
+
       /**** 1 - 0700px **************************************************************************/
       /* OUTER/INNER SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */ 
-      
-   
+         
       .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
         width: 90vw; 
       }
@@ -579,8 +542,6 @@
         margin-top: 3rem;
       }
 
-   
-
       .scr1_article2_dots, 
       .happy_dots { 
         width:   80vw;   
@@ -592,11 +553,6 @@
         width: 20vw;
       }
 
-   
-
-      
-
-    
       /**** 1 - 0700px **************************************************************************/
       /* INNER SCREENS : LISTS */
     
@@ -620,8 +576,7 @@
         padding: 1% 1% 0% 0%;
       }
   
-  
-            /**** 1 - 0700px **************************************************************************/
+      /**** 1 - 0700px **************************************************************************/
       /* ROUND CONTACT-ICONS-LINKS (coding education + contact screen) */
   
       .contact_icon_line_mag,
@@ -648,8 +603,6 @@
         display: none;
       }    
        
-
-
       /**** 1 - 0700px **************************************************************************/
       /* all SLIDES, ACCORDION and ANIMATIONS */
    
@@ -708,25 +661,11 @@
 
 
 
-   
-  
-  
 
 
+      /* NEST 3 >>> 1-500px */
 
-    
-
-
-
-
-
-
-
-
-
-
-
-      @media screen and (min-width: 1px) and (max-width: 500px) {
+      @media screen and (max-width: 500px) {
 
         body {
           /* background-color: purple;  */
@@ -760,21 +699,9 @@
 
 
 
+        /* NEST 4 >>> 1-00px */
 
-
-        
-
-
-
-        
-
-
-
-
-
-
-
-        @media screen and (min-width: 1px) and (max-width: 400px) {
+        @media screen and (max-width: 400px) {
 
           body {
             /* background-color: violet;  */
@@ -784,32 +711,10 @@
        
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
       }
 
-      
-
-
-
-      
     }
 
-
-
-
   }
-
-
 
 }
