@@ -29,46 +29,35 @@
 
 
 
-<body id="holo_fun" onmousemove="handleMouseMove(event)" ;>
+<body id="holo_fun" onmousemove="handleMouseMove(event)">
+
+    <div class="hero-image"></div>
+    </div>
+    <div class="hero-image-slideshow"></div>
 
 
     <button onclick="goToTop()" id="up_button" title="to top">
         &#9650;
     </button>
 
-
-
-    <!-- <body> -->
-
-
     <!-- ****************************************************************************************** -->
     <!-- SCREEN 01 a > NAVIGATION  -->
     <!-- ****************************************************************************************** -->
 
-    <!-- NAVIGATION BAR -->
     <div class="nav_background">
-
         <nav>
-
-
-
             <div class="nav_left">
-                <div class="nav_box1"> <a onClick="window.location.reload()" href="#"> HOME </a></div>
-            </div>
-            <div class="nav_right">
-                <div class="nav_box3">
-                    <a href="#design-experience-link">
-                        <!-- <span class="glow";> UX/UI </span> -->
-                        UX/UI
+                <div class="nav_box1">
+                    <a onClick="window.location.reload()" href="#">
+                        <img src="./icons/wiorka_06.svg" style="height:3.0rem;" alt="wiórka home">
                     </a>
                 </div>
-                <!-- <div class="nav_box"> + </div> -->
+            </div>
+            <div class="nav_right">
+                <div class="nav_box3"> <a href="#design-experience-link"> UX/UI </a> </div>
                 <div class="nav_box4"> <a href="#coding-experience-link">coding</a></div>
-                <!-- <div class="nav_box"> + </div> -->
                 <div class="nav_box5"> <a href="#interaction-experience-link">interaction</a></div>
-                <!-- <div class="nav_box"> : : </div> -->
                 <div class="nav_box6"> <a href="#contact-link"> contact/me </a></div>
-
                 <div class="mobile_nav_section">
                     <!-- MOBILE NAVIGATION overlay and content-->
                     <div class="overlay" id="mobileNav">
@@ -76,33 +65,25 @@
                         <a href="javascript:void(0)" class="close_X" onclick="closeMobileNav()"> &times; </a>
                         <!-- overlay content -->
                         <div class="overlay-content">
-                            <a href="#" onclick="closeMobileNav()"> : : HOME : : </a>
+                            <a href="#" onclick="closeMobileNav()"> HOME
+                                <img src="./icons/wiorka_06.svg" style="height:2rem;" alt="wiórka home">
+                            </a>
                             <!-- <a href="#about-link" onclick="closeMobileNav()">: : about : : </a> <br> <br> <br> -->
                             <a href="#design-experience-link" class="glow" style="color: rgb(230, 193, 213)" ;
                                 onclick="closeMobileNav()">ux/ui</a>
                             <a href="#coding-experience-link" onclick="closeMobileNav()">&lt;coding&gt;</a>
                             <a href="#interaction-experience-link" onclick="closeMobileNav()">interaction</a> <br> <br>
                             <br>
-                            <a href="#contact-link" onclick="closeMobileNav()"> : : contact me : : </a>
+                            <a href="#contact-link" onclick="closeMobileNav()"> contact me </a>
                         </div>
                     </div>
-
                     <!-- hamburger button -->
                     <div class="nav_box7" onclick="openMobileNav()">
                         &#9776;
                     </div>
                 </div>
-
             </div>
-
-
-
-
-
-
         </nav>
-
-
     </div>
 
 
@@ -111,262 +92,167 @@
     <!-- ****************************************************************************************** -->
 
     <header class="screen1">
-
-
         <div class="screen_flex_layout1">
-
-
             <div class="scr1_articles">
 
-
                 <article class="scr1_article1_magda">
-
-                    <section class=" flex_row">
+                    <!-- magda-pic -->
+                    <section>
                         <div class="autoslides_container_outer">
                             <div>
                                 <div class="autoslides_container">
                                     <div class="auto_slides auto_fade">
-                                        <img class="auto_images" src="./images/mag_sq_1.jpg">
+                                        <img class="auto_images" src="./images/mag_lumi.png">
                                     </div>
                                     <div class="auto_slides auto_fade">
-                                        <img class="auto_images" src="./images/mag_sq_2.jpg">
+                                        <img class="auto_images" src="./images/mag_lumi.png">
+                                    </div>
+                                    <div class="auto_slides auto_fade">
+                                        <img class="auto_images" src="./images/mag_lumi.png">
+                                    </div>
+                                    <div class="auto_slides auto_fade">
+                                        <img class="auto_images" src="./images/mag_lumi.png">
                                     </div>
                                 </div class="autoslides_container">
                                 <div>
                                     <span class="auto_dots" style="width:0%; height: 0%;"></span>
-                                    <!-- <span class="auto_dots"></span> -->
-                                    <!-- <span class="auto_dots"></span> -->
-                                    <!-- <span class="auto_dots"></span> -->
-                                    <!-- <span class="auto_dots"></span> -->
+                                    <span class="auto_dots"></span>
+                                    <span class="auto_dots"></span>
+                                    <span class="auto_dots"></span>
+                                    <span class="auto_dots"></span>
                                 </div>
                             </div> <br>
                         </div class="autoslides_container_outer">
                     </section>
-                    <br>
-
-                    <h1 class="typewriter_area">
-                        I am Magda, a <span class="glow char_desaturated">UX/UI designer </span>
-                        <span class="char_desaturated">👩‍🔧/👩‍🎨</span>
-                    </h1>
-
+                    <!-- magda-type-area -->
                     <section>
-
-                        <!-- INTRODUCTION to a squirreloid person -->
-                        <p class="large_font">
-                            who can also code <span class="char_desaturated">👩‍💻</span>
-                            interact efficiently <span class="char_desaturated">👋 </span>
-                            <!-- <br> -->
-                            and who utilizes her affection
-                            for all things visual,
-                            <!-- <br class="break_mobile_none"> -->
-                            functional and interaction-related
-                            with the energy of a squirrel. <br>
+                        <h1 class="typewriter_area">
+                            I am Magda,
+                            a <span class="glow char_desaturated">UX/UI designer </span>
+                            <span class="char_desaturated">👩‍🔧/👩‍🎨</span>
+                        </h1>
+                    </section>
+                    <!-- INTRODUCTION to a squirreloid person -->
+                    <section class="opacity-transition-0-100-01">
+                        <p class="intro_font" style="text-align: center;">
+                            but also
+                            an occasional &nbsp; <span class="bolder-wider">web developer</span>
+                            <span class="char_desaturated">👩‍💻 </span>
+                            and
+                            a keen &nbsp; <span class="bolder-wider">communicator</span>
+                            <!-- <span class="char_desaturated">&#128490;</span> -->
+                            &nbsp;
                         </p>
-                        <br>
-                        <p class="med_large">
+                    </section>
+                    <!-- INTRODUCTION to a squirreloid person CHECK CHECK CHECK -->
+                    <section class="opacity-transition-0-100-02">
+                        <p class="intro_font">
+                            ✔ who utilizes her affection for all things visual,
+                            functional and user-centered with the energy of a squirrel
+                            <!-- <img src="./icons/wiorka_06.svg" style="height:1.6rem;" alt="a pic of a tiny squirrel"> -->
+                            <br>
+                            ✔ enjoys using creativity, technical and soft skills
+                            in her problem-solving, interdisciplinary job
+                            <br>
+                            ✔ feels in the element as a mediator
+                            merging interests of the users and stakeholders
+                            <!-- ✔ balances business goals vs. production viability -->
+                        </p>
+                    </section>
+                    <div class="br-1"></div>
+                    <!-- WHAT I DO, WORK ENVIRONMENT, TOOLS -->
+                    <section class="opacity-transition-0-100-03">
+                        <p class="intro_font">
+                            <span class="bolder-wider">WHAT I DO:</span> &nbsp;
+                            in-depth user research (qq), empathy, data driven ideation,
+                            user journeys, persona development,
+                            information architecture, sitemapping, wireframes,
+                            moodboards, visual design, interactive prototyping,
+                            testing and ...iterating!
                             My design process is powered by
+                            <!-- href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond" -->
                             <a class="text_link"
-                                href="https://www.designcouncil.org.uk/news-opinion/what-framework-innovation-design-councils-evolved-double-diamond"
+                                href="https://www.designcouncil.org.uk/our-work/news-opinion/double-diamond-universally-accepted-depiction-design-process-"
                                 target="_blank" rel="noopener noreferrer">
-                                <span class="med_large">
-                                    <span class="char_desaturated smaller_font"> &#128142;&#128142;</span>
-                                    the double diamond model
-                                </span>
+                                <span class="char_desaturated smaller_font"> &#128142;&#128142;</span>
+                                the double diamond methodology
                             </a>
-                            which contains of four phases:
-                            discovery, definition, development and delivery.
-                            They involve deep empathy
-                            <span class="char_desaturated">
-                                &#128155; &#129494; &#129501; &#129499;
-                            </span> to understand
-                            users' real needs, defining the issue(s) basing on what has been found out during an
-                            in-depth user research, ideation and delivery with multiple tests to check whether the
-                            solution is working. If not, iterate until it does.
-                        </p> <br>
-
-                        <p class="med_large">
-                            I feel comfortable working in cross-functional teams in agile environment.
-                            I enjoy being the mediator solving the conflicting interests of
-                            stakeholders and developers or business goals vs. production viability
-                            through the lens of a designer always having the user in the centre of the galaxy.
+                            to discover, define, develop and deliver a relevant solution that actually works!
                         </p>
-
-                        <p>
-                            <span class="dot_explanation_right">
-                                <!-- this has display none on mobile layout -->
-                                <!-- Here's the way I think and work &#8680; -->
-                            </span>
-                            <span class="dot_explanation_mobile">
-                                <!-- this has display none on mobile layout -->
-                                Here's the way I think and work. &#8595; &#8609; &#8681;
-                            </span>
+                        <div class="br-1"></div>
+                        <p class="intro_font">
+                            <span class="bolder-wider">MY WORK ENVIRONMENT:</span> &nbsp;
+                            <span class="char_desaturated">👩‍💻&#129494;&#129501;&#129499;</span>
+                            cross-functional teams
+                            <span class="char_desaturated">&#128171;</span>
+                            agile: Confluence, Jira, GitHub
+                            <!-- <a href="https://www.flaticon.com/free-icons/agile" title="agile icons">Agile icons created by Flat Icons - Flaticon</a> -->
                         </p>
-
-
-                        <!-- <p class="med_large">
-                            Imagine me at work being the
-                            <span>squirrel</span>
-                            <img style="width: 5rem;" src="./icons/wiorka_05.svg" ;
-                                alt=" an icon showing a squirrel">
-                            </img>
-                            <img style="width: 5rem;" src="./images/mag_sq_2.jpg" ;
-                                alt=" an icon showing a squirrel">
-                            </img>
-                        </p> -->
-
-
-                        <!-- <p class="medium_font">
-                            I enjoy
-                            dark sense of humour
-                            <span class="char_desaturated">😎&#128420;</span>
-                            Sci-Fi films
-                            <span class="char_desaturated"">👽🛸🚀</span>
-                             interacting with fellow non/human beings ^^
-                            <span class=" char_desaturated"> 😺</span>
-                            outdoor adventures
-                            <span class="char_desaturated">🎒⛺🔥📷</span>
-                            abandoned places
-                            <span class="char_desaturated"> &#9964; </span>
-                            deserts
-                            <span class="char_desaturated">&#128043;</span>
-                            water
-                            <span class=" char_desaturated">🌊⛵</span>
-                            (despite being a very wobbly swimmer)
-                            <span class="char_desaturated">&#129500;</span>
-                            creating jewellery
-                            <span class="char_desaturated">👩‍🏭💍</span> and interior decorations.
-                            <br class="break_mobile_none">
-                            My fuel is music
-                            <span class="char_desaturated">🎹🎧</span>
-                            (to find out more book a day off).
-                        </p> -->
-                    </section> <br>
-
-                    <!-- 🌕🌞 &#x1f97e; &#128690; &#128161; 👩‍🎨👩‍🔧 🏊🔨 ⏳&#128142; 🚨 🌟
-                    &#10036; &#8594; &#8527; &#8608; ⟿ &#128556;🏴 💻
-                    &nbsp; &#8759; -->
-
-                    <a href="CV_printer_friendly.pdf" target="_blank" rel="noopener noreferrer" class="cv_button">
-                        DOWNLOAD CV
-                    </a>
-                    <br><br><br>
-
-                    <p class="med_large">
-                        Here's the way I think and work. &nbsp; &#8681;
-                    </p>
-
-
+                        <div class="br-1"></div>
+                        <p class="intro_font">
+                            <span class="bolder-wider">UX/UI and WEB DEV TOOLS/TECHNOLOGIES:</span> &nbsp;
+                            Figma, Photoshop, Whimsical, Canva, MURAL,
+                            Miro, crayons; HTML5, CSS3, JavaScript, React.js;
+                            DB (MySQL), Node.js; GitHub and Visual Studio Code.
+                        </p>
+                        <!-- ICONS -->
+                        <div class="skills_icon_line_top">
+                            <img src="./icons/7564187_figma_logo_brand_icon.png" alt="Figma icon">
+                            <img src="./icons/icon_ps.png" alt="PhotoShop icon">
+                            <img src="./icons/ic_whimsical.png" alt="Whimsical icon">
+                            <img src="./icons/ic_canva.png" alt="Canva icon">
+                            <img src="./icons/mural-icon.png" alt="Mural icon">
+                            <img src="./icons/miro-2.svg" alt="Miro icon">
+                            <img src="./icons/ic_pencil.png" alt="pencil icon">
+                        </div>
+                        <div class="skills_icon_line_top">
+                            <img src="./icons/jira-software-logo-gradient-white-attribution_rgb.svg"
+                                alt="Confluence icon">
+                            <img src="./icons/confluence-logo-gradient-white-attribution_rgb.svg" alt="Jira icon">
+                            <img src="./icons/8197864_slack_social network_communication_interaction_message_icon.png"
+                                alt="videocall-telephone-slack icons">
+                        </div>
+                        <div class="skills_icon_line_top">
+                            <img src="./icons/icon_html.png" alt="html5 icon">
+                            <img src="./icons/icon_css.png" alt="css3 icon">
+                            <img src="./icons/icon_js.png" alt="JavaScript icon">
+                            <img src="./icons/icon_reactjs.png" alt="reactjs icon">
+                            <img style="background-color: none; " src="./icons/icon_mysql.png" alt="mysql icon">
+                            <img src="./icons/icon_nodejs.png" alt="nodejs icon">
+                            <img style="background-color: none; " src="./icons/icon_github2.png" alt="GitHub icon">
+                            <img style="background-color: none; " src="./icons/icon_vsc.png"
+                                alt="Visual Studio Code icon">
+                        </div class="skills_icon_line">
+                    </section>
+                    <br>
+                    <!-- BUTTONS: CV AND PROJECTS -->
+                    <section class="opacity-transition-0-100-03">
+                        <div class="scr1-buttons">
+                            <div class="cv_button">
+                                <a href="CV_printer_friendly.pdf" target="_blank" rel="noopener noreferrer"
+                                    class="cv_button_content">
+                                    DOWNLOAD CV
+                                </a>
+                            </div>
+                            <div class="cv_button">
+                                <a href="#design-experience-link" target="_blank" rel="noopener noreferrer"
+                                    class="cv_button_content">
+                                    EXPLORE PROJECTS
+                                </a>
+                            </div>
+                        </div>
+                    </section>
                 </article class="scr1_article1_magda">
 
-
-                <article class="scr1_article2_dots">
-
-                    <div class="happy_dots">
-
-                        <div class="dot_anime_01">
-                            <p>coding</p>
-                        </div>
-                        <div class="dot_anime_02">
-                            <p>UX/UI</p>
-                        </div>
-                        <div class="dot_anime_03">
-                            <p>interaction </p>
-                        </div>
-                        <div class="dot_anime_04">
-                            <p>interaction</p>
-                        </div>
-                        <div class="dot_anime_05">
-                            <p>user </p>
-                        </div>
-                        <div class="dot_anime_06">
-                            <p>empathy</p>
-                        </div>
-                        <div class="dot_anime_07">
-                            <p>design <br>thinking</p>
-                        </div>
-                        <div class="dot_anime_08">
-                            <p>
-                                <!-- <img class="squirrel_icon_flip_svg" src="./icons/wiorka_05.svg" ;
-                                    alt=" an icon showing a squirrel">
-                                </img> -->
-                                <img class="ux_person_animated" src="./images/mag_sq_2.jpg" ;
-                                    alt=" an icon showing a squirrel">
-                                </img>
-                            </p>
-                        </div>
-
-                        <!-- <div class="dot_anime_09">
-                            <p>Here's </p>
-                        </div>
-                        <div class="dot_anime_10">
-                            <p>how I</p>
-                        </div>
-                        <div class="dot_anime_11 char_desaturated">
-                            <p>think </p>
-                        </div>
-                        <div class="dot_anime_12">
-                            <p>& work :</p>
-                        </div> -->
-
-
-                        <div class="dot_anime_13">
-                            <p> iteration </p>
-                        </div>
-                        <div class="dot_anime_14">
-                            <p> testing </p>
-                        </div>
-                        <div class="dot_anime_15">
-                            <p> ideation</p>
-                        </div>
-
-                        <!-- <br> &#128142;&#128142; -->
-
-                        <!-- <div class="dot_anime_16">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_17">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_18">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_19">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_20">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_21">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_22">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_23">
-                            <p> </p>
-                        </div>
-                        <div class="dot_anime_24">
-                            <p> </p>
-                        </div> -->
-
-
-                    </div class="happy_dots">
-
-                </article class="scr1_article2_dots">
-
             </div class="screen_flex_layout1">
-
-            <br>
-            <!-- <div class="buttons_row">
-                <a href="#design-experience-link">
-                    <button class="button_r_landing"> ▼ </button>
-                </a>
-            </div> -->
-
         </div class="screen_flex_layout1">
-
-
+        <p class="hero-image-attribution">
+            The hero image has been created by allvision and obtained legally
+            from https://stock.adobe.com/dk/images/astronaut-room/430310386
+        </p>
     </header class="screen1">
+    <br><br><br>
+
 
 
 
@@ -377,341 +263,205 @@
 
     <div class="screen2">
 
-        <!-- anchor screen 02 :: DESIGN -->
+
         <div class="anchor" id="design-experience-link"></div>
-
-        <div class="screen_title">
-            <h1>
-                UX/UI +
-                <span class="smaller_font">other</span>
-                design
-            </h1>
+        <br>
+        <div>
+            <h1> UX/UI design: sample projects </h1>
+            <br>
+            <p class="center-text" style="font-size: 1rem;">I can talk a lot about them...</p>
         </div>
-
+        <br><br>
 
         <div class="screen_flex_layout2">
 
-            <aside class="clearfix">
 
-                <!-- <h2>design &nbsp; > &nbsp; education</h2> <br> <br> -->
-                <h2> education /skills /tools </h2> <br> <br>
-                <section>
-                    <h3 style="padding-bottom: 1%;">
-                        <span class="glow">UX/UI</span>
-                        and graphic design
-                        <a class="text_link"
-                            href="https://certificatesdk.talentgarden.com/1190d59c-6dae-4a08-b900-be0a96481b22#gs.9dw376"
-                            target="_blank" rel="noopener noreferrer">
-                            certificate
-                        </a>
+
+            <main class="main-ux-projects">
+
+                <!-- KAOSPILOT -->
+                <div class="ux-project-area">
+                    <h3 class="center-text">
+                        <!-- <span class="char_desaturated"> &#128161;</span> -->
+                        A full UX/UI design for KAOSPILOT toolbox
                     </h3>
-                    <p>
-                        <!-- <a class="text_link" href="https://talentgarden.org/en/about/" target="_blank"
-                            rel="noopener noreferrer">
-                            Talent Garden Copenhagen [TAG]
-                        </a> -->
-                        <a class="text_link" href="https://kea.dk/en/" target="_blank" rel="noopener noreferrer">
-                            Copenhagen School of Design and Technology [KEA]
-                        </a>
-                    </p>
-                    <!-- <p> and at
-                        <a class="text_link" href="https://www.hackyourfuture.dk/" target="_blank"
-                            rel="noopener noreferrer">
-                            HackYourFuture Copenhagen coding school [HYF]
-                        </a>
-                    </p> -->
-                    <p>user research, sitemaps, wireframes, moodboards,<br>
-                        visual design, interactive prototyping, testing
-                    </p>
-                    <div class="skills_icon_line">
-                        <!-- git and front end -->
-                        <img src="./icons/7564187_figma_logo_brand_icon.png" alt="Figma icon">
-                        <img src="./icons/icon_ps.png" alt="PhotoShop icon">
-                        <img src="./icons/ic_whimsical.png" alt="Whimsical icon">
-                        <img src="./icons/ic_canva.png" alt="Canva icon">
-                        <img src="./icons/mural-icon.png" alt="Mural icon">
-                        <img src="./icons/miro-2.svg" alt="Miro icon">
-                        <!-- <img src="./icons/ic_pencil.png" alt="pencil icon"> -->
-                    </div class="skills_icon_line">
-                    <p>Figma, Photoshop, Whimsical, Canva,<br>
-                        MURAL, Miro, crayons + paper</p>
-                </section> <br> <br>
-
-                <section>
-                    <h3> jewellery design and silversmithing </h3>
-                    <ul>
-                        <li>
-                            <a class="text_link" href="https://www.pomorskaizba.pl/" target="_blank"
-                                rel="noopener noreferrer">
-                                The Assoc. of Pomeranian Craftsmen, Gdansk, Poland
-                            </a>
-                        </li>
-                        <li>inventing, designing, manufacturing my own projects</li>
-                        <li>wax sculpting, precious metals, stone setting </li>
-                        <!-- <li> hallmark below </li>
-                        <li> <img class="hallmark" src="./images/hallmark2.png" alt="some icon with hallmark"> </li> -->
-                    </ul>
-                </section> <br> <br>
-
-                <section>
-                    <h3>photography technology </h3>
-                    <ul>
-                        <li>graphic design (collages, posters) restoring</li>
-                        <li>developing, color processing, tech control</li>
-                        <li>C-41, b&w, 135, medium format, APS</li>
-                        <li>photoshoots, passport photos</li>
-                    </ul>
-                </section> <br> <br><br>
-                <!-- <img src="ic_squirrel.png" alt="an icon showing a squirrel" class="squirrel_icon"></img> -->
-
-            </aside>
-
-            <main class="clearfix">
-
-                <article>
-                    <h2> projects /experience </h2> <br> <br>
-
-
-                    <h3><span class="char_desaturated"> &#128161;</span>
-                        Vegan restaurant's web page: a full redesign
-                    </h3> <br>
-                    <p>
-                        A full redo with the intention to identify main pain points and improve the most urgent issues.
-                        After all there is always something we can alter, fix or tweak, right? ;)
-                        <br>
-                        <br>
-                        METHODOLOGY / HIGHLIGHTS:
-                        <br>
-                        double diamond || user centered design || stakeholder's interview ||
-                        iteration || testing || wireframes || interactive prototype || visual design || content writing
-                        <br>
-                        <br>
-                        TOOLS:
-                        <br>
-                        Figma || Miro || Whimsical || a pencil and paper || human helpers (testees) || brain ||
-                        knowledge || experience
-                    </p>
                     <br>
-                    <section class="project_card">
-                        <!-- relative -->
-                        <img class="project_image" src="./images/restaurant_redesign/widescr_home_slide_01_v2.jpg"
+                    <div class="ux-project-text-box">
+                        <p> MOTIVATION:
+                            <br>
+                            a UX/UI and DESIGN SYSTEM on top of existing visual identity
+                            <!-- There is always something we can alter, fix or tweak, right? -->
+                        </p>
+                        <p>
+                            METHODOLOGY HIGHLIGHTS:
+                            <br>
+                            DD, UCD, IxD,
+                            stakeholder's interview, UXR, visual design,
+                            iteration, testing, wireframes, prototype
+                        </p>
+                        <p>
+                            TOOLS:
+                            <br>
+                            Figma, HTML/CS/JS/React.js, GitHub, agile: Jira, Confluece
+                        </p>
+                    </div>
+                    <div class="project_card">
+                        <img class="project_image" src="./images/kaospilot_toolbox/kaos_product_page_1.png"
                             alt="restaurant project landing page">
-                        <!-- absolute -->
                         <div class="project_image_content">
-
-                            <a href="cv_restaurant_project.html" rel="noopener noreferrer" class="view_button">
+                            <a href="cv_kaospilot.html" rel="noopener noreferrer" class="view_button">
                                 VIEW PROJECT
                             </a>
                         </div>
-                    </section>
-                    <!-- <p> &nbsp; &nbsp; &nbsp; 🚨 THE LINK IS COMING BACK 05/05/2022 ! </p> -->
+                    </div>
+                </div>
 
-
-                    <section>
-                        <!-- <a class="text_link" style="border-style: none;" target="_blank" rel="noopener noreferrer"
-                            onclick="openSlide_lightbox();currentSlide(1)">
-                            <img class="link_bars" src="./images/green_love_bar.png"
-                                alt="a screenshot of green love redesign in figma file">
-                        </a> -->
-                        <div class=" lightbox">
-                            <!-- 1) SMALL PICTURES before opening -->
-                            <!-- <div class="smallPicDiv_row">
-                                <div class="smallPicDiv">
-                                    <img class="smallPic" src="./images/slidegl01.jpg"
-                                        onclick="openSlide_lightbox();currentSlide(1)">
-                                </div>
-                                <div class="smallPicDiv">
-                                    <img class="smallPic" src="./images/slidegl02.jpg"
-                                        onclick="openSlide_lightbox();currentSlide(2)">
-                                </div>
-                                <div class="smallPicDiv">
-                                    <img class="smallPic" src="./images/slidegl03.jpg"
-                                        onclick="openSlide_lightbox();currentSlide(3)">
-                                </div>
-                                <div class="smallPicDiv">
-                                    <img class="smallPic" src="./images/slidegl04.jpg"
-                                        onclick="openSlide_lightbox();currentSlide(4)">
-                                </div>
-                                <div class="smallPicDiv">
-                                    <img class="smallPic" src="./images/slidegl05.jpg"
-                                        onclick="openSlide_lightbox();currentSlide(5)">
-                                </div>
-                            </div> -->
-                            <!-- 2) FULL OVERLAY #333352 -->
-                            <div id="overlay_lightbox_full_id" class="overlay_lightbox_full">
-                                <!-- 2a -->
-                                <span class="closing_XXX" onclick="closeSlide_lightbox()">&times;</span>
-                                <!-- 2b -->
-                                <div class="overlay_lightbox_content">
-                                    <div class="slideDivs_div">
-                                        <div class="slideDiv">
-                                            <div class="slideNumTxt">1 / 5</div>
-                                            <img class="aSingleSlide" src="./images/slidegl01.jpg">
-                                        </div>
-                                        <div class="slideDiv">
-                                            <div class="slideNumTxt">2 / 5</div>
-                                            <img class="aSingleSlide" src="./images/slidegl02.jpg">
-                                        </div>
-                                        <div class="slideDiv">
-                                            <div class="slideNumTxt">3 / 5</div>
-                                            <img class="aSingleSlide" src="./images/slidegl03.jpg">
-                                        </div>
-                                        <div class="slideDiv">
-                                            <div class="slideNumTxt">4 / 5</div>
-                                            <img class="aSingleSlide" src="./images/slidegl04.jpg">
-                                        </div>
-                                        <div class="slideDiv">
-                                            <div class="slideNumTxt">5 / 5</div>
-                                            <img class="aSingleSlide" src="./images/slidegl05.jpg">
-                                        </div>
-                                        <!-- alt property used as description !!! -->
-                                        <div class="slideDescrDiv">
-                                            <p id="slideDescr"></p>
-                                        </div>
-                                    </div>
-                                    <!-- active/inactive dost as pictures -->
-                                    <div class="smallPicDotDivs_div">
-                                        <div class="smallPicDotDiv">
-                                            <img class="smallPicDot" onclick="currentSlide(1) 
-                                            " src="./images/slidegl01.jpg" alt="full project overview">
-                                        </div>
-                                        <div class="smallPicDotDiv">
-                                            <img class="smallPicDot" onclick="currentSlide(2) 
-                                            " src="./images/slidegl02.jpg"
-                                                alt="the double diamond and problem spotting">
-                                        </div>
-                                        <div class="smallPicDotDiv">
-                                            <img class="smallPicDot" onclick="currentSlide(3) 
-                                            " src="./images/slidegl03.jpg" alt="UXR and design goals">
-                                        </div>
-                                        <div class="smallPicDotDiv">
-                                            <img class="smallPicDot" onclick="currentSlide(4) 
-                                            " src="./images/slidegl04.jpg" alt="sitemap, moodboard and wireframes">
-                                        </div>
-                                        <div class="smallPicDotDiv">
-                                            <img class="smallPicDot" onclick="currentSlide(4) 
-                                            " src="./images/slidegl05.jpg" alt="more testing and visual design">
-                                        </div>
-                                    </div class="smallPicDotDivs_div">
-                                </div class="overlay_lightbox_content">
-                                <!-- 2c previous/next buttons -->
-                                <div class="divPrevNext">
-                                    <a class="prevSlide_lightbox" onclick="nextSlide_lightboxPlease(-1)">&#10094;</a>
-                                    <a class="nextSlide_lightbox" onclick="nextSlide_lightboxPlease(1)">&#10095;</a>
-                                </div>
-                            </div id="overlay_lightbox_full_id" class="overlay_lightbox_full">
-                        </div class="lightbox">
-                    </section> <br> <br>
-
-
-                    <h3><span class="char_desaturated"> &#128161;</span>
-                        A web store design (Figma)
-                    </h3> <br>
-                    <p>
-                        UX/UI design for
-                        <a class="text_link" href="https://www.hackyourfuture.dk/" target="_blank"
-                            rel="noopener noreferrer">
-                            Hack-Your-Future/Copenhagen
-                        </a>
-                        coding school: final project for class #20 (web development: May-July 2022)
-                        <br>
-                        <br>
-                        METHODOLOGY / HIGHLIGHTS:
-                        <br>
-                        double diamond || user centered design || stakeholder's interview || cross functional team
-                        environment ||
-                        iteration || testing || wireframes || interactive prototype || visual design || content writing
-                        <br>
-                        <br>
-                        TOOLS:
-                        <br>
-                        Figma || a pencil and paper || human helpers (stakeholders and testees) || brain ||
-                        knowledge || experience
-                    </p>
+                <!-- SPICES -->
+                <div class="ux-project-area">
+                    <h3 class="center-text">
+                        <!-- <span class="char_desaturated"> &#128161;</span> -->
+                        'Simply Spices' web store design
+                    </h3>
                     <br>
-                    <section class="project_card">
-                        <!-- relative -->
+                    <div class="ux-project-text-box">
+                        <p> MOTIVATION:
+                            <br>
+                            UI design for
+                            <a class="text_link" href="https://www.hackyourfuture.dk/" target="_blank"
+                                rel="noopener noreferrer">
+                                Hack-Your-Future/Copenhagen
+                            </a>
+                            coding school
+                        </p>
+                        <p>
+                            METHODOLOGY HIGHLIGHTS:
+                            <br>
+                            UCD, IxD,
+                            visual design, content writing,
+                            iteration, prototype, cross-functional team collaboration, agile
+                        </p>
+                        <p>
+                            TOOLS:
+                            <br>
+                            Figma, agile: Jira, GitHub, HTML/CSS/JS/React.js
+                        </p>
+                    </div>
+                    <div class="project_card">
                         <img class="project_image"
                             src="./images/spice_store_design/landing_page_01v3_not_logged_page_2.jpg"
                             alt="restaurant project landing page">
-                        <!-- absolute -->
                         <div class="project_image_content">
                             <a href="cv_spice_store.html" rel="noopener noreferrer" class="view_button">
                                 VIEW PROJECT
                             </a>
-                            <!-- <a href="https://www.figma.com/file/NTUzhWDZf1rrFau5vNshXB/spices__web_store?node-id=0%3A1"
-                                rel="noopener noreferrer" class="view_button">
-                                VIEW PROJECT
-                            </a> -->
                         </div>
-                    </section>
+                    </div>
+                </div>
+
+                <!-- GREEN LOVE -->
+                <div class="ux-project-area">
+                    <h3 class="center-text">
+                        <!-- <span class="char_desaturated"> &#128161;</span> -->
+                        A full UX/UI redesign for a restaurant
+                    </h3>
                     <br>
-                    <!-- <p> &nbsp; &nbsp; &nbsp; 🚨 THE LINK IS COMING BACK 05/05/2022 ! </p> -->
-                    <!-- <a class="text_link" style="border-style: none;" target="_blank" rel="noopener noreferrer"
-                        href="https://www.figma.com/file/NTUzhWDZf1rrFau5vNshXB/spices__web_store?node-id=0%3A1">
-                        <img class="link_bars" src="./images/spices_store_bar.png"
-                            alt="a screenshot of spice store design in figma file">
-                    </a> -->
-                    <br> <br>
-
-                    <section>
-                        <h3> <span class="char_desaturated"> &#128161;</span>
-                            THIS website :) </h3>
-                        <p>
-                            Are you curious why my portfolio looks the way it looks? I'll be glad to talk about it.
-                            ||
-                            METHODOLOGY / HIGHLIGHTS: double dimond, accessibility, graphic design, HTML, CSS,
-                            JavaScript.
+                    <div class="ux-project-text-box">
+                        <p> MOTIVATION:
+                            <br>
+                            a full audit to find main pain points and redesign the most urgent issues.
+                            <!-- There is always something we can alter, fix or tweak, right? -->
                         </p>
-                    </section>
-                    <br><br>
-
-
-                    <section>
-                        <h3> <span class="char_desaturated"> &#128161;</span>
-                            other UX/UI projects in the making (let's talk)</h3>
-                        <br>
-                        <!-- &#10036; -->
-
-                        <h4>an interactive and visual form</h4>
                         <p>
-                            a site feature to help the user find their product match in a fun, interactive and
-                            intuitive
-                            way || METHODOLOGY / HIGHLIGHTS: qualitative research, graphic design, cross functional
-                            team
-                            environment.
+                            METHODOLOGY HIGHLIGHTS:
+                            <br>
+                            DD, UCD, IxD,
+                            stakeholder's interview, UXR,
+                            IA; visual design, content writing,
+                            iteration, testing, wireframes, prototype
                         </p>
-                        <br>
-
-                        <h4>Copenhagen Metro Line [M3]</h4>
                         <p>
-                            a short sketch of a quick fix for certain pain points I have spotted on M3 line ||
-                            METHODOLOGY / HIGHLIGHTS: system design, accessibility, graphic design.
+                            TOOLS:
+                            <br>
+                            Figma, Miro, Whimsical
                         </p>
+                    </div>
+                    <div class="project_card">
+                        <img class="project_image" src="./images/restaurant_redesign/widescr_home_slide_01_v2.jpg"
+                            alt="restaurant project landing page">
+                        <div class="project_image_content">
+                            <a href="cv_restaurant_project.html" rel="noopener noreferrer" class="view_button">
+                                VIEW PROJECT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ux-project-area" style="display:none;">
+                    <!-- THIS SITE -->
+                    <h3 class="center-text">
+                        <!-- <span class="char_desaturated"> &#128161;</span> -->
+                        this portfolio :)
+                    </h3>
+                    <br>
+                    <p>
+                        Are you curious why my portfolio looks the way it looks? I'll be glad to talk about it.
+                        METHODOLOGY / HIGHLIGHTS: double diamond, accessibility, graphic design, HTML, CSS,
+                        JavaScript.
+                    </p>
+                    <br>
+                </div>
+
+
+
+                <div class="ux-project-area">
+                    <!-- OTHER MINOR UX THINGS -->
+                    <h3 class="center-text">
+                        <!-- <span class="char_desaturated"> &#128161;</span> -->
+                        other UX/UI projects in the making (let's talk)
+                    </h3>
+                    <br>
+                    <h4>the UX/UI for an interactive online form </h4>
+                    <p>
+                        a site feature to help the user find their product match in a fun, interactive and
+                        intuitive way
                         <br>
-
-                        <h4>Nordbro Tower UX</h4>
-                        <p>
-                            the UX flow of my building: a quick fix || METHODOLOGY / HIGHLIGHTS: system design,
-                            accessibility, graphic design.
-                        </p>
+                        METHODOLOGY / HIGHLIGHTS: qualitative research, graphic design, cross functional
+                        team
+                        environment.
+                    </p>
+                    <br>
+                    <h4>new UX for Copenhagen Metro Line [M3]</h4>
+                    <p>
+                        a short sketch of a quick fix for certain pain points I have spotted on M3 line
                         <br>
+                        METHODOLOGY / HIGHLIGHTS: system design, accessibility, graphic design.
+                    </p>
+                    <br>
+                    <h4>Nordbro Tower UX</h4>
+                    <p>
+                        the UX flow of my building: a quick fix:
+                        <br>
+                        METHODOLOGY / HIGHLIGHTS: system design,
+                        accessibility, graphic design.
+                    </p>
+                </div>
 
-                    </section>
 
-                    <h3> <span class="char_desaturated"> &#128161;</span>
-                        other non UX/UI projects </h3>
+                <div class="ux-project-area-100">
+                    <br>
+                    <br>
+                    <h3>non-UX projects if you're curious</h3>
+                    <br>
                     <br>
 
                     <!-- JEWELLERY :: what I've done > hide/show -->
                     <section>
-
                         <button class="accordion">
-                            other design &nbsp; : : &nbsp; my jewellery projects
+                            non UX design &nbsp; : : &nbsp; my jewellery projects
                         </button>
                         <div class="panel">
                             <div class="jewellery_presentation_container">
-
                                 <!-- 2) -->
                                 <div class="mySlides1_dot_descr">
                                     <p>
@@ -721,9 +471,6 @@
                                         and hand crafted.
                                     </p>
                                 </div>
-
-
-
                                 <!-- 2) and 3) for narrow screens -->
                                 <div class="mySlides1_dot_descr_mobile">
                                     <p>
@@ -731,7 +478,6 @@
                                         My sweet spot is statement rings and mixed media techniques.
                                     </p>
                                 </div>
-
                                 <!-- 1) -->
                                 <div class="slideshow-container">
                                     <div class="mySlides1">
@@ -771,7 +517,6 @@
                                     <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                                 </div class="slideshow-container">
                                 <!-- <div class="clearing_div"> </div> -->
-
                                 <!-- 3) -->
                                 <div class="mySlides1_dot_descr">
                                     <p>
@@ -781,15 +526,15 @@
                                         techniques.
                                     </p>
                                 </div>
-
                             </div class="jewellery_presentation_container">
                         </div class="panel">
                     </section>
+                    <br><br>
 
                     <!-- PHOTO :: what I've done > hide/show -->
                     <section>
                         <button class="accordion">
-                            other design &nbsp; : : &nbsp; photo labs
+                            non UX design &nbsp; : : &nbsp; photo labs
                         </button>
                         <div class="panel"> <br>
                             <ul>
@@ -812,30 +557,20 @@
                             </ul>
                         </div>
                     </section>
-                    <br> <br>
+                    <br><br>
 
-                </article>
+                </div>
+
+                <br><br>
+
+
+
 
             </main>
-
         </div class="screen_flex_layout2">
-
-
-        <!-- <div class="buttons_row">
-            <a href="#">
-                <button class="button_l"> ▲ </button>
-            </a>
-            <div class="button_middle_space"></div>
-            <a href="#coding-experience-link">
-                <button class="button_r"> ▼ </button>
-            </a>
-        </div> -->
-
-
     </div class="screen2">
 
-
-
+    <br><br><br><br>
 
 
 
@@ -1246,6 +981,8 @@
                         </div>
                     </section>
 
+
+
                 </article> <br>
 
             </main>
@@ -1421,6 +1158,9 @@
 
 
 
+
+
+
     <!-- ****************************************************************************************** -->
     <!-- FOOTER  -->
     <!-- ****************************************************************************************** -->
@@ -1447,10 +1187,13 @@
 
 
         <div class="blob">
+
             <p> by Magdalena Wojtakowska [Voigt] &copy; 2020 MSW
                 <time datetime='2019-10-09 23:00+0100'></time>
+                <br>
+                Hero image: created by allvision, licensed legally
+                from https://stock.adobe.com/dk/images/astronaut-room/430310386
             </p>
-
 
         </div class="blob">
 

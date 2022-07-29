@@ -10,13 +10,17 @@
     /* background-color: rgb(219, 0, 0); */
   } 
 
+  html {
+    font-size: 14px;
+  }
+
   .break_mobile_none {
     display: none;
   }
 
   .anchor {
     position: absolute;
-    margin: -12.666vh;
+    margin: -10.666vh;
   }
 
   .screen_title h1 {
@@ -29,19 +33,18 @@
     width: 100%;
     margin-bottom: 3rem;
   }
-  
 
 
   /**** 1 - 1225px **************************************************************************/
   /* NAVIGATION */
   .nav_background {
-    height: 8vh;
+    height: 4rem;
     width: 100vw;
     margin-top: 0vh;
     padding: 0;
   }
   nav {
-    height: 8vh;
+    height: 4rem;
     width: 80vw; 
   }
   .nav_background nav div a, .nav_box {
@@ -56,22 +59,17 @@
   .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
     border: rgba(228, 228, 228, 0.151) 0.2rem solid;
     border-radius: 5px;
-    margin-top: 5rem;
+    margin-top: 4rem;
     padding-bottom: 2vh;
-    height: 100%;
     width: 80vw; 
   }
-
   .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
   .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
     flex-direction: column;
     width: 80vw;
     padding-bottom: 0px;
   }
-
-  
   .scr1_articles,
-   
   .screen_flex_layout1, 
   .scr1_article1_magda,
   .scr1_article1_magda  section {
@@ -84,9 +82,28 @@
   .screen_flex_layout1 {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 0rem;
     padding: 0;
   }
+
+
+
+
+  
+  
+
+
+
+
+
+
+  .typewriter_area {       width: 600px;       font-size: 2.6rem;       }
+  @keyframes typing {        from {    width: 0  }        to   {    width: 600px  }      }
+  .intro_font {  font-size: 1.2rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
+
+
+
+
   .scr1_article2_dots {
     width:  37.5rem; /* ===600px if HTML font size === 16px */
   }
@@ -115,7 +132,53 @@
 
   aside {    text-align: left;  }
   main:not(.screen_flex_layout6 main)  {    order: -1;  }
-  aside>section>ul, aside>section>ul>li {    text-align: left;  } 
+  aside>section>ul, aside>section>ul>li {    text-align: left;  }  
+
+
+  /* EACH PROJECT AREA and CARD */  
+
+
+  .main-ux-projects {
+    width: 100%; 
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;  
+  }
+
+  .screen2 {
+    border: none; 
+  }
+  
+  .ux-project-area {
+    width: 49.2%; 
+    justify-content: center; 
+    margin: 0 0 1rem 0;
+  } 
+  
+  .ux-project-text-box {
+    height: 160px;
+  }
+ 
+  .view_button {
+    display: flex;
+    flex-direction: column;
+    color: rgba(228, 228, 228);
+    background-color: transparent; 
+    
+    border: rgba(228, 228, 228) solid 0.1rem;
+    padding: 0.5rem;
+    text-decoration: none; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 1.6rem;
+    /* height: 100%; */
+    width: auto; 
+    /* width: 100%; */
+  }
+  .view_button:hover,.view_button:focus,
+  .view_button:active {  color: rgba(228, 228, 228, 0.801);
+    border: rgba(228, 228, 228, 0.801) solid 0.1rem;
+  }
+
   
   
   /* SCREEN 6 with changed contact layout */ 
@@ -149,6 +212,11 @@
     padding: 0; 
     width: 100%;
     align-items: flex-start;
+  }
+
+  .screen_flex_layout6 h3 {
+    width: auto;
+    margin: 0; 
   }
 
 
@@ -361,10 +429,12 @@
     }  
 
 
+    .nav_background {
+      height: 4rem;
+    }
     nav {
-      height: 10vh;
+      height: 4rem;
       width: 80vw;
-
     }
 
     .scr1_articles,
@@ -380,6 +450,96 @@
     }
     .screen_flex_layout1 {
       padding: 0;
+    }
+
+
+
+
+
+  .screen_flex_layout1,.screen_flex_layout2,.screen_flex_layout3,
+  .screen_flex_layout4,.screen_flex_layout5,.screen_flex_layout6 {
+  height: 100%;
+  }
+  .screen_flex_layout1 {
+  height: 100%;
+  }
+  .scr1_articles {
+  height: 100%;
+  }
+
+
+
+  
+
+
+
+
+
+
+    .typewriter_area {       width: 500px;       font-size: 2.1rem;   text-align: center;    }
+    @keyframes typing {        from {    width: 0  }        to   {    width: 500px  }      }
+    .intro_font {  font-size: 1.1rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
+
+ 
+    .skills_icon_line_top {
+      /* border: pink solid 1px; */
+      gap: 0.6rem;
+    }
+    .skills_icon_line_top > img {
+      height: 2.2rem;
+    }
+
+    /* project card */
+
+    .ux-project-area {
+      width: 49.4%;
+      padding: 1%; 
+    } 
+
+    .ux-project-area h3 {
+      width: 95%;
+      height: 40px;
+      font-size: 1.4rem;
+    }
+    
+    .ux-project-text-box {
+      height: 170px;
+    }
+    .ux-project-text-box p {
+      text-align: center;
+      font-size: 0.9rem ;
+    }
+    
+    .project_card {
+      position: relative;
+      height: auto;
+    }
+    .project_image {
+      width: 100%;
+      height: auto;
+      filter: saturate(80%);
+      position: relative;
+      bottom: 0;
+      left: 0;
+    }
+    .project_image_content {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 30%;
+      width: 100%;
+      background: linear-gradient(90deg, #333352, #45666d 250%); 
+      /* background-color: #333352; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+ 
+    .view_button {
+      padding: 0.5rem;
+      font-size: 1.2rem; 
+      width: 100%; 
+      height: 100%;
     }
  
     /* JEWELLERY SLIDES 1 - 1000px  */
@@ -437,9 +597,7 @@
     /* NEST 2 >>> 1- 700 */ 
 
     @media screen and (max-width: 700px) { 
-      
-
-
+  
       body {
         /* background-color: pink; */
       }
@@ -454,22 +612,33 @@
       h1 {
         font-size: 2rem;
       }
+      p.intro_font {  
+        font-size: 1.1rem;  line-height: 1.4rem;  
+        font-weight: 100; width: 98%; text-align: left;
+        padding: 0.2rem 1rem 0.5rem 1rem;
+      }
+      
+      
+
 
       /**** 1 - 700px **************************************************************************/
       /* NAVIGATION FOR MOBILE LAYOUT */
       .nav_background {
         position: fixed;
         width: 100vw;
-    
+        background-color: transparent;
+        background-color: #3333528f;
         margin-top: 0vh;
+        height: 4rem;
         border: none;
         /* border: pink solid 1px; */
       }
       nav {
         /* border: pink dashed 1px; */
+        background-color: #333352;
+        height: 4rem;
         justify-content: end;
-        width: 96vw;
-
+        width: 90vw;
         padding: 0;
       }
       nav div a {
@@ -492,18 +661,19 @@
         display: flex !important;
         align-items: center;
         justify-content: center;
-        width: 8vh;
-        height: 8vh;
+        width: 4rem;
+        height: 4rem;
         margin: 0 0 0 0;
         padding: 0 0px 0 0;
-        font-size: 4vh;
+        font-size: 2rem;
       } 
 
       /* nav overlay X */ 
       .overlay .close_X {
-        width: 8vh;
-        height: 8vh;
-        font-size: 4vh;
+        width: 4rem;
+        height: 4rem;
+        font-size: 3rem;
+        margin-right: 1vw;
       }
 
       .overlay a:not(.close_X) {
@@ -536,11 +706,35 @@
         width: 100vw;
         border: none;
       }
+      .screen1 h1 {
+      transform: scale(0.9);
+      }
       .screen_flex_layout1 {
         padding: 0;
         margin: 0 auto; 
-        margin-top: 3rem;
+        margin-top: 0rem;
       }
+
+
+      .screen_flex_layout1,.screen_flex_layout2,.screen_flex_layout3,
+      .screen_flex_layout4,.screen_flex_layout5,.screen_flex_layout6 {
+      height: 100%;
+      min-height: 9vh;
+      /* border: azure dotted 0.1px; */
+      }
+      .screen_flex_layout1 {
+      height: 100%;
+      }
+      .scr1_articles {
+      height: 100%;
+      }
+
+       
+
+      .typewriter_area {       width: 450px;       font-size: 2.2rem;       }
+      @keyframes typing {        from {    width: 0  }        to   {    width: 450px  }      }
+      .intro_font {  font-size: 1.6rem;  line-height: 2rem;  font-weight: 100; width: 450px} 
+      .intro_font {  font-size: 1.2rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
 
       .scr1_article2_dots, 
       .happy_dots { 
@@ -553,6 +747,24 @@
         width: 20vw;
       }
 
+      .scr1-buttons {
+        display: flex;
+        width: auto;
+      }
+
+        .skills_icon_line_top {
+        /* border: pink solid 1px; */
+        gap: 0.5rem;
+      }
+      .skills_icon_line_top > img {
+        height: 1.8rem;
+      }
+
+
+
+      
+  
+
       /**** 1 - 0700px **************************************************************************/
       /* INNER SCREENS : LISTS */
     
@@ -560,7 +772,26 @@
       aside>section>ul>li {
         text-align: left;
       } 
-      
+
+
+      .ux-project-area {
+        width: 49.4%; 
+      } 
+      .ux-project-text-box {
+        /* border: pink solid 1px; */
+        height: 180px;
+      }    
+      .ux-project-text-box p {
+        /* border: pink solid 1px; */
+        font-size: 0.8rem;
+      } 
+
+
+
+
+
+
+
       /**** 1 - 0700px **************************************************************************/
       /* INNER SCREENS : icons and icon bars */
       
@@ -671,10 +902,76 @@
           /* background-color: purple;  */
         } 
 
+     
+
         .large_font  { font-size: 1.20rem;  }
         h1 {          font-size: 1.5rem;        }
+
+        .typewriter_area {       width: 360px;       font-size: 1.76rem;       }
+        @keyframes typing {        from {    width: 0  }        to   {    width: 360px  }      }
+        .intro_font {  font-size: 1.6rem;  line-height: 2rem;  font-weight: 100; width: 360px}
+        .intro_font {  font-size: 1.2rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
   
-            
+          
+        .screen_flex_layout1,.screen_flex_layout2,.screen_flex_layout3,
+        .screen_flex_layout4,.screen_flex_layout5,.screen_flex_layout6 {
+        height: 100%;
+        min-height: 9vh;
+        /* border: azure dotted 0.1px; */
+        }
+        .screen_flex_layout1 {
+        height: 100%;
+        }
+        .scr1_articles {
+        height: 100%;
+        }
+
+        .skills_icon_line_top {
+          /* border: pink solid 1px; */
+          padding-top: 1rem;
+          width: 90%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.6rem;
+        }
+        .skills_icon_line_top > img {
+          height: 1.9rem;
+        }
+
+        .scr1-buttons {
+          display: flex; 
+          flex-direction: column;
+          width: 98%;
+          margin-top: 1rem;
+        }
+        
+        .cv_button {
+          margin-bottom: 1rem;
+        }
+   
+
+
+
+        .ux-project-area {
+          width: 100%; 
+        } 
+        .ux-project-area h3 {
+          width: 100%; 
+          height: auto;
+          padding-top: 1rem;
+        }
+        .ux-project-text-box {
+          /* border: pink solid 1px; */
+          height: 130px;
+        }    
+        .ux-project-text-box p {
+          /* border: pink solid 1px; */
+          font-size: 0.8rem;
+        }
+
+
+
+
        .slideshow-container {
           width: 60vw;
           height: 60vw;
@@ -708,7 +1005,26 @@
           }
 
           html {  font-size: 11px;}
+
+          .typewriter_area {       width: 90vw;       font-size: 6vw;       }
+          @keyframes typing {        from {    width: 0  }        to   {    width: 90vw  }      }
+          .intro_font {  font-size: 5vw;  line-height: 7vw;  font-weight: 100; width: 90vw}
+          .intro_font {  font-size: 1.2rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
        
+          .screen_flex_layout1,.screen_flex_layout2,.screen_flex_layout3,
+        .screen_flex_layout4,.screen_flex_layout5,.screen_flex_layout6 {
+        height: 100%;
+        min-height: 9vh;
+        /* border: azure dotted 0.1px; */
+        }
+        .screen_flex_layout1 {
+        height: 100%;
+        }
+        .scr1_articles {
+        height: 100%;
+        }
+
+
         }
 
       }

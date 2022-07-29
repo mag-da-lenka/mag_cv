@@ -46,7 +46,7 @@ html {  font-size: 16px }
 
 /* font sizes from XXS to XXL (except nav links and nav buttons) */
 .smaller_font {                        font-size: 1.00rem;  font-weight: 100; }
-.text_link:link, .text_link:visited {  font-size: 1.00rem;  font-weight: 100; }
+.text_link:link, .text_link:visited {  font-size: 1.20rem;  font-weight: 100; }
 a, p, ul, li, .accordion {             font-size: 1.20rem;  font-weight: 100; }
 .medium_font {                         font-size: 1.40rem;  font-weight: 100; }
 .large_font  {                         font-size: 1.60rem;  font-weight: 100; }
