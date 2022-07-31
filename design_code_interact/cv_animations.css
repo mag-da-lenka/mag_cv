@@ -37,8 +37,7 @@
 }
 
 @keyframes glow {
-  from {
-    text-shadow:
+  from { text-shadow:
       0 0 0.05rem rgb(194, 165, 181),
       0 0 0.05rem rgb(194, 165, 181),
       0 0 0.05rem rgb(194, 165, 181),
@@ -46,8 +45,7 @@
       0 0 0.15rem rgb(209, 203, 207),
       0 0 0.20rem rgb(209, 203, 207)
   }
-  to {
-    text-shadow:
+  to { text-shadow:
     0 0 0.05rem rgb(194, 165, 181),
   }
 }
@@ -58,63 +56,32 @@
 
 
 
-
-/******************************************************************************/
-/* squirrels flip */ 
-
 .ux_person_animated {
-  position: relative; 
-  top:0; 
-  left: 0;
-  z-index: 50;
+  position: relative;  top:0;   left: 0;  z-index: 50;
   width: 7.5rem;
-  opacity: 60%; 
-  filter: saturate(20%);
+  opacity: 60%;   filter: saturate(20%);
   animation: ux_person_dot 2.666s infinite;
-  /* border: solid red 2px;  */
   border-radius: 50%;
-  
 }
 
-
 .squirrel_icon_flip_svg {
-  position: absolute; 
-  top:0; 
-  left: 0;
-  margin-top: 1vh;
+  position: absolute;   top:0;   left: 0;  margin-top: 1vh;
+  width: 7.5rem;
   margin-right: 1vh;
   color: rgb(228, 228, 228);
-  width: 7.5rem;
   opacity: 50%;
   animation: squirrel_flip 2.666s infinite;
-  /* border: solid red 2px; */
 }
 @keyframes squirrel_flip {  0% {
     transform: rotate(360deg);  }
 }
-/* if PNG */
-/* .squirrel_icon_flip {
-  margin-top: 5vh;
-  width: 10vw;
-  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
-  opacity: 30%; 
-  animation: squirrel_flip 5s infinite; 
-} @keyframes squirrel_flip {  100% {transform: rotate(360deg);}}  */
-
-
-/******************************************************************************/
-/* squirrels jump */
 
 .squirrel_icon_jump_svg {
-  position: relative;
-  margin-top: 8vh;
-  padding: 0;
-  width: 10vw;
-  color: rgb(228, 228, 228);
+  position: relative;  margin-top: 8vh;
   width: 8vw;
-  opacity: 60%;
+  padding: 0;
+  color: rgb(228, 228, 228);opacity: 60%;
   animation: squirrel_jump 0.666s infinite;
-  
 }
 @keyframes squirrel_jump {
   000% {    bottom: -020px;  }
@@ -122,28 +89,7 @@
   100% {    bottom: -020px;  }
 }
 
-/* if PNG */
-/* .squirrel_icon_jump {
-  position: relative;
-  margin-top: 8vh;
-  padding: 0;
-  width: 10vw;
-  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg) brightness(111%) contrast(79%);
-  opacity: 30%; 
-  animation: squirrel_jump 0.666s infinite;   
-} @keyframes squirrel_jump {
-  000%  {bottom:  -020px;}
-  080%  {bottom:  +100px;}
-  100%  {bottom:  -020px;}
-} */
 
-/* @keyframes squirrel_jump { 100% { */
-/* transform: translateX(20px);  */
-/* transform: translateY(20px);  */
-/* transform: rotateZ(9deg);   */
-/* rotate, scale, move (translate), and skew elements */
-/* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
-/* transform: matrix(2, 0, 0, 0, 0, 0);} } */
 
 
 
@@ -154,31 +100,18 @@
 /* SCREEN 1 > DOTS > div sizes only */ 
 
 .scr1_article2_dots {
-  position: static;   
-  margin:  0; 
-  padding: 0; 
-  width:   37.5rem;   
-  height:  37.5rem; /* ===600px if HTML font size === 16px */ 
+  position: static;   margin:  0;   padding: 0; 
+  width:   37.5rem;     height:  37.5rem; /* ===600px if HTML font size === 16px */ 
   width: 600px;
-  /* border: orange 1px solid; */
   display: none;
-
 }
 
 .happy_dots {
-  position: absolute;
-  z-index: 0;
-  display: flex;
-  flex-direction: row; 
-  margin:  0 0 0 0; 
-  padding: 0 0 0 0; 
-  width:   37.5rem;   
-  height:  37.5rem; /* ===600px initial HTML font size === 16px */ 
-   /* border: rgba(255, 166, 0, 0.466) 1px dashed; */
+  position: absolute;  z-index: 0;
+  display: flex;  flex-direction: row; 
+  margin:  0 0 0 0;   padding: 0 0 0 0; 
+  width:   37.5rem;     height:  37.5rem; /* ===600px initial HTML font size === 16px */ 
 } 
-
-/******************************************************************************/
-/* DOTS FOR the \\ MAIN SCREEN > .scr1_articles > .scr1_article2_dots */ 
 
 .dot_anime_01, .dot_anime_02, .dot_anime_03, .dot_anime_04,
 .dot_anime_05, .dot_anime_06, .dot_anime_07, .dot_anime_08, 
@@ -186,24 +119,16 @@
 .dot_anime_13, .dot_anime_14, .dot_anime_15, .dot_anime_16, 
 .dot_anime_17, .dot_anime_18, .dot_anime_19, .dot_anime_20,
 .dot_anime_21, .dot_anime_22, .dot_anime_23, .dot_anime_24 {
-  position: relative;
-  display: flex;
-  flex-direction: row; 
-  margin:  0 0 0 0; 
-  padding: 0 0 0 0; 
-  width:   020%;   
-  height:  020%;
+  position: relative;  display: flex;  flex-direction: row;   align-items: center;  justify-content: center;
+  margin:  0 0 0 0;   padding: 0 0 0 0; 
+  width:   020%;     height:  020%;
   border-radius: 50%;
   transition: 1000ms;
-  /* animation-delay: 3s;  */
   filter: opacity(100%);  
-  align-items: center;
-  justify-content: center;
 } 
 
 .dot_anime_09, .dot_anime_10, .dot_anime_11, .dot_anime_12 {
-  width:   015%;   
-  height:  015%;
+  width:   015%;     height:  015%;
 }
 
 .dot_anime_01  {animation: dot_01  07.666s infinite; position: absolute; z-index: -01; }
