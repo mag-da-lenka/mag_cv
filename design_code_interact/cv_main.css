@@ -325,7 +325,7 @@ aside,main {  padding: 1.5% 1.5% 0% 1%;  border: 0.14rem;}
 aside {  margin: 0% 1% 0% 1%;}
 aside {  width: 400px;
   text-align: right;
-  border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151)transparent transparent;
+  border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) transparent transparent;
   border-style: solid solid solid solid;  border-radius: 0 0.2rem 0 0;
 }
 main {  width: 60vw;  width: 690px;
@@ -366,7 +366,7 @@ aside > section > ul > li {
   justify-content: space-between; 
   width: 49.4%; 
   margin: 0 0 1rem 0;  padding: 1rem; 
-  border: rgba(228, 228, 228, 0.151) solid 0.14rem;
+  border: rgba(228, 228, 228, 0.151) solid 0.2rem;
   /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.178); */
 } 
 .ux-project-container h3, .ux-project-container h4 {

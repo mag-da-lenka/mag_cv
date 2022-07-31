@@ -21,12 +21,14 @@
   .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { width: 80vw;   flex-direction: column;  }
   .scr1_articles{   flex-direction: row;  }
 
-  
+  .screen_flex_layout3, .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
+   border-style: solid solid solid solid;  border-radius: 0.1rem; border-color: rgba(228, 228, 228, 0.151);
+  }
 
   .screen_title    {    width: 100%;  padding: 1rem 0 2rem 0;  }
   .screen_title h1 {   font-size: 3rem;    text-align: end;     }
 
-  aside, main {    height: 100%;    width: 100%;    margin: 0;    padding: 3%;  }
+  aside, main {    height: 100%;    width: 100%;    margin: 0;    padding: 3%; border: none; }
   aside {    text-align: left;  }
   main:not(.screen_flex_layout6 main)  {    order: -1;  }
   aside>section>ul, aside>section>ul>li {    text-align: left;  }  
