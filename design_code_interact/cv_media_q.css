@@ -19,7 +19,7 @@
   .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
   .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6,
   .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { width: 80vw;   flex-direction: column;  }
-  .scr1_articles{   flex-direction: row;  }
+  .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 5rem;  }
 
   .screen_flex_layout3, .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
    border-style: solid solid solid solid;  border-radius: 0.1rem; border-color: rgba(228, 228, 228, 0.151);
@@ -75,7 +75,7 @@
     .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
     .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6,
     .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { width: 90vw;   flex-direction: column;  }
-    .scr1_articles{   flex-direction: row;  }
+    .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 5rem;  }
     .scr1_article1_magda section {  padding: 0 1.00rem 0 1.00rem;  }
 
     .skills_icon_line_top {  gap: 0.5rem;}
@@ -131,6 +131,9 @@
           display: flex !important; align-items: center;  justify-content: flex-end;  width: 4rem;        } 
         .overlay .close_X { width: 4rem;  height: 4rem; font-size: 2rem;  margin-right: 0;  }
         .overlay a:not(.close_X) { font-size: 2rem;  } 
+
+
+        .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 2rem;  }
         
         .typewriter_area {width: 22rem; font-size: 1.5rem; }
         @keyframes typing {  from {  width: 0  }  to   { width: 22rem;}}
