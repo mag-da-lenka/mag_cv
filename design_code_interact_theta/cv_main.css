@@ -1,0 +1,894 @@
+/******************************************************************************/
+/* body / background */
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  /* border: pink solid 1px; */
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+  /* background-color: #333352; */
+}
+
+html {
+  font-size: 16px;
+  width: 100vw;
+  font-weight: 100;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #333352;
+  color: rgba(228, 228, 228);
+  font-family: "Abel";
+  font-weight: 100;
+  /* cursor: crosshair; */
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+::selection {
+  color: #333352;
+  background: rgba(228, 228, 228);
+}
+
+#holo_fun {
+  background-image: linear-gradient(0.12turn, #45666d, #33335265, #45666d);
+  background-size: 369.666%;
+}
+
+/******************************************************************************/
+/* FONTS */
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(194, 165, 181);
+  text-shadow: 1px 1px 2px #333352;
+  border: none;
+  padding: 0 0 0 0;
+  margin: 0;
+  font-weight: 100;
+}
+
+/* font sizes from XXS to XXL (except nav links and nav buttons) */
+.smaller_font {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.text_link:link,
+.text_link:visited {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+a,
+p,
+ul,
+li {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.accordion {
+  /* afects the text on the panel (NOT plus/minus) */
+  /* all other accordion styles down below */
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.accordion:after {
+  /*PLUS*/
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.accordion.active:after {
+  /*MINUS*/
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.medium_font {
+  font-size: 1.1rem;
+  font-weight: 100;
+  line-height: 1.5rem;
+}
+
+.med_large {
+  font-size: 1.3rem;
+  line-height: 2em;
+  line-height: 1.7rem;
+}
+
+.large_font {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  padding: 0;
+  margin: 0;
+
+  text-shadow: 0.1px 0.1px 0.2px #33335200;
+  /* background:   linear-gradient(to right, rgb(194, 165, 181) 0%, rgba(228, 228, 228) 70%);
+	-webkit-background-clip: text; 	-webkit-text-fill-color: transparent;   */
+}
+
+h2 {
+  font-size: 1.9rem;
+  font-weight: 100;
+  line-height: 1.9rem;
+  padding: 0;
+  margin: 0;
+  color: rgba(228, 228, 228);
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 100;
+  line-height: 2.2rem;
+  padding: 0;
+  margin: 0;
+  color: rgba(228, 228, 228);
+}
+
+/* the real h1 font size is in .i_am_magda_1 */
+.XXL_font {
+  font-size: 1.6rem;
+  font-weight: 100;
+  line-height: 1.6rem;
+  padding: 0;
+  margin: 0;
+  text-shadow: 2px 2px 5px #333352;
+}
+
+.panel h3,
+.panel ul,
+.panel ul li,
+.panel ul li p {
+  padding-right: 1.4rem;
+}
+
+/* other basics */
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.anchor {
+  position: absolute;
+  margin: -9.666vh 0 0 0;
+  border: 0px solid pink;
+}
+
+/******************************************************************************/
+/* NAVIGATION */
+
+.nav_background {
+  background-color: #333352;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 0vh;
+  padding: 0 0 0 0;
+  width: 100vw;
+  height: 8vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  justify-content: space-between;
+  justify-items: flex-start;
+  width: 1100px;
+  /* === aside + main widths*/
+  height: 6vh;
+  /* border: solid 1px red; */
+}
+
+.nav_left {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_right {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile_nav_section {
+  padding: 0 0 0 0;
+}
+
+/* .nav_background nav div === see below :) */
+.nav_box,
+/* in between */
+.nav_box1, .nav_box2, .nav_box3,
+.nav_box4, .nav_box5, .nav_box6 {
+  display: flex;
+  color: rgba(228, 228, 228);
+  text-decoration: none;
+  align-items: center;
+  align-content: center;
+  height: 1.5rem;
+  margin: 2.5vh 0vw 2.5vh 0vw;
+  padding: 0 0 0 2vw;
+  border: none;
+}
+
+.nav_box1 {
+  padding: 0 0 0 0vw;
+}
+
+.nav_box3 {
+  color: rgb(230, 193, 213);
+  color: rgb(194, 165, 181);
+  animation: flip_text 0.3s infinite;
+}
+
+@keyframes flip_text {
+  20% {
+    transform: rotate(2deg);
+  }
+}
+
+.nav_box7 {
+  visibility: hidden;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+/******************************************************************************/
+/* MOBILE NAVIGATION OVERLAY */
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #333352;
+  overflow-y: hidden;
+  transition: 0.666s ease-out;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.overlay a:not(.close_X) {
+  padding: 8px;
+  text-decoration: none;
+  color: rgba(228, 228, 228, 0.733);
+  display: block;
+  font-size: 40px;
+  transition: 0.666s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: rgba(228, 228, 228, 0.733);
+  /* transform: scale(1.1); */
+}
+
+.overlay .close_X {
+  /*compare mq mobile nav box 7  line 1228*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 10vh;
+  height: 10vh;
+  margin: 0 0 0 0;
+  padding: 0 15px 0 0;
+  font-size: 7.5vh;
+  background-color: none;
+}
+
+/******************************************************************************/
+/* OUTER SCREENS */
+
+.screen1,
+.screen2,
+.screen3,
+.screen4,
+.screen5,
+.screen6 {
+  background-color: none;
+  margin-top: 8vh;
+  /* the height of nav */
+  min-height: 20vh;
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  /* border: azure solid 0.1px; */
+}
+
+.screen1 {
+  min-height: 92vh;
+  width: 100vw;
+  background-image: url("./images/fig_aurora_40.png");
+  background-size: cover;
+  background-position-y: top;
+  transform: scale(1);
+}
+
+.screen_title {
+  text-align: start;
+  width: 1050px;
+  padding: 0.8rem 0 0.2rem 0;
+}
+
+/******************************************************************************/
+/* INNER SCREENS, ASIDES, MAINS + mods */
+
+.screen_flex_layout1,
+.screen_flex_layout2,
+.screen_flex_layout3,
+.screen_flex_layout4,
+.screen_flex_layout5,
+.screen_flex_layout6 {
+  display: flex;
+  width: 1100px;
+  min-height: 9vh;
+  /* min-height: 72vh; */
+  /* border: azure dotted 0.1px; */
+}
+
+.screen_flex_layout1 {
+  /* border: rgb(221, 38, 38) 1px solid; */
+  display: block;
+  width: 1100px;
+  /* <- aside + main widths*/
+  /* height: 600px; */
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.scr1_articles {
+  /* border: red 1px solid; */
+  width: 1100px;
+  /* height: 600px; */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-items: space-between; */
+}
+
+.scr1_article1_magda {
+  /* border: red 1px dashed; */
+  width: 1100px;
+  /* height: 600px; */
+  margin: 0;
+  padding-top: 0rem;
+}
+
+.scr1_article1_magda section {
+  /* border: red 1px dotted; */
+  width: 800px;
+  align-items: center;
+  align-content: space-between;
+  margin: 0rem 0rem 0rem 0rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+.char_desaturated {
+  filter: grayscale(100%);
+  /* hue-rotate(30deg); */
+}
+
+.cv_button {
+  color: rgba(228, 228, 228);
+  background-color: transparent;
+  border: rgba(228, 228, 228) solid 0.1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.cv_button:hover,
+.cv_button:focus,
+.cv_button:active {
+  color: rgba(228, 228, 228, 0.801);
+  border: rgba(228, 228, 228, 0.801) solid 0.1rem;
+}
+
+/* .dot_explanation_right  {height: 0%; width: 0%; font-size: 0; line-height: 0%;} */
+.dot_explanation_mobile {
+  height: 0%;
+  width: 0%;
+  font-size: 0;
+  line-height: 0%;
+}
+
+aside,
+main {
+  padding: 1.5% 1.5% 0% 1%;
+  border: 0.2rem;
+}
+
+aside {
+  margin: 0% 1% 0% 1%;
+}
+
+aside {
+  width: 470px;
+  text-align: right;
+  border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151)
+    transparent transparent;
+  border-style: solid solid solid solid;
+  border-radius: 0px 5px 0px 0px;
+}
+
+main {
+  width: 60vw;
+  width: 750px;
+  border-color: transparent transparent rgba(228, 228, 228, 0.151)
+    rgba(228, 228, 228, 0.151);
+  border-style: solid solid solid solid;
+  border-radius: 0px 0px 0px 5px;
+}
+
+/******************************************************************************/
+/* INNER SCREENS : LISTS */
+
+ul {
+  margin: 1% 0% 1% 0%;
+  padding: 0% 0% 0% 0%;
+  text-align: left;
+  list-style-type: none;
+}
+
+li {
+  display: block;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  text-align: left;
+  list-style-type: none;
+}
+
+aside > section > ul {
+  margin: 1% 0% 1% 0%;
+  padding: 0% 0% 0% 0%;
+  text-align: right;
+  list-style-type: none;
+}
+
+aside > section > ul > li {
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  text-align: right;
+  list-style-type: none;
+}
+
+.project_card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.329);
+  /* border: pink dashed 1px;  */
+  height: auto;
+}
+
+.project_image {
+  width: 100%;
+  height: auto;
+  filter: saturate(80%);
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.project_image_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+  background-color: #333352;
+  background: linear-gradient(90deg, #333352, #45666d 250%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.view_button {
+  color: rgba(228, 228, 228);
+  background-color: transparent;
+  border: rgba(228, 228, 228) solid 0.1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: auto;
+}
+
+.view_button:hover,
+.view_button:focus,
+.view_button:active {
+  color: rgba(228, 228, 228, 0.801);
+  border: rgba(228, 228, 228, 0.801) solid 0.1rem;
+}
+
+/******************************************************************************/
+/* INNER SCREENS : icons and icon bars */
+
+.non_hover_bars {
+  margin-top: 1vh;
+  width: 300px;
+}
+
+.link_bars {
+  margin-top: 1vh;
+  width: 300px;
+  filter: saturate(100%) brightness(120%);
+}
+
+.link_bars:hover {
+  margin-top: 1vh;
+  opacity: 100%;
+  filter: saturate(100%) brightness(150%);
+}
+
+/* each tech skills > a single icon*/
+.skills_icon_line {
+  border: pink solid 0px;
+}
+
+.skills_icon_line > img {
+  height: 3rem;
+  margin: 1% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  filter: saturate(30%);
+}
+
+.hallmark {
+  width: 10vw;
+  border: 0vw solid none;
+  border-radius: 50%;
+  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg)
+    brightness(111%) contrast(79%);
+  opacity: 30%;
+}
+
+/******************************************************************************/
+/* FOOTER */
+/* footer_buttons are styled in the nav buttons section */
+
+footer {
+  margin: 5% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  text-align: center;
+  width: 90vw;
+}
+
+.blob {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 500px;
+  background-color: #7f7faf00;
+  background-image: linear-gradient(to top, #7f7faf3a, #9595b325);
+  clip-path: ellipse(42% 100% at 58% 100%);
+}
+
+.blob p {
+  color: #333352;
+  color: rgba(228, 228, 228, 0.733);
+  margin: 0;
+  padding: 0 50px 20px 0;
+}
+
+/******************************************************************************/
+/* NAVIGATION LINKS */
+
+.nav_background nav div a,
+.nav_box {
+  align-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-decoration: none;
+  color: rgba(228, 228, 228);
+  padding: 0em 0.2em 0em 0.2em;
+}
+
+.nav_background nav div:hover:not(.nav_box, .nav_box7),
+.nav_background nav div:active:not(.nav_box, .nav_box7),
+.nav_background nav div:focus:not(.nav_box, .nav_box7) {
+  color: rgba(228, 228, 228);
+}
+
+.nav_background nav div:visited {
+  color: rgba(228, 228, 228);
+}
+
+/******************************************************************************/
+/* TEXT LINKS in aside + main + footer */
+
+.text_link:link,
+.text_link:visited {
+  color: rgba(228, 228, 228);
+  text-decoration: none;
+  padding: 0em 0.2em 0em 0.2em;
+  border: 1px;
+  border-color: transparent transparent rgba(228, 228, 228, 0.151)
+    rgba(228, 228, 228, 0.151);
+  border-style: solid solid solid solid;
+  border-radius: 0px 0px 0px 2px;
+  transition: 0.366s ease-out;
+}
+
+.text_link:hover,
+.text_link:active,
+.text_link:focus {
+  color: rgba(228, 228, 228);
+  text-decoration: none;
+  border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151)
+    transparent transparent;
+  border-style: solid solid solid solid;
+  border-radius: 0px 3px 0px 0px;
+  transition: 0.366s ease-out;
+}
+
+/******************************************************************************/
+/* ROUND CONTACT-ICONS-LINKS (coding education + contact screen) */
+
+/* >>> each contact icon ROW > float right in the asides :> */
+.contact_icon_line_hyf {
+  display: flex;
+  float: right;
+  margin: 5% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+}
+
+/* SCREEN 6 with changed contact layout */
+
+.screen6 {
+  /* border: rgb(48, 0, 0) 1px solid; */
+}
+
+.screen_flex_layout6 {
+  /* border: rgb(128, 0, 0) 1px solid; */
+  display: flex;
+  flex-direction: row;
+}
+
+.screen_flex_layout6 aside {
+  /* border: orange 1px solid;  */
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.screen_flex_layout6 aside .address {
+  /* border: orange 1px dashed;  */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.screen_flex_layout6 aside .address .contact_icon_line_mag {
+  /* border: orange 1px dotted; */
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+}
+
+.screen_flex_layout6 main {
+  /* border: rgb(251, 255, 0) 1px solid; */
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 0;
+  padding-left: 1rem;
+  /* width: 400px; */
+}
+
+/* -------------------------------------- */
+
+.contact_icon_line_mag .text_link {
+  height: 3rem;
+}
+
+.clearing_div {
+  clear: both;
+  height: 0;
+  width: 0;
+}
+
+.space_1vw {
+  width: 0.3rem;
+}
+
+/* >>> each round png :: styled */
+.icon_link {
+  width: 3rem;
+  margin: 0% 0% 0% 0%;
+  padding: 0% 0% 0% 0%;
+  background-color: none;
+  border: none;
+  filter: invert(98%) sepia(1%) saturate(78%) hue-rotate(184deg)
+    brightness(111%) contrast(79%);
+  opacity: 100%;
+  -webkit-transition: transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* >>> each round png :: as a link */
+.contact_icon_line_hyf > a > img:hover,
+.contact_icon_line_hyf > a > img:active,
+.contact_icon_line_hyf > a > img:focus,
+.contact_icon_line_mag > a > img:hover,
+.contact_icon_line_mag > a > img:active,
+.contact_icon_line_mag > a > img:focus {
+  transform: scale(1.2);
+}
+
+/* ...and its contact link */
+.contact_icon_line_hyf > a:link,
+.contact_icon_line_hyf > a:visited,
+.contact_icon_line_mag > a:link,
+.contact_icon_line_mag > a:visited {
+  text-decoration: none;
+  background-image: none;
+  border: none;
+  color: rgba(228, 228, 228, 0.733);
+}
+
+#up_button {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 5vw;
+  z-index: 99;
+  outline: none;
+
+  height: 3.2rem;
+  width: 3.2rem;
+  padding: 0;
+  background-color: rgba(194, 165, 181, 0);
+  color: rgba(228, 228, 228, 0.6);
+  font-size: 1.7rem;
+  cursor: pointer;
+  border: rgba(228, 228, 228, 0.6) 0.18rem solid;
+  border-radius: 50%;
+}
+
+#up_button:hover {
+  color: rgba(228, 228, 228, 0.9);
+  border: rgba(228, 228, 228, 0.9) 0.18rem solid;
+}
+
+/******************************************************************************/
+/* ROUND UP/DOWN BUTTONS */
+/* DISABLED in html EXCEPT THE LANDING PAGE ONE */
+
+/* the up/down navigation ROW  */
+.buttons_row {
+  padding: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons_row > a {
+  border: none;
+}
+
+/* >>> the up/down navigation arrow buttons L=UP, R=DOWN */
+.button_l,
+.button_r,
+.button_r_landing,
+.button_simulacrum {
+  height: 3.2vw;
+  height: 3.2rem;
+  width: 3.2vw;
+  width: 3.2rem;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  color: rgba(228, 228, 228, 0.6);
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  box-shadow: -6px -6px 10px rgba(0, 0, 0, 0), 6px 6px 10px rgba(0, 0, 0, 0.178);
+  border: rgba(228, 228, 228, 0.6) 0.15rem solid;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.button_l:focus,
+.button_l:hover,
+.button_r:focus,
+.button_r:hover,
+.button_r_landing:focus,
+.button_r_landing:hover,
+.button_simulacrum:focus,
+.button_simulacrum:hover {
+  color: rgba(228, 228, 228, 0.9);
+  border: rgba(228, 228, 228, 0.9) 0.18rem solid;
+}
+
+.button_l:active,
+.button_r:active,
+.button_r_landing:active,
+.button_simulacrum:active {
+  background-color: rgb(121, 94, 109);
+  box-shadow: inset -4px -4px 8px rgb(121, 94, 109),
+    inset 8px 8px 16px rgb(121, 94, 109);
+}
+
+.button_simulacrum,
+.button_simulacrum:focus,
+.button_simulacrum:hover,
+.button_simulacrum:active {
+  cursor: none;
+  visibility: hidden;
+}
+
+.footer_buttons {
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+}
+
+.button_middle_space {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+button:focus {
+  outline: 0;
+}
+
+/* customized scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.5rem #333352;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(228, 228, 228);
+  border-radius: 0rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(228, 228, 228);
+}

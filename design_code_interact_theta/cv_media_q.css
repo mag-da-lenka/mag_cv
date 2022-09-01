@@ -1,0 +1,720 @@
+/******************************************************************************/
+/* MEDIA QUERIES : medium width // tablets and stuff */
+
+
+@media screen and (max-width: 1225px) {
+
+  body {
+    display: flex;
+    flex-direction: column;  
+    /* background-color: rgb(219, 0, 0); */
+  } 
+
+  .break_mobile_none {
+    display: none;
+  }
+
+  .anchor {
+    position: absolute;
+    margin: -12.666vh;
+  }
+
+  .screen_title h1 {
+    font-size: 3rem;
+    text-align: end;
+    padding: 2% 2% 1% 1%;
+  }
+  .screen_title {
+    /* border: white solid 1px; */
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  
+
+
+  /**** 1 - 1225px **************************************************************************/
+  /* NAVIGATION */
+  .nav_background {
+    height: 8vh;
+    width: 100vw;
+    margin-top: 0vh;
+    padding: 0;
+  }
+  nav {
+    height: 8vh;
+    width: 80vw; 
+  }
+  .nav_background nav div a, .nav_box {
+    font-size: 1.5rem;
+    height: auto;
+  }
+
+  
+  
+  /**** 1 - 1225px **************************************************************************/
+  /* SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */
+  .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
+    border: rgba(228, 228, 228, 0.151) 0.2rem solid;
+    border-radius: 5px;
+    margin-top: 5rem;
+    padding-bottom: 2vh;
+    height: 100%;
+    width: 80vw; 
+  }
+
+  .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
+  .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
+    flex-direction: column;
+    width: 80vw;
+    padding-bottom: 0px;
+  }
+
+  
+  .scr1_articles,
+   
+  .screen_flex_layout1, 
+  .scr1_article1_magda,
+  .scr1_article1_magda  section {
+    width: 80vw;
+  }
+  .screen1 {
+    width: 100vw;
+    border: none;
+  }
+  .screen_flex_layout1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0;
+  }
+  .scr1_article2_dots {
+    width:  37.5rem; /* ===600px if HTML font size === 16px */
+  }
+
+  .squirrel_icon_flip_svg {
+    width: 7.5rem;
+    /* border: solid white 2px; */
+  }
+
+
+
+
+
+
+
+  /* -------------------------------------- */
+
+
+  aside, main {
+    height: 100%;
+    width: 100%;
+    margin: 0% 0% 0% 0%;
+    padding: 3% 3% 3% 3%;
+    border: 0.4vw;
+  }
+
+  aside {    text-align: left;  }
+  main:not(.screen_flex_layout6 main)  {    order: -1;  }
+  aside>section>ul, aside>section>ul>li {    text-align: left;  } 
+  
+  
+  /* SCREEN 6 with changed contact layout */ 
+
+  .screen6 {
+    margin: 0 auto;
+    margin-top: 9vh;
+    min-height: 50vh;
+    width: 80vw;
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .screen_flex_layout6 {
+    display: flex; 
+    flex-direction: column; 
+    margin: 0 auto;
+  }
+
+  .screen_flex_layout6 aside {
+    display: flex; 
+    flex-direction: row;
+    min-height: 29vh; 
+    width: 100%; 
+    padding: 3% 3% 3% 3%;
+    margin: 0;
+
+  } 
+  .screen_flex_layout6 aside .address {
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    align-items: flex-start;
+  }
+
+
+
+  .screen_flex_layout6 aside .address .contact_icon_line_mag {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%; 
+  }
+
+  .screen_flex_layout6 aside .address .contact_icon_line_mag .icon_link {
+    margin: 0% 0% 0% 0%;
+    padding: 0% 0% 0% 0%; 
+    height: 2rem;
+    width: 2rem;
+  }
+
+
+
+
+
+
+  .screen_flex_layout6 main {
+    display: flex; 
+    flex-direction: column;
+    min-height: 30vh;
+    width: 100%; 
+    margin: 0;
+    padding: 3% 3% 3% 3%;
+  } 
+  .screen_flex_layout6 main p {
+    margin: 0;
+    padding: 0;
+    width:100%;
+  }
+
+
+
+
+
+  /**** 1 - 1225px **************************************************************************/
+  /* BARS contacts HYF + CONTACTS MAGDA */
+
+  .non_hover_bars  {    width: 40vw;  }
+  .link_bars       {    width: 40vw;  }
+  .link_bars:hover {    opacity: 100%;  }
+
+  .contact_icon_line_hyf {
+    float: left;
+    margin: 0% 0% 0% 0%;
+    padding: 1% 0% 1% 0%;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .address {
+    margin-right: 100px;
+  }
+
+  .contact_icon_line_mag {
+    float: right;
+    flex-direction: row-reverse;
+  }
+
+  .icon_link {
+    width: 5vw;
+    margin: 5% 0% 1% 0%;
+  }
+
+  .contact_languages {
+    position: absolute;
+    margin-top: 1.50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: flex-start;
+    width: 250px;
+  }
+
+  .skills_icon_line>img {
+    height: 4vw;
+  }
+
+
+
+
+  /**** 1 - 1225px **************************************************************************/
+  /* FOOTER */
+
+  footer {
+    width: 90vw;
+  }
+  .blob {
+    height: 49vw;
+    width: 100vw;
+    border: none;
+    clip-path: ellipse(57% 100% at 57% 100%);
+  } 
+  
+  
+    
+  /**** 1 - 1225px **************************************************************************/
+  /* ROUND UP/DOWN BUTTONS */
+
+  .button_r {
+    display: none;
+  }
+  .button_r_landing {
+    margin-top: 0vh;
+    padding: 0;
+  }
+ 
+
+  #up_button {
+    display: none;
+    position: fixed;
+    bottom: 0rem;
+    right: 0vw;
+     
+  
+    height: 0em;
+    width: 0rem;
+    padding: 0;
+    font-size: 0rem;
+    cursor: none; 
+    border: rgba(228, 228, 228, 0.6) 0rem solid;
+    
+  }
+  
+  #up_button:hover {
+    color: rgba(228, 228, 228, 0.9);
+    border: rgba(228, 228, 228, 0.9) 0rem solid;
+  }
+
+  /**** 1 - 1225px **************************************************************************/
+  /* all SLIDES, ACCORDION and ANIMATIONS */ 
+
+ 
+  .jewellery_presentation_container {
+    display: flex; 
+    flex-direction: row;
+    padding-left: 2vw; 
+    align-content: space-between;
+  }
+  
+  .slideshow-container, .mySlides1_dot_descr {
+    display: flex;
+    align-items: flex-start;
+    width: 17vw;
+    height: 17vw;
+    margin: 0vw 0.5vw 0vw 0.5vw;
+  } 
+  
+ 
+  .accordion {
+    /* font-size: 1.6rem; */
+    padding: 1% 1% 1% 1%;
+    margin: 1% 0% 0% 0%;
+    width: 58vw;
+  }
+  .accordion:after {
+    /* font-size: 1.6rem; */
+  }
+  .panel {
+    width: 58vw;
+  }
+
+
+
+
+  .lightbox {
+    flex-direction: row; 
+    align-items: flex-start;
+    padding: 0;
+    width: 80vw;
+  }
+
+  .overlay_lightbox_content {
+    width: 100vw;
+    height: 100vh;
+  }
+  .slideDivs_div, .slideDiv, .aSingleSlide {
+    width: 90vw;
+    height: 52.5vw;
+  }
+  .slideNumTxt {
+    transform: scale(0.8);
+  }
+   .slideDescrDiv {
+    width: 90vw; 
+    height: 10vw;
+    padding: 1vw;
+  }
+  .smallPicDotDivs_div {
+    width: 80vw;
+    height: 20vw;
+    padding: 0rem;
+    margin-top: 14vw;
+  }
+
+
+
+
+
+  /* NEST 1 >>> 1-1000 */ 
+
+  @media screen and (min-width: 1px) and (max-width: 1000px) {  
+
+    body {
+      /* background-color: darkcyan;  */
+    }  
+
+
+    nav {
+      height: 10vh;
+      width: 80vw;
+
+    }
+
+    .scr1_articles,
+    .screen1, 
+    .screen_flex_layout1, 
+    .scr1_article1_magda,
+    .scr1_article1_magda  section {
+      width: 80vw;
+    }
+    .screen1 {
+      width: 100vw;
+      border: none;
+    }
+    .screen_flex_layout1 {
+      padding: 0;
+    }
+ 
+    /* JEWELLERY SLIDES 1 - 1000px  */
+    .jewellery_presentation_container {
+      display: flex; 
+      flex-direction: row-reverse; 
+      flex-wrap: wrap;
+      padding: 2vw 1vw 2vw 1vw; 
+    }
+    .mySlides1_dot_descr, .mySlides1_dot_descr p {
+      display: none;
+     }
+    .slideshow-container, .mySlides1_dot_descr_mobile {
+      width: 26.5vw;
+      height: 26.5vw;
+      margin: 0vw 0.5vw 0vw 0.5vw;
+    } 
+    .slideshow-container {      order: -1; /* !!!!!!! */    }
+    .mySlides1_dot_descr_mobile p {
+      border: 0px transparent solid;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      background-color: #33335227;
+      font-size: 2.2vw;
+      line-height: 2.2vw; 
+      padding: 3vw 4.9vw 0 6.5vw;
+      align-items: center;
+      align-content: center;
+    }
+    .prev, .next {
+      position: absolute;
+      top: 10vw;
+      font-size: 4vw;
+    } 
+
+
+
+    .overlay_lightbox_content {
+      padding-top: 10vw;
+    }
+    .smallPicDotDivs_div {
+      margin-top: 44vw;
+    } 
+
+    .non_hover_bars  {    width: 60vw;  }
+    .link_bars       {    width: 60vw;  }
+    .link_bars:hover {    opacity: 100%;  }
+
+  
+
+    
+
+
+    /* NEST 2 >>> 1- 700 */ 
+
+    @media screen and (max-width: 700px) { 
+      
+
+
+      body {
+        /* background-color: pink; */
+      }
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* BASICS */  
+   
+      html {
+        font-size:14px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      /**** 1 - 700px **************************************************************************/
+      /* NAVIGATION FOR MOBILE LAYOUT */
+      .nav_background {
+        position: fixed;
+        width: 100vw;
+    
+        margin-top: 0vh;
+        border: none;
+        /* border: pink solid 1px; */
+      }
+      nav {
+        /* border: pink dashed 1px; */
+        justify-content: end;
+        width: 96vw;
+
+        padding: 0;
+      }
+      nav div a {
+        align-items: center;
+        text-decoration: none;
+        font-size: 11.0vw;
+        font-weight: 520;
+        padding: 0;
+        margin: 0;
+      }
+      .nav_box,
+      .nav_box1, .nav_box2, .nav_box3,
+      .nav_box4, .nav_box5, .nav_box6 {
+        display: none;
+      }
+      .nav_box7 {
+        /* HAMBURGER */
+        border: none;
+        visibility: visible;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 8vh;
+        height: 8vh;
+        margin: 0 0 0 0;
+        padding: 0 0px 0 0;
+        font-size: 4vh;
+      } 
+
+      /* nav overlay X */ 
+      .overlay .close_X {
+        width: 8vh;
+        height: 8vh;
+        font-size: 4vh;
+      }
+
+      .overlay a:not(.close_X) {
+        font-size: 2rem;
+      }
+      
+      
+
+      /**** 1 - 0700px **************************************************************************/
+      /* OUTER/INNER SCREENS, SCREEN 1 unique settings, ASIDE, MAIN, SCREEN 6 (contact) */ 
+         
+      .screen1, .screen2, .screen3, .screen4, .screen5, .screen6 {
+        width: 90vw; 
+      }
+
+      .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
+      .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
+        flex-direction: column;
+        width: 90vw;
+      } 
+
+      .scr1_articles,
+      .screen1, 
+      .screen_flex_layout1, 
+      .scr1_article1_magda,
+      .scr1_article1_magda  section {
+        width: 90vw;
+      }
+      .screen1 {
+        width: 100vw;
+        border: none;
+      }
+      .screen_flex_layout1 {
+        padding: 0;
+        margin: 0 auto; 
+        margin-top: 3rem;
+      }
+
+      .scr1_article2_dots, 
+      .happy_dots { 
+        width:   80vw;   
+        height:  80vw; 
+        /* border: orange 1px solid; */
+      } 
+
+      .squirrel_icon_flip_svg {
+        width: 20vw;
+      }
+
+      /**** 1 - 0700px **************************************************************************/
+      /* INNER SCREENS : LISTS */
+    
+      aside>section>ul,
+      aside>section>ul>li {
+        text-align: left;
+      } 
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* INNER SCREENS : icons and icon bars */
+      
+      .skills_icon_line  {
+        display: flex;
+        width: 80vw;
+        margin: 0;
+        padding:0;
+      }
+      .skills_icon_line>img {
+        height: 3.00rem;
+        margin: 0% 0% 0% 0%;
+        padding: 1% 1% 0% 0%;
+      }
+  
+      /**** 1 - 0700px **************************************************************************/
+      /* ROUND CONTACT-ICONS-LINKS (coding education + contact screen) */
+  
+      .contact_icon_line_mag,
+      .contact_icon_line_hyf {
+        margin: 0% 0% 0% 0%;
+        padding: 1% 2% 1% 0%;
+      }
+  
+      .icon_link {
+        width: 8vw;
+        margin: 5% 0% 1% 0%;
+      }  
+      
+      /**** 1 - 0700px **************************************************************************/
+      /* ROUND UP/DOWN BUTTONS */
+  
+      .button_r {
+        display: none;
+      }
+      .button_r_landing {
+        margin-top: 0vh;
+      }
+      .button_simulacrum {
+        display: none;
+      }    
+       
+      /**** 1 - 0700px **************************************************************************/
+      /* all SLIDES, ACCORDION and ANIMATIONS */
+   
+
+      .accordion {
+        /* font-size: 1.6rem; */
+        padding: 1% 1% 1% 1%;
+        margin: 1% 0% 0% 0%;
+        width: 80vw;
+      }
+      .accordion:after {
+        /* font-size: 1.6rem; */
+      }
+      .panel {
+        width: 80vw;
+      } 
+
+
+      .non_hover_bars  {    width: 80vw;  }
+      .link_bars       {    width: 80vw;  }
+      .link_bars:hover {    opacity: 100%;  }
+  
+
+
+      /* jewellery slides */
+      .jewellery_presentation_container {
+        flex-direction: column-reverse;  
+        align-items: flex-end;
+      } 
+      .slideshow-container {
+        width: 50vw;
+        height: 50vw;
+        margin: 0vw 0.5vw 0vw 0.5vw;
+      }
+      .mySlides1_dot_descr_mobile {
+        width: 100%;
+        height: 100%;
+        margin: 0vw 0.5vw 0vw 0.5vw;
+      }    
+      .mySlides1_dot_descr_mobile p {
+        border: none;
+        border-radius: 0%;
+        background-color: #33335200;
+        font-size: 1.3rem;
+        line-height: 1.3rem; 
+        padding: 2vw 0vw 2vw 2vw;
+        margin: 0;
+        text-align: right;
+      }
+      .prev, .next {
+        position: absolute;
+        top: 20vw;
+        font-size: 5vw;
+      } 
+
+
+
+
+
+
+      /* NEST 3 >>> 1-500px */
+
+      @media screen and (max-width: 500px) {
+
+        body {
+          /* background-color: purple;  */
+        } 
+
+        .large_font  { font-size: 1.20rem;  }
+        h1 {          font-size: 1.5rem;        }
+  
+            
+       .slideshow-container {
+          width: 60vw;
+          height: 60vw;
+          margin: 0vw 0.5vw 0vw 0.5vw;
+        }
+        .prev, .next {
+          position: absolute;
+          top: 25vw;
+          font-size: 7vw;
+        } 
+
+
+        .skills_icon_line  {
+          display: flex; 
+          flex-wrap: wrap;
+          width: 85vw;
+        }
+        .skills_icon_line>img {
+          height: 2.50rem;
+        }  
+
+
+
+
+        /* NEST 4 >>> 1-00px */
+
+        @media screen and (max-width: 400px) {
+
+          body {
+            /* background-color: violet;  */
+          }
+
+          html {  font-size: 11px;}
+       
+        }
+
+      }
+
+    }
+
+  }
+
+}

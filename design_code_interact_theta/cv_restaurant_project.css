@@ -1,0 +1,295 @@
+/******************************************************************************/
+/* body / background */
+
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+  /* border: pink solid 1px; */
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+  /* background-color: #333352; */
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; 
+  padding: 5rem 0 5rem 0;
+  background-color: #333352;
+  background-color: #56634F;
+  background-color: #4f5f47;
+  color: rgba(228, 228, 228);
+  font-family: 'Abel'; 
+  width: 100vw; 
+  min-height: 100vh;   
+  /* overflow-x: hidden; */
+}
+
+::selection {
+  color: #333352;
+  background: rgba(228, 228, 228);
+}
+
+/* customized scrollbar */
+::-webkit-scrollbar {  width: 2px;}
+::-webkit-scrollbar-track {  box-shadow: inset 0 0 0.5rem #333352;   border-radius: 0px;}
+::-webkit-scrollbar-thumb {  background: rgba(228, 228, 228);   border-radius: 0rem;}
+::-webkit-scrollbar-thumb:hover {  background: rgba(228, 228, 228); }
+
+
+/******************************************************************************/
+/* FONTS */
+
+html {  font-size: 16px }
+
+/* font sizes from XXS to XXL (except nav links and nav buttons) */
+.smaller_font {                        font-size: 1.00rem;  font-weight: 100; }
+.text_link:link, .text_link:visited {  font-size: 1.00rem;  font-weight: 100; }
+a, p, ul, li, .accordion {                         font-size: 1.20rem;  font-weight: 100; }
+.medium_font {                         font-size: 1.40rem;  font-weight: 100; }
+.large_font  {                         font-size: 1.60rem;  font-weight: 100; }
+.XXL_font {                            font-size: 2.80rem;  font-weight: 100; padding: 0; margin: 0; text-shadow: 2px 2px 5px #333352; }
+h4 {                                   font-size: 1.20rem;  font-weight: 100; padding: 0; margin: 0; text-shadow: 0.1px 0.1px 0.2px #33335200; }
+h3 {                                   font-size: 1.40rem;  font-weight: 100; padding: 0; margin: 0; text-shadow: 0.1px 0.1px 0.2px #33335200; }
+h2 {                                   font-size: 1.90rem;  font-weight: 100; padding: 0; margin: 0; color:rgba(228, 228, 228);}
+h1 {                                   font-size: 2.20rem;  font-weight: 100; padding: 0; margin: 0; color:rgba(228, 228, 228);} /* the real h1 font size is in .i_am_magda_1 */
+
+h1, h2, h3, h4 {
+  color: rgb(194, 165, 181);
+  color: rgb(235, 206, 129);
+  text-shadow: 1px 1px 2px #333352;
+  border: none;
+  padding: 0 0 0 0;
+  margin:  0 0 0 0; 
+  font-weight: 100; 
+}
+
+ul {
+   list-style: none; 
+   list-style-position: outside;
+   font-size: xx-large;
+}
+
+li {
+   padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+
+.yellow {
+  color: rgb(235, 206, 129);
+}
+
+
+
+.char_desaturated {
+  filter: grayscale(85%) hue-rotate(30deg);
+}
+
+
+/* other basics */
+.clearfix    {  overflow: hidden; } 
+
+
+/******************************************************************************/
+/* OUTER SCREENS */
+
+.intro, .article, section { 
+  margin: 0 auto; 
+  padding: 0 0 0 0;
+  background-color: none;
+  width: 800px;
+  /* border: azure solid 2px; */
+}
+
+.intro {
+  text-align: center;
+}
+
+section {
+  margin: 0 auto; 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 2rem; 
+  background-color: none;
+  width: 800px;
+  
+  border: 0.2rem;
+  border-color: transparent transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) ;
+  border-color: rgba(228, 228, 228, 0.151) ;
+  border-style: solid solid solid solid;
+  border-radius: 0px 5px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+/******************************************************************************/
+/* INNER SCREENS, ASIDES, MAINS + mods */
+
+
+.char_desaturated {
+  filter: grayscale(85%) hue-rotate(30deg);
+}
+
+.cv_button {
+  color: rgba(228, 228, 228); 
+  background-color: transparent;
+  border: rgba(228, 228, 228) solid 0.1rem; 
+  padding: 0.5rem; 
+  text-decoration: none; 
+  font-size: 1.2rem;
+}
+
+.cv_button:hover, .cv_button:focus, .cv_button:active {
+  color: rgba(228, 228, 228, 0.801); 
+  border: rgba(228, 228, 228, 0.801) solid 0.1rem; 
+}
+
+
+
+
+/******************************************************************************/
+/* INNER SCREENS : icons and icon bars */
+
+.non_hover_bars  {  margin-top: 1vh;  width: 300px }
+.link_bars       {  margin-top: 1vh;  width: 300px;   filter: saturate(100%) brightness(120%) }
+.link_bars:hover {  margin-top: 1vh;  opacity: 100%;  filter: saturate(100%) brightness(150%)}
+
+
+
+
+/******************************************************************************/
+/* FOOTER */  /* footer_buttons are styled in the nav buttons section */
+
+
+
+
+
+/******************************************************************************/
+/* TEXT LINKS in aside + main + footer */
+
+.text_link:link, .text_link:visited {
+  color: rgba(228, 228, 228);
+  text-decoration: none;
+  padding: 0.0em 0.2em 0.0em 0.2em;
+  border: 1px;
+  border-color: transparent transparent rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151);
+  border-style: solid solid solid solid;
+  border-radius: 0px 0px 0px 2px;
+  transition: 0.366s ease-out;
+}
+
+.text_link:hover, .text_link:active, .text_link:focus {
+  color: rgba(228, 228, 228);
+  text-decoration: none;
+  border-color: rgba(228, 228, 228, 0.151) rgba(228, 228, 228, 0.151) transparent transparent;
+  border-style: solid solid solid solid;
+  border-radius: 0px 3px 0px 0px;
+  transition: 0.366s ease-out;
+}
+
+
+
+.accordion {
+  /* the panel and text on it  !!! without dingbats */
+  background-color: rgba(255, 192, 203, 0.014);
+  background-color: #475740;
+  border: none;
+  border-radius: 0.2rem;
+  transition: 0.4s;
+  padding: 1% 1% 1% 1%;
+  margin: 0% 0% 1% 0%;
+  width: 100%;
+  color: rgb(228, 228, 228);
+  font-family: 'Abel';
+  text-align: left;
+  text-shadow: 2px 2px 4px #333352ee;
+  cursor: pointer;
+}
+
+.accordion:hover {
+  background-color: rgba(145, 145, 145, 0.068);
+  
+  background-color: #4d5f46;
+}
+.accordion.active {
+  background-color: rgba(255, 192, 203, 0.151);
+  background-color: #475740;
+}
+
+.accordion:after {
+  content: '\02795';
+  content: "+";
+  color: rgba(228, 228, 228, 0.37);
+  padding-right: 1rem;
+  float: right;
+  text-align: center;
+  font-family: 'Fira Code Medium';
+}
+
+.accordion.active:after {
+  content: "\2796";
+  /* DINGBATS MINUS */
+  /* content: "\02BC5"; */
+  /* content: "▲"; */
+  content: "-";
+  /* content:"˄"; */
+
+}
+
+.panel {
+  /* the text inside the button-bar */
+  color: rgba(228, 228, 228, 0.897);
+  background-color: rgba(255, 192, 203, 0.014);
+  background-color: rgba(255, 192, 203, 0.0);
+  background: linear-gradient(180deg, rgba(255, 192, 203, 0.045), rgba(255, 192, 203, 0) 100%);
+  background: linear-gradient(180deg, #475740, #4757405b 100%);
+  /* background-color: rgb(235, 206, 129); */
+  max-height: 0;
+  width: 100%;
+
+  padding: 0 1rem 0 1rem;
+  margin: 0% 0% 1% 0%;
+  overflow: hidden;
+  transition: 0.2s ease-out;
+}
+
+
+
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  html {  font-size: 15px }
+  .intro, .article  { 
+    width: 80vw;
+  }
+  section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  html {  font-size: 14px }
+  .intro, .article  { 
+    width: 80vw;
+  }
+  section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 600px) {
+  html {  font-size: 12px }
+  .intro, .article  { 
+    width: 90vw;
+  }
+  section {
+    width: 100%;
+  }
+}
