@@ -1,12 +1,11 @@
 /******************************************************************************/
 /* MEDIA QUERIES : medium width // tablets and stuff */
 
-/*MQ1:  1-300 / 301-400 / 401-700 / 7011000 / 1001- 1225 */
+/*MQ1:  1-300 / 301-400 / 401-700 / 701-1000 / 1001-1225 */
 @media screen and (max-width: 1225px) {
 
   body {    
     display: flex;    flex-direction: column;      
-    /* background-color: black; */
   } 
 
   html {    font-size: 14px;  }
@@ -19,7 +18,9 @@
   .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
   .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6,
   .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { width: 80vw;   flex-direction: column;  }
-  .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 5rem;  }
+  .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 5rem;  } 
+
+  p.intro_checkcheckcheck { width: 41rem; padding: 0.3rem 0.5rem 1.1rem 0.5rem;     }
 
   .screen_flex_layout3, .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
    border-style: solid solid solid solid;  border-radius: 0.1rem; border-color: rgba(228, 228, 228, 0.151);
@@ -67,7 +68,7 @@
 
   @media screen and (max-width: 1000px) {  
 
-    /* body {   background-color: darkcyan;     }   */
+ 
 
     nav { width: 90vw;   }
 
@@ -76,7 +77,8 @@
     .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6,
     .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { width: 90vw;   flex-direction: column;  }
     .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 5rem;  }
-    .scr1_article1_magda section {  padding: 0 1.00rem 0 1.00rem;  }
+    .scr1_article1_magda section {  padding: 0 1.00rem 0 1.00rem;  } 
+  
 
     .skills_icon_line_top {  gap: 0.5rem;}
     .skills_icon_line_top > img {  height: 3.6rem;}
@@ -96,12 +98,15 @@
 
     @media screen and (max-width: 700px) { 
        
-      /* body {   background-color: black;     }  */
-      html {        font-size:14px;      }
+      
+      html {        font-size:14px;     }
 
-     .typewriter_area {width: 32rem; font-size: 2rem; }
-      @keyframes typing {  from {  width: 0  }  to   { width: 32rem;}}
+      .typewriter_area { width: 29.5rem;  font-size: 2rem;  }
+      @keyframes typing {  from {    width: 0  }  to   {    width: 29.5rem  }}
       p.intro_font { padding: 0.2rem 1vw 0.5rem 1vw;  }
+      p.intro_font_plusplus { width: 29.5rem;} 
+      p.intro_checkcheckcheck { width: 29.5rem; padding: 0 0 1.1rem 0; text-align: left;}
+      
 
       .skills_icon_line_top { gap: 0.4vw;}
       .skills_icon_line_top > img {  height: 7vw;  }
@@ -137,12 +142,13 @@
         
         .typewriter_area {width: 22rem; font-size: 1.5rem; }
         @keyframes typing {  from {  width: 0  }  to   { width: 22rem;}}
-        p.intro_font { padding: 0.2rem 1vw 0.5rem 1vw;  }
-        .intro_font {  font-size: 1.2rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
+        p.intro_font {  font-size: 1.2rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
+        p.intro_font_plusplus { width: 22rem; font-size: 0.9rem} 
+        p.intro_checkcheckcheck { width: 22rem; padding: 0 0 1.1rem 0; text-align: left;}
         .skills_icon_line_top {  gap: 0.14rem;}
-        .skills_icon_line_top > img {  height: 2.6rem;}
+        .skills_icon_line_top > img {  height: 2.5rem;}
         .scr1-buttons { display: flex;  flex-direction: column;   width: 98%;  margin-top: 1rem;   }
-        .cv_button {   margin-bottom: 1rem;   }
+        .cv_button {   margin-bottom: 2rem;   }
    
         .ux-project-text-box { height: auto;} 
       
@@ -170,9 +176,9 @@
           html {  font-size: 11px;}
           .typewriter_area {width: 22rem; font-size: 1.5rem; }
           @keyframes typing {  from {  width: 0  }  to   { width: 22rem;}}
-          .intro_font {  font-size: 5vw;  line-height: 7vw;  font-weight: 100; width: 90vw}
-          .intro_font {  font-size: 1.2rem;  line-height: 1.4rem;  font-weight: 100; width: 90%; text-align: left;}
-
+          p.intro_font_plusplus { width: 22rem; font-size: .9rem} 
+          p.intro_checkcheckcheck { width: 22rem; padding: 0 0 1.1rem 0; text-align: left; font-size: 1.1rem}
+          
 
           /* MQ6 >>>1 --- 001-300 */ 
 
@@ -180,9 +186,11 @@
 
             /* body {   background-color: orange;  }  */
             html {  font-size: 3vw;}
-            .typewriter_area {width: 100%; font-size: 1.8rem; }
-            @keyframes typing {  from {  width: 0  }  to   { width: 100%;}}
-
+            .typewriter_area {width: 80vw; font-size: 1.8rem; }
+            @keyframes typing {  from {  width: 0  }  to   { width: 80vw;}}
+            p.intro_font_plusplus { width: 80vw; font-size: 1.2rem} 
+            p.intro_checkcheckcheck { width: 80vw; padding: 0 0 1.4rem 0; text-align: left; font-size: 1.2rem}
+            .cv_button {width: 80vw;   height: 50px; }
           }
 
         }

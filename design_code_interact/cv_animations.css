@@ -10,20 +10,24 @@
   animation: typing 1.666s steps(66, start);
   margin: 0 auto; 
   padding: 1rem 0 0.5rem 0; 
-  width: 32rem;
-  /* border: greenyellow 1px solid; */
+  width: 31.5rem;
+  /* border: white solid 1px;  */
 }
-@keyframes typing {  from {    width: 0  }  to   {    width: 32rem  }}
+@keyframes typing {  from {    width: 0  }  to   {    width: 31.5rem  }}
 
 
 
-
-.opacity-transition-0-100-01 {  animation-name: opacity-0-100-transition-keyframe1;   animation-duration: 2.6s;}
+.opacity-transition-0-100-00 {  animation-name: opacity-0-100-transition-keyframe0;   animation-duration: 1.666s;}
+@keyframes opacity-0-100-transition-keyframe0 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01 {  animation-name: opacity-0-100-transition-keyframe1;   animation-duration: 2.666s;}
 @keyframes opacity-0-100-transition-keyframe1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
-.opacity-transition-0-100-02 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4s;}
+.opacity-transition-0-100-02 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.666s;}
 @keyframes opacity-0-100-transition-keyframe2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
-.opacity-transition-0-100-03 {  animation-name: opacity-0-100-transition-keyframe3;   animation-duration: 5s;}
+
+.opacity-transition-0-100-03 {  animation-name: opacity-0-100-transition-keyframe3;   animation-duration: 4.666s;}
 @keyframes opacity-0-100-transition-keyframe3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 5.666s;}
+@keyframes opacity-0-100-transition-keyframe4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
 
 
 
