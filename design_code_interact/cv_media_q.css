@@ -21,6 +21,7 @@
   .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 5rem;  } 
 
   p.intro_checkcheckcheck { width: 41rem; padding: 0.3rem 0.5rem 1.1rem 0.5rem;     }
+  .squirrel-warning {padding-bottom: 3rem;}
 
   .screen_flex_layout3, .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
    border-style: solid solid solid solid;  border-radius: 0.1rem; border-color: rgba(228, 228, 228, 0.151);
