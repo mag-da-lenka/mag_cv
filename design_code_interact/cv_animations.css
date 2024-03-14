@@ -5,16 +5,15 @@
 .typewriter_area {
   overflow: hidden;
   white-space: nowrap;
-  margin: 0 auto;
   letter-spacing: .0em;
   animation: typing 1.666s steps(66, start);
   margin: 0 auto; 
+  margin: 0; 
   padding: 1rem 0 0.5rem 0; 
-  width: 31.5rem;
+  width: auto;
   /* border: white solid 1px;  */
 }
 @keyframes typing {  from {    width: 0  }  to   {    width: 31.5rem  }}
-
 
 
 .opacity-transition-0-100-00 {  animation-name: opacity-0-100-transition-keyframe0;   animation-duration: 1.666s;}

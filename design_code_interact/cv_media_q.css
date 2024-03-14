@@ -1,7 +1,11 @@
 /******************************************************************************/
 /* MEDIA QUERIES : medium width // tablets and stuff */
+/*MQ1: 1225-1001 / 1000-701 / 700-401 / 400-301 / 300-1  */
 
-/*MQ1:  1-300 / 301-400 / 401-700 / 701-1000 / 1001-1225 */
+
+
+/*MQ1: 1225-1001 */ 
+
 @media screen and (max-width: 1225px) {
 
   body {    
@@ -17,26 +21,38 @@
   .screen1, .screen2, .screen3, .screen4, .screen5, .screen6,
   .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
   .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6,
-  .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { width: 80vw;   flex-direction: column;  }
-  .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 3rem;  } 
+  .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { 
+    width: 80vw;   flex-direction: column;  
+  }
+  
+  .scr1_articles{   
+    flex-direction: row;  align-items: flex-start; padding-top:10rem;  
+    width: 80vw; 
+  }  
 
-  p.intro_checkcheckcheck { width: 41rem; padding: 0.3rem 0.5rem 1.1rem 0.5rem;     }
-  .squirrel-warning {padding-bottom: 3rem;}
+  .scr1_article1_magda { 
+    width: 700px;   flex-direction: column;  
+  }
 
   .screen_flex_layout3, .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6 {
-   border-style: solid solid solid solid;  border-radius: 0.1rem; border-color: rgba(228, 228, 228, 0.151); 
    border: none;
   }
 
-  .screen_title    {    width: 100%;  padding: 1rem 0 2rem 0;  }
-  .screen_title h1 {   font-size: 3rem;    text-align: start;     }
+  .screen_title    {    width: 100%;  padding: 1rem 0 4rem 0;  }
+  .screen_title h1 {   font-size: 4rem;    text-align: start;     }
 
-  aside, main {    height: 100%;    width: 100%;    margin: 0;    padding: 0%; border: none; }
-  aside {    text-align: left;  }
-  main:not(.screen_flex_layout6 main)  {    order: -1;  }
+  aside, main { height: 100%;    width: 100%;    margin: 0;    padding: 0%; border: none; }
+  aside { text-align: left;  }
+  main:not(.screen_flex_layout6 main)  { order: -1;  }
   aside>section>ul, aside>section>ul>li {    text-align: left;  }  
 
 
+
+    /* screen 1 ---> ACTION BUTTONS */
+  .cta_button { width: 48%;  height: 50px;}
+  .cta_button_content {  width: 200px;   height: 50px;}
+  
+  
 
   /* EACH PROJECT AREA and CARD */  
   .screen2 {    border: none;   }
@@ -81,7 +97,8 @@
 
 
  
-    /* SCREEN 6 with changed contact layout */ 
+  
+  /* SCREEN 6 with changed contact layout */ 
   .screen_flex_layout6 aside {    margin: 0;    padding: 2%;      } 
   .screen_flex_layout6 aside .address {  align-items: flex-start;     }
   .screen_flex_layout6 h3 {    width: auto;    margin: 0;   }
@@ -100,43 +117,46 @@
   footer {    width: 90vw;  }
   .blob {    height: 49vw;    width: 100vw;    border: none;    clip-path: ellipse(57% 100% at 57% 100%);  } 
   
-
+  
    
 
 
   
 
-  /* MQ2 >>>1 --- 701-1000 */ 
+  /* MQ2 >>>1 --- 1000-701 */ 
 
   @media screen and (max-width: 1000px) {  
-
- 
 
     nav { width: 90vw;   }
 
     .screen1, .screen2, .screen3, .screen4, .screen5, .screen6,
     .screen_flex_layout1, .screen_flex_layout2, .screen_flex_layout3,
     .screen_flex_layout4, .screen_flex_layout5, .screen_flex_layout6,
-    .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { width: 90vw;   flex-direction: column;  }
-    .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 5rem;  }
+    .scr1_articles,  .screen_flex_layout1, .scr1_articles, .scr1_article1_magda { 
+      width: 90vw;   flex-direction: column;  
+    }
+    .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 10rem;  } 
+    .scr1_article1_magda {
+      height: auto; 
+      width: 700px; 
+    }  
     .scr1_article1_magda section {  padding: 0 1.00rem 0 1.00rem;  } 
   
 
     .skills_icon_line_top {  gap: 0.5rem;}
-    .skills_icon_line_top > img {  height: 3.6rem;}
-
- 
+    .skills_icon_line_top > img {  height: 3.8rem;  margin: 0;  padding: 0 0 1rem 0;  filter: saturate(30%);} 
  
   
 
 
 
-    /* MQ3 >>>1 --- 501-700 */ 
+
+
+    /* MQ3 >>>1 --- 700- 501 */ 
 
     @media screen and (max-width: 700px) { 
        
-      
-      html {        font-size:14px;     }
+      html {  font-size: 14px;  }
 
       .typewriter_area { width: 29.5rem;  font-size: 2rem;  }
       @keyframes typing {  from {    width: 0  }  to   {    width: 29.5rem  }}
@@ -146,10 +166,8 @@
       
 
       .skills_icon_line_top { gap: 0.4vw;}
-      .skills_icon_line_top > img {  height: 7vw;  }
+      .skills_icon_line_top > img {  height: 11vw;  }
       
-      .scr1-buttons { width: 100% }
-      .cv_button, .cv_button_content { width: 180px;   height: 40px;  }
 
       .skills_icon_line  {  display: flex;    width: 90vw;   margin: 0;  padding:0;      }
       .skills_icon_line>img {  height: 3.00rem;  margin: 0;   padding: 1% 1% 0 0;      }
@@ -160,22 +178,34 @@
 
 
 
-      /* MQ4 >>>1 --- 401-500 */
+      /* MQ4 >>>1 --- 500-401 */
 
       @media screen and (max-width: 500px) {
 
-        /* body {   background-color: pink;     }  */
+          
+        .nav_box, .nav_box1, .nav_box2, .nav_box3,  .nav_box4, .nav_box5, .nav_box6 {  display: none; }  
+        .mobile_nav_background {  
+          display: flex;  flex-direction: row;
+          width: 100%;  height: 4rem;  
+          margin: 0 auto;  padding: 0;  
+        }
+        .nav_box7_mobile { 
+          visibility: visible;  display: flex;  align-items: center;
+          margin: 0; padding: 0; height: 4rem; width: 90vw; 
+          font-size: 2rem; border: none;       
+        }  
+        .nav_box7_mobile_l  { width: 50%; display: flex; justify-content: flex-start; } 
+        .nav_box7_mobile_r  { width: 50%; display: flex; justify-content: flex-end;   } 
+        .overlay { width: 100vw; margin: 0; padding: 0;  }
+        .overlay .close_X { 
+          display: flex;  align-items: center; justify-items: flex-end;
+          width: auto;  height: 4rem; padding: 0; margin-right: 5vw;  
+          font-size: 2.8rem;  
+        }
+        .overlay a:not(.close_X) { font-size: 2rem; line-height: 4rem; } 
 
-        nav div a { align-items: center; text-decoration: none;  font-size: 11.0vw;  font-weight: 520;
-          padding: 0;   margin: 0;        }
-        .nav_box, .nav_box1, .nav_box2, .nav_box3,  .nav_box4, .nav_box5, .nav_box6 {  display: none; }
-        .nav_box7 { visibility: visible;  height: 4rem; margin: 0 0 0 0; padding: 0 0 0 0; font-size: 2rem; border: none;       
-          display: flex !important; align-items: center;  justify-content: flex-end;  width: 4rem;        } 
-        .overlay .close_X { width: 4rem;  height: 4rem; font-size: 2rem;  margin-right: 0;  }
-        .overlay a:not(.close_X) { font-size: 2rem;  } 
 
-
-        .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 2rem;  }
+        .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 4rem;  }
         
         .typewriter_area {width: 22rem; font-size: 1.5rem; }
         @keyframes typing {  from {  width: 0  }  to   { width: 22rem;}}
@@ -183,9 +213,10 @@
         p.intro_font_plusplus { width: 22rem; font-size: 0.9rem} 
         p.intro_checkcheckcheck { width: 22rem; padding: 0 0 1.1rem 0; text-align: left;}
         .skills_icon_line_top {  gap: 0.14rem;}
-        .skills_icon_line_top > img {  height: 2.5rem;}
+        .skills_icon_line_top > img {  height: 11vw;}
+        
         .scr1-buttons { display: flex;  flex-direction: column;   width: 98%;  margin-top: 1rem;   }
-        .cv_button {   margin-bottom: 2rem;   }
+        .cta_button {   margin-bottom: 2rem; width: 100%;  }
    
         .ux-project-text-box { height: auto;} 
       
@@ -222,12 +253,14 @@
           @media screen and (max-width: 300px) {
 
             /* body {   background-color: orange;  }  */
-            html {  font-size: 3vw;}
+            html {  font-size: 4vw;}
             .typewriter_area {width: 80vw; font-size: 1.8rem; }
             @keyframes typing {  from {  width: 0  }  to   { width: 80vw;}}
-            p.intro_font_plusplus { width: 80vw; font-size: 1.2rem} 
-            p.intro_checkcheckcheck { width: 80vw; padding: 0 0 1.4rem 0; text-align: left; font-size: 1.2rem}
-            .cv_button {width: 80vw;   height: 50px; }
+            .scr1_article1_magda {
+              display: flex;   flex-direction: column;   align-items: center; gap: 1rem; 
+              width: 90vw; 
+              height: 90%; 
+            }
           }
 
         }

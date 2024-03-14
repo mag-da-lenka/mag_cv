@@ -6,6 +6,7 @@
   /* border: 1px solid darkblue; */
   width: 9rem;  height: 9rem;
   margin: 0 auto;
+  margin: 0;
 }
 
 .autoslides_container {
@@ -127,12 +128,12 @@
   padding: 1% 1% 1% 1%;
   margin: 0% 0% 1% 0%;
   width: 100%;
-  color: rgb(228, 228, 228);
-  font-size: 1rem;  
-  font-weight: 100;
-  font-family: 'Abel';
+  /* color: rgb(228, 228, 228); */
+  /* font-size: 1.1rem;   */
+  /* font-weight: 100; */
+  /* font-family: 'Abel'; */
   text-align: left;
-  text-shadow: 2px 2px 4px #333352ee;
+  /* text-shadow: 2px 2px 4px #333352ee; */
   cursor: pointer;
   /* border: 2px red solid; */
 }

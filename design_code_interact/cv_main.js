@@ -32,8 +32,8 @@ const goToTop = () => {
  
 // mobile nav
 
-const openMobileNav = () => { document.getElementById("mobileNav").style.height = "100%"; }
-const closeMobileNav = () => { document.getElementById("mobileNav").style.height = "0%"; }
+const openMobileNav = () => { document.getElementById("mobileNavOverlay").style.height = "100%"; }
+const closeMobileNav = () => { document.getElementById("mobileNavOverlay").style.height = "0%"; }
 
 
 
