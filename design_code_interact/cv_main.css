@@ -568,7 +568,7 @@ main {
 .screen_flex_layout6 main {  display: inline-block;  margin-right: 1rem;  padding: 0;  width: 650px; margin-right: 50px;}
 
 /* -------------------------------------- */
-.contact_icon_line_mag .text_link { height: 3rem; color:}
+.contact_icon_line_mag .text_link { height: 3rem;}
 .clearing_div {  clear: both;  height: 0;  width: 0;}
 .space_1vw {  width: 0.3rem;}
 
@@ -611,11 +611,18 @@ main {
 /* FOOTER */ /* footer_buttons are styled in the nav buttons section */
 
 footer {
-  margin: 5% 0 0 0;  padding: 0;
+  margin: 5% 0 0 0;  padding: 2vw 5vw 2vw 5vw;
   text-align: center;
-  width: 90vw;
+  width: 100vw; 
+  background-color: var(--main_dark_gray_100);
 }
-.blob {
+
+
+
+
+
+
+/* .blob {
   display: flex;  flex-direction: row;  align-items: flex-end;  justify-content: flex-end;
   height: 500px;
   background-color: #b8b8b800;
@@ -626,6 +633,6 @@ footer {
   color: #2d2d2d;
   color: rgba(228, 228, 228, 0.733);
   margin: 0;  padding: 0 50px 20px 0;
-}
+} */
 
 
