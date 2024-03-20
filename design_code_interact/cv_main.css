@@ -14,6 +14,8 @@
   --main_white_040: rgba(228, 228, 228, 0.4); 
   --main_white_020: rgba(228, 228, 228, 0.2); 
 
+  --main_accent_100: rgba(255, 219, 151, 1.0);
+
   /* for buttons and links */
   --main_white_default: rgba(228, 228, 228, 0.8);
   --main_white_hover: rgba(228, 228, 228, 1.0); 
@@ -107,7 +109,7 @@ h1 {
 h2 {  
   font-size: 1.8rem;  line-height: 2.2rem;  
   /* color: orange; */
-  color: rgb(255, 219, 151);
+  color: var(--main_accent_100)
 } 
 
 h3 {  

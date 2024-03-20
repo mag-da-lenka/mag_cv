@@ -1,8 +1,6 @@
 console.table(`hello Hello`)
 
-// FOAT PREVENTION :
 
-function show() { document.getElementById('wrapper').style.visibility = 'visible'; }
 
 // setTimeout(() => {
 //     alert("The mobile layout is currently being rebuilt, please view the page on your laptop.")
