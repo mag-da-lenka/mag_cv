@@ -31,7 +31,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 15px;
   width: 100vw;
   font-weight: 800;
 }
@@ -41,11 +41,11 @@ body {
   padding: 0;
   background-color: var(--main_gray_100);
   color: var(--main_white_100); 
-  /* font-family: "Abel";  */
+  font-family: "Abel"; 
   /* font-family: "Dosis";  */
-  font-family: "Fira Sans Condensed", sans-serif;
+  /* font-family: "Fira Sans Condensed", sans-serif; */
   font-weight: 100; 
-  letter-spacing: -0.2px;
+  /* letter-spacing: -0.2px; */
   width: 100vw;
   overflow-x: hidden;
   overflow-y : visible;
@@ -101,12 +101,13 @@ h1, h2, h3 ,h4 {
 } 
 
 h1 {  
-  font-size: 2.6rem;  line-height: 3.0rem;   font-weight: 300;
+  font-size: 2.6rem;  line-height: 3.0rem;   
 } 
 
 h2 {  
-  font-size: 1.8rem;  line-height: 2.2rem;  font-weight: 300;
-  color: orange;
+  font-size: 1.8rem;  line-height: 2.2rem;  
+  /* color: orange; */
+  color: rgb(255, 219, 151);
 } 
 
 h3 {  
