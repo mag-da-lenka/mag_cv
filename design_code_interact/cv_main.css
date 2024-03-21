@@ -92,7 +92,11 @@ body {
 .clearfix {  overflow: hidden;}
 .anchor {  position: absolute;  margin: -9.666vh 0 0 0;  border: 0px solid pink;}
 .char_desaturated {  filter: grayscale(80%);}  
-.white-space-1rem {  padding-left: 1rem;}
+.white-space-1rem {  padding-left: 1rem;} 
+
+.highlight {
+  color: var(--main_accent_100);
+}
 
 h1, h2, h3 ,h4 {  
   color: var(--main_white_100);  
@@ -113,7 +117,7 @@ h2 {
 } 
 
 h3 {  
-  font-size: 1.28rem;  line-height: 1.4rem; 
+  font-size: 1.28rem;  line-height: 2.0rem; 
   /* color: yellow; */
 }
 
@@ -123,12 +127,25 @@ h4 {
 }
 
 
-p,ul,li {  
-  font-size: 1.2rem; 
-  line-height: 1.6rem; 
-  padding: 0 0 0 0; 
-  margin: 0;
-  /* color: green; */
+p,ul, ul li {  
+  font-size: 1.1rem; 
+  line-height: 2.4rem;
+  padding: 0 0 1rem 0;  margin: 0;  
+  list-style-type: none; 
+  /* border: solid green 1px; */
+}
+
+ol{  
+  font-size: 1.1rem; 
+  line-height: 2.4rem;
+  padding: 0 0 1rem 1rem ;  margin: 0;  
+  list-style-position: outside; 
+  /* border: solid red 1px; */
+}
+
+li {
+  line-height: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 /* in aside + main + footer */
@@ -139,16 +156,23 @@ p,ul,li {
   text-decoration: none; 
   /* font-size: 1.1rem; */
   margin: 0; padding: 0; 
-  border: 0.1rem; 
-  border-style: solid;
-  border-color: transparent transparent var(--main_white_default) transparent;
-  transition: 0.366s ease-out;
+  /* border: 0.1rem;  */
+  /* border-style: solid; */
+  /* border-color: transparent transparent var(--main_white_default) transparent;   */
+  transition: 0.366s ease-out; 
+  text-decoration: underline; 
+  text-decoration-style: solid; 
+  text-underline-offset: 0.28rem; 
+  text-decoration-thickness: 0.06rem;
 }
 .text_link:hover,.text_link:active,.text_link:focus {
-  border: 0.12rem; 
-  border-style: solid;
-  border-color: transparent transparent var(--main_white_hover) transparent;
+  /* border: 0.12rem;  */
+  /* border-style: solid; */
+  /* border-color: transparent transparent var(--main_white_hover) transparent;  */
+  text-decoration-thickness: 0.09rem;
   transition: 0.366s ease-out;
+  text-decoration-style: wavy; 
+  text-decoration-color: var(--main_accent_100);
 }
 
 
