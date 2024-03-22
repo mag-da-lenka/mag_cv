@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="description" content="Magdalena Wojtakowska [Voigt] CV restaurant project">
+  <meta name="keywords" content=" web developer, software engineer, frontend, backend, UX, UI, UXUI, UX/UI">
+  <meta name="author" content="Magdalena Wojtakowska [Voigt]">
+
+  <title>
+    magda / design : : code : : interact
+  </title>
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+  <!-- <link rel="stylesheet" href="cv_animations.css"> -->
+  <!-- <link rel="stylesheet" href="cv_slides_accordion.css"> -->
+  <link rel="stylesheet" href="cv_impact_roasters.css">
+  <!-- <link rel="stylesheet" href="cv_media_q.css"> -->
+
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+
+</head>
+
+
+<body>
+
+
+
+
+  <div class="intro">
+    <h1>
+      An interactive online form UX/UI for Impact Roasters to help web users pick the perfect coffee beans
+    </h1>
+    <!-- <p>
+    ** While working on my redesign, it turned out that some features of the website started to change and I
+    soon got the confirmation that it was to be rebuilt soon so I included samples of the page in this folio. Please
+    feel free to contact me if necessary because the page has drastically changed its funcionality and aestetics.
+    </p> -->
+  </div class="intro">
+
+  <br>
+  <br>
+
+
+
+  <figure>
+    <img class="img_shadow" src="./images/sub_impact_roasters/team.png" alt="Project participants brainstorming">
+    <figcaption style="text-align: right;">
+      Project participants brainstorming
+    </figcaption>
+  </figure>
+  <br> <br>
+
+  <h2>GOALS</h2>
+  <ol>
+    <li>
+      Build a new feature needed by the users via feedback to the stakeholders. We want to create a Coffe Match
+      Finder interactive form for our unline customers who want to make informed decisions about buing our amazing
+      products.
+    </li>
+    <li>
+      Identify the most important pain points: what makes it difficult to make a desicion about the purchase and how
+      might we improve the status quo?
+    </li>
+    <li>
+      Design the form within the currend Style Guidelines so that is consistent with the stylescape of Impact
+      Roasters.
+    </li>
+  </ol>
+
+  <h2>METHODOLOGY HIGHLIGHTS</h2>
+  <ul>
+    <li>
+      The Double Diamond <span class="char_desaturated"> &#128142;&#128142; </span> with constant iteration and
+      testing, user-centered design and empathy.
+    </li>
+    <li>
+      Stakeholder's interview, 1:1 interviews, persona creation. Wireframes, interactive prototype, visual design,
+      UX writing. Testing and implementing changes on each iteration.
+    </li>
+  </ul>
+
+
+  <h2>PEOPLE and TOOLS </h2>
+  <ul>
+    <li>
+      Human helpers: users, test particiants, stakeholders and developers. The group that participated in the tests
+      included existent and
+      potential new users as well as team members. Thank you all for letting me use the group picture with your
+      lovely faces!
+    </li>
+    <li>
+      Tools: Figma, an old pencil, a few crayons and some paper. A loooot of great coffee.
+    </li>
+  </ul>
+
+
+
+  <h2>DESIGN PROCESS HIGHLIGHTS</h2>
+  <br>
+
+  <h3>DOUBLE DIAMOND: discovery and definition phase </h3>
+  <br>
+
+  <h4>Status Quo evaluation</h4>
+  <ul>
+    <li>
+      We have a functioning
+      <a class="text_link" href="https://impactroasters.dk/" target="_blank" rel="noopener noreferrer">website</a>
+      and a working prototype done in React.js by our brave devs but no UX yet.
+    </li>
+  </ul>
+  <!-- <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/form_initial_state.png"
+      alt="Form (proto version before I took over)">
+    <figcaption style="text-align: right;">
+      Form (proto version before I took over) <br> <br>
+    </figcaption>
+  </figure> -->
+
+  <figure>
+    <img class="img_shadow" src="./images/sub_impact_roasters/form_initial_state_refresh.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Form (proto version before I took over) <br> <br>
+    </figcaption>
+  </figure>
+  <ul>
+    <li>
+      We have feedback from the users via our stakeholders that a form is needed to simplify and speed up the
+      process of buing online to make an informed decision when buying coffee.
+    </li>
+    <li>
+      As a UX person and an absolut coffee noob, I have access to a lot of information about coffee bean types,
+      methods of brewing and all kind of magic I am not aware yet. All that is accessible directly from Imact
+      Roasters Team, the website and various leaflets. I can also happily get caffeinated at the premises. That is
+      how I best my best coffee ever: the barista listened to my amateurish description of how I'd like my coffe
+      to be and she delivered so let the work begin!
+    </li>
+  </ul>
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/leaflets.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Impact Roasters Leaflets <br> <br>
+    </figcaption>
+  </figure>
+
+
+
+  <h4>Status Quo on a closer look</h4>
+  <ul>
+    <li>
+      There is a lot of information to process for someone who is a beginner. That is a great thing, but can be
+      overwhelming so it seems like we might make it more concise by cherry picking the most crucial bits. What is
+      important to know in order not to exceed our cognitive load? We will find out.
+    </li>
+  </ul>
+
+
+
+
+  <h4>Status Quo: the form prototype I am to work with</h4>
+  <ul>
+    <li>
+      The phrasing is a bit difficult for me. I got stuck at the 1st question not sure what
+      is meant. After all, I am a beginner but so might be any other user. Ssall we translate the maker-centric
+      language into something easier to follow? I am sure we can.
+    </li>
+    <li>
+      There is no progress bar yet so I am not sure how long the form is. We will certainly add the bar.
+    </li>
+    <li>
+      The functionality of the form is done by the book so that the user has the escape option to go back and change
+      the answer. Mistake prevention: check.
+    </li>
+    <li>
+      The result page is to be discussed but we can use quite a few criteria because we have gret input in our JSON
+      files! Wohoo! Thats's a great beginning.
+    </li>
+  </ul>
+  <figure>
+    <img class="img_shadow" src="./images/sub_impact_roasters/json_sample.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      JSON file: lots of cool data to use :) <br> <br>
+    </figcaption>
+  </figure>
+
+
+  <h1>
+    More description coming soon :) 
+    <br>
+    Teaser photos below!
+  </h1>
+
+<br>
+
+
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/interviews.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Interviews: notes <br> <br>
+    </figcaption>
+  </figure>
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/interviews_filled_1.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Inteviews: answers examples <br> <br>
+    </figcaption>
+  </figure>
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/interviews_filled_2.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Inteviews: answers examples <br> <br>
+    </figcaption>
+  </figure>
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/interviews_filled_closeup.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Interviews: answers examples <br> <br>
+    </figcaption>
+  </figure>
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/findings.png" alt="UXR and tests: findings">
+    <figcaption style="text-align: right;">
+      UXR and tests: findings <br> <br>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/style_guide_ir.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Impact Roasters: style guide <br> <br>
+    </figcaption>
+  </figure>
+
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/form_1234.png" alt="Form 1-2-3-4">
+    <figcaption style="text-align: right;">
+      Form 1-2-3-4 <br> <br>
+    </figcaption>
+  </figure>
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/form_result.png" alt="site map screenshot">
+    <figcaption style="text-align: right;">
+      Form: results page <br> <br>
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <div style="display: none;">
+
+    <h4> Qualitative and quantitative research </h4>
+    <li>
+      Desktop research, surveys, comparative research, testing.
+    </li>
+    <li>
+      1:1 sessions provided evidence, eg. noone understood the word 'biodynamic' and all testees were confused by
+      the clickable pictures that weren't links to gallery but opened the landing page in new tab.
+    </li>
+    <li>
+      Stakeholder's interview: the owner turned to be a friendly person with true passion for vegan food and
+      abundance of positive energy. There was a survey, the meeting took an hour. The questions and tasks focused on
+      4 issues:
+      1) What is the place all about? 2) Who are the guests? 3) Business goals for the nearest future 4) What is
+      the purpose of the website in the context of the business goals?
+    </li>
+    <li>
+      Card sorting was helpful in detecting how to organize the navigation to make all desired content easily
+      discoverable and accessible.
+      The cards with pages' titles (initial sitemap, but 'sliced') were given to each testee separately and then
+      they decided together which of the 3 sets should be the final hierarchy.
+    </li>
+    <br>
+    <br>
+
+    <h3> DOUBLE DIAMOND: in between: informed re/definition of the pain points and priority goals </h3>
+    <br>
+
+    <ul>
+      <li>
+        There was a number of issues to be solved on every level but due to the limited feasibility at that time
+        I have chosen to focus on the landing page and the menu page as crucial to achieve <span class="yellow">
+          <span class="char_desaturated"> &#128161;</span> PRIORITY GOALS </span>:
+      </li>
+      <li>
+        attract new audience and promote a certain lifestyle,
+        <br>
+        improve usability and accessibility for wide audience (incl.
+        non-tech savvy),
+        <br>
+        improve content writing,
+        <br>
+        convey clearly the core values mentioned during the
+        stakeholder's interview,
+        <br>
+        reduce jargon and shorten lengthy articles,
+        <br>
+        improve aesthetics (colours, contrasts, conventions, visual
+        hierarchy and typography).
+      </li>
+    </ul>
+    <br>
+    <br>
+
+    <h3>DOUBLE DIAMOND: development and delivery </h3>
+    <br>
+
+    <h4>Information architecture design </h4>
+    <ul>
+      <li>
+        <span>Sitemap </span>
+        was created anew after card sorting and after multiple 1:1 sessions on wireframes
+      </li>
+      <li>
+        <span class="yellow">Wireframes</span>
+        (from rough sketches to full new structure)
+        were created after card sorting and 1:1 sessions and
+        there were multiple iterations and testing all over again
+      </li>
+    </ul>
+
+
+    <h4> Content writing </h4>
+    <ul>
+      <li>
+        All content writing was done anew to simplify the language and shorten the articles. AB tests proved that it
+        was the correct decision and the comprehension time was significantly shorter once the changes were applied.
+        The positive effect of the switch from maker- to user-centric language was measured on a group of 10 users
+        aged
+        23-71.
+      </li>
+    </ul>
+    <br>
+
+    <h4> Aesthetics </h4>
+    <ul>
+      <li>
+        Visual design done anew followed by further 1:1 sessions to test it so that the final result is different from
+        the initial moodboard shown below. The feedback included the following phrases: 'cozy feel but also modern',
+        'elegant, but edgy', 'I like the colour mood', it's less overwhelming than the original'.
+      </li>
+
+    </ul>
+    <br>
+
+
+    <h2>FULL SCOPE SUMMARIZED </h2>
+    <br>
+
+    <h3>A few examples of changes </h3>
+    <br>
+
+    <h4> Priority goals coverage </h4>
+    <ul>
+      <li>
+        New audience feels attracted to consider a certain lifestyle.
+        The last tests of the ready interactive prototype showed positive results in comparison to the initial tests
+        on the website before redesign. The message about the purpose of the place was clear, the main slogan (vegan
+        restaurant and beyond) proved to increase curiosity and led to further exploration of the site.
+        Other reasons why the page has improved in the eyes of the testees are mentioned below and my super long and
+        detailed description of the whole process and results that can be discussed in person if you're inerested.
+      </li>
+      <li>
+        Usability and accessibility for wide audience (incl. non-tech savvy users) has been improved.
+        The tests proved that it was easier for the users to navigate the page and access information due to
+        structural changes and user-centric language.
+      </li>
+      <li>
+        Content writing has boosted reading comprehention.
+        The testees understood the core values of the place and were not tired by excessive memory load.
+        They did not need to know words like "biodynamic farming" as technical vocabulary was "translated" into
+        Everyman's language.
+      </li>
+      <li>
+        Aesthetics boost (colours, contrasts, conventions, visual hierarchy typography) semed appealing to
+        the users. That aspect is both technical and subjective. However, the testees chose the final design as
+        'nicer' and more 'eye-pleasing' over the page as they saw it before redesign.
+      </li>
+      <li>
+        The stakeholder's interest and user needs have been included to get the best of both perspectives.
+        There were no real sacrifices in terms of explaining what the place is all about. We managed to simplify the
+        technical language without losing the core message. The users found it much easier to understand that what
+        matters for Green Love is that food, but also a certain lifestyle and worldview is what makes the very tissue
+        of the place.
+      </li>
+    </ul>
+    <br>
+
+
+    <div class="intro">
+      <div class="cta_button">
+        <a href="cv_index.html#design-experience-link" target="_blank" rel="noopener noreferrer"
+          class="cta_button_content">
+          BACK
+        </a>
+      </div>
+    </div class="intro">
+
+
+  </div>
+
+
+
+
+
+
+  <script src="cv_restaurant_project.js"></script>
+
+</body>
+
+</html>
