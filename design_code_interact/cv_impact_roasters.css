@@ -111,13 +111,13 @@ h2 {
 h3 {
   font-size: 1.4rem;
   line-height: 1.6rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 1rem;
 }
 
 h4 {
   font-size: 1.2rem;
   line-height: 1.4rem;
-  padding-bottom: 0.6rem;
+  padding-bottom: 1rem;
 }
 
 p,
@@ -138,9 +138,21 @@ ol {
   /* border: solid red 1px; */
 }
 
-li {
-  line-height: 1.8rem;
-  margin-bottom: 1rem;
+ul li {
+  line-height: 2rem;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+ul li ul li {
+  margin-left: 1.8rem;
+  list-style-type: circle;
+}
+
+.highlight {
+  /* color: var(--sub_text_accent);  */
+  font-weight: 800;
+  letter-spacing: 0.1rem;
 }
 
 .text_link:link,
@@ -227,6 +239,14 @@ figcaption {
   width: 800px;
   border-radius: 0.4rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+  width: 800px;
+  height: 1rem;
+  margin: 0 auto;
+  color: var(--main_white_060);
+  border-top: 1px solid;
 }
 
 @media screen and (min-width: 1px) and (max-width: 1000px) {

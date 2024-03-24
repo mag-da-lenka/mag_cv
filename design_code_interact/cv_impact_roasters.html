@@ -32,21 +32,11 @@
 
 
 
-  <div class="intro">
-    <h1>
-      An interactive online form UX/UI for Impact Roasters to help web users pick the perfect coffee beans
-    </h1>
-    <!-- <p>
-    ** While working on my redesign, it turned out that some features of the website started to change and I
-    soon got the confirmation that it was to be rebuilt soon so I included samples of the page in this folio. Please
-    feel free to contact me if necessary because the page has drastically changed its funcionality and aestetics.
-    </p> -->
-  </div class="intro">
 
+  <h1>
+    An interactive online form UX/UI for Impact Roasters to help web users pick the perfect coffee beans
+  </h1>
   <br>
-  <br>
-
-
 
   <figure>
     <img class="img_shadow" src="./images/sub_impact_roasters/team.png" alt="Project participants brainstorming">
@@ -54,90 +44,98 @@
       Project participants brainstorming
     </figcaption>
   </figure>
-  <br> <br>
+
+  <br>
+  <br>
+
 
   <h2>GOALS</h2>
+  <div class="line"></div>
   <ul>
     <li>
-      Build a new feature needed by the users via feedback to the stakeholders. We want to create a Coffe Match
-      Finder: an interactive form for our online customers who want to make informed decisions about buying our amazing
-      products.
+      To design and develop a new feature needed by the users via feedback to the stakeholders. What's the user's
+      motivation? To be able to choose their coffee effortlessly and make an informed decision, even if they are
+      total coffee beginners and don't even know how to start navigating themselves through the myriad of options,
+      criteria and the mighty jargon they simply do not understand without having an expert on their side. (Or Uncle
+      Google.)
     </li>
     <li>
-      Identify the most important pain points: what makes it difficult to make a desicion about the purchase and how
-      might we improve the status quo?
-    </li>
-    <li>
-      Design the form within the current Style Guidelines so that it is consistent with the stylescape of Impact
-      Roasters.
+      To deliver tool that will solve the above problem after a solid research, identifying the most important pain
+      points and coming up with a solution. We will need to take a closer look at what makes it difficult to make tha
+      right choice and how we might improve the process.
     </li>
   </ul>
+  <br>
+  <br>
+
 
   <h2>METHODOLOGY HIGHLIGHTS</h2>
+  <div class="line"></div>
   <ul>
     <li>
       The Double Diamond <span class="char_desaturated"> &#128142;&#128142; </span> with constant iteration and
       testing, user-centered design and empathy.
     </li>
     <li>
-      Stakeholder's interview, 1:1 interviews, persona creation. Wireframes, interactive prototype, visual design,
+      UXR: Stakeholder's interview, 1:1 interviews. Persona creation, ireframes, interactive prototype, visual design,
       UX writing. Testing and implementing changes on each iteration.
     </li>
   </ul>
+  <br>
+  <br>
 
 
   <h2>PEOPLE and TOOLS </h2>
+  <div class="line"></div>
   <ul>
     <li>
-      Human helpers: users, test particiants, stakeholders and developers. The group that participated in the tests
-      included existent and potential new users as well as team members. Thank you all for letting me use the group
-      picture with your lovely faces!
+      We will be working with real users, test participants, stakeholders* and developers*.
+      <br>
+      * Thank you all for letting me use the group picture with your lovely faces!
     </li>
     <li>
-      Tools: Figma, an old pencil, a few crayons and some paper. A lot of great coffee.
+      My tools are simply Figma, a pen and pencil, a few crayons and some paper. Plus a lot of great coffee.
     </li>
   </ul>
+  <br>
+  <br>
+
+
+
+
 
 
 
   <h2>DESIGN PROCESS HIGHLIGHTS</h2>
+  <div class="line"></div>
+  <br>
   <br>
 
-  <h3>DOUBLE DIAMOND: discovery and definition phase </h3>
+
+
+  <h3>DOUBLE DIAMOND: DISCOVERY AND DEFINITION </h3>
   <br>
 
-  <h4>Status Quo evaluation</h4>
+
+  <h4>Status Quo at a glance</h4>
   <ul>
     <li>
-      We have a functioning
+      We have a functioning, information-rich
       <a class="text_link" href="https://impactroasters.dk/" target="_blank" rel="noopener noreferrer">website</a>
-      and a working prototype done in React.js by our brave devs, but no UX yet.
-    </li>
-  </ul>
-  <!-- <figure>
-    <img class="img_wide" src="./images/sub_impact_roasters/form_initial_state.png"
-      alt="Form (proto version before I took over)">
-    <figcaption style="text-align: right;">
-      Form (proto version before I took over) <br> <br>
-    </figcaption>
-  </figure> -->
-
-  <figure>
-    <img class="img_shadow" src="./images/sub_impact_roasters/form_initial_state_refresh.png"
-      alt="developer's version of the form">
-    <figcaption style="text-align: right;">
-      Form (proto version before I took over) <br> <br>
-    </figcaption>
-  </figure>
-  <ul>
-    <li>
-      We have feedback from the users via our stakeholders that a form is needed to simplify and speed up the
-      process of buying online to make an informed decision.
+      with an established stylescape.
     </li>
     <li>
-      As a UX person and an absolute coffee noob, I have access to a lot of information about bean types,
-      methods of brewing and all kind of magic I am not aware yet. All that is accessible directly from Impact
-      Roasters Team, the website and various leaflets. I can also happily get caffeinated at the premises.
+      There is a working prototype of an interactive questionnaire done in React.js by our brave devs,
+      but no UX yet.
+    </li>
+    <li>
+      We have some coffee criteria and facts in our database so we can use those to build up.
+      Anything from the .JSON file below could be displayed on the front-end. That's a great start.
+    </li>
+    <li>
+      As a UX person, I am given my first bits of coffe know-how from Impact Roasters leaflets and guides.
+      Let's also remebmer I'm about to hang out with a team of coffe nerds who know methods of brewing
+      and all kind of magic I am not aware yet.
     </li>
   </ul>
   <figure>
@@ -148,23 +146,17 @@
   </figure>
 
 
-
-  <h4>Status Quo on a closer look</h4>
+  <h4>Status Quo: the prototype I am to work with</h4>
   <ul>
     <li>
-      There is a lot of information to process for someone who is a beginner. That is a great thing, but can be
-      overwhelming so it seems like we might make it more concise by cherry picking the most crucial bits. What is
-      important to know in order not to exceed our cognitive load? We will find out.
+      It's hard-coded example of a questionnaire logic from the perspective of a developer looking at the possibilities
+      the data offers. The language for the form was provided by coffee-pros so let's see how manageable that will by
+      for a random user.
     </li>
-  </ul>
-
-
-  <h4>Status Quo: the form prototype I am to work with</h4>
-  <ul>
     <li>
       The phrasing is a bit difficult for me. I got stuck at the 1st question not sure what is meant. After all, I am a
-      beginner but so might be any other user. Shall we translate the maker-centric language into something easier to
-      follow? I am sure we can.
+      beginner but so might be any other user. Can we translate the maker-centric language into something easier to
+      follow? Of course.
     </li>
     <li>
       There is no progress bar yet so I am not sure how long the form is. We will certainly add the bar.
@@ -174,51 +166,199 @@
       the answer. Mistake prevention: check.
     </li>
     <li>
-      The result page is to be discussed but we can use quite a few criteria because we have great input in our JSON
-      files! Wohoo! Thats's a great beginning.
+      The result page is to be discussed but we can use quite a few criteria because we have useful data in our JSON
+      files!
+    </li>
+    <li>
+      Wohoo! Thats's a great beginning.
     </li>
   </ul>
+  <br>
   <figure>
     <img class="img_shadow" src="./images/sub_impact_roasters/json_sample.png" alt="site map screenshot">
     <figcaption style="text-align: right;">
       JSON file: lots of cool data to use :) <br> <br>
     </figcaption>
   </figure>
+  <br>
+  <figure>
+    <img class="img_wide" src="./images/sub_impact_roasters/form_initial_state_refresh.png"
+      alt="developer's version of the form">
+    <figcaption style="text-align: right;">
+      Form (proto version before I took over)
+    </figcaption>
+  </figure>
+
+  <br>
+  <br>
 
 
-  <h1>
-    More description coming soon :)
-    <br>
-    Teaser photos below!
-  </h1>
+  <h4> UXR and tests: iteration 1</h4>
+  <p>
+    Ideally we want to mix qualitative an quantitative methods.
+  </p>
+  <ul>
+    <li>First of all: a simple <span class="highlight">desktop research</span>.
+      I began teaching myself what there is to know about coffee from all the people and materials mentioned above.
+      The leaflets got annotated, the website was read thoroughly so that after an hour or two I had a basic idea what
+      kind of knowledge is provided and what phrasing is used in the narrative. Though it gave me insight, I cannot say
+      I was sure I understood everything properly. I will need to test that with other people! Then I started consulting
+      the Team to clarify what I did not understand and then I felt like I fell a little overwhelmed with their
+      nerdiness. Nevertheless, I got what I needed to know myself.
+    </li>
+    <li>
+      Next step was <span class="highlight">1:1 sessions</span> with a few volunteers who identify as
+      coffee-know-how-ignorant. Did they feel similar to me, a total coffee noob trying to make sense of things?
+      I asked them to spend max 30 mins to research the website and a chosen leaflet and tell me how confident they
+      would be deciding which coffe they'd like to try in terms of method, beans and their roast? They had ideas, a
+      general sense of direction but no true confidence: "I feel like I get that the darker roast the less sour it will
+      be. Or acidic? Idk, I don't like acidic so dark roast. But then there are so many methods so I am not 100% sure
+      which one would be best."
+    </li>
+    <li>
+      Step 3: just like the previous one but this time with the prototype we already have and max 2 mins. Just like me,
+      most of the participants did not really get the first question and felt a little discouraged, but next questions
+      were easier. Nevertheless, there seems to be room for improvement in terms of the language to make it more
+      user-centric.
+    </li>
+    <li>
+      Step 4: <span class="highlight">comparative research</span>. This helped me to get an idea that there are cool
+      ideas out there and the questionnaire is a great idea as long as we improve the above and research what other
+      criteria we can add to get
+      real insight.
+    </li>
+    <li>
+      Step 5: <span class="highlight">card sorting</span>. The same group was asked to decide which criteria
+      matter to them. I prepared the cards based of anything I have learned so far that might potentially matter.
+      Winners: taste, caffeine intake, good quality (mentioned by the participants but in a vague way). And let's not
+      forget that the taste can be affected by a million things...
+    </li>
+  </ul>
+
+  <br>
+
+  <h4>Iteration 1: findings</h4>
+  <ul>
+    <li> Problem 1: <span class="highlight">information and cognitive overload</span>.
+      The information is available via leaflets and the website and it is super helpful,
+      but for some it was qiote a lot to process, which was at times quite overwhelming.
+      I later tried Step 2 on advanced users (i.e. coffee-nerds) and they had known most of what they were to read
+      before so it was an easy task.
+      However, we need to democratise the experience: make it more concise by finding out
+      and cherry picking the most crucial bits for everyone to be able to get a quick crash course and find the beans of
+      their lives.
+    </li>
+    <li>
+      Problem 2: <span class="highlight"> user-centric language of the form prototype</span>.
+      The form is a bit of a challenge to coffe beginners due to maker-centric language.
+      “What is coffee body?” “What does that mean?”
+      On top of it, the quick card sorting proved that my participants' brains focused
+      on taste, caffeine and pleasure, but were not fully able to explain what good taste is.
+      However, they were very eager to find out about the type of coffee, roast level or grind.
+      We want to help so let's iterate.
+    </li>
+  </ul>
 
   <br>
 
 
+
+
+  <h4> UXR and tests: iteration 2</h4>
+  <ul>
+    <li>
+      Let's ask <span class="highlight">a few open questions</span>.
+      We know by now that we have two issues to improve but how can we learn about the users even more to create some
+      sensible personas?
+    </li>
+    <li>
+      Who is the target user? The assumption has to be that it's quite often someone who is a coffee beginner, but can
+      be
+      in fact anyone. We want to promote amazing Ethiopian coffee so we ideally want to target wide audience.
+    </li>
+    <li>
+      I have started to think of how to elicit unbiased answers about coffee itself and users' habits without suggesting
+      anything. I am interested in the primary qualitative 'feely' approach on more participants to identify the
+      sentiments and
+      motivations.
+    </li>
+    <li>
+      The questions were asked by me and hadn't been revealed to
+      the participants before in order to get a real reactions and emotions. I made sure that the spectrum off coffee
+      affiliation of the participants is as wide as possible.
+    </li>
+    <li>
+      Here are the questions for 1:1 interviews.
+      <br>
+      Do you drink coffee? Why?
+      Do you like coffee? Why?
+      How do you like your coffee? What's your perfect cup?
+      Do you like it on its own or with snacks? / What kind of snacks?
+      How often do you drink coffee? / What time of the day?
+
+    </li>
+    <li>
+      The interviews were either online (but on video to see the reactions) or in person.
+    </li>
+    <li>
+      <ul>
+        The previous participants are still with me, but there are more on board this time.
+        <li>
+          Customers of the Impact Rosters coffee bars that I invited by leaving a card on the table in order not to
+          interrupt them while working, chatting, focusing, etc. PS. A reward was promised. See the postcard below.
+        </li>
+        <li>
+          A few friends and colleagues who like or don't like coffee, just to have a perspective. Could we change that?
+        </li>
+        <li>
+          Some baristas and people who specialize in coffee, or simply have some knowledge about it.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <br>
+
   <figure>
-    <img class="img_wide" src="./images/sub_impact_roasters/interviews.png" alt="site map screenshot">
+    <img class="img_wide" src="./images/sub_impact_roasters/interviews.png" alt="interviews: notes">
     <figcaption style="text-align: right;">
       Interviews: notes <br> <br>
     </figcaption>
   </figure>
+
+
   <figure>
-    <img class="img_wide" src="./images/sub_impact_roasters/interviews_filled_1.png" alt="site map screenshot">
+    <img class="img_wide" src="./images/sub_impact_roasters/interviews_filled_samples.png"
+      alt="Interviews: answers examples">
+    <figcaption style="text-align: right;">
+      Interviews: answers close-up <br> <br>
+    </figcaption>
+  </figure>
+
+
+  <figure>
+    <img class="img_shadow" src="./images/sub_impact_roasters/interviews_filled.png" alt="Inteviews: answers examples">
     <figcaption style="text-align: right;">
       Inteviews: answers examples <br> <br>
     </figcaption>
   </figure>
-  <figure>
-    <img class="img_wide" src="./images/sub_impact_roasters/interviews_filled_2.png" alt="site map screenshot">
-    <figcaption style="text-align: right;">
-      Inteviews: answers examples <br> <br>
-    </figcaption>
-  </figure>
-  <figure>
-    <img class="img_wide" src="./images/sub_impact_roasters/interviews_filled_closeup.png" alt="site map screenshot">
-    <figcaption style="text-align: right;">
-      Interviews: answers examples <br> <br>
-    </figcaption>
-  </figure>
+
+
+  <h4>Iteration 2: findings</h4>
+  <p>
+    It is quite clear that a non-professional coffee drinker uses a simple language, but the criteria are indeed
+    relevant. Various participants mentioned eg. nutty or chocolatey aroma they like. And that there is not sour
+    aftertaste. (Some, on the other hand actually like it.) See? That depends on the roast, method of brewing etc.
+    That is why our interactive form is a great idea. What mattered is also things like strength (so eg. method of
+    brewing) or sugar/milk intake, but that is not critical for choosing the right beans so we can focus on adjusting
+    the language to be user-centric and understood by everyone. There are also coffee-pros who could talk you to death
+    about coffee and I love the enthusiasm. They will be fine no matter what. There was also a person who admitted to
+    hating coffee but still using it as a caffeine shot. I really hope we can make the experience way better if the
+    quality of coffee is excellent and the preferences are found and then met. Let's create some personas and
+    'translate' the language to make it user-centric and democratic. Great coffee for all! :)
+  </p>
+  <br>
+
   <figure>
     <img class="img_wide" src="./images/sub_impact_roasters/findings.png" alt="UXR and tests: findings">
     <figcaption style="text-align: right;">
@@ -226,12 +366,115 @@
     </figcaption>
   </figure>
 
+  <br>
+
+
+  <h4>Iteration 2: personas</h4>
+  <ul>
+    <li>
+      Mike, a busy developer who prefers his coffee strong with
+      rich fruity aroma and needs the beans for his espresso machine. He has a favorite brand but has recently heard
+      about
+      Impact Roasters from his colleague who has recently grabbed a cup at S-Tog Flintholm station and recommended the
+      place to Mike during lunch at work. Now Mike wants to try them out.
+    </li>
+    <li>
+      Elsa, a doctor at the ER who needs to stay up all night quite often and focus on her demanding work. Caffeine has
+      always been the only reason why she has coffee because she simply doesn't like it. “It's kind of sour and leaves a
+      weird taste in your mouth. Is there coffee type that would be more manageable, if not simply pleasant?” seh asks.
+      Elsa has no idea how and where to begin. She normally just grabs the coffee from the hospital machine but a friend
+      has told her about Impact Roasters so she'd like to try them out.
+    </li>
+  </ul>
+  <br>
+
+  <h4>Iteration 2: decoding the maker-centric language</h4>
+  <p>
+    What I did was go back to Impact Roasters Team of nerds and ask them to explain it all to me imagining that I am a
+    12-year-old.
+    Here are the words and phrases they delivered after deliberating.
+  </p>
+
+  <ul>
+    <li>
+      Body
+      : :
+      Reference to the consistency of the coffee. Depends on the coffee processing method.
+    </li>
+    <li>
+      Finish
+      : :
+      The aftertaste which can be experienced at the end of the mouth.
+    </li>
+    <li>
+      Round : :
+      Refers to the taste not being sharp but instead balanced - Not too acidic, not too sweet.
+    </li>
+    <li>
+      Clean : :
+      Reference to the combination of taste and consistency of the coffee which in this case usually comes from washed
+      processed coffees and are lighter in body and often used for everyday use.
+      Washed, mored acidic and citrusy, more classic taste, can be acidic (roast level: dark, medium, light) or round
+      (roast level: dark, medium, light).
+    </li>
+    <li>
+      Rich
+      : :
+      Reference to the combination of taste and consistency of the coffee which in this case usually comes from natural
+      processed coffees and are heavier in body and often used for special occasions.
+      Rich in flavour, sundried beans, fermented taste, ripe, sweet (roast level: dark, medium, light).
+    </li>
+    <li>
+      Acidity : :
+      in coffee taste is a reference to one of the natural flavors of the coffee and can be tasted in the front of the
+      mouth and especially on the tongue. The experience is usually pleasant and gives a fresh feeling.
+    </li>
+    <li>
+      Sourness : :
+      is often due to the coffee being too light roasted or coarsely ground. The experience is usually overwhelming,
+      unpleasant and destroys the nuances of the coffee.
+    </li>
+    <li>
+      Bitterness : :
+      is often due to the coffee being too dark roasted or too finely ground. The experience is usually overwhelming,
+      unpleasant and destroys the nuances of the coffee.
+    </li>
+  </ul>
+  <br>
+
+
+  <h3>DOUBLE DIAMOND: DISCOVERY AND DEFINITION </h3>
+  <br>
+
+  <h4>Ok, Lets deliver the form! </h4>
+
+
+  <p>
+    That means no lengthy articles, an interactive tool that is hands-on, easy and intuitive. What we have is already
+    relevant, except the language, but see how it was rewritten (below).
+  </p>
+  <p>
+    We are staying within the current Style Guidelines so that it is consistent with the stylescape of Impact
+    Roasters. I have added a few icons that match the ones on the website. A little visual boost might make it more
+    approachable.
+  </p>
+  <br>
+
+  </li>
   <figure>
-    <img class="img_wide" src="./images/sub_impact_roasters/style_guide_ir.png" alt="site map screenshot">
+    <img class="img_shadow" src="./images/sub_impact_roasters/style_guide_ir.png" alt="Impact Roasters: style guide">
     <figcaption style="text-align: right;">
       Impact Roasters: style guide <br> <br>
     </figcaption>
   </figure>
+
+
+  <p>
+    Ready? Do you remember the questions before? Here's the 'after'. And yes, it was tested again on a few non-nerds and
+    it worked! Noone got stuck at the first question. Sometimes we needed to add a little description. Well, UX laws..
+    If there is complexity, we cannot ignore it. Instead, try to navigate and overcome.
+  </p>
+  <br>
 
   <figure>
     <img class="img_wide" src="./images/sub_impact_roasters/form_1234.png" alt="Form 1-2-3-4">
@@ -239,12 +482,48 @@
       Form 1-2-3-4 <br> <br>
     </figcaption>
   </figure>
+  <br>
+
+  <p>
+    Please notice the changes, but also how important it is for us to get some extra insight. Take look at the first
+    question. 'I like both' and 'Not sure' tell us that the user either know what they're doing or not much. Sounds
+    different, right? It will be a valuable insight for future iterations to see how many users might get confused /
+    unsure and if it is necessary to make any amendments.
+  </p>
+  <br>
+
+
+  <h4>The results page</h4>
+  <p>
+    Here we get the closest match, which takes us to each product page. There in turns, anyone, no matter how advanced
+    they are, can learn a lot more about each coffee type and posibillities it offer. So we have the beans, now we
+    choose the roast which was explained in the form, and lastly pick the way we want to brew. Well, brewing methods
+    were not mentioned in the form, but it would overcomplicate the experience. However, that is the only extra little
+    reaserch to be done if something sounds new. (I had no idea what Hario was.)
+
+
+    After reading you can happily fall in to the rabbit hole to explore all the high quality options. :)
+    I did and have been a fan of Kaffa, dark roast. As a former coffee ignorant, I have to see 'thank you!'
+  </p>
+
+
+
   <figure>
     <img class="img_wide" src="./images/sub_impact_roasters/form_result.png" alt="site map screenshot">
     <figcaption style="text-align: right;">
       Form: results page <br> <br>
     </figcaption>
   </figure>
+
+
+
+  <br>
+
+
+  <h1>
+    Thank you for making it this far!
+  </h1>
+
 
 
   <div class="cta_buttons_wrapper">
@@ -265,88 +544,10 @@
 
   <div style="display: none;">
 
-    <h4> Qualitative and quantitative research </h4>
-    <li>
-      Desktop research, surveys, comparative research, testing.
-    </li>
-    <li>
-      1:1 sessions provided evidence, eg. noone understood the word 'biodynamic' and all testees were confused by
-      the clickable pictures that weren't links to gallery but opened the landing page in new tab.
-    </li>
-    <li>
-      Stakeholder's interview: the owner turned to be a friendly person with true passion for vegan food and
-      abundance of positive energy. There was a survey, the meeting took an hour. The questions and tasks focused on
-      4 issues:
-      1) What is the place all about? 2) Who are the guests? 3) Business goals for the nearest future 4) What is
-      the purpose of the website in the context of the business goals?
-    </li>
-    <li>
-      Card sorting was helpful in detecting how to organize the navigation to make all desired content easily
-      discoverable and accessible.
-      The cards with pages' titles (initial sitemap, but 'sliced') were given to each testee separately and then
-      they decided together which of the 3 sets should be the final hierarchy.
-    </li>
-    <br>
-    <br>
-
-    <h3> DOUBLE DIAMOND: in between: informed re/definition of the pain points and priority goals </h3>
-    <br>
-
-    <ul>
-      <li>
-        There was a number of issues to be solved on every level but due to the limited feasibility at that time
-        I have chosen to focus on the landing page and the menu page as crucial to achieve <span class="yellow">
-          <span class="char_desaturated"> &#128161;</span> PRIORITY GOALS </span>:
-      </li>
-      <li>
-        attract new audience and promote a certain lifestyle,
-        <br>
-        improve usability and accessibility for wide audience (incl.
-        non-tech savvy),
-        <br>
-        improve content writing,
-        <br>
-        convey clearly the core values mentioned during the
-        stakeholder's interview,
-        <br>
-        reduce jargon and shorten lengthy articles,
-        <br>
-        improve aesthetics (colours, contrasts, conventions, visual
-        hierarchy and typography).
-      </li>
-    </ul>
-    <br>
-    <br>
-
-    <h3>DOUBLE DIAMOND: development and delivery </h3>
-    <br>
-
-    <h4>Information architecture design </h4>
-    <ul>
-      <li>
-        <span>Sitemap </span>
-        was created anew after card sorting and after multiple 1:1 sessions on wireframes
-      </li>
-      <li>
-        <span class="yellow">Wireframes</span>
-        (from rough sketches to full new structure)
-        were created after card sorting and 1:1 sessions and
-        there were multiple iterations and testing all over again
-      </li>
-    </ul>
 
 
-    <h4> Content writing </h4>
-    <ul>
-      <li>
-        All content writing was done anew to simplify the language and shorten the articles. AB tests proved that it
-        was the correct decision and the comprehension time was significantly shorter once the changes were applied.
-        The positive effect of the switch from maker- to user-centric language was measured on a group of 10 users
-        aged
-        23-71.
-      </li>
-    </ul>
-    <br>
+
+
 
     <h4> Aesthetics </h4>
     <ul>
@@ -360,47 +561,6 @@
     <br>
 
 
-    <h2>FULL SCOPE SUMMARIZED </h2>
-    <br>
-
-    <h3>A few examples of changes </h3>
-    <br>
-
-    <h4> Priority goals coverage </h4>
-    <ul>
-      <li>
-        New audience feels attracted to consider a certain lifestyle.
-        The last tests of the ready interactive prototype showed positive results in comparison to the initial tests
-        on the website before redesign. The message about the purpose of the place was clear, the main slogan (vegan
-        restaurant and beyond) proved to increase curiosity and led to further exploration of the site.
-        Other reasons why the page has improved in the eyes of the testees are mentioned below and my super long and
-        detailed description of the whole process and results that can be discussed in person if you're inerested.
-      </li>
-      <li>
-        Usability and accessibility for wide audience (incl. non-tech savvy users) has been improved.
-        The tests proved that it was easier for the users to navigate the page and access information due to
-        structural changes and user-centric language.
-      </li>
-      <li>
-        Content writing has boosted reading comprehention.
-        The testees understood the core values of the place and were not tired by excessive memory load.
-        They did not need to know words like "biodynamic farming" as technical vocabulary was "translated" into
-        Everyman's language.
-      </li>
-      <li>
-        Aesthetics boost (colours, contrasts, conventions, visual hierarchy typography) semed appealing to
-        the users. That aspect is both technical and subjective. However, the testees chose the final design as
-        'nicer' and more 'eye-pleasing' over the page as they saw it before redesign.
-      </li>
-      <li>
-        The stakeholder's interest and user needs have been included to get the best of both perspectives.
-        There were no real sacrifices in terms of explaining what the place is all about. We managed to simplify the
-        technical language without losing the core message. The users found it much easier to understand that what
-        matters for Green Love is that food, but also a certain lifestyle and worldview is what makes the very tissue
-        of the place.
-      </li>
-    </ul>
-    <br>
 
 
     <div class="intro">
