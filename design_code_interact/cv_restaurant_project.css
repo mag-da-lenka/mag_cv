@@ -6,7 +6,8 @@
   --main_gray_040: rgba(67, 67, 67, 0.4); 
 
   --sub_background: rgb(57, 55, 55);
-  --sub_background: rgb(56, 66, 57);
+  --sub_background: rgb(56, 66, 57); 
+  --sub_background: rgb(65, 76, 66);
 
   --main_white_100: rgba(228, 228, 228, 1.0); 
   --main_white_080: rgba(228, 228, 228, 0.8);
@@ -83,24 +84,28 @@ h4 {
 }
 
 
-p,ul, ul li {  
+p, ol, ul {  
   font-size: 1.1rem; 
-  line-height: 2.4rem;
+  line-height: 1.8rem;
   padding: 0 0 0 0;  margin: 0;  
-  list-style-type: none; 
+  /* list-style-type: none;  */
   /* border: solid green 1px; */
 }
 
-ol{  
-  font-size: 1.1rem; 
-  line-height: 2.4rem;
-  padding: 0 0 1rem 1rem ;  margin: 0;  
-  list-style-position: outside; 
-  /* border: solid red 1px; */
+ol, ul {
+  padding: 0 0 0 1rem;  margin: 0; 
 }
 
+/* ol{  
+  font-size: 1.1rem; 
+  line-height: 2.4rem;
+  padding: 0 0 1rem 2rem ;  margin: 0;  
+  list-style-position: outside; 
+  border: solid red 1px;
+} */
+
 li {
-  line-height: 1.8rem;
+  line-height: 1.4rem;
   margin-bottom: 1rem;
 }
 
