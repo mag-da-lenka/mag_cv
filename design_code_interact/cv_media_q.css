@@ -188,6 +188,9 @@
           width: 100%;  height: 4rem;  
           margin: 0 auto;  padding: 0;  
         }
+
+
+        /* before opening */
         .nav_box7_mobile { 
           visibility: visible;  display: flex;  align-items: center;
           margin: 0; padding: 0; height: 4rem; width: 90vw; 
@@ -196,12 +199,23 @@
         .nav_box7_mobile_l  { width: 50%; display: flex; justify-content: flex-start; } 
         .nav_box7_mobile_r  { width: 50%; display: flex; justify-content: flex-end;   } 
         .overlay { width: 100vw; margin: 0; padding: 0;  }
+
+        /* after opening */
         .overlay .close_X { 
           display: flex;  align-items: center; justify-items: flex-end;
           width: auto;  height: 4rem; padding: 0; margin-right: 5vw;  
-          font-size: 2.8rem;  
+          width: auto;  height: 4rem; padding: 0; margin-right: 4.5vw;  
+          /* border-color: aquamarine;  border-style: solid;  border-width: 0.1rem; */
+          font-size: 2rem; /*the 2rem matches the burger size before opening!!! */
         }
         .overlay a:not(.close_X) { font-size: 2rem; line-height: 4rem; } 
+
+
+
+
+
+
+
 
 
         .scr1_articles{   flex-direction: row;  align-items: flex-start; padding-top: 4rem;  }

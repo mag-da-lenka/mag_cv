@@ -72,40 +72,82 @@
         <nav>
             <div class="nav_left">
                 <div class="nav_box1">
-                    <a onClick="window.location.reload()" href="#"> MAGDA
-                        <!-- <img src="./icons/wiorka_06.svg" style="height:3.0rem;" alt="wiórka home"> -->
-                    </a>
+                    <!-- <a onClick="window.location.reload()" href="#"> MAGDA... -->
+                    <!-- <img src="./icons/wiorka_06.svg" style="height:3.0rem;" alt="wiórka home"> -->
+                    <!-- </a> -->
+                    <!-- <a onclick="goToTop()" href="#">    -to-top-
+                        
+                    </a> -->
+                    <a href="#" onclick="reloadAndGoToTop()">Magda</a>
+
                 </div>
             </div>
             <div class="nav_right">
-                <div class="nav_box3"> <a href="#design-experience-link"> UX/UI </a> </div>
-                <div class="nav_box4"> <a href="#coding-experience-link">coding</a></div>
-                <div class="nav_box5"> <a href="#interaction-experience-link">interaction</a></div>
-                <div class="nav_box6"> <a href="#contact-link"> contact </a></div>
 
+                <div class="nav_box3"> <a onclick="scrollToEl('#design-experience-link')"> Projects </a> </div>
+                <!-- <div class="nav_box3"> <a href="#design-experience-link"> Projects </a> </div>    -->
+
+                <!-- <div class="nav_box4"> <a href="#coding-experience-link">coding</a></div> -->
+
+                <!-- <div class="nav_box5"> <a href="#interaction-experience-link">interaction</a></div> -->
+
+                <!-- <div class="nav_box6"> <a href="#contact-link"> Contact </a></div> -->
+                <div class="nav_box6"> <a onclick="scrollToEl('#contact-link')">Contact</a></div>
+
+
+                <!-- mobile NAV CONTAINER -->
                 <div class="mobile_nav_background">
 
-                    <!-- mobile NAV -->
+                    <!-- mobile NAV before opening-->
                     <div class="nav_box7_mobile">
+
                         <div class="nav_box7_mobile_l" onClick="window.location.reload()" href="#">
-                            MAGDA
+                            Magda
                         </div>
+
                         <div class="nav_box7_mobile_r" onclick="openMobileNav()">
                             &#9776;
                         </div>
+
                     </div>
 
-                    <!-- mobile NAV: OVERLAY-->
+                    <!-- mobile NAV: OVERLAY in versions -->
+
                     <div class="overlay" id="mobileNavOverlay">
+
+
+                        <!-- TEMPORARILY ON HOLD -->
+                        <!-- <div href="#" class="close_X" onclick="reloadAndGoToTop()">Magda</div> -->
+
                         <!-- overlay - X button -->
-                        <div href="javascript:void(0)" class="close_X" onclick="closeMobileNav()">&times;</div>
+                        <!-- <div href="javascript:void(0)" class="close_X" onclick="closeMobileNav()">&times;</div> -->
+                        <!-- OR  -->
+                        <!-- overlay - BURGER button with CLOSE functionality -->
+                        <div href="javascript:void(0)" class="close_X" onclick="closeMobileNav()">&#9776;</div>
+
+
+
+
                         <!-- overlay - content -->
                         <div class="overlay-content">
-                            <a href="#design-experience-link" class="glow" style="color: rgb(230, 193, 213)" ;
-                                onclick="closeMobileNav()">ux/ui</a>
-                            <a href="#coding-experience-link" onclick="closeMobileNav()">&lt;coding&gt;</a>
-                            <a href="#interaction-experience-link" onclick="closeMobileNav()">interaction</a>
-                            <a href="#contact-link" onclick="closeMobileNav()"> contact me </a>
+
+                            <!-- <div class="nav_box7_mobile_l" onClick="window.location.reload()" href="#">MAGDA</div> -->
+                            <!-- <a href="#" class="nav_box7_mobile_l" ; onclick="reloadAndGoToTop()">Magda</a> -->
+                            <a href="#" ; onclick="reloadAndGoToTop()">Magda</a>
+
+                            <!-- <a href="#design-experience-link" class="glow" style="color: rgb(230, 193, 213)" ;
+                                onclick="closeMobileNav()">Projects</a>  -->
+                            <a href="#design-experience-link" ; onclick="closeMobileNav()">Projects</a>
+                            <!-- <a href="#design-experience-link" ;
+                                onclick="scrollToEl('#design-experience-link')">Projects (Scroll)</a> -->
+
+                            <!-- <a href="#coding-experience-link" onclick="closeMobileNav()">&lt;coding&gt;</a> -->
+
+                            <!-- <a href="#interaction-experience-link" onclick="closeMobileNav()">interaction</a> -->
+
+                            <a href="#contact-link" onclick="closeMobileNav()"> Contact </a>
+                            <!-- <a href="#contact-link" onclick="scrollToEl('#contact-link')"> Contact (Scroll)</a> -->
+
                         </div>
                     </div>
 
@@ -163,6 +205,7 @@
                             a <span class="glow char_desaturated">UX/UI designer </span>
                             <!-- <span class="char_desaturated">👩‍🔧/👩‍🎨</span> -->
                         </h1>
+                        <br>
                         <div class="opacity-transition-0-100-01">
                             <h3>
                                 <!-- + an occasional &nbsp; <span class="bolder-wider">web developer</span> -->
@@ -242,7 +285,7 @@
 
 
                     <!-- ICONS -->
-                    <section class="opacity-transition-0-100-03">
+                    <section class="opacity-transition-0-100-03" style="display: none;">
                         <div class="skills_icon_line_top">
                             <img src="./icons/7564187_figma_logo_brand_icon.png" alt="Figma icon">
                             <img src="./icons/icon_adobe_indesign.png" alt="inDesign icon">
@@ -274,23 +317,34 @@
                         <!-- <img class="squirrel-warning" src="./images/squirrel_stamps_light_mode.png" alt="squirrel warning stamp"> -->
                     </section>
 
+                    <br>
 
 
                     <!-- BUTTONS: CV AND PROJECTS -->
                     <section class="opacity-transition-0-100-04">
                         <div class="scr1-buttons">
-                            <div class="cta_button">
+
+                            <!-- <div class="cta_button">
                                 <a href="CV_magdalena_wojtakowska_voigt.pdf" target="_blank"
                                     rel="noopener noreferrer" class="cta_button_content">
                                     DOWNLOAD CV
                                 </a>
-                            </div>
-                            <div class="cta_button">
+                            </div> -->
+
+                            <!-- <div class="cta_button">
                                 <a href="#design-experience-link" target="_blank" rel="noopener noreferrer"
                                     class="cta_button_content">
                                     EXPLORE PROJECTS
                                 </a>
+                            </div>  -->
+
+                            <div class="cta_button">
+                                <a href="#design-experience-link" class="cta_button_content" ;
+                                    onclick="scrollToEl('#design-experience-link')"> Explore Projects</a>
                             </div>
+
+
+
                         </div>
                     </section>
 
@@ -319,13 +373,12 @@
             <h1>UX/UI projects</h1>
             <br><br>
             <h3>
-                My most recent projects have involved creating <span class="highlight"> design systems </span> in
-                Figma for Web and for
+                My most previous projects have involved creating <span class="highlight"> design systems </span> for
                 <a class="text_link" href=" https://www.anthillagency.com/cases/anthill-activator" target="_blank"
                     rel="noopener noreferrer">
                     Activator
                 </a>
-                which is a content management system integrated with Veeva Vault. These projects are protected by
+                - a content management system integrated with Veeva Vault. These projects are protected by
                 copyright law and will not be shown. Besides this, I worked on Modular Content creating <span
                     class="highlight"> digital assets </span>
                 in Adobe inDesign and Illustrator.
@@ -675,7 +728,8 @@
     <!-- SCREEN 03 > CODING edu skills projects experience  -->
     <!-- ****************************************************************************************** -->
 
-    <div class="screen3">
+    <div class="screen3" style="display: none;">
+
 
         <!-- anchor screen 03 :: CODING -->
         <div class="anchor" id="coding-experience-link"></div>
@@ -949,7 +1003,7 @@
     <!-- SCREEN 04 > HUMAN INTERACTION edu skills projects experience  -->
     <!-- ****************************************************************************************** -->
 
-    <div class="screen4">
+    <div class="screen4" style="display: none;">
 
         <!-- anchor screen 03 :: HUMAN INTERACTION -->
         <div class="anchor" id="interaction-experience-link"></div>
@@ -1176,7 +1230,7 @@
                 <p>
                     I enjoy
                     <br> <br>
-                    dark sense of humour
+                    good sense of humour
                     <span class="char_desaturated">😎&#128420;</span>
                     Sci-Fi films
                     <span class="char_desaturated"">👽🛸🚀</span>

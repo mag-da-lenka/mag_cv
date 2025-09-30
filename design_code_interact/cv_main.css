@@ -26,6 +26,8 @@
 }
 
 
+
+
 * {
   box-sizing: border-box;
   margin: 0 auto;
@@ -36,7 +38,10 @@ html {
   font-size: 15px;
   width: 100vw;
   font-weight: 800;
+  scroll-behavior: smooth;
 }
+
+
 
 body {
   margin: 0 auto;
@@ -251,7 +256,11 @@ nav {
   display: flex;  flex-direction: row;   justify-content: space-between; 
   width: 1100px;  height: 4rem;  
   margin: 0 auto;  padding: 0;  
-} 
+}
+
+.nav_background a {
+  cursor: pointer;
+}
 
 .nav_left, .nav_right {  display: flex;  padding: 0;  margin: 0; align-items: center; } 
 
@@ -263,13 +272,16 @@ nav {
   border: none; 
 }
 .nav_box1 {  padding: 0;}
-.nav_box3 {  color: rgb(230, 193, 213);  color: rgb(194, 165, 181);  animation: flip_text 0.3s infinite;} @keyframes flip_text { 20% { transform: rotate(2deg); }}
+/* .nav_box3 {  color: rgb(230, 193, 213);  color: rgb(194, 165, 181);  animation: flip_text 0.3s infinite;} @keyframes flip_text { 20% { transform: rotate(2deg); }} */
+.nav_box3 {  color: rgb(230, 193, 213);  color: rgb(194, 165, 181);  } 
+
 
 .nav_box7_mobile {  
   visibility: hidden;  
   padding: 0;  margin: 0;  
   width: 0;  height: 0;  font-size: 0; 
 }
+
   
 /* NAVIGATION LINKS */
 .nav_background nav div a, .nav_box {
@@ -286,16 +298,20 @@ nav {
 
 /******************************************************************************/
 /* MOBILE NAVIGATION OVERLAY */
+
 .overlay {
   height: 0%;  width: 100%;
   position: fixed;  top: 0;  left: 0;  z-index: 1;
-  background-color: #1c1c22;
+  /* position: fixed;  top:4rem;  right: 0;  z-index: 1; */
+  /* background-color: #1c1c22;  */
+  background-image: linear-gradient(to bottom, #1c1c22, #1c1c22, #1c1c22bd);
+
   overflow-y: hidden;
-  transition: 0.666s ease-out;
+  transition: 0.336s ease-out; 
 }
 .overlay-content {
   position: relative;  top: 10vh;  margin-top: 10vh; width: 100%;
-  text-align: center; 
+  text-align:center; 
 }
 .overlay a:not(.close_X) {
   padding: 8px;
@@ -304,8 +320,11 @@ nav {
   display: block;
   font-size: 40px;
   transition: 0.666s;
+  /* background-color: red; */
 }
+
 .overlay a:hover,.overlay a:focus {  color: var(--main_white_100);  /* transform: scale(1.1); */}
+
 .overlay .close_X {  /*compare mq mobile nav box 7  line 1228*/
   position: absolute;   top: 0;  right: 0;
   display: flex !important;  align-items: center;  justify-content: center;
@@ -313,6 +332,7 @@ nav {
   margin: 0;  padding: 0 15px 0 0;
   font-size: 7.5vh;
   background-color: none;
+  /* background-color: green; */
 }
 
 
@@ -659,5 +679,7 @@ footer {
   color: rgba(228, 228, 228, 0.733);
   margin: 0;  padding: 0 50px 20px 0;
 } */
+
+
 
 

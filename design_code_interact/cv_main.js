@@ -9,6 +9,12 @@ console.table(`hello Hello`)
 
 // up BUTTON
 
+const scrollToEl = (id) => {
+    document.querySelector(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+
 const toTopButton = document.getElementById("up_button");
 
 window.onscroll = () => { showBtnOnScrollDown() };
@@ -28,11 +34,26 @@ const goToTop = () => {
 }
 
 
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+
+function reloadAndGoToTop() {
+  // Scroll to top smoothly
+    window.location.reload();
+}
+
+
 
 
 // mobile nav
 
-const openMobileNav = () => { document.getElementById("mobileNavOverlay").style.height = "100%"; }
+// const openMobileNav = () => { document.getElementById("mobileNavOverlay").style.height = "60%"}
+const openMobileNav = () => {
+  const nav = document.getElementById("mobileNavOverlay");
+  nav.style.height = "100%";
+  nav.style.width = "100%"; // Example: full width
+};
+
 const closeMobileNav = () => { document.getElementById("mobileNavOverlay").style.height = "0%"; }
 
 
