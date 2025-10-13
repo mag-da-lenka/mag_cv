@@ -1,0 +1,63 @@
+.typewriter_area {
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: .0em;
+  animation: typing 1.666s steps(66, start);
+  margin: 0; 
+  padding: 1rem 0 1rem 0; 
+  width: auto;
+}
+@keyframes typing {  
+  from {width: 0}  
+    to {width: 60vw} 
+}
+
+
+
+.opacity-transition-0-100-00 {  animation-name: opacity-0-100-transition-keyframe0;   animation-duration: 0.010s;}
+@keyframes opacity-0-100-transition-keyframe0 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01 {  animation-name: opacity-0-100-transition-keyframe1;   animation-duration: 1.100s;}
+@keyframes opacity-0-100-transition-keyframe1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.200s;}
+@keyframes opacity-0-100-transition-keyframe2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03 {  animation-name: opacity-0-100-transition-keyframe3;   animation-duration: 3.300s;}
+@keyframes opacity-0-100-transition-keyframe3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 4.400s;}
+@keyframes opacity-0-100-transition-keyframe4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-05 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 5.500s;}
+@keyframes opacity-0-100-transition-keyframe5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }} 
+
+.opacity-transition-0-100-00 {  animation-name: opacity-0-100-transition-keyframe0;   animation-duration: 0.010s;}
+@keyframes opacity-0-100-transition-keyframe0 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01 {  animation-name: opacity-0-100-transition-keyframe1;   animation-duration: 1.000s;}
+@keyframes opacity-0-100-transition-keyframe1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.600s;}
+@keyframes opacity-0-100-transition-keyframe2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03 {  animation-name: opacity-0-100-transition-keyframe3;   animation-duration: 2.200s;}
+@keyframes opacity-0-100-transition-keyframe3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 2.800s;}
+@keyframes opacity-0-100-transition-keyframe4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-05 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 3.400s;}
+@keyframes opacity-0-100-transition-keyframe5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+
+
+
+
+.glow {
+  -webkit-animation: glow 0.5s ease-in-out infinite alternate;
+  -moz-animation: glow 0.5s ease-in-out infinite alternate;
+  animation: glow 1.666s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from { text-shadow:
+      0 0 0.05rem rgb(194, 165, 181),
+      0 0 0.05rem rgb(194, 165, 181),
+      0 0 0.05rem rgb(194, 165, 181),
+      0 0 0.10rem rgb(209, 203, 207),
+      0 0 0.15rem rgb(209, 203, 207),
+      0 0 0.20rem rgb(209, 203, 207)
+  }
+  to { text-shadow:
+    0 0 0.05rem rgb(194, 165, 181),
+  }
+}

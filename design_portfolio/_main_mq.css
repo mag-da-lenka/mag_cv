@@ -1,0 +1,447 @@
+/*MQ1*/ 
+
+@media screen and (max-width: 1279px) {
+
+  body { 
+    display: flex; 
+    flex-direction: column; 
+    /* background-color: blue; */
+  }
+
+  html { font-size: 18px;}
+
+  .break_mobile_none {display: none;} 
+
+  .anchor {position: absolute; margin: -10.666vh;} 
+
+  nav { width: 90vw; }
+
+  
+  .screen1, .screen2, .screen3, .screen4, .screen5, 
+  .screen_flex_layout1, 
+  .scr1_articles,  
+  .scr1_article1_magda,
+  .screen_flex_layout2, 
+  .screen_flex_layout3,
+  .screen_flex_layout4, 
+  .screen_flex_layout5 { 
+    /* screen 6 - done separately */  
+    width: 90vw;   
+    flex-direction: column;  
+  }
+ 
+  .scr1_articles{   
+    flex-direction: row;  
+    align-items: flex-start; 
+    padding-top:10rem;  
+    width: 90vw; 
+  }  
+  .scr1_article1_magda { 
+    width: 60vw;  
+    flex-direction: column; 
+  }
+
+  .screen_title    {    
+    width: 100%; 
+    /* padding: 1.0rem 0 4.0rem 0;  */
+  }
+  
+
+  .main-ux-projects {  
+    width: 100%; 
+  }
+  .ux-project-container { 
+    flex-direction: column;
+    margin: 0 0 4vw 0;  
+    width: 43vw;
+  }
+  .ux-project-container .project_image {  
+  width: 100%;  
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  }
+  .ux-project-text-box {
+    padding: 2rem; 
+  }
+  .ux-project-container h3 {
+    font-size: 1.60rem;  
+  }
+  .ux-project-container button {
+    width: 100%;
+  }
+
+  .screen6 {
+    flex-direction:column; 
+    width: 90vw;   
+  }
+  .screen_flex_layout6 {  
+    flex-direction:row; 
+    width: 90vw;   
+  }
+  .screen_flex_layout6 main {  
+    width: 60vw; 
+  }
+  .screen_flex_layout6 aside {
+    width: 28vw; 
+    padding: 0;  
+    margin: 0;
+  }
+
+  .footer_content {
+    width: 90vw;
+  }
+  
+}  
+
+
+  
+
+/*MQ2*/ 
+
+@media screen and (max-width: 1023px) {  
+
+  html { font-size: 18px;}
+
+  /* body { background-color: blueviolet; }  */
+
+  nav { width: 80vw; }
+  
+  .screen1, 
+  .screen2, 
+  .screen3,   
+  .screen4, 
+  .screen5, 
+  .screen_flex_layout1, 
+  .scr1_articles,  
+  .scr1_article1_magda,
+  .screen_flex_layout2, 
+  .screen_flex_layout3,
+  .screen_flex_layout4, 
+  .screen_flex_layout5 { 
+    /* screen 6 - done separately */  
+    width: 80vw;   
+  }
+   .scr1_articles{   
+    width: 80vw; 
+  }  
+  .scr1_article1_magda { 
+    width: 70vw;  
+  }
+
+   
+  /* USE CASES SCREEN */
+  .main-ux-projects {  
+    flex-direction: column; 
+    align-items: center; /* centering cards */
+  }
+  .ux-project-container { 
+    flex-direction: column; 
+    margin: 0 0 10vw 0;  
+    width: 100%; 
+    width: 80vw; 
+  }
+  .ux-project-container .project_image {  
+  width: 100%;  
+  border-radius: 0.4rem 0.4rem 0rem 0rem;
+  }
+  /* text box - temporarily centered for all projects */
+ .ux-project-text-box {
+  align-items: center;
+ }
+  /* text magic - h3 temporarily centered for all projects */
+  .ux-project-container h3 {
+    font-size: 2.60rem; 
+    padding: 0 0 2rem 0;
+    /* text-align: center;  */
+  }
+  /* <div> p p </div> columns - HTML test for Impact Roasters, annotated */
+  .flex_direction_toggle {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  }
+  .flex_direction_toggle p {
+   width: 46%;
+  }
+  /* temporarily narrowed down for all projetcs */
+  .ux-project-container button {
+    width: 260px; /* as in non-mq setup*/ 
+    width: 100%;  /* as in mq1 setup*/ 
+  }
+
+
+
+  .screen6 {
+    width: 80vw;   
+  }
+  .screen_flex_layout6 {  
+    flex-direction: column;
+    width: 80vw;   
+  }
+
+  main:not(.screen_flex_layout6 main)  { order: -1;  }
+ 
+  .screen_flex_layout6 main {  
+    width: 80vw; 
+  }
+  .screen_flex_layout6 aside {
+    width: 80vw; 
+    padding: 0;  
+    margin: 0 0 2rem 0;
+  }
+
+  
+  .footer_content {
+    width: 80vw;
+  }
+
+  .footer_content p {
+    font-size: 1.0rem;
+    text-align: left;
+  }
+
+
+}
+
+
+
+/*MQ3*/ 
+
+@media screen and (max-width: 700px) { 
+
+  /* body {   background-color: darkgreen  }  */
+        
+  html {  font-size: 16px;  }
+
+  /* .scr1_articles{   padding: 12vw 0 0 0 }  */
+  /* TO RECONSIDER!!! */
+
+  .ux-project-container h3 {
+    font-size: 6.0vw; /* switching to vw from rem*/
+    padding: 0 0 2rem 0;
+  }
+
+
+
+
+  /* widescreen navigation hidden */
+  .nav_box, 
+  .nav_box1, .nav_box2, .nav_box3, 
+  .nav_box4, .nav_box5, .nav_box6 {  
+    display: none; 
+  }  
+        
+  /* widescr navigation is 4rem high, with font size 1.5rem */
+
+
+  /* mobile  navigation is 4rem high, with font size 2.0rem */
+
+  .mobile_nav_background {  
+    display: flex;  
+    flex-direction: row;
+    width: 100%;  
+    height: 4rem;     /*must match the closing X container's height */
+    margin: 0 auto;  
+    padding: 0;  
+  }
+
+  /* mobile nav content: Magda and burger */
+  .nav_box7_mobile { 
+    visibility: visible;  
+    display: flex;  
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+    height: 4rem;        /*must match the closing X container's height */
+    width: 80vw; 
+    font-size: 2.0rem;   /*must match the closing X's size */
+    border: none;   
+    cursor: pointer; 
+    /* border: aquamarine solid 1px;     */
+  } 
+  
+  /* mobile nav content > Magda's div */
+  .nav_box7_mobile_l { width: 50%; display: flex; justify-content: flex-start; } 
+
+  /* mobile nav content > Burger's div */
+  .nav_box7_mobile_r { width: 50%; display: flex; justify-content: flex-end;   } 
+
+  
+  .overlay {
+    display: block;
+    height: 0%;  /* hidden in wide screen --- visibility triggered by function*/
+    width: 100%;
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    z-index: 1;
+    background-image: linear-gradient(to bottom, #1c1c22, #1c1c22, #1c1c22bd);
+    overflow-y: hidden;
+    transition: 0.336s ease-out; 
+  }
+
+
+
+  /* CLOSING X container on overlay - crisp version  */
+  .potato {
+    width: 80vw;
+    display: flex; 
+    flex-direction: row;
+    /* border: aquamarine solid 1px;  */
+  }
+  .overlay .close_M { 
+    display: flex;  
+    align-items: center; 
+    justify-content: flex-start;
+    width: 39.6vw;       /*0.4vw removed, otherwise jumpy!!! */
+    height: 4rem;        /*must match the mobile nav's height */
+    padding: 0; 
+    margin: 0 auto;  
+    font-size: 2.0rem;    /*must match the burger's size */
+    font-weight: 100;     /*no extra weight to match Magda from mobile nav */
+    cursor: pointer;
+  } 
+  .overlay .close_X { 
+    display: flex;  
+    align-items: center; 
+    justify-content: flex-end;
+    width: 40vw;  
+    height: 4rem;        /*must match the mobile nav's height */
+    padding: 0; 
+    margin: 0 auto;  
+    font-size: 2.0rem;    /*must match the burger's size */
+    font-weight: 600;     /*extra weight to match burger */
+    cursor: pointer;
+  } 
+
+
+  .overlay-content { /* overlay > div  */
+    position: relative;  
+    top: 10vh;  
+    margin-top: 10vh; 
+    width: 100%;
+    text-align:center; 
+  }
+  .overlay a:not(.close_X) { /* overlay > div > link line */
+    padding: 0 0 4rem 0;
+    text-decoration: none;
+    color: var(--main_white_100);
+    display: block;
+    font-size: 2rem;
+    transition: 0.666s; 
+    /* color: yellow; */
+  }
+  .overlay a:hover, /* overlay > div > link line :: pseudoclasses */
+  .overlay a:focus,
+  .overlay a:active {  
+    color: var(--main_white_hover); 
+    /* minimal styling for touch devices */
+  }
+
+
+
+  /* mobile nav links hit separately and given styling for mobile pseudoclasses */
+
+  .nav_box7_mobile_l,
+  .nav_box7_mobile_r,
+  .potato .close_M, 
+  .potato .close_X  
+  {
+    color: var(--main_white_white);
+    cursor: pointer;
+    transition: 0.366s ease-out; 
+    /* text-decoration: none;   */
+    text-decoration-style: dotted; 
+    text-decoration-color: rgba(255, 255, 255, 0);
+    text-underline-offset: 0.48rem; 
+    text-decoration-thickness: 0.06rem; 
+    /* color: lime; */
+  }
+
+  .nav_box7_mobile_l:hover,
+  .nav_box7_mobile_r:hover,
+  .potato .close_M:hover, 
+  .potato .close_X:hover,
+  .nav_box7_mobile_l:focus,
+  .nav_box7_mobile_r:focus,
+  .potato .close_M:focus, 
+  .potato .close_X:focus,
+  .nav_box7_mobile_l:active,
+  .nav_box7_mobile_r:active,
+  .potato .close_M:active, 
+  .potato .close_X:active {
+    color: var(--main_white_hover);
+    text-decoration-color: var(--main_accent_100);
+    /* color: rgb(159, 255, 159); */
+  }
+
+
+  .footer_content p {
+    font-size: 2.6vw; 
+  }
+
+
+}  
+
+
+
+
+/*MQ4*/ 
+
+@media screen and (max-width: 480px) {
+
+/* body {   background-color: darkolivegreen  }   */
+
+html {  font-size: 15px;  }       
+       
+}
+
+
+
+
+
+/*MQ5*/      
+
+@media screen and (max-width: 400px) {
+
+  /* body {background-color: darkred}  */
+
+  html {font-size: 13.6px; letter-spacing: 0.03rem;} 
+
+  button  {width: 100%;} 
+
+  .footer_content p {
+  font-size: 1rem; 
+  }
+  
+}
+
+
+
+
+/*MQ6*/  
+
+@media screen and (max-width: 300px) {
+
+  /* body {   background-color: orange;  }  */
+
+  html {  font-size: 4vw;}
+
+}
+
+
+/* MQ6 ORANGE  :: min 0001px --- max 0300px */ 
+/* MQ5 DrkRED  :: min 0301px --- max 0400px */ 
+/* MQ4 OlivGr  :: min 0401px --- max 0480px */ 
+/* MQ3 OlivGr  :: min 0481px --- max 0700px */ 
+/* MQ2 VIOLET  :: min 0701px --- max 1023px */ /* 0701px-1023px: tablet portrait*/ 
+/* MQ1 d-BLUE  :: min 1024px --- max 1279px */ /* 1024px: iPadPro landscape */ /* 1200px: small desktop */ 
+
+
+
+/* @media screen and (max-width: 1279px) { body { background-color: blue;}}  
+@media screen and (max-width: 1023px) { body { background-color: blueviolet;}}
+@media screen and (max-width:  700px) { body { background-color: darkgreen;}}  
+@media screen and (max-width:  480px) { body { background-color: darkolivegreen;}}   
+@media screen and (max-width:  400px) { body { background-color: darkred;}}
+@media screen and (max-width:  300px) { body { background-color: orange;}} */
+

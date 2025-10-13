@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Magdalena Wojtakowska Voigt - Design Portfolio">
+    <meta name="keywords"
+        content=" product designer, UX, UI, UX/UI, web developer, software engineer, frontend, backend">
+    <meta name="author" content="Magdalena Wojtakowska Voigt">
+
+    <title> Magda - Design Portfolio </title>
+
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+
+    <link rel="stylesheet" href="_main_animations.css">
+    <link rel="stylesheet" href="_main_slides_acc.css">
+    <link rel="stylesheet" href="_main.css">
+    <link rel="stylesheet" href="_main_mq.css">
+
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
+</head>
+
+
+
+<body id="holo_fun" onmousemove="handleMouseMove(event)">
+
+
+    <div class="hero-image"></div> <!-- attribution in the footer -->
+    <div class="hero-image-slideshow"></div>
+
+    <button onclick="goToTop()" id="takeMeUp" title="to top">
+        <a class="button_content">&#8593;</a>
+    </button>
+
+
+
+    <!-- SCREEN 01 a > NAVIGATION  -->
+    <!-- ************************* -->
+
+    <div class="nav_background">
+
+        <nav>
+
+            <!-- widescreen -->
+            <div class="nav_left">
+                <div class="nav_box1">
+                    <a href="#" onclick="reloadEverything()">
+                        Magda
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav_right">
+                <div class="nav_box3">
+                    <a href="#design-experience-link" onclick="scrollToEl('#design-experience-link')">
+                        Projects
+                    </a>
+                </div>
+                <div class="nav_box6">
+                    <a href="#contact-link" onclick="scrollToEl('#contact-link')">
+                        Contact
+                    </a>
+                </div>
+
+
+                <!-- mobile -->
+                <div class="mobile_nav_background">
+
+                    <!-- before opening-->
+                    <div class="nav_box7_mobile">
+
+                        <div class="nav_box7_mobile_l" href="#" onclick="reloadEverything()">
+                            Magda
+                        </div>
+
+                        <!-- <a class="nav_box7_mobile_l" href="#" onclick="reloadEverything()">
+                            M1_a
+                        </a>
+
+                        <div class="nav_box7_mobile_l" href="#" onclick="window.location.reload()">
+                            M2
+                        </div>
+
+                        <div class="nav_box7_mobile_l" href="#" onclick="window.location.hash='#'; window.location.reload();">
+                            M3
+                        </div> -->
+
+                        <div class="nav_box7_mobile_r" onclick="openMobileNav()">
+                            &#9776;<!-- burger -->
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- overlay open -->
+                    <div class="overlay" id="mobileNavOverlay">
+
+                        <span class="potato">
+
+                            <div class="close_M" href="#" onclick="reloadEverything()">
+                                Magda
+                            </div>
+
+                            <!-- <a class="close_M" href="#" onclick="reloadEverything()">
+                                M1_a
+                            </a>
+
+                            <div class="close_M" href="#" onclick="window.location.reload()">
+                                M2
+                            </div>
+
+                            <div class="close_M" href="#" onclick="window.location.hash='#'; window.location.reload();">
+                                M3
+                            </div> -->
+
+                            <div class="close_X" href="javascript:void(0)" onclick="closeMobileNav()">
+                                &#10005;<!-- closing X -->
+                            </div>
+
+                        </span>
+
+                        <div class="overlay-content">
+                            <!-- <a href="#" ; onclick="window.location.hash='#'; window.location.reload();">
+                                Magda
+                            </a> -->
+                            <a href="#design-experience-link" ; onclick="closeMobileNav()">
+                                Projects
+                            </a>
+                            <a href="#contact-link" onclick="closeMobileNav()">
+                                Contact
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- SCREEN 01 b > I am Magda  -->
+    <!-- ************************* -->
+
+
+    <div class="mySlides1"></div> <!-- currently unused, but my mugshot depends on them -->
+    <div class="mySlides2"></div> <!-- currently unused, but my mugshot depends on them -->
+
+    <header class="screen1">
+        <div class="screen_flex_layout1">
+
+            <div class="scr1_articles">
+
+                <article class="scr1_article1_magda">
+
+                    <section class="opacity-transition-0-100-01">
+                        <div class="autoslides_container_outer">
+                            <div>
+                                <div class="autoslides_container">
+                                    <div class="auto_slides auto_fade"> <img class="auto_images"
+                                            src="./images/main_main/mag_lumi.png"> </div>
+                                    <div class="auto_slides auto_fade">
+                                        <img class="auto_images" src="./images/main_main/mag_lumi.png">
+                                    </div>
+                                    <div class="auto_slides auto_fade">
+                                        <img class="auto_images" src="./images/main_main/mag_lumi.png">
+                                    </div>
+                                    <div class="auto_slides auto_fade">
+                                        <img class="auto_images" src="./images/main_main/mag_lumi.png">
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="auto_dots" style="width:0%; height: 0%;"></span>
+                                    <span class="auto_dots"></span>
+                                    <span class="auto_dots"></span>
+                                    <span class="auto_dots"></span>
+                                    <span class="auto_dots"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+
+                        <h4 class="typewriter_area">
+                            I am Magda, a <span class="glow" class="opacity-transition-0-100-01">UX/UI Designer</span>.
+                            <!-- <span class="char_desaturated">🛠🎨</span> -->
+                        </h4>
+                        <p class="opacity-transition-0-100-02 large">
+                            With agency and freelance background, I blend UX strategy, scalable UI systems, SaaS,
+                            front-end development expertise, and hands-on experience with AI workflows.
+                        </p>
+                        <p class="opacity-transition-0-100-03 large">
+                            My work spans web and cross-platform products, with a strong focus on accessibility and
+                            internationalisation.
+                        </p>
+                        <p class="opacity-transition-0-100-04 large">
+                            I turn research insights into implementation-ready designs, collaborating with individual
+                            contributors, managers, and stakeholders in cross-functional teams to deliver user-centered
+                            solutions that meet business goals. 🚀
+                        </p>
+                    </section>
+
+
+                    <section class="opacity-transition-0-100-05">
+                        <button>
+                            <a href="#design-experience-link" class="button_content" ;
+                                onclick="scrollToEl('#design-experience-link')">
+                                See my work
+                            </a>
+                        </button>
+                        <!-- <button>
+                            <a href="#" class="button_content" ; onclick="scrollToEl('#')">
+                                Test ME
+                            </a>
+                        </button> -->
+                    </section>
+
+                </article class="scr1_article1_magda">
+
+            </div class="scr1_articles">
+        </div class="screen_flex_layout1">
+    </header class="screen1">
+
+
+
+
+
+    <!-- SCREEN 02 > Projects -->
+    <!-- ******************** -->
+
+    <div class="screen2">
+
+        <div class="anchor" id="design-experience-link"></div>
+
+        <div class="screen_title" style="display: inline-block;">
+            <h1>UX/UI projects</h1>
+            <br><br>
+            <p class="large">
+                I am currently leading design of a personalised educational platform centered around conversational AI:
+                from strategy and research to a scalable design system that is ready for internationalisation,
+                accessible and developer-friendly.
+            </p>
+            <p class="large">
+                My previous projects have involved creating design systems for
+                <a class="text_link" href="https://www.anthill.technology/activator" target="_blank"
+                    rel="noopener noreferrer">
+                    Activator
+                </a>
+                - a content management system trusted by pharmaceutical companies worldwide. These projects are
+                protected by copyright law and will not be shown.
+            </p>
+            <br>
+            <p class="large">
+                Curious how I work and think? Check below.
+            </p>
+            <br>
+        </div>
+
+        <br>
+
+
+
+        <div class="screen_flex_layout2">
+
+            <main class="main-ux-projects">
+
+                <!-- IMPACT ROASTERS -->
+                <div class="ux-project-container">
+                    <img class="project_image" src="./images/sub_impact_roasters/team_for_main.png"
+                        alt="restaurant project landing page">
+                    <div class="ux-project-text-box">
+                        <div>
+                            <h3>
+                                Impact Roasters Decoded
+                            </h3>
+                            <!-- <div class="flex_direction_toggle"> -->
+                            <p>
+                                Boosting checkout conversion rate and ROI by democratizing customer journey so that
+                                even a coffee newbie can choose the right beans fast and frictionless.
+                                <span class="unbreakable">☕💰📈</span>
+                                <!-- UXR, stakeholder's interview; visual design, content writing, testing, wireframes, prototype -->
+                            </p>
+                            <p class="small">
+                                <span class="highlight">#️</span>empathy-driven UX meets business goals
+                                <span class="highlight">#️</span>game-changing feature
+                                <span class="highlight">#️</span>inclusivity
+                                <span class="highlight">#️</span>shitfing entry points
+                                <span class="highlight">#️</span>interaction design
+                            </p>
+                            <!-- </div> -->
+                            <div class="breathe"></div>
+                        </div>
+                        <button>
+                            <a href="case_impact_roasters.html" class="button_content" ; onclick="scrollToEl('#')">
+                                Discover how ☕
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- GREEN LOVE -->
+                <div class="ux-project-container">
+                    <img class="project_image" src="./images/sub_green_love/widescr_home_slide_02_v3.png"
+                        alt="restaurant project landing page">
+                    <div class="ux-project-text-box">
+                        <div>
+                            <h3>
+                                Green Love Cleanup
+                            </h3>
+                            <p>
+                                <!-- Turning chaotic landing page and site architecture into a clear, accessible and
+                                conversion-optimized experience that speaks to both values and usability. -->
+                                From cluttered clicks to confident conversions. Redesigning chaotic landing page and
+                                site flows into streamlined, user-first journeys that boost engagement and ROI.
+                                <span class="unbreakable">🌱🧭📈</span>
+                            </p>
+                            <p class="small">
+                                <span class="highlight">#️</span>user-centered redesign
+                                <span class="highlight">#️</span>accessibility
+                                <span class="highlight">#️</span>content clarity
+                                <span class="highlight">#️</span>visual hierarchy
+                                <span class="highlight">#️</span>conversion boost
+                                <span class="highlight">#️</span>tight budget
+                            </p>
+                            <div class="breathe"></div>
+                        </div>
+                        <button>
+                            <a href="case_green_love.html" class="button_content" ; onclick="scrollToEl('#')">
+                                Discover how 🌿
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- SPICES -->
+                <div class="ux-project-container">
+                    <img class="project_image" src="./images/sub_simply_spices/landing_page_01v3_not_logged_page_2.jpg"
+                        alt="restaurant project landing page">
+                    <div class="ux-project-text-box">
+                        <div>
+                            <h3>
+                                B2C E-commerce Platform
+                            </h3>
+                            <p>
+                                Optimizing for high-volume sales, combining frictionless checkout and
+                                scalable logistics to drive conversion and customer retention. Built by junior
+                                full-stack developers.
+                                <span class="unbreakable">👨‍💻🎓🎉</span>
+                            </p>
+                            <p class="small">
+                                <span class="highlight">#️</span>mentoring developers
+                                <span class="highlight">#️</span>code-enhanced prototyping
+                                <span class="highlight">#️</span>cross-functional team
+                                <span class="highlight">#️</span>visual delight
+                                <span class="highlight">#️</span>agile
+                                <span class="highlight">#️</span>deadlines
+                            </p>
+                            <div class="breathe"></div>
+                        </div>
+                        <button>
+                            <a href="case_spice_store.html" class="button_content" ; onclick="scrollToEl('#')">
+                                Discover how 🛒
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- KAOSPILOT -->
+                <div class="ux-project-container">
+                    <img class="project_image" src="./images/sub_kaospilot_toolbox/kaos_product_page_1.png"
+                        alt="restaurant project landing page">
+                    <div class="ux-project-text-box">
+                        <div>
+                            <h3>
+                                Kaospilot Teaching Toolbox
+                            </h3>
+                            <p>
+                                <!-- Helping teachers pack their class essentials in digestible chunks for easy access and
+                                work-life balance. -->
+                                <!-- Helping teachers digitize their shared workshop notes into tablet-friendly, scalable
+                                libraries accessible to all staff to save time and improve work-life balance.  -->
+                                Helping teachers digitize shared workshop notes into tablet-friendly, scalable libraries
+                                that are accessible to all staff - saving time and improving work-life balance.
+                                <span class="unbreakable">👩🏻‍🏫🗂️🧘🏻‍♀️</span>
+                            </p>
+                            <p class="small">
+                                <span class="highlight">#️</span>user-centricity
+                                <span class="highlight">#️</span>evidence-based solutions
+                                <span class="highlight">#️</span>accessible UI
+                                <span class="highlight">#️</span>saving trees
+                                <span class="highlight">#️</span>cross-functional team
+                                <span class="highlight">#️</span>agile
+                            </p>
+                            <div class="breathe"></div>
+                        </div>
+                        <button>
+                            <a href="case_kaospilot.html" class="button_content" ; onclick="scrollToEl('#')">
+                                Discover how ✈️
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+
+            </main class="main-ux-projects">
+        </div>
+
+    </div class="screen2">
+
+
+
+
+
+
+
+
+
+    <!-- SCREEN 06 > CONTACT  -->
+
+    <div class="screen6">
+
+        <!-- anchor contact  -->
+        <div class="anchor" id="contact-link"></div>
+
+        <div class="screen_title">
+            <h1>Contact</h1>
+            <br><br>
+        </div>
+        <br>
+
+        <div class="screen_flex_layout6">
+
+            <aside class="clearfix">
+                <div class="address">
+                    <!-- <br><br> -->
+
+                    <!-- gmail -->
+                    <div class="contact_icon_line_mag">
+
+                        <a href="mailto:magdalena.s.wojtakowska@gmail.com" target="_blank" rel="noopener noreferrer">
+                            magda.uxui.design@gmail.com</a> &nbsp;
+
+                        <div class="space_1vw"></div>
+
+                        <a href="mailto:magda.uxui.design@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <img class="icon_link" src="./icons/ic_mail2.png" alt="gmail icon"></a>
+
+                    </div>
+
+                    <!-- linked in -->
+                    <div class="contact_icon_line_mag">
+
+                        <a href="http://www.linkedin.com/in/magdalena-voigt/" target="_blank" rel="noopener noreferrer">
+                            linkedin/magdalena-voigt/</a> &nbsp;
+
+                        <div class="space_1vw"></div>
+
+                        <a href="http://www.linkedin.com/in/magdalena-voigt/" target="_blank" rel="noopener noreferrer">
+                            <img class="icon_link" src="./icons/ic_in.png" alt="LinkedIn icon"></a>
+
+                    </div>
+
+                    <!-- git hub -->
+                    <div class="contact_icon_line_mag">
+
+                        <a href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
+                            github.com/mag-da-lenka</a> &nbsp;
+
+                        <div class="space_1vw"></div>
+
+                        <a href="https://github.com/mag-da-lenka" target="_blank" rel="noopener noreferrer">
+                            <img class="icon_link" src="./icons/ic_gh.png" alt="GitHub icon"></a>
+
+                    </div>
+
+                    <!-- mobile phone -->
+                    <div class="contact_icon_line_mag">
+
+                        <a href="tel:+45 9185 9682" target="_blank" rel="noopener noreferrer">
+                            +45 91 85 96 82</a> &nbsp;
+
+                        <div class="space_1vw"></div>
+
+                        <a href="tel:+45 9185 9682" target="_blank" rel="noopener noreferrer">
+                            <img style="padding: 0.3rem;" class="icon_link" src="./icons/ic_call.png"
+                                alt="telephone icon"></a>
+
+                    </div>
+
+                </div class="address">
+            </aside>
+
+            <main class="clearfix" style="flex-direction:column;">
+                <!-- <br><br> -->
+                <p>
+                    I speak English, Polish, a little Danish, JavaScript and Music.
+                </p>
+                <p>
+                    I enjoy good sense of humour
+                    <span class="char_desaturated">😎&#128420;</span>
+                    Sci-Fi films
+                    <span class="char_desaturated"">👽🛸🚀</span>
+                    interacting with fellow non/human beings ^^
+                    <span class=" char_desaturated"> 😺</span>
+                    outdoor adventures
+                    <span class="char_desaturated">🎒⛺🔥📷</span>
+                    abandoned places
+                    <span class="char_desaturated"> &#9964; </span>
+                    deserts
+                    <span class="char_desaturated">&#128043;</span>
+                    water
+                    <span class=" char_desaturated">🌊⛵</span>
+                    (despite being a very wobbly swimmer)
+                    <span class="char_desaturated">&#129500;</span>
+                    creating jewellery
+                    <span class="char_desaturated">👩‍🏭💍</span> and interior decorations.
+                    <!-- <br class="break_mobile_none"> -->
+                    My fuel is music
+                    <span class="char_desaturated">🎹🎧</span>
+                    (to find out more book a day off).
+                </p>
+                <!-- <br> -->
+            </main>
+
+        </div class="screen_flex_layout6">
+    </div class="screen6">
+
+
+
+
+
+
+    <footer>
+        <div class="anchor" id="footer"></div>
+        <div class="footer_content">
+            <p class="small"> Site baked from scratch with Vanilla JS 🍦 by Magdalena &copy; 2019-2025
+                <time datetime='2019-10-09 23:00+0100'></time>
+            </p>
+            <p class="small">
+                Hero image: created by
+                <a class="text_link"
+                    href="https://stock.adobe.com/dk/contributor/205924963/allvision?load_type=author&prev_url=detail"
+                    target="_blank" rel="noopener noreferrer">
+                    allvision</a>, licensed legally from
+                <a class="text_link" href="https://stock.adobe.com/dk/images/astronaut-room/430310386" target="_blank"
+                    rel="noopener noreferrer"> Adobe Stock</a>.
+        </div class="blob">
+    </footer>
+
+
+
+    <script src="_main.js"></script>
+
+
+
+
+</body>
+
+
+</html>
