@@ -1,10 +1,10 @@
-/*MQ1*/ 
+/*MQ1 portrait*/ 
 
 @media screen and (max-width: 1279px) {
 
   body { 
-    display: flex; 
-    flex-direction: column; 
+    /* display: flex; 
+    flex-direction: column;  */
     /* background-color: blue; */
   }
 
@@ -16,9 +16,6 @@
 
   nav { width: 90vw; } 
 
-
-
-  
   .screen1, .screen2, .screen3, .screen4, .screen5, 
   .screen_flex_layout1, 
   .scr1_articles,  
@@ -34,28 +31,22 @@
 
   .hero-image, 
   .hero-image-slideshow {
-  height: calc(100vh - 0rem); /* why does it work? */
+  height: calc(100vh - 4rem); 
   }
 
-  .scr1_article1_magda { 
-    width: 60vw;                             
-  }
-
-  /* .screen1 {
-    border: dashed 4px red;                            
+  .screen1 {
+    height: auto;                          
   }
   .screen_flex_layout1 {
-    border: dashed 4px blue;                           
+    height: auto;                       
   }
-   .scr1_articles{   
-    border: dashed 4px green;                           
+   .scr1_articles{  
+    height: calc(100vh - 4rem - 2rem);                       
   }  
-  .scr1_article1_magda { 
-    border: dashed 2px orange;                           
+  .scr1_article1_magda {
+    width: 60vw;                              
   }
-  .scr1_article1_magda section {
-  border: dashed 2px yellow;                             
-  }   */
+
 
 
   .screen_title    {    
@@ -112,11 +103,70 @@
 }  
 
 
-  
+/*MQ1 landscape*/ 
 
-/*MQ2*/ 
+@media screen and (max-width: 1279px) and (orientation: landscape) {
+
+  .hero-image, 
+  .hero-image-slideshow {
+  height: calc(100vw - 4rem); 
+  }
+
+  .screen1 {
+    height: calc(100vw - 4rem);   
+                        
+  }
+  .screen_flex_layout1 {
+    height: 100%;                         
+  }
+   .scr1_articles{  
+    height: calc(100% - 4rem);                         
+  }  
+  .scr1_article1_magda {
+    padding: 1.5rem 0.5rem 0 0.5rem;   
+    width: 80vw;   
+    height: 100%;                        
+  }
+  .scr1_article1_magda section {
+    width: 100%;   
+    height: auto;   
+    margin: 0; 
+    padding: 0;                      
+  }  
+
+}
+
+
+
+
+
+
+
+
+
+/*MQ2 portrait*/ 
 
 @media screen and (max-width: 1023px) {  
+
+  /* portrait helpers */
+  /* .screen1 {
+    border: dashed 4px red;                            
+  }
+  .screen_flex_layout1 {
+    border: dashed 4px blue;                           
+  }
+   .scr1_articles{  
+     border: dashed 4px green;                           
+  }  
+  .scr1_article1_magda {
+    border: dashed 2px orange;                           
+  }
+  .scr1_article1_magda section {
+    border: dashed 2px yellow;                             
+  }  
+  .autoslides_container_outer.autoslides_container img {
+   border: solid white 2px;
+  } */
 
   html { font-size: 18px;}
 
@@ -139,11 +189,10 @@
     /* screen 6 - done separately */  
     width: 80vw;   
   }
-
-  .scr1_article1_magda { 
-    width: 70vw;  
+  
+  .scr1_article1_magda section {
+    width: 90%;
   }
-
    
   /* USE CASES SCREEN */
   .main-ux-projects {  
@@ -221,7 +270,7 @@
 
 
 
-/*MQ3*/ 
+/*MQ3 portrait*/ 
 
 @media screen and (max-width: 700px) { 
 
@@ -229,13 +278,59 @@
         
   html {  font-size: 16px;  }
 
-  /* .scr1_articles{   padding: 12vw 0 0 0 }  */
-  /* TO RECONSIDER!!! */
+  
+  nav { width: 90vw; }
+
+  .screen1, 
+  .screen2, 
+  .screen3,   
+  .screen4, 
+  .screen5, 
+  .screen_flex_layout1, 
+  .scr1_articles,  
+  .scr1_article1_magda,
+  .screen_flex_layout2, 
+  .screen_flex_layout3,
+  .screen_flex_layout4, 
+  .screen_flex_layout5 { 
+  /* screen 6 - done separately */  
+    width: 90vw;   
+  }
+  
+  .scr1_article1_magda {
+    overflow-y: scroll;  
+    padding-top: 0.4rem;  
+    gap: 0.4rem;             
+  }
 
   .ux-project-container h3 {
     font-size: 6.0vw; /* switching to vw from rem*/
     padding: 0 0 2rem 0;
   }
+
+  .ux-project-container { 
+    width: 90vw; 
+  }
+
+
+  .screen6 {
+    width: 90vw;   
+  }
+  .screen_flex_layout6 {  
+    width: 90vw;   
+  } 
+  .screen_flex_layout6 main {  
+    width: 90vw; 
+  }
+  .screen_flex_layout6 aside {
+    width: 90vw; 
+  }
+  .footer_content {
+    width: 90vw;
+  }
+
+
+ 
 
 
 
@@ -269,7 +364,7 @@
     margin: 0; 
     padding: 0; 
     height: 4rem;        /*must match the closing X container's height */
-    width: 80vw; 
+    width: 90vw; 
     font-size: 2.0rem;   /*must match the closing X's size */
     border: none;   
     cursor: pointer; 
@@ -300,7 +395,7 @@
 
   /* CLOSING X container on overlay - crisp version  */
   .potato {
-    width: 80vw;
+    width: 90vw;
     display: flex; 
     flex-direction: row;
     /* border: aquamarine solid 1px;  */
@@ -309,7 +404,7 @@
     display: flex;  
     align-items: center; 
     justify-content: flex-start;
-    width: 39.6vw;       /*0.4vw removed, otherwise jumpy!!! */
+    width: 44.6vw;       /*0.4vw removed, otherwise jumpy!!! */
     height: 4rem;        /*must match the mobile nav's height */
     padding: 0; 
     margin: 0 auto;  
@@ -321,7 +416,7 @@
     display: flex;  
     align-items: center; 
     justify-content: flex-end;
-    width: 40vw;  
+    width: 45vw;  
     height: 4rem;        /*must match the mobile nav's height */
     padding: 0; 
     margin: 0 auto;  
@@ -392,6 +487,12 @@
   }
 
 
+
+
+
+
+
+
   .footer_content p {
     font-size: 2.6vw; 
   }
@@ -405,10 +506,12 @@
 /*MQ4*/ 
 
 @media screen and (max-width: 480px) {
+  
 
 /* body {   background-color: darkolivegreen  }   */
 
-html {  font-size: 15px;  }       
+html {  font-size: 15px;  }   
+    
        
 }
 
@@ -454,7 +557,7 @@ html {  font-size: 15px;  }
 /* MQ1 d-BLUE  :: min 1024px --- max 1279px */ /* 1024px: iPadPro landscape */ /* 1200px: small desktop */ 
 
 
-
+/* MQ portrait */
 /* @media screen and (max-width: 1279px) { body { background-color: blue;}}  
 @media screen and (max-width: 1023px) { body { background-color: blueviolet;}}
 @media screen and (max-width:  700px) { body { background-color: darkgreen;}}  
@@ -462,3 +565,12 @@ html {  font-size: 15px;  }
 @media screen and (max-width:  400px) { body { background-color: darkred;}}
 @media screen and (max-width:  300px) { body { background-color: orange;}} */
 
+/* MQ landscape */
+/* @media screen and (max-width: 1279px) and (orientation: landscape) {
+  .screen1                                             {border: dotted 4px red;}
+  .screen_flex_layout1                                 {border: dotted 4px blue;}
+  .scr1_articles                                       {border: dotted 4px green;}  
+  .scr1_article1_magda                                 {border: dotted 2px orange;}
+  .scr1_article1_magda section                         {border: dotted 2px yellow;}  
+  .autoslides_container_outer.autoslides_container img {border: dotted 2px white;}
+} */

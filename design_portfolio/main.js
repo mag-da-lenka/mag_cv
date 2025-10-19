@@ -11,11 +11,30 @@ console.table(`hello Hello`)
 document.body.scrollTop = 0; // For Safari
 document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
 
-// for [Magda] in nav (wide & mobile)
-function reloadEverything() { 
-    window.location.hash = "#"; //added 
+// function reloadEverything() { 
+    // window.location.hash = "#"; 
+    // document.body.scrollTop
+    // window.location.reload();
+// }
+
+function reloadEverything() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  history.replaceState(null, '', window.location.pathname);
+  setTimeout(() => {
     window.location.reload();
+  }, 66);
 }
+
+// function reloadEverything2(event) {
+//   event.preventDefault();
+//   window.scrollTo({ top: 0, behavior: 'smooth' });
+//   history.replaceState(null, '', window.location.pathname);
+//   setTimeout(() => {
+//     window.location.reload();
+//   }, 666);
+// }
+
+
 
 // for Nav[Projects], Nav[Contact] and Button[Explore Projects]
 const scrollToEl = (id) => {

@@ -44,7 +44,7 @@ body {
 
 ::-webkit-scrollbar {  
   background-color: var(--main_dark_gray_100); 
-  width: 1px; 
+  width: 0px; 
   overflow-y: overlay; 
 }
 ::-webkit-scrollbar-track {
