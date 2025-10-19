@@ -14,7 +14,9 @@
 
   .anchor {position: absolute; margin: -10.666vh;} 
 
-  nav { width: 90vw; }
+  nav { width: 90vw; } 
+
+
 
   
   .screen1, .screen2, .screen3, .screen4, .screen5, 
@@ -29,17 +31,32 @@
     width: 90vw;   
     flex-direction: column;  
   }
- 
-  .scr1_articles{   
-    flex-direction: row;  
-    align-items: flex-start; 
-    padding-top:10rem;  
-    width: 90vw; 
+
+  .hero-image, 
+  .hero-image-slideshow {
+  height: calc(100vh - 0rem); /* why does it work? */
+  }
+
+  .scr1_article1_magda { 
+    width: 60vw;                             
+  }
+
+  /* .screen1 {
+    border: dashed 4px red;                            
+  }
+  .screen_flex_layout1 {
+    border: dashed 4px blue;                           
+  }
+   .scr1_articles{   
+    border: dashed 4px green;                           
   }  
   .scr1_article1_magda { 
-    width: 60vw;  
-    flex-direction: column; 
+    border: dashed 2px orange;                           
   }
+  .scr1_article1_magda section {
+  border: dashed 2px yellow;                             
+  }   */
+
 
   .screen_title    {    
     width: 100%; 
@@ -68,6 +85,8 @@
   .ux-project-container button {
     width: 100%;
   }
+
+
 
   .screen6 {
     flex-direction:column; 
@@ -120,9 +139,7 @@
     /* screen 6 - done separately */  
     width: 80vw;   
   }
-   .scr1_articles{   
-    width: 80vw; 
-  }  
+
   .scr1_article1_magda { 
     width: 70vw;  
   }

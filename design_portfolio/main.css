@@ -373,6 +373,7 @@ nav {
 .hero-image {
   position: absolute;  z-index: -2;  margin-top: 0rem;  left: 0;  right: 0;
   height: 100vh;   
+  height: calc(100vh - 4rem); /* hero image minus wide nav*/
   width: 100%;
   background: url('./images/main_main/astronaut_AdobeStock_430310386.jpeg') fixed center;
   background-size: cover;
@@ -381,7 +382,8 @@ nav {
 }
 .hero-image-slideshow {
   position: absolute;  z-index: -1;  margin-top: 0rem;  left: 0;  right: 0;
-  height: 100vh;    
+  height: 100vh;  
+  height: calc(100vh - 4rem); /* hero image minus wide nav*/
   width: 100%; 
   background: url('./images/main_main/astronaut_AdobeStock_430310386.jpeg') fixed center; 
   filter: opacity(010%) saturate(010%);
@@ -420,22 +422,11 @@ nav {
 
 .screen1,.screen2,.screen3,.screen4,.screen5,.screen6 {
   background-color: none;
-  margin-top: 2rem;  /* the height of nav */ 
+  margin-top: 2rem;  /* 1/2 height of nav */ 
   margin-bottom: 6rem;  
-  padding:0;
+  padding: 0 0 0 0;
   width: 1100px;
   display: flex;   flex-direction: column; 
-}
-
-.screen1 {
-  min-height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  background-size: 100vw; 
-  background-position-x: center;
-  background-position-y: top;
-  background-repeat: no-repeat;
-  transform: scale(1); 
 }
 
 .screen_flex_layout1,
@@ -446,28 +437,51 @@ nav {
 .screen_flex_layout6 {
   display: flex; 
   width: 1100px; /* <- aside + main widths*/
-  padding: 0; 
   margin: 0 auto; 
 }
 
+
+/* SCREEN 1 OVERRIDES */
+
+.screen1 {
+  width: 100vw;
+  height: calc(100vh - 4rem); /* hero image minus wide nav*/
+  margin-top: 4rem;  /* the height of nav */ 
+  background-size: cover;
+  background-size: 100vw; 
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  transform: scale(1); 
+  /* border: solid 4px red;                              */
+}
+
 .screen_flex_layout1 {
-  flex-direction: column;
+  flex-direction: column; 
+  height:100%;
+  /* border: solid 4px blue;                           */
 }
 
 .scr1_articles {
-  display: flex;  align-items: center;
-  background-image: linear-gradient(#1c1c22b3, #1c1c2200) ; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; /*top padding === bottom padding */ 
+  /* align-items: center; */ /*legacy from row setup */ 
   width: 1100px;
-  min-height: 100vh;
+  height:100%;
   margin: 0 auto;  
+  background-image: linear-gradient(#1c1c22b3, #1c1c2200) ; 
+  /* border: solid 4px green;                            */
 }
 
 .scr1_article1_magda {
-  display: flex;   flex-direction: column;   
+  display: flex;   
+  flex-direction: column;   
   align-items: center; 
   gap: 1rem; 
   width: 800px; 
-  height: 90%; 
+  height: auto; 
+  /* border: solid 2px orange;                            */
 }
 
 .scr1_article1_magda section {
@@ -476,6 +490,7 @@ nav {
   margin: 0 auto;
   margin: 0;
   padding: 0; 
+  /* border: solid 2px yellow;                        */
 }
 
 
