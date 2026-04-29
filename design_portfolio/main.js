@@ -1,25 +1,22 @@
-console.table(`hello Hello`) 
-
-
+console.table(`hello Hello`);
 
 // setTimeout(() => {
 //     alert("The mobile layout is currently being rebuilt, please view the page on your laptop.")
-// }, 2666); 
+// }, 2666);
 
-
-// global rules for scrolling 
+// global rules for scrolling
 document.body.scrollTop = 0; // For Safari
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera 
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 
-// function reloadEverything() { 
-    // window.location.hash = "#"; 
-    // document.body.scrollTop
-    // window.location.reload();
+// function reloadEverything() {
+// window.location.hash = "#";
+// document.body.scrollTop
+// window.location.reload();
 // }
 
 function reloadEverything() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  history.replaceState(null, '', window.location.pathname);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  history.replaceState(null, "", window.location.pathname);
   setTimeout(() => {
     window.location.reload();
   }, 66);
@@ -34,28 +31,29 @@ function reloadEverything() {
 //   }, 666);
 // }
 
-
-
 // for Nav[Projects], Nav[Contact] and Button[Explore Projects]
 const scrollToEl = (id) => {
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-}
-
+  document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+};
 
 // for Floating button - "takeMeUp"
 const toTopButton = document.getElementById("takeMeUp"); // locate
-window.onscroll = () => { showBtnOnScrollDown() }; // when scrolled down, show button
-const showBtnOnScrollDown = () => { // show button after scrolling down 50px
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
-         {toTopButton.style.display = "block"; } 
-    else {toTopButton.style.display = "none"; } }
-const goToTop = () => { // applies only Floating button - Go to top
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-
-
+window.onscroll = () => {
+  showBtnOnScrollDown();
+}; // when scrolled down, show button
+const showBtnOnScrollDown = () => {
+  // show button after scrolling down 50px
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    toTopButton.style.display = "block";
+  } else {
+    toTopButton.style.display = "none";
+  }
+};
+const goToTop = () => {
+  // applies only Floating button - Go to top
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+};
 
 // mobile navigation
 const openMobileNav = () => {
@@ -63,114 +61,168 @@ const openMobileNav = () => {
   nav.style.height = "100%";
   nav.style.width = "100%"; // Example: full width
 };
-const closeMobileNav = () => { 
-    document.getElementById("mobileNavOverlay").style.height = "0%"; 
-}
+const closeMobileNav = () => {
+  document.getElementById("mobileNavOverlay").style.height = "0%";
+};
 
-
-
-// HOLOGRAPHIC BODY 
+// HOLOGRAPHIC BODY
 const holoBody = document.getElementById("holo_fun");
-const handleMouseMove = (event) => { // get mouse X position in mili
-    console.log(`1) new_move: `)
-    const positionX_value = event.clientX;
-    console.log(`2) positionX_value: `, positionX_value); //  2) positionX_value:  522
-    const clientWidth_value = document.documentElement.clientWidth;
-    console.log(`3) clientWidth_value: `, clientWidth_value) //  3) clientWidth_value:  1536
-    const calculated_value_mili = positionX_value / clientWidth_value;
-    console.log(`4) calculated_value_mili: `, calculated_value_mili.toFixed(3)) // 4) calculated_value_mili:  0.340
-    updateHolographicBackground(calculated_value_mili);
-}
-const updateHolographicBackground = (O_xxx) => { // mouse X position in %
-    const percentage_value = O_xxx * 100; // 5) percentage_value:  0.000 (initial)
-    console.log(`5) percentage_value: `, percentage_value.toFixed(3)) // 5) percentage_value:  33.984
-    holoBody.style.backgroundPosition = percentage_value + "%";
-}
+const handleMouseMove = (event) => {
+  // get mouse X position in mili
+  console.log(`1) new_move: `);
+  const positionX_value = event.clientX;
+  console.log(`2) positionX_value: `, positionX_value); //  2) positionX_value:  522
+  const clientWidth_value = document.documentElement.clientWidth;
+  console.log(`3) clientWidth_value: `, clientWidth_value); //  3) clientWidth_value:  1536
+  const calculated_value_mili = positionX_value / clientWidth_value;
+  console.log(`4) calculated_value_mili: `, calculated_value_mili.toFixed(3)); // 4) calculated_value_mili:  0.340
+  updateHolographicBackground(calculated_value_mili);
+};
+const updateHolographicBackground = (O_xxx) => {
+  // mouse X position in %
+  const percentage_value = O_xxx * 100; // 5) percentage_value:  0.000 (initial)
+  console.log(`5) percentage_value: `, percentage_value.toFixed(3)); // 5) percentage_value:  33.984
+  holoBody.style.backgroundPosition = percentage_value + "%";
+};
 
-
-
-
-
-// automatic slideshow for my mugshot 
+// automatic slideshow for my mugshot
 let autoSlideIndex = 0;
-const showAutoSlides = () => { // change image every 2.666 seconds
-    let index;
-    let autoSlides = document.getElementsByClassName("auto_slides"); 
-    let autoDots = document.getElementsByClassName("auto_dots"); 
-    for (index = 0; index < autoSlides.length; index++) { 
-        autoSlides[index].style.display = "none"; }
-    autoSlideIndex++;
-    if (autoSlideIndex > autoSlides.length) { autoSlideIndex = 1 } // loop back to first slide
-    for (index = 0; index < autoDots.length; index++) { //
-        autoDots[index].className = autoDots[index].className.replace("auto_active", "");}
-    autoSlides[autoSlideIndex - 1].style.display = "block";
-    autoDots[autoSlideIndex - 1].className += " auto_active";
-    setTimeout(showAutoSlides, 2666);
-}
-showAutoSlides(); 
-
+const showAutoSlides = () => {
+  // change image every 2.666 seconds
+  let index;
+  let autoSlides = document.getElementsByClassName("auto_slides");
+  let autoDots = document.getElementsByClassName("auto_dots");
+  for (index = 0; index < autoSlides.length; index++) {
+    autoSlides[index].style.display = "none";
+  }
+  autoSlideIndex++;
+  if (autoSlideIndex > autoSlides.length) {
+    autoSlideIndex = 1;
+  } // loop back to first slide
+  for (index = 0; index < autoDots.length; index++) {
+    //
+    autoDots[index].className = autoDots[index].className.replace(
+      "auto_active",
+      "",
+    );
+  }
+  autoSlides[autoSlideIndex - 1].style.display = "block";
+  autoDots[autoSlideIndex - 1].className += " auto_active";
+  setTimeout(showAutoSlides, 2666);
+};
+showAutoSlides();
 
 // slideshow for non-mughsot images
 const slideIndex = [1, 1];
-const slideId = ["mySlides1", "mySlides2"] // classes now unused, but have to stay for my image to work
+const slideId = ["mySlides1", "mySlides2"]; // classes now unused, but have to stay for my image to work
 const plusSlides = (num, idNum) => {
-    showSlides(slideIndex[idNum] += num, idNum);
-}
+  showSlides((slideIndex[idNum] += num), idNum);
+};
 const showSlides = (num, idNum) => {
-    let i;
-    let slides = document.getElementsByClassName(slideId[idNum]);
-    if (num > slides.length) { slideIndex[idNum] = 1 }
-    if (num < 1) { slideIndex[idNum] = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex[idNum] - 1].style.display = "block";
-}
+  let i;
+  let slides = document.getElementsByClassName(slideId[idNum]);
+  if (num > slides.length) {
+    slideIndex[idNum] = 1;
+  }
+  if (num < 1) {
+    slideIndex[idNum] = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex[idNum] - 1].style.display = "block";
+};
 showSlides(1, 0);
 showSlides(1, 1);
-
-
-
 
 // accordion
 const acc = document.getElementsByClassName("accordion");
 for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-          if (panel.style.maxHeight) 
-             {panel.style.maxHeight = null;} 
-        else {panel.style.maxHeight = panel.scrollHeight + "vw"; }
-    });
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "vw";
+    }
+  });
 }
 
-
-
-
-
-// LIGHTBOX 
-function openSlide_lightbox() { document.getElementById("overlay_lightbox_full_id").style.display = "block"; }
-function closeSlide_lightbox() { document.getElementById("overlay_lightbox_full_id").style.display = "none"; }
+// LIGHTBOX
+function openSlide_lightbox() {
+  document.getElementById("overlay_lightbox_full_id").style.display = "block";
+}
+function closeSlide_lightbox() {
+  document.getElementById("overlay_lightbox_full_id").style.display = "none";
+}
 var slideIdx = 1;
 runSlideShow(slideIdx);
-function nextSlide_lightboxPlease(n) { runSlideShow(slideIdx += n); }
-function currentSlide(n) { runSlideShow(slideIdx = n); }
+function nextSlide_lightboxPlease(n) {
+  runSlideShow((slideIdx += n));
+}
+function currentSlide(n) {
+  runSlideShow((slideIdx = n));
+}
 function runSlideShow(n) {
-    let idx;
-    let slides_lb = document.getElementsByClassName("slideDiv");
-    let dots_lb = document.getElementsByClassName("smallPicDot");
-    let description_lb = document.getElementById("slideDescr");
-    if (n > slides_lb.length) { slideIdx = 1 }
-    if (n < 1) { slideIdx = slides_lb.length }
-    for (idx = 0; idx < slides_lb.length; idx++) { slides_lb[idx].style.display = "none"; }
-    for (idx = 0; idx < dots_lb.length; idx++) {
-        dots_lb[idx].className = dots_lb[idx].className.replace(" activeSmallPicDot", "");}
-    slides_lb[slideIdx - 1].style.display = "block";
-    dots_lb[slideIdx - 1].className += " activeSmallPicDot";
-    description_lb.innerHTML = dots_lb[slideIdx - 1].alt;
+  let idx;
+  let slides_lb = document.getElementsByClassName("slideDiv");
+  let dots_lb = document.getElementsByClassName("smallPicDot");
+  let description_lb = document.getElementById("slideDescr");
+  if (n > slides_lb.length) {
+    slideIdx = 1;
+  }
+  if (n < 1) {
+    slideIdx = slides_lb.length;
+  }
+  for (idx = 0; idx < slides_lb.length; idx++) {
+    slides_lb[idx].style.display = "none";
+  }
+  for (idx = 0; idx < dots_lb.length; idx++) {
+    dots_lb[idx].className = dots_lb[idx].className.replace(
+      " activeSmallPicDot",
+      "",
+    );
+  }
+  slides_lb[slideIdx - 1].style.display = "block";
+  dots_lb[slideIdx - 1].className += " activeSmallPicDot";
+  description_lb.innerHTML = dots_lb[slideIdx - 1].alt;
 }
 
+const ibm = [
+  "#161616",
+  "#262626",
+  "#393939",
+  "#525252",
+  "#6f6f6f",
+  "#8d8d8d",
+  "#a8a8a8",
+  "#c6c6c6",
+  "#e0e0e0",
+  "#f4f4f4",
+  "#ffffff",
+];
 
+const themes = {
+  source: "#87806C",
+  fluent: "#7C808B",
+  warm: "#8E7C6F",
+};
 
+function buildThemeRamp(themeHex) {
+  const themeLab = new Color(themeHex).to("lab");
+  const themeA = themeLab.coords[1];
+  const themeB = themeLab.coords[2];
 
+  const ibmL = ibm.map((c) => new Color(c).to("lab").coords[0]);
 
+  return ibmL.map((L) => {
+    const lab = new Color("lab", [L, themeA, themeB]);
+    return lab.to("srgb").toString({ format: "hex" });
+  });
+}
+
+console.log("Source:", buildThemeRamp(themes.source));
+console.log("Fluent:", buildThemeRamp(themes.fluent));
+console.log("Warm:", buildThemeRamp(themes.warm));
+console.log("Satan:", ibm);

@@ -16,20 +16,101 @@
 
 .opacity-transition-0-100-00 {  animation-name: opacity-0-100-transition-keyframe0;   animation-duration: 0.010s;}
 @keyframes opacity-0-100-transition-keyframe0 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
-.opacity-transition-0-100-01 {  animation-name: opacity-0-100-transition-keyframe1;   animation-duration: 1.100s;}
+
+.opacity-transition-0-100-01 {  animation-name: opacity-0-100-transition-keyframe1;   animation-duration: 1.000s;}
 @keyframes opacity-0-100-transition-keyframe1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
-.opacity-transition-0-100-02 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.200s;}
+.opacity-transition-0-100-01-1 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.100s;}
+@keyframes opacity-0-100-transition-keyframe1-1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-2 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.200s;}
+@keyframes opacity-0-100-transition-keyframe1-2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-3 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.300s;}
+@keyframes opacity-0-100-transition-keyframe1-3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-4 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.400s;}
+@keyframes opacity-0-100-transition-keyframe1-4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-5 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.500s;}
+@keyframes opacity-0-100-transition-keyframe1-5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-6 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.600s;}
+@keyframes opacity-0-100-transition-keyframe1-6 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-7 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.700s;}
+@keyframes opacity-0-100-transition-keyframe1-7 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-8 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.800s;}
+@keyframes opacity-0-100-transition-keyframe1-8 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-01-9 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.900s;}
+@keyframes opacity-0-100-transition-keyframe1-9 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+
+
+.opacity-transition-0-100-02 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.000s;}
 @keyframes opacity-0-100-transition-keyframe2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
-.opacity-transition-0-100-03 {  animation-name: opacity-0-100-transition-keyframe3;   animation-duration: 3.300s;}
+.opacity-transition-0-100-02-1 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.100s;}
+@keyframes opacity-0-100-transition-keyframe2-1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-2 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.200s;}
+@keyframes opacity-0-100-transition-keyframe2-2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-3 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.300s;}
+@keyframes opacity-0-100-transition-keyframe2-3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-4 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.400s;}
+@keyframes opacity-0-100-transition-keyframe2-4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-5 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.500s;}
+@keyframes opacity-0-100-transition-keyframe2-5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-6 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.600s;}
+@keyframes opacity-0-100-transition-keyframe2-6 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-7 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.700s;}
+@keyframes opacity-0-100-transition-keyframe2-7 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-8 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.800s;}
+@keyframes opacity-0-100-transition-keyframe2-8 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-02-9 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 2.900s;}
+@keyframes opacity-0-100-transition-keyframe2-9 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+
+.opacity-transition-0-100-03 {  animation-name: opacity-0-100-transition-keyframe3;   animation-duration: 3.000s;}
 @keyframes opacity-0-100-transition-keyframe3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
-.opacity-transition-0-100-04 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 4.400s;}
+.opacity-transition-0-100-03-1 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.100s;}
+@keyframes opacity-0-100-transition-keyframe3-1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-2 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.200s;}
+@keyframes opacity-0-100-transition-keyframe3-2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-3 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.300s;}
+@keyframes opacity-0-100-transition-keyframe3-3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-4 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.400s;}
+@keyframes opacity-0-100-transition-keyframe3-4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-5 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.500s;}
+@keyframes opacity-0-100-transition-keyframe3-5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-6 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.600s;}
+@keyframes opacity-0-100-transition-keyframe3-6 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-7 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.700s;}
+@keyframes opacity-0-100-transition-keyframe3-7 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-8 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.800s;}
+@keyframes opacity-0-100-transition-keyframe3-8 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-03-9 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 3.900s;}
+@keyframes opacity-0-100-transition-keyframe3-9 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+
+.opacity-transition-0-100-04 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 4.000s;}
 @keyframes opacity-0-100-transition-keyframe4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-1 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.100s;}
+@keyframes opacity-0-100-transition-keyframe4-1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-2 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.200s;}
+@keyframes opacity-0-100-transition-keyframe4-2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-3 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.300s;}
+@keyframes opacity-0-100-transition-keyframe4-3 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-4 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.400s;}
+@keyframes opacity-0-100-transition-keyframe4-4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-5 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.500s;}
+@keyframes opacity-0-100-transition-keyframe4-5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-6 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.600s;}
+@keyframes opacity-0-100-transition-keyframe4-6 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-7 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.700s;}
+@keyframes opacity-0-100-transition-keyframe4-7 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-8 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.800s;}
+@keyframes opacity-0-100-transition-keyframe4-8 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+.opacity-transition-0-100-04-9 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 4.900s;}
+@keyframes opacity-0-100-transition-keyframe4-9 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+
 .opacity-transition-0-100-05 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 5.500s;}
 @keyframes opacity-0-100-transition-keyframe5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }} 
 
-.opacity-transition-0-100-00 {  animation-name: opacity-0-100-transition-keyframe0;   animation-duration: 0.010s;}
-@keyframes opacity-0-100-transition-keyframe0 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
-.opacity-transition-0-100-01 {  animation-name: opacity-0-100-transition-keyframe1;   animation-duration: 1.000s;}
+.opacity-transition-0-100-06 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 6.600s;}
+@keyframes opacity-0-100-transition-keyframe6 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }} 
+
+/* .opacity-transition-0-10OTH-00 {  animation-name: opacity-0-1００-transition-keyframe０;   animation-duration: ０.０１０s;}
+@keyframes opacity-０-１００-transition-keyframe０ {    ０００% {opacity: ０% }    ０７５% {opacity: ０% }    １００% {opacity: １００% }}
+.opacity-transition-０-１００-０１ {  animation-name: opacity-０-１００-transition-keyframe１;   animation-duration: １.０００s;}
 @keyframes opacity-0-100-transition-keyframe1 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
 .opacity-transition-0-100-02 {  animation-name: opacity-0-100-transition-keyframe2;   animation-duration: 1.600s;}
 @keyframes opacity-0-100-transition-keyframe2 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
@@ -38,7 +119,7 @@
 .opacity-transition-0-100-04 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 2.800s;}
 @keyframes opacity-0-100-transition-keyframe4 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
 .opacity-transition-0-100-05 {  animation-name: opacity-0-100-transition-keyframe4;   animation-duration: 3.400s;}
-@keyframes opacity-0-100-transition-keyframe5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }}
+@keyframes opacity-0-100-transition-keyframe5 {    000% {opacity: 0% }    075% {opacity: 0% }    100% {opacity: 100% }} */
 
 
 

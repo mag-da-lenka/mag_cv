@@ -44,7 +44,8 @@
     height: calc(100vh - 4rem - 2rem);                       
   }  
   .scr1_article1_magda {
-    width: 60vw;                              
+    width: 60vw; 
+    width: 666px;                              
   }
 
 
@@ -124,7 +125,7 @@
   }  
   .scr1_article1_magda {
     padding: 1.5rem 0.5rem 0 0.5rem;   
-    width: 80vw;   
+    width: 666px;   
     height: 100%;                        
   }
   .scr1_article1_magda section {
