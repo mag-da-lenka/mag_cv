@@ -19,10 +19,18 @@
 
   <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 
+
+  <link rel="stylesheet" href="main_animations.css">
+  <link rel="stylesheet" href="main_slides_acc.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main_mq.css">
+
   <!-- <link rel="stylesheet" href="cv_animations.css"> -->
   <!-- <link rel="stylesheet" href="cv_slides_accordion.css"> -->
   <link rel="stylesheet" href="case_impact_roasters.css">
   <!-- <link rel="stylesheet" href="cv_media_q.css"> -->
+
+
 
   <meta http-equiv='cache-control' content='no-cache'>
   <meta http-equiv='expires' content='0'>
@@ -33,13 +41,79 @@
 
 <body>
 
+
+  <!-- SCREEN 01 a > NAVIGATION  -->
+  <!-- ************************* -->
+
+  <div class="nav_background">
+    <nav>
+      <!-- 1) widescreen -->
+      <div class="nav_left">
+        <div class="nav_box1">
+          <a href="index.html#" onclick="scrollToEl('index.html#')">
+            Magda
+          </a>
+        </div>
+      </div>
+      <div class="nav_right">
+        <div class="nav_box3">
+          <a href="index.html#design-experience-link" onclick="scrollToEl('index.html#design-experience-link')">
+            Projects
+          </a>
+        </div>
+        <div class="nav_box6">
+          <a href="index.html#contact-link" onclick="scrollToEl('index.html#contact-link')">
+            Contact
+          </a>
+        </div>
+        <!-- 2) mobile nav -->
+        <!-- 2.a) mobile nav before opening-->
+        <div class="mobile_nav_background">
+          <div class="nav_box7_mobile">
+            <a class="nav_box7_mobile_l" href="index.html#" onclick="scrollToEl('index.html#')">
+              Magda
+            </a>
+            <div class=" nav_box7_mobile_r" onclick="openMobileNav()">
+              &#9776;<!-- burger -->
+            </div>
+          </div>
+          <!-- mobile nav - open overlay -->
+          <div class="overlay" id="mobileNavOverlay">
+            <span class="potato">
+              <a class="close_M" href="index.html#" onclick="scrollToEl('index.html#')">
+              </a>
+              <!-- closing X -->
+              <a class=" close_X" href="javascript:void(0)" onclick="closeMobileNav()">
+                &#10005;
+              </a>
+            </span>
+            <div class="overlay-content">
+              <a href="index.html#design-experience-link" ; onclick="scrollToEl('index.html#'); closeMobileNav()">
+                Magda
+              </a>
+              <a href="index.html#design-experience-link" ;
+                onclick="scrollToEl('index.html#design-experience-link'); closeMobileNav()">
+                Projects
+              </a>
+              <a href="index.html#contact-link" onclick="scrollToEl('index.html#contact-link'); closeMobileNav()">
+                Contact
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <br /> <br /><br /><br />
   <div class="intro">
     <button>
       <a href="index.html#design-experience-link" class="button_content" ; onclick="scrollToEl('#')">
-        く Back 🏠︎
+        ≺ Back 🏠︎
       </a>
     </button>
   </div>
+
+
 
   <article>
 
@@ -559,15 +633,25 @@
 
 
   </article>
+  
+  <!-- <div class="outro"> -->
+    <div class="outro-L">
+      <button class="button_back">
+        <a href="index.html#design-experience-link" class="button_content" ; onclick="scrollToEl('#')">
+          ≺ Back 🏠︎
+        </a>
+      </button>
+    </div>
 
+    <div class="outro-R">
+      <button class="button_next">
+        <a href="index.html#design-experience-link" class="button_content" ; onclick="scrollToEl('#')">
+          Next ≻
+        </a>
+      </button>
+    </div>
 
-  <div class="outro">
-    <button>
-      <a href="index.html#design-experience-link" class="button_content" ; onclick="scrollToEl('#')">
-        く Back 🏠︎
-      </a>
-    </button>
-  </div>
+  <!-- </div> -->
 
 
   <script src="main.js"></script>

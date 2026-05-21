@@ -2,11 +2,11 @@
 
 @media screen and (max-width: 1279px) {
 
-  body { 
+  /* body {  */
     /* display: flex; 
     flex-direction: column;  */
     /* background-color: blue; */
-  }
+  /* } */
 
   html { font-size: 18px;}
 
@@ -355,6 +355,7 @@
     height: 4rem;     /*must match the closing X container's height */
     margin: 0 auto;  
     padding: 0;  
+     height: 4rem;
   }
 
   /* mobile nav content: Magda and burger */
@@ -370,13 +371,14 @@
     border: none;   
     cursor: pointer; 
     /* border: aquamarine solid 1px;     */
+     height: 4rem;
   } 
   
   /* mobile nav content > Magda's div */
-  .nav_box7_mobile_l { width: 50%; display: flex; justify-content: flex-start; } 
+  .nav_box7_mobile_l { width: 50%; display: flex; justify-content: flex-start;  height: 4rem;  align-items: center; } 
 
   /* mobile nav content > Burger's div */
-  .nav_box7_mobile_r { width: 50%; display: flex; justify-content: flex-end;   } 
+  .nav_box7_mobile_r { width: 50%; display: flex; justify-content: flex-end;    height: 4rem;  align-items: center; } 
 
   
   .overlay {
@@ -397,9 +399,12 @@
   /* CLOSING X container on overlay - crisp version  */
   .potato {
     width: 90vw;
+    margin: 0 auto;
     display: flex; 
     flex-direction: row;
     /* border: aquamarine solid 1px;  */
+     height: 4rem;
+      align-items: center; 
   }
   .overlay .close_M { 
     display: flex;  
@@ -412,6 +417,7 @@
     font-size: 2.0rem;    /*must match the burger's size */
     font-weight: 100;     /*no extra weight to match Magda from mobile nav */
     cursor: pointer;
+     height: 4rem;
   } 
   .overlay .close_X { 
     display: flex;  
@@ -424,6 +430,7 @@
     font-size: 2.0rem;    /*must match the burger's size */
     font-weight: 600;     /*extra weight to match burger */
     cursor: pointer;
+     height: 4rem;
   } 
 
 
@@ -468,6 +475,9 @@
     text-underline-offset: 0.48rem; 
     text-decoration-thickness: 0.06rem; 
     /* color: lime; */
+
+   height: 4rem;
+      /* border: blue 2px dotted; */
   }
 
   .nav_box7_mobile_l:hover,
@@ -485,6 +495,9 @@
     color: var(--main_white_hover);
     text-decoration-color: var(--main_accent_100);
     /* color: rgb(159, 255, 159); */
+    height: 4rem;
+    /* border: blue 2px dashed; */
+
   }
 
 

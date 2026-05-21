@@ -395,7 +395,10 @@ ol, ul{
 }
 
 .outro { 
+  display:flex; 
+  /* flex-wrap: wrap; */
   margin: 0 auto; 
+  justify-content: space-between;
   padding: 2rem 0 0 0;
   background-color: none;
   width: 800px;
@@ -703,6 +706,36 @@ button:active         {transform: scale(0.98); background: rgba(255, 255, 255, 0
     width: 90vw; 
   }
 
+    .outro { 
+    padding: 1rem 0 1rem 0; 
+    display:flex; 
+    margin: 0 auto; 
+    width: 90vw;
+
+  }
+
+  .outro-L {
+    padding: 1rem 0 1rem 0; 
+     margin: 0 auto; 
+    display:flex; 
+    flex-direction: row;
+    width: 90vw;
+  }
+    .outro-R { 
+      padding: 1rem 0 1rem 0; 
+       margin: 0 auto; 
+    display:flex; 
+    flex-direction: row-reverse;
+    width: 90vw;
+  }
+  
+  .button_back {
+    width: 66.6%;
+  }
+
+ .button_next {
+    width: 66.6%;
+  }
   article { 
     padding: 5rem 2rem 5rem 2rem; 
   }
@@ -734,6 +767,30 @@ button:active         {transform: scale(0.98); background: rgba(255, 255, 255, 0
   .intro, .outro, article { 
     width: 90vw; 
   }
+
+      .outro { 
+    padding: 1rem 0 1rem 0; 
+    display:flex; 
+    margin: 0 auto; 
+    width: 90vw;
+
+  }
+
+  .outro-L {
+    padding: 2rem 0 1rem 0; 
+     margin: 0 auto; 
+    display:flex; 
+    flex-direction: row;
+    width: 90vw;
+  }
+    .outro-R { 
+      padding: 1rem 0 1rem 0; 
+       margin: 0 auto; 
+    display:flex; 
+    flex-direction: row-reverse;
+    width: 90vw;
+  }
+  
 
   article { 
     padding: 5rem 2rem 5rem 2rem; 
