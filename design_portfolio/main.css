@@ -106,6 +106,10 @@ body {
 .highlight {
   color: var(--main_accent_100);
 }
+.text-accent {
+  color: var(--sub_text_accent_100);
+}
+
 .clearing_div {
   clear: both;
   height: 0;
